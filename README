@@ -1,0 +1,27 @@
+Packet Flight: visualizing packets
+carlos@bueno.org
+BSD license: Share and enjoy, but give credit where it's due.
+
+Packet Flight is a script that turns a TCP packet dump (tcpdump) data into a
+Processing animation.
+
+At the moment this is a very basic demonstraion of the idea.
+
+TODOS:
+
+  * take any valid TCP dump
+
+  * generate & compile the progam in one step (no copy/paste into Processing)
+
+  * automatically figure out the latency and correct the timings to account
+    for it. The dump timestamps show the send time of sent packets and the
+    recieved time of recieved packets, so the timings for recieved packets
+    have to be adjusted backwards.
+
+  * show labels for nodes and packets
+
+  * prettier visualizations
+
+  * sound effects!
+
+  * a timeline for pausing, skipping, etc.
