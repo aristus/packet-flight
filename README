@@ -15,7 +15,7 @@ TODOS:
 
   * automatically figure out the latency and correct the timings to account
     for it. The dump timestamps show the send time of sent packets and the
-    recieved time of recieved packets, so the timings for recieved packets
+    received time of received packets, so the timings for received packets
     have to be adjusted backwards.
 
   * show labels for nodes and packets
