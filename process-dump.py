@@ -1,5 +1,10 @@
-import re, fileinput
+"""
+Parse format of
 
+sudo tcpdump -n -i en1 -q -ttt host <HOST>
+"""
+
+import re, fileinput
 
 # hour, minute, sec, microsec, from, to, size. Note that these times are deltas
 # so we'll only look at secs and usecs
@@ -9,10 +14,10 @@ time = 0.0
 
 machines = {}
 
-spots = ((120, 240),(400,240))
+spots = ((120, 240),(520,240))
 spos = 0
 
-scale = 50000.0 # 50,000 usecs = 1 sec
+scale = 25000.0 # 25,000 usecs = 1 sec
 latency = 0.2   # packet one-way latency, in seconds
 
 for line in fileinput.input():
@@ -38,7 +43,7 @@ for line in fileinput.input():
 
 
 for name, data in machines.iteritems():
-    print '  nodes.put("%s", new NetworkNode("client", %d, %d));' % (name, data['xy'][0], data['xy'][1])
+    print '  nodes.put("%s", new NetworkNode("%s", %d, %d));' % (name, name, data['xy'][0], data['xy'][1])
 
 
 print '  NetworkNode node;'
@@ -46,3 +51,4 @@ for name, data in machines.iteritems():
     print '  node = (NetworkNode)nodes.get("%s");' % name
     for dest, start, size in data['packets']:
         print '  packets.add(node.makePacket((NetworkNode)nodes.get("%s"), %.3f, %d));' % (dest, start, size)
+
