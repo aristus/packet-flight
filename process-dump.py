@@ -19,6 +19,11 @@ spos = 0
 
 scale = 25000.0 # 25,000 usecs = 1 sec
 
+colors = {
+  'data': '#adcede',
+  'ack':  '#4d8c2a'
+}
+
 for line in fileinput.input():
     m = reg.match(line)
     if m:
@@ -26,6 +31,10 @@ for line in fileinput.input():
 
         start = time + (float(sec) * 1000000.0) + float(usec)
         time = start
+
+        color = colors['data']
+        if int(size) == 0:
+            color = colors['ack']
 
         ## move time for received packets backwards to account for latency.
         if dest == "client":
@@ -36,7 +45,7 @@ for line in fileinput.input():
             machines[src] = {'xy':spots[spos], 'packets':[]}
             spos += 1
 
-        machines[src]['packets'].append((dest, (start / scale), int(size)))
+        machines[src]['packets'].append((dest, (start / scale), int(size), color))
     else:
         print "BLARGH", line
 
@@ -48,6 +57,6 @@ for name, data in machines.iteritems():
 print '  NetworkNode node;'
 for name, data in machines.iteritems():
     print '  node = (NetworkNode)nodes.get("%s");' % name
-    for dest, start, size in data['packets']:
-        print '  packets.add(node.makePacket((NetworkNode)nodes.get("%s"), %.3f, %d));' % (dest, start, size)
+    for dest, start, size, color in data['packets']:
+        print '  packets.add(node.makePacket((NetworkNode)nodes.get("%s"), %.3f, %d, %s));' % (dest, start, size, color)
 
