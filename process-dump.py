@@ -18,7 +18,6 @@ spots = ((120, 240),(520,240))
 spos = 0
 
 scale = 25000.0 # 25,000 usecs = 1 sec
-latency = 0.2   # packet one-way latency, in seconds
 
 for line in fileinput.input():
     m = reg.match(line)
@@ -30,7 +29,7 @@ for line in fileinput.input():
 
         ## move time for received packets backwards to account for latency.
         if dest == "client":
-            start -= (latency * scale)
+            start -= (1 * scale)
 
 
         if not machines.has_key(src):
