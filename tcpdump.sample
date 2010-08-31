@@ -1,3 +1,4 @@
+# 300KB HTTP image request
 00:00:00.000000 IP client > server: tcp 0
 00:00:00.059851 IP server > client: tcp 0
 00:00:00.000074 IP client > server: tcp 0
