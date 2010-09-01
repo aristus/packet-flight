@@ -1,28 +1,28 @@
 """
 Parse a tcpdump file into a "data" pde file for packet flight.
 
-sudo tcpdump -n -i en1 -q -ttt host <HOST> > data.dump
+sudo tcpdump -n -i <INTERFACE> -ttttt host <HOST> > data.dump
 cat data.dump | python process-dump.py > packet_flight/data.pde
+
 """
 
 import re, fileinput
 
-# hour, minute, sec, microsec, from, to, size. Note that these times are deltas
-# so we'll only look at secs and usecs
-reg = re.compile(r'^(\d\d):(\d\d):(\d\d)\.(\d+) IP (\S+) > (\S+): tcp (\d+)')
+# 00:00:00.022019 IP client > server: Flags [S], seq 232647348, win 65535, options [mss 1460,nop,wscale 1,nop,nop,TS val 423667877 ecr 0,sackOK,eol], length 0
+verbose = re.compile(r'^\d\d:\d\d:(\d\d\.\d+) IP (\S+) > (\S+): Flags \[([^\[]+)\], .+ length (\d+)')
 
-scale = 25 * 1000.0 # usecs = 1 sec
-
-# start at 1sec
+# This scale is tuned by hand at the moment. I'm getting good
+# results from using the time between the first SYN/ACK divided
+# by two. For > 2 nodes this won't work, of course.
+scale = 80 * 1000.0
 time = 1 * scale
+maxtime = 0
 
 machines = {}
 
-spots = ((120, 240),(520,240))
+# Where the network nodes live
+spots = ((100, 240),(540,240))
 spos = 0
-
-maxtime = 0
-
 
 colors = {
   'data': '#1689cf',
@@ -32,24 +32,25 @@ colors = {
 title = "Packet Visualization"
 
 for line in fileinput.input():
+    # if the first line is a comment, use it as the title
     if line[0] == '#':
         title = line[1:].strip()
+        continue
 
-    m = reg.match(line)
+    m = verbose.match(line)
     if m:
-        hour, minu, sec, usec, src, dest, size = m.groups()
+        sec, src, dest, flags, size = m.groups()
 
-        start = time + (float(sec) * 1000000.0) + float(usec)
+        start = (float(sec) * 1000000.0) # microseconds
         time = start
 
         color = colors['data']
         if int(size) == 0:
             color = colors['ack']
 
-        ## move time for received packets backwards to account for latency.
+        ## move start time for received packets backwards to account for latency.
         if dest == "client":
             start -= (1 * scale)
-
 
         if not machines.has_key(src):
             machines[src] = {'xy':spots[spos], 'packets':[]}
@@ -58,6 +59,9 @@ for line in fileinput.input():
         machines[src]['packets'].append((dest, (start / scale), int(size), color))
         maxtime = (time / scale) + 1
 
+    else:
+        print "// BLARGH!", line
+
 print 'void init_data() {'
 print '  title="%s";' % title
 print '  scale=%d;' % scale
@@ -65,7 +69,6 @@ print '  maxtime=%d;' % maxtime
 
 for name, data in machines.iteritems():
     print '  nodes.put("%s", new NetworkNode("%s", %d, %d));' % (name, name, data['xy'][0], data['xy'][1])
-
 
 print '  NetworkNode node;'
 for name, data in machines.iteritems():

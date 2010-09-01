@@ -1,0 +1,1234 @@
+# Anatomy of a RickRoll (4 seconds of video)
+00:00:00.000000 IP client > youtube: Flags [S], seq 2880643263, win 65535, options [mss 1460,nop,wscale 1,nop,nop,TS val 423701863 ecr 0,sackOK,eol], length 0
+00:00:00.163316 IP youtube > client: Flags [S.], seq 3283178163, ack 2880643264, win 5792, options [mss 1460,sackOK,TS val 1261876858 ecr 423701863,nop,wscale 6], length 0
+00:00:00.163379 IP client > youtube: Flags [.], ack 1, win 33304, options [nop,nop,TS val 423701864 ecr 1261876858], length 0
+00:00:00.163482 IP client > youtube: Flags [P.], seq 1:1018, ack 1, win 33304, options [nop,nop,TS val 423701864 ecr 1261876858], length 1017
+00:00:00.326027 IP youtube > client: Flags [.], ack 1018, win 123, options [nop,nop,TS val 1261877021 ecr 423701864], length 0
+00:00:00.326033 IP youtube > client: Flags [.], ack 1018, win 123, options [nop,nop,TS val 1261877021 ecr 423701864], length 0
+00:00:00.326270 IP youtube > client: Flags [P.], seq 1:126, ack 1018, win 123, options [nop,nop,TS val 1261877022 ecr 423701864], length 125
+00:00:00.326298 IP client > youtube: Flags [.], ack 126, win 33241, options [nop,nop,TS val 423701866 ecr 1261877022], length 0
+00:00:00.573031 IP client > youtube: Flags [P.], seq 1018:2075, ack 126, win 33304, options [nop,nop,TS val 423702078 ecr 1261877022], length 1057
+00:00:00.746956 IP youtube > client: Flags [P.], seq 126:450, ack 2075, win 156, options [nop,nop,TS val 1261898440 ecr 423702078], length 324
+00:00:00.747029 IP youtube > client: Flags [P.], seq 450:742, ack 2075, win 156, options [nop,nop,TS val 1261898440 ecr 423702078], length 292
+00:00:00.747050 IP client > youtube: Flags [.], ack 450, win 33142, options [nop,nop,TS val 423702080 ecr 1261898440], length 0
+00:00:00.747093 IP client > youtube: Flags [.], ack 742, win 32996, options [nop,nop,TS val 423702080 ecr 1261898440], length 0
+00:00:00.747209 IP youtube > client: Flags [P.], seq 742:765, ack 2075, win 156, options [nop,nop,TS val 1261898440 ecr 423702078], length 23
+00:00:00.747230 IP client > youtube: Flags [.], ack 765, win 33292, options [nop,nop,TS val 423702080 ecr 1261898440], length 0
+00:00:00.747812 IP youtube > client: Flags [P.], seq 765:774, ack 2075, win 156, options [nop,nop,TS val 1261898440 ecr 423702078], length 9
+00:00:00.747858 IP client > youtube: Flags [.], ack 774, win 33299, options [nop,nop,TS val 423702080 ecr 1261898440], length 0
+00:00:00.908932 IP youtube > client: Flags [.], seq 774:2222, ack 2075, win 156, options [nop,nop,TS val 1261898603 ecr 423702080], length 1448
+00:00:00.909180 IP youtube > client: Flags [.], seq 2222:3670, ack 2075, win 156, options [nop,nop,TS val 1261898603 ecr 423702080], length 1448
+00:00:00.909210 IP client > youtube: Flags [.], ack 3670, win 32580, options [nop,nop,TS val 423702081 ecr 1261898603], length 0
+00:00:00.909549 IP youtube > client: Flags [.], seq 3670:5118, ack 2075, win 156, options [nop,nop,TS val 1261898603 ecr 423702080], length 1448
+00:00:00.909578 IP client > youtube: Flags [.], ack 5118, win 33304, options [nop,nop,TS val 423702081 ecr 1261898603], length 0
+00:00:00.910141 IP youtube > client: Flags [.], seq 5118:6566, ack 2075, win 156, options [nop,nop,TS val 1261898603 ecr 423702080], length 1448
+00:00:00.910161 IP client > youtube: Flags [.], ack 6566, win 32580, options [nop,nop,TS val 423702081 ecr 1261898603], length 0
+00:00:00.916272 IP youtube > client: Flags [.], seq 6566:8014, ack 2075, win 156, options [nop,nop,TS val 1261898610 ecr 423702080], length 1448
+00:00:00.916386 IP client > youtube: Flags [.], ack 8014, win 33304, options [nop,nop,TS val 423702081 ecr 1261898610], length 0
+00:00:00.916487 IP youtube > client: Flags [.], seq 8014:9462, ack 2075, win 156, options [nop,nop,TS val 1261898610 ecr 423702080], length 1448
+00:00:00.916504 IP client > youtube: Flags [.], ack 9462, win 32580, options [nop,nop,TS val 423702081 ecr 1261898610], length 0
+00:00:00.917142 IP youtube > client: Flags [.], seq 9462:10910, ack 2075, win 156, options [nop,nop,TS val 1261898610 ecr 423702080], length 1448
+00:00:00.917183 IP client > youtube: Flags [.], ack 10910, win 33304, options [nop,nop,TS val 423702081 ecr 1261898610], length 0
+00:00:00.917483 IP youtube > client: Flags [.], seq 10910:12358, ack 2075, win 156, options [nop,nop,TS val 1261898610 ecr 423702080], length 1448
+00:00:00.920054 IP client > youtube: Flags [.], ack 12358, win 33304, options [nop,nop,TS val 423702081 ecr 1261898610], length 0
+00:00:01.076613 IP youtube > client: Flags [.], seq 12358:13806, ack 2075, win 156, options [nop,nop,TS val 1261898771 ecr 423702081], length 1448
+00:00:01.077468 IP youtube > client: Flags [.], seq 13806:15254, ack 2075, win 156, options [nop,nop,TS val 1261898771 ecr 423702081], length 1448
+00:00:01.077528 IP client > youtube: Flags [.], ack 15254, win 33304, options [nop,nop,TS val 423702083 ecr 1261898771], length 0
+00:00:01.077859 IP youtube > client: Flags [.], seq 15254:16702, ack 2075, win 156, options [nop,nop,TS val 1261898771 ecr 423702081], length 1448
+00:00:01.078369 IP youtube > client: Flags [.], seq 16702:18150, ack 2075, win 156, options [nop,nop,TS val 1261898771 ecr 423702081], length 1448
+00:00:01.078397 IP client > youtube: Flags [.], ack 18150, win 33304, options [nop,nop,TS val 423702083 ecr 1261898771], length 0
+00:00:01.078754 IP youtube > client: Flags [.], seq 18150:19598, ack 2075, win 156, options [nop,nop,TS val 1261898771 ecr 423702081], length 1448
+00:00:01.079400 IP youtube > client: Flags [.], seq 19598:21046, ack 2075, win 156, options [nop,nop,TS val 1261898774 ecr 423702081], length 1448
+00:00:01.079432 IP client > youtube: Flags [.], ack 21046, win 33304, options [nop,nop,TS val 423702083 ecr 1261898771], length 0
+00:00:01.079948 IP youtube > client: Flags [.], seq 21046:22494, ack 2075, win 156, options [nop,nop,TS val 1261898774 ecr 423702081], length 1448
+00:00:01.084408 IP youtube > client: Flags [.], seq 22494:23942, ack 2075, win 156, options [nop,nop,TS val 1261898778 ecr 423702081], length 1448
+00:00:01.084480 IP client > youtube: Flags [.], ack 23942, win 33304, options [nop,nop,TS val 423702083 ecr 1261898774], length 0
+00:00:01.084745 IP youtube > client: Flags [.], seq 23942:25390, ack 2075, win 156, options [nop,nop,TS val 1261898778 ecr 423702081], length 1448
+00:00:01.084762 IP client > youtube: Flags [.], ack 25390, win 32580, options [nop,nop,TS val 423702083 ecr 1261898778], length 0
+00:00:01.085352 IP youtube > client: Flags [.], seq 25390:26838, ack 2075, win 156, options [nop,nop,TS val 1261898778 ecr 423702081], length 1448
+00:00:01.085411 IP client > youtube: Flags [.], ack 26838, win 33304, options [nop,nop,TS val 423702083 ecr 1261898778], length 0
+00:00:01.085949 IP youtube > client: Flags [.], seq 26838:28286, ack 2075, win 156, options [nop,nop,TS val 1261898778 ecr 423702081], length 1448
+00:00:01.087618 IP youtube > client: Flags [.], seq 28286:29734, ack 2075, win 156, options [nop,nop,TS val 1261898782 ecr 423702081], length 1448
+00:00:01.087710 IP client > youtube: Flags [.], ack 29734, win 33304, options [nop,nop,TS val 423702083 ecr 1261898778], length 0
+00:00:01.087918 IP youtube > client: Flags [.], seq 29734:31182, ack 2075, win 156, options [nop,nop,TS val 1261898782 ecr 423702081], length 1448
+00:00:01.088469 IP youtube > client: Flags [.], seq 31182:32630, ack 2075, win 156, options [nop,nop,TS val 1261898782 ecr 423702081], length 1448
+00:00:01.088507 IP client > youtube: Flags [.], ack 32630, win 33304, options [nop,nop,TS val 423702083 ecr 1261898782], length 0
+00:00:01.089028 IP youtube > client: Flags [.], seq 32630:34078, ack 2075, win 156, options [nop,nop,TS val 1261898782 ecr 423702081], length 1448
+00:00:01.120208 IP client > youtube: Flags [.], ack 34078, win 33304, options [nop,nop,TS val 423702083 ecr 1261898782], length 0
+00:00:01.239454 IP youtube > client: Flags [P.], seq 34078:35526, ack 2075, win 156, options [nop,nop,TS val 1261898933 ecr 423702083], length 1448
+00:00:01.239514 IP client > youtube: Flags [.], ack 35526, win 32580, options [nop,nop,TS val 423702085 ecr 1261898933], length 0
+00:00:01.239704 IP youtube > client: Flags [.], seq 35526:36974, ack 2075, win 156, options [nop,nop,TS val 1261898933 ecr 423702083], length 1448
+00:00:01.239756 IP client > youtube: Flags [.], ack 36974, win 33304, options [nop,nop,TS val 423702085 ecr 1261898933], length 0
+00:00:01.240297 IP youtube > client: Flags [.], seq 36974:38422, ack 2075, win 156, options [nop,nop,TS val 1261898933 ecr 423702083], length 1448
+00:00:01.242945 IP youtube > client: Flags [.], seq 38422:39870, ack 2075, win 156, options [nop,nop,TS val 1261898937 ecr 423702083], length 1448
+00:00:01.243002 IP client > youtube: Flags [.], ack 39870, win 33304, options [nop,nop,TS val 423702085 ecr 1261898933], length 0
+00:00:01.243094 IP youtube > client: Flags [.], seq 39870:41318, ack 2075, win 156, options [nop,nop,TS val 1261898937 ecr 423702083], length 1448
+00:00:01.243642 IP youtube > client: Flags [.], seq 41318:42766, ack 2075, win 156, options [nop,nop,TS val 1261898937 ecr 423702083], length 1448
+00:00:01.243830 IP client > youtube: Flags [.], ack 42766, win 33304, options [nop,nop,TS val 423702085 ecr 1261898937], length 0
+00:00:01.244002 IP youtube > client: Flags [.], seq 42766:44214, ack 2075, win 156, options [nop,nop,TS val 1261898937 ecr 423702083], length 1448
+00:00:01.246018 IP youtube > client: Flags [.], seq 44214:45662, ack 2075, win 156, options [nop,nop,TS val 1261898937 ecr 423702083], length 1448
+00:00:01.246102 IP client > youtube: Flags [.], ack 45662, win 33304, options [nop,nop,TS val 423702085 ecr 1261898937], length 0
+00:00:01.246231 IP youtube > client: Flags [.], seq 45662:47110, ack 2075, win 156, options [nop,nop,TS val 1261898937 ecr 423702083], length 1448
+00:00:01.246788 IP youtube > client: Flags [.], seq 47110:48558, ack 2075, win 156, options [nop,nop,TS val 1261898941 ecr 423702083], length 1448
+00:00:01.246803 IP client > youtube: Flags [.], ack 48558, win 32580, options [nop,nop,TS val 423702085 ecr 1261898937], length 0
+00:00:01.247130 IP youtube > client: Flags [.], seq 48558:50006, ack 2075, win 156, options [nop,nop,TS val 1261898941 ecr 423702083], length 1448
+00:00:01.247155 IP client > youtube: Flags [.], ack 50006, win 33304, options [nop,nop,TS val 423702085 ecr 1261898941], length 0
+00:00:01.247827 IP youtube > client: Flags [.], seq 50006:51454, ack 2075, win 156, options [nop,nop,TS val 1261898941 ecr 423702083], length 1448
+00:00:01.248218 IP youtube > client: Flags [.], seq 51454:52902, ack 2075, win 156, options [nop,nop,TS val 1261898941 ecr 423702083], length 1448
+00:00:01.248244 IP client > youtube: Flags [.], ack 52902, win 33304, options [nop,nop,TS val 423702085 ecr 1261898941], length 0
+00:00:01.248735 IP youtube > client: Flags [.], seq 52902:54350, ack 2075, win 156, options [nop,nop,TS val 1261898941 ecr 423702083], length 1448
+00:00:01.251359 IP youtube > client: Flags [.], seq 54350:55798, ack 2075, win 156, options [nop,nop,TS val 1261898945 ecr 423702083], length 1448
+00:00:01.251419 IP client > youtube: Flags [.], ack 55798, win 33304, options [nop,nop,TS val 423702085 ecr 1261898941], length 0
+00:00:01.251689 IP youtube > client: Flags [.], seq 55798:57246, ack 2075, win 156, options [nop,nop,TS val 1261898945 ecr 423702083], length 1448
+00:00:01.257939 IP youtube > client: Flags [.], seq 57246:58694, ack 2075, win 156, options [nop,nop,TS val 1261898952 ecr 423702083], length 1448
+00:00:01.258042 IP client > youtube: Flags [.], ack 58694, win 33304, options [nop,nop,TS val 423702085 ecr 1261898945], length 0
+00:00:01.258063 IP youtube > client: Flags [.], seq 58694:60142, ack 2075, win 156, options [nop,nop,TS val 1261898952 ecr 423702083], length 1448
+00:00:01.258404 IP youtube > client: Flags [.], seq 60142:61590, ack 2075, win 156, options [nop,nop,TS val 1261898952 ecr 423702083], length 1448
+00:00:01.258439 IP client > youtube: Flags [.], ack 61590, win 32580, options [nop,nop,TS val 423702085 ecr 1261898952], length 0
+00:00:01.259061 IP youtube > client: Flags [.], seq 61590:63038, ack 2075, win 156, options [nop,nop,TS val 1261898952 ecr 423702083], length 1448
+00:00:01.259104 IP client > youtube: Flags [.], ack 63038, win 33304, options [nop,nop,TS val 423702085 ecr 1261898952], length 0
+00:00:01.259594 IP youtube > client: Flags [.], seq 63038:64486, ack 2075, win 156, options [nop,nop,TS val 1261898952 ecr 423702083], length 1448
+00:00:01.259992 IP youtube > client: Flags [.], seq 64486:65934, ack 2075, win 156, options [nop,nop,TS val 1261898952 ecr 423702083], length 1448
+00:00:01.260025 IP client > youtube: Flags [.], ack 65934, win 33304, options [nop,nop,TS val 423702085 ecr 1261898952], length 0
+00:00:01.282749 IP youtube > client: Flags [.], seq 65934:67382, ack 2075, win 156, options [nop,nop,TS val 1261898977 ecr 423702083], length 1448
+00:00:01.283021 IP youtube > client: Flags [.], seq 67382:68830, ack 2075, win 156, options [nop,nop,TS val 1261898977 ecr 423702083], length 1448
+00:00:01.283056 IP client > youtube: Flags [.], ack 68830, win 33304, options [nop,nop,TS val 423702085 ecr 1261898977], length 0
+00:00:01.404961 IP youtube > client: Flags [.], seq 68830:70278, ack 2075, win 156, options [nop,nop,TS val 1261899096 ecr 423702085], length 1448
+00:00:01.405802 IP youtube > client: Flags [.], seq 70278:71726, ack 2075, win 156, options [nop,nop,TS val 1261899096 ecr 423702085], length 1448
+00:00:01.405987 IP client > youtube: Flags [.], ack 71726, win 33304, options [nop,nop,TS val 423702086 ecr 1261899096], length 0
+00:00:01.406198 IP youtube > client: Flags [.], seq 71726:73174, ack 2075, win 156, options [nop,nop,TS val 1261899096 ecr 423702085], length 1448
+00:00:01.406805 IP youtube > client: Flags [.], seq 73174:74622, ack 2075, win 156, options [nop,nop,TS val 1261899096 ecr 423702085], length 1448
+00:00:01.406824 IP client > youtube: Flags [.], ack 74622, win 32580, options [nop,nop,TS val 423702086 ecr 1261899096], length 0
+00:00:01.407162 IP youtube > client: Flags [.], seq 74622:76070, ack 2075, win 156, options [nop,nop,TS val 1261899101 ecr 423702085], length 1448
+00:00:01.407187 IP client > youtube: Flags [.], ack 76070, win 33304, options [nop,nop,TS val 423702086 ecr 1261899101], length 0
+00:00:01.407806 IP youtube > client: Flags [.], seq 76070:77518, ack 2075, win 156, options [nop,nop,TS val 1261899101 ecr 423702085], length 1448
+00:00:01.408196 IP youtube > client: Flags [.], seq 77518:78966, ack 2075, win 156, options [nop,nop,TS val 1261899101 ecr 423702085], length 1448
+00:00:01.408221 IP client > youtube: Flags [.], ack 78966, win 33304, options [nop,nop,TS val 423702086 ecr 1261899101], length 0
+00:00:01.408543 IP youtube > client: Flags [.], seq 78966:80414, ack 2075, win 156, options [nop,nop,TS val 1261899101 ecr 423702085], length 1448
+00:00:01.409052 IP youtube > client: Flags [.], seq 80414:81862, ack 2075, win 156, options [nop,nop,TS val 1261899101 ecr 423702085], length 1448
+00:00:01.409079 IP client > youtube: Flags [.], ack 81862, win 33304, options [nop,nop,TS val 423702086 ecr 1261899101], length 0
+00:00:01.409587 IP youtube > client: Flags [.], seq 81862:83310, ack 2075, win 156, options [nop,nop,TS val 1261899101 ecr 423702085], length 1448
+00:00:01.410454 IP youtube > client: Flags [.], seq 83310:84758, ack 2075, win 156, options [nop,nop,TS val 1261899104 ecr 423702085], length 1448
+00:00:01.410535 IP client > youtube: Flags [.], ack 84758, win 33304, options [nop,nop,TS val 423702086 ecr 1261899101], length 0
+00:00:01.410731 IP youtube > client: Flags [.], seq 84758:86206, ack 2075, win 156, options [nop,nop,TS val 1261899104 ecr 423702085], length 1448
+00:00:01.411237 IP youtube > client: Flags [.], seq 86206:87654, ack 2075, win 156, options [nop,nop,TS val 1261899104 ecr 423702085], length 1448
+00:00:01.411251 IP client > youtube: Flags [.], ack 87654, win 32580, options [nop,nop,TS val 423702086 ecr 1261899104], length 0
+00:00:01.411792 IP youtube > client: Flags [.], seq 87654:89102, ack 2075, win 156, options [nop,nop,TS val 1261899104 ecr 423702085], length 1448
+00:00:01.411824 IP client > youtube: Flags [.], ack 89102, win 33304, options [nop,nop,TS val 423702086 ecr 1261899104], length 0
+00:00:01.412938 IP youtube > client: Flags [.], seq 89102:90550, ack 2075, win 156, options [nop,nop,TS val 1261899104 ecr 423702085], length 1448
+00:00:01.413337 IP youtube > client: Flags [.], seq 90550:91998, ack 2075, win 156, options [nop,nop,TS val 1261899104 ecr 423702085], length 1448
+00:00:01.413374 IP client > youtube: Flags [.], ack 91998, win 33304, options [nop,nop,TS val 423702086 ecr 1261899104], length 0
+00:00:01.413693 IP youtube > client: Flags [.], seq 91998:93446, ack 2075, win 156, options [nop,nop,TS val 1261899104 ecr 423702085], length 1448
+00:00:01.414307 IP youtube > client: Flags [.], seq 93446:94894, ack 2075, win 156, options [nop,nop,TS val 1261899104 ecr 423702085], length 1448
+00:00:01.414372 IP client > youtube: Flags [.], ack 94894, win 33304, options [nop,nop,TS val 423702086 ecr 1261899104], length 0
+00:00:01.414573 IP youtube > client: Flags [.], seq 94894:96342, ack 2075, win 156, options [nop,nop,TS val 1261899104 ecr 423702085], length 1448
+00:00:01.415082 IP youtube > client: Flags [P.], seq 96342:97790, ack 2075, win 156, options [nop,nop,TS val 1261899104 ecr 423702085], length 1448
+00:00:01.415099 IP client > youtube: Flags [.], ack 97790, win 32580, options [nop,nop,TS val 423702086 ecr 1261899104], length 0
+00:00:01.415400 IP youtube > client: Flags [.], seq 97790:99238, ack 2075, win 156, options [nop,nop,TS val 1261899104 ecr 423702085], length 1448
+00:00:01.415425 IP client > youtube: Flags [.], ack 99238, win 33304, options [nop,nop,TS val 423702086 ecr 1261899104], length 0
+00:00:01.420120 IP youtube > client: Flags [.], seq 99238:100686, ack 2075, win 156, options [nop,nop,TS val 1261899115 ecr 423702085], length 1448
+00:00:01.420250 IP youtube > client: Flags [.], seq 100686:102134, ack 2075, win 156, options [nop,nop,TS val 1261899115 ecr 423702085], length 1448
+00:00:01.420284 IP client > youtube: Flags [.], ack 102134, win 33304, options [nop,nop,TS val 423702086 ecr 1261899115], length 0
+00:00:01.420584 IP youtube > client: Flags [.], seq 102134:103582, ack 2075, win 156, options [nop,nop,TS val 1261899115 ecr 423702085], length 1448
+00:00:01.425944 IP youtube > client: Flags [.], seq 103582:105030, ack 2075, win 156, options [nop,nop,TS val 1261899118 ecr 423702085], length 1448
+00:00:01.426068 IP client > youtube: Flags [.], ack 105030, win 33304, options [nop,nop,TS val 423702087 ecr 1261899115], length 0
+00:00:01.426218 IP youtube > client: Flags [.], seq 105030:106478, ack 2075, win 156, options [nop,nop,TS val 1261899118 ecr 423702085], length 1448
+00:00:01.426541 IP youtube > client: Flags [.], seq 106478:107926, ack 2075, win 156, options [nop,nop,TS val 1261899118 ecr 423702085], length 1448
+00:00:01.426578 IP client > youtube: Flags [.], ack 107926, win 33304, options [nop,nop,TS val 423702087 ecr 1261899118], length 0
+00:00:01.427558 IP youtube > client: Flags [.], seq 107926:109374, ack 2075, win 156, options [nop,nop,TS val 1261899118 ecr 423702085], length 1448
+00:00:01.427991 IP youtube > client: Flags [.], seq 109374:110822, ack 2075, win 156, options [nop,nop,TS val 1261899118 ecr 423702085], length 1448
+00:00:01.428007 IP client > youtube: Flags [.], ack 110822, win 32580, options [nop,nop,TS val 423702087 ecr 1261899118], length 0
+00:00:01.428557 IP youtube > client: Flags [.], seq 110822:112270, ack 2075, win 156, options [nop,nop,TS val 1261899118 ecr 423702085], length 1448
+00:00:01.428583 IP client > youtube: Flags [.], ack 112270, win 33304, options [nop,nop,TS val 423702087 ecr 1261899118], length 0
+00:00:01.428851 IP youtube > client: Flags [.], seq 112270:113718, ack 2075, win 156, options [nop,nop,TS val 1261899118 ecr 423702085], length 1448
+00:00:01.429334 IP youtube > client: Flags [.], seq 113718:115166, ack 2075, win 156, options [nop,nop,TS val 1261899118 ecr 423702085], length 1448
+00:00:01.429365 IP client > youtube: Flags [.], ack 115166, win 33304, options [nop,nop,TS val 423702087 ecr 1261899118], length 0
+00:00:01.429920 IP youtube > client: Flags [.], seq 115166:116614, ack 2075, win 156, options [nop,nop,TS val 1261899118 ecr 423702085], length 1448
+00:00:01.452174 IP youtube > client: Flags [.], seq 116614:118062, ack 2075, win 156, options [nop,nop,TS val 1261899146 ecr 423702085], length 1448
+00:00:01.452369 IP youtube > client: Flags [.], seq 118062:119510, ack 2075, win 156, options [nop,nop,TS val 1261899146 ecr 423702085], length 1448
+00:00:01.452494 IP client > youtube: Flags [.], ack 119510, win 33304, options [nop,nop,TS val 423702087 ecr 1261899118], length 0
+00:00:01.452754 IP youtube > client: Flags [.], seq 119510:120958, ack 2075, win 156, options [nop,nop,TS val 1261899146 ecr 423702085], length 1448
+00:00:01.520690 IP client > youtube: Flags [.], ack 120958, win 33304, options [nop,nop,TS val 423702087 ecr 1261899146], length 0
+00:00:01.568324 IP youtube > client: Flags [.], seq 120958:122406, ack 2075, win 156, options [nop,nop,TS val 1261899263 ecr 423702086], length 1448
+00:00:01.568579 IP youtube > client: Flags [.], seq 122406:123854, ack 2075, win 156, options [nop,nop,TS val 1261899263 ecr 423702086], length 1448
+00:00:01.568615 IP client > youtube: Flags [.], ack 123854, win 33304, options [nop,nop,TS val 423702088 ecr 1261899263], length 0
+00:00:01.569319 IP youtube > client: Flags [.], seq 123854:125302, ack 2075, win 156, options [nop,nop,TS val 1261899263 ecr 423702086], length 1448
+00:00:01.572300 IP youtube > client: Flags [.], seq 125302:126750, ack 2075, win 156, options [nop,nop,TS val 1261899267 ecr 423702086], length 1448
+00:00:01.572372 IP client > youtube: Flags [.], ack 126750, win 33304, options [nop,nop,TS val 423702088 ecr 1261899263], length 0
+00:00:01.572593 IP youtube > client: Flags [.], seq 126750:128198, ack 2075, win 156, options [nop,nop,TS val 1261899267 ecr 423702086], length 1448
+00:00:01.573101 IP youtube > client: Flags [P.], seq 128198:129646, ack 2075, win 156, options [nop,nop,TS val 1261899267 ecr 423702086], length 1448
+00:00:01.573121 IP client > youtube: Flags [.], ack 129646, win 32580, options [nop,nop,TS val 423702088 ecr 1261899267], length 0
+00:00:01.573506 IP youtube > client: Flags [.], seq 129646:131094, ack 2075, win 156, options [nop,nop,TS val 1261899267 ecr 423702086], length 1448
+00:00:01.573540 IP client > youtube: Flags [.], ack 131094, win 33304, options [nop,nop,TS val 423702088 ecr 1261899267], length 0
+00:00:01.574283 IP youtube > client: Flags [.], seq 131094:132542, ack 2075, win 156, options [nop,nop,TS val 1261899267 ecr 423702086], length 1448
+00:00:01.574703 IP youtube > client: Flags [.], seq 132542:133990, ack 2075, win 156, options [nop,nop,TS val 1261899267 ecr 423702086], length 1448
+00:00:01.574730 IP client > youtube: Flags [.], ack 133990, win 33304, options [nop,nop,TS val 423702088 ecr 1261899267], length 0
+00:00:01.575022 IP youtube > client: Flags [.], seq 133990:135438, ack 2075, win 156, options [nop,nop,TS val 1261899267 ecr 423702086], length 1448
+00:00:01.575582 IP youtube > client: Flags [.], seq 135438:136886, ack 2075, win 156, options [nop,nop,TS val 1261899267 ecr 423702086], length 1448
+00:00:01.575611 IP client > youtube: Flags [.], ack 136886, win 33304, options [nop,nop,TS val 423702088 ecr 1261899267], length 0
+00:00:01.576392 IP youtube > client: Flags [.], seq 136886:138334, ack 2075, win 156, options [nop,nop,TS val 1261899271 ecr 423702086], length 1448
+00:00:01.576804 IP youtube > client: Flags [.], seq 138334:139782, ack 2075, win 156, options [nop,nop,TS val 1261899271 ecr 423702086], length 1448
+00:00:01.576842 IP client > youtube: Flags [.], ack 139782, win 33304, options [nop,nop,TS val 423702088 ecr 1261899271], length 0
+00:00:01.577147 IP youtube > client: Flags [.], seq 139782:141230, ack 2075, win 156, options [nop,nop,TS val 1261899271 ecr 423702086], length 1448
+00:00:01.577603 IP youtube > client: Flags [.], seq 141230:142678, ack 2075, win 156, options [nop,nop,TS val 1261899271 ecr 423702086], length 1448
+00:00:01.577617 IP client > youtube: Flags [.], ack 142678, win 32580, options [nop,nop,TS val 423702088 ecr 1261899271], length 0
+00:00:01.578193 IP youtube > client: Flags [.], seq 142678:144126, ack 2075, win 156, options [nop,nop,TS val 1261899271 ecr 423702086], length 1448
+00:00:01.578225 IP client > youtube: Flags [.], ack 144126, win 33304, options [nop,nop,TS val 423702088 ecr 1261899271], length 0
+00:00:01.578766 IP youtube > client: Flags [.], seq 144126:145574, ack 2075, win 156, options [nop,nop,TS val 1261899271 ecr 423702086], length 1448
+00:00:01.580175 IP youtube > client: Flags [.], seq 145574:147022, ack 2075, win 156, options [nop,nop,TS val 1261899275 ecr 423702086], length 1448
+00:00:01.580237 IP client > youtube: Flags [.], ack 147022, win 33304, options [nop,nop,TS val 423702088 ecr 1261899271], length 0
+00:00:01.581299 IP youtube > client: Flags [.], seq 147022:148470, ack 2075, win 156, options [nop,nop,TS val 1261899275 ecr 423702086], length 1448
+00:00:01.581692 IP youtube > client: Flags [.], seq 148470:149918, ack 2075, win 156, options [nop,nop,TS val 1261899275 ecr 423702086], length 1448
+00:00:01.581726 IP client > youtube: Flags [.], ack 149918, win 33304, options [nop,nop,TS val 423702088 ecr 1261899275], length 0
+00:00:01.582235 IP youtube > client: Flags [.], seq 149918:151366, ack 2075, win 156, options [nop,nop,TS val 1261899275 ecr 423702086], length 1448
+00:00:01.582649 IP youtube > client: Flags [.], seq 151366:152814, ack 2075, win 156, options [nop,nop,TS val 1261899275 ecr 423702086], length 1448
+00:00:01.582681 IP client > youtube: Flags [.], ack 152814, win 33304, options [nop,nop,TS val 423702088 ecr 1261899275], length 0
+00:00:01.583201 IP youtube > client: Flags [.], seq 152814:154262, ack 2075, win 156, options [nop,nop,TS val 1261899275 ecr 423702086], length 1448
+00:00:01.583669 IP youtube > client: Flags [.], seq 154262:155710, ack 2075, win 156, options [nop,nop,TS val 1261899275 ecr 423702086], length 1448
+00:00:01.583695 IP client > youtube: Flags [.], ack 155710, win 32580, options [nop,nop,TS val 423702088 ecr 1261899275], length 0
+00:00:01.584204 IP youtube > client: Flags [.], seq 155710:157158, ack 2075, win 156, options [nop,nop,TS val 1261899275 ecr 423702086], length 1448
+00:00:01.584623 IP youtube > client: Flags [.], seq 157158:158606, ack 2075, win 156, options [nop,nop,TS val 1261899279 ecr 423702086], length 1448
+00:00:01.585017 IP youtube > client: Flags [.], seq 158606:160054, ack 2075, win 156, options [nop,nop,TS val 1261899279 ecr 423702086], length 1448
+00:00:01.585368 IP youtube > client: Flags [P.], seq 160054:161502, ack 2075, win 156, options [nop,nop,TS val 1261899279 ecr 423702086], length 1448
+00:00:01.585386 IP client > youtube: Flags [.], ack 161502, win 29684, options [nop,nop,TS val 423702088 ecr 1261899275], length 0
+00:00:01.588318 IP youtube > client: Flags [.], seq 161502:162950, ack 2075, win 156, options [nop,nop,TS val 1261899283 ecr 423702087], length 1448
+00:00:01.588377 IP client > youtube: Flags [.], ack 162950, win 33056, options [nop,nop,TS val 423702088 ecr 1261899283], length 0
+00:00:01.588627 IP youtube > client: Flags [.], seq 162950:164398, ack 2075, win 156, options [nop,nop,TS val 1261899283 ecr 423702087], length 1448
+00:00:01.589133 IP youtube > client: Flags [.], seq 164398:165846, ack 2075, win 156, options [nop,nop,TS val 1261899283 ecr 423702087], length 1448
+00:00:01.589183 IP client > youtube: Flags [.], ack 165846, win 33304, options [nop,nop,TS val 423702088 ecr 1261899283], length 0
+00:00:01.589487 IP youtube > client: Flags [.], seq 165846:167294, ack 2075, win 156, options [nop,nop,TS val 1261899283 ecr 423702087], length 1448
+00:00:01.590060 IP youtube > client: Flags [.], seq 167294:168742, ack 2075, win 156, options [nop,nop,TS val 1261899283 ecr 423702087], length 1448
+00:00:01.590092 IP client > youtube: Flags [.], ack 168742, win 33304, options [nop,nop,TS val 423702088 ecr 1261899283], length 0
+00:00:01.592331 IP youtube > client: Flags [.], seq 168742:170190, ack 2075, win 156, options [nop,nop,TS val 1261899287 ecr 423702087], length 1448
+00:00:01.593092 IP youtube > client: Flags [.], seq 170190:171638, ack 2075, win 156, options [nop,nop,TS val 1261899287 ecr 423702087], length 1448
+00:00:01.593142 IP client > youtube: Flags [.], ack 171638, win 33304, options [nop,nop,TS val 423702088 ecr 1261899287], length 0
+00:00:01.593393 IP youtube > client: Flags [.], seq 171638:173086, ack 2075, win 156, options [nop,nop,TS val 1261899287 ecr 423702087], length 1448
+00:00:01.593916 IP youtube > client: Flags [.], seq 173086:174534, ack 2075, win 156, options [nop,nop,TS val 1261899287 ecr 423702087], length 1448
+00:00:01.593928 IP client > youtube: Flags [.], ack 174534, win 32580, options [nop,nop,TS val 423702088 ecr 1261899287], length 0
+00:00:01.594487 IP youtube > client: Flags [.], seq 174534:175982, ack 2075, win 156, options [nop,nop,TS val 1261899287 ecr 423702087], length 1448
+00:00:01.594520 IP client > youtube: Flags [.], ack 175982, win 33304, options [nop,nop,TS val 423702088 ecr 1261899287], length 0
+00:00:01.595025 IP youtube > client: Flags [.], seq 175982:177430, ack 2075, win 156, options [nop,nop,TS val 1261899287 ecr 423702087], length 1448
+00:00:01.614725 IP youtube > client: Flags [.], seq 177430:178878, ack 2075, win 156, options [nop,nop,TS val 1261899309 ecr 423702087], length 1448
+00:00:01.614965 IP client > youtube: Flags [.], ack 178878, win 33304, options [nop,nop,TS val 423702088 ecr 1261899287], length 0
+00:00:01.615060 IP youtube > client: Flags [.], seq 178878:180326, ack 2075, win 156, options [nop,nop,TS val 1261899309 ecr 423702087], length 1448
+00:00:01.615381 IP youtube > client: Flags [.], seq 180326:181774, ack 2075, win 156, options [nop,nop,TS val 1261899309 ecr 423702087], length 1448
+00:00:01.615423 IP client > youtube: Flags [.], ack 181774, win 33304, options [nop,nop,TS val 423702088 ecr 1261899309], length 0
+00:00:01.615998 IP youtube > client: Flags [.], seq 181774:183222, ack 2075, win 156, options [nop,nop,TS val 1261899309 ecr 423702087], length 1448
+00:00:01.685157 IP youtube > client: Flags [.], seq 183222:184670, ack 2075, win 156, options [nop,nop,TS val 1261899378 ecr 423702087], length 1448
+00:00:01.685162 IP youtube > client: Flags [.], seq 184670:186118, ack 2075, win 156, options [nop,nop,TS val 1261899378 ecr 423702087], length 1448
+00:00:01.685308 IP client > youtube: Flags [.], ack 186118, win 33056, options [nop,nop,TS val 423702089 ecr 1261899309], length 0
+00:00:01.729909 IP youtube > client: Flags [.], seq 186118:187566, ack 2075, win 156, options [nop,nop,TS val 1261899424 ecr 423702088], length 1448
+00:00:01.729965 IP client > youtube: Flags [.], ack 187566, win 32580, options [nop,nop,TS val 423702090 ecr 1261899424], length 0
+00:00:01.731616 IP youtube > client: Flags [.], seq 187566:189014, ack 2075, win 156, options [nop,nop,TS val 1261899424 ecr 423702088], length 1448
+00:00:01.731670 IP client > youtube: Flags [.], ack 189014, win 33304, options [nop,nop,TS val 423702090 ecr 1261899424], length 0
+00:00:01.733074 IP youtube > client: Flags [.], seq 189014:190462, ack 2075, win 156, options [nop,nop,TS val 1261899424 ecr 423702088], length 1448
+00:00:01.733105 IP client > youtube: Flags [.], ack 190462, win 32580, options [nop,nop,TS val 423702090 ecr 1261899424], length 0
+00:00:01.734552 IP youtube > client: Flags [.], seq 190462:191910, ack 2075, win 156, options [nop,nop,TS val 1261899428 ecr 423702088], length 1448
+00:00:01.734586 IP client > youtube: Flags [.], ack 191910, win 33304, options [nop,nop,TS val 423702090 ecr 1261899428], length 0
+00:00:01.735097 IP youtube > client: Flags [.], seq 191910:193358, ack 2075, win 156, options [nop,nop,TS val 1261899428 ecr 423702088], length 1448
+00:00:01.735110 IP client > youtube: Flags [.], ack 193358, win 32580, options [nop,nop,TS val 423702090 ecr 1261899428], length 0
+00:00:01.738278 IP youtube > client: Flags [P.], seq 193358:194806, ack 2075, win 156, options [nop,nop,TS val 1261899432 ecr 423702088], length 1448
+00:00:01.738335 IP client > youtube: Flags [.], ack 194806, win 32580, options [nop,nop,TS val 423702090 ecr 1261899432], length 0
+00:00:01.742738 IP youtube > client: Flags [.], seq 194806:196254, ack 2075, win 156, options [nop,nop,TS val 1261899436 ecr 423702088], length 1448
+00:00:01.742744 IP youtube > client: Flags [.], seq 196254:197702, ack 2075, win 156, options [nop,nop,TS val 1261899436 ecr 423702088], length 1448
+00:00:01.742746 IP youtube > client: Flags [.], seq 197702:199150, ack 2075, win 156, options [nop,nop,TS val 1261899436 ecr 423702088], length 1448
+00:00:01.742835 IP client > youtube: Flags [.], ack 199150, win 32684, options [nop,nop,TS val 423702090 ecr 1261899436], length 0
+00:00:01.743035 IP youtube > client: Flags [.], seq 199150:200598, ack 2075, win 156, options [nop,nop,TS val 1261899436 ecr 423702088], length 1448
+00:00:01.743589 IP youtube > client: Flags [.], seq 200598:202046, ack 2075, win 156, options [nop,nop,TS val 1261899436 ecr 423702088], length 1448
+00:00:01.743614 IP client > youtube: Flags [.], ack 202046, win 33284, options [nop,nop,TS val 423702090 ecr 1261899436], length 0
+00:00:01.744173 IP youtube > client: Flags [.], seq 202046:203494, ack 2075, win 156, options [nop,nop,TS val 1261899436 ecr 423702088], length 1448
+00:00:01.746097 IP youtube > client: Flags [.], seq 203494:204942, ack 2075, win 156, options [nop,nop,TS val 1261899436 ecr 423702088], length 1448
+00:00:01.746190 IP client > youtube: Flags [.], ack 204942, win 33304, options [nop,nop,TS val 423702090 ecr 1261899436], length 0
+00:00:01.747998 IP youtube > client: Flags [.], seq 204942:206390, ack 2075, win 156, options [nop,nop,TS val 1261899436 ecr 423702088], length 1448
+00:00:01.748561 IP youtube > client: Flags [.], seq 206390:207838, ack 2075, win 156, options [nop,nop,TS val 1261899436 ecr 423702088], length 1448
+00:00:01.748589 IP client > youtube: Flags [.], ack 207838, win 32580, options [nop,nop,TS val 423702090 ecr 1261899436], length 0
+00:00:01.748790 IP youtube > client: Flags [.], seq 207838:209286, ack 2075, win 156, options [nop,nop,TS val 1261899436 ecr 423702088], length 1448
+00:00:01.748822 IP client > youtube: Flags [.], ack 209286, win 33304, options [nop,nop,TS val 423702090 ecr 1261899436], length 0
+00:00:01.749210 IP youtube > client: Flags [.], seq 209286:210734, ack 2075, win 156, options [nop,nop,TS val 1261899436 ecr 423702088], length 1448
+00:00:01.749834 IP youtube > client: Flags [.], seq 210734:212182, ack 2075, win 156, options [nop,nop,TS val 1261899440 ecr 423702088], length 1448
+00:00:01.749866 IP client > youtube: Flags [.], ack 212182, win 33304, options [nop,nop,TS val 423702090 ecr 1261899436], length 0
+00:00:01.750193 IP youtube > client: Flags [.], seq 212182:213630, ack 2075, win 156, options [nop,nop,TS val 1261899440 ecr 423702088], length 1448
+00:00:01.750738 IP youtube > client: Flags [.], seq 213630:215078, ack 2075, win 156, options [nop,nop,TS val 1261899440 ecr 423702088], length 1448
+00:00:01.750781 IP client > youtube: Flags [.], ack 215078, win 33304, options [nop,nop,TS val 423702090 ecr 1261899440], length 0
+00:00:01.751075 IP youtube > client: Flags [.], seq 215078:216526, ack 2075, win 156, options [nop,nop,TS val 1261899440 ecr 423702088], length 1448
+00:00:01.751645 IP youtube > client: Flags [.], seq 216526:217974, ack 2075, win 156, options [nop,nop,TS val 1261899444 ecr 423702088], length 1448
+00:00:01.751681 IP client > youtube: Flags [.], ack 217974, win 33304, options [nop,nop,TS val 423702090 ecr 1261899440], length 0
+00:00:01.751981 IP youtube > client: Flags [.], seq 217974:219422, ack 2075, win 156, options [nop,nop,TS val 1261899444 ecr 423702088], length 1448
+00:00:01.752570 IP youtube > client: Flags [.], seq 219422:220870, ack 2075, win 156, options [nop,nop,TS val 1261899444 ecr 423702088], length 1448
+00:00:01.752596 IP client > youtube: Flags [.], ack 220870, win 32580, options [nop,nop,TS val 423702090 ecr 1261899444], length 0
+00:00:01.753957 IP youtube > client: Flags [.], seq 220870:222318, ack 2075, win 156, options [nop,nop,TS val 1261899448 ecr 423702088], length 1448
+00:00:01.754400 IP youtube > client: Flags [.], seq 222318:223766, ack 2075, win 156, options [nop,nop,TS val 1261899448 ecr 423702088], length 1448
+00:00:01.754794 IP client > youtube: Flags [.], ack 223766, win 32932, options [nop,nop,TS val 423702090 ecr 1261899448], length 0
+00:00:01.754841 IP youtube > client: Flags [.], seq 223766:225214, ack 2075, win 156, options [nop,nop,TS val 1261899448 ecr 423702088], length 1448
+00:00:01.755418 IP youtube > client: Flags [.], seq 225214:226662, ack 2075, win 156, options [nop,nop,TS val 1261899448 ecr 423702088], length 1448
+00:00:01.755454 IP client > youtube: Flags [.], ack 226662, win 33304, options [nop,nop,TS val 423702090 ecr 1261899448], length 0
+00:00:01.755791 IP youtube > client: Flags [.], seq 226662:228110, ack 2075, win 156, options [nop,nop,TS val 1261899448 ecr 423702088], length 1448
+00:00:01.756354 IP youtube > client: Flags [P.], seq 228110:229558, ack 2075, win 156, options [nop,nop,TS val 1261899448 ecr 423702088], length 1448
+00:00:01.756379 IP client > youtube: Flags [.], ack 229558, win 32580, options [nop,nop,TS val 423702090 ecr 1261899448], length 0
+00:00:01.756740 IP youtube > client: Flags [.], seq 229558:231006, ack 2075, win 156, options [nop,nop,TS val 1261899448 ecr 423702088], length 1448
+00:00:01.756787 IP client > youtube: Flags [.], ack 231006, win 33304, options [nop,nop,TS val 423702090 ecr 1261899448], length 0
+00:00:01.757430 IP youtube > client: Flags [.], seq 231006:232454, ack 2075, win 156, options [nop,nop,TS val 1261899448 ecr 423702088], length 1448
+00:00:01.757818 IP youtube > client: Flags [.], seq 232454:233902, ack 2075, win 156, options [nop,nop,TS val 1261899448 ecr 423702088], length 1448
+00:00:01.757850 IP client > youtube: Flags [.], ack 233902, win 33304, options [nop,nop,TS val 423702090 ecr 1261899448], length 0
+00:00:01.758176 IP youtube > client: Flags [.], seq 233902:235350, ack 2075, win 156, options [nop,nop,TS val 1261899448 ecr 423702088], length 1448
+00:00:01.759113 IP youtube > client: Flags [P.], seq 235350:236798, ack 2075, win 156, options [nop,nop,TS val 1261899452 ecr 423702088], length 1448
+00:00:01.759131 IP client > youtube: Flags [.], ack 236798, win 32580, options [nop,nop,TS val 423702090 ecr 1261899448], length 0
+00:00:01.759669 IP youtube > client: Flags [.], seq 236798:238246, ack 2075, win 156, options [nop,nop,TS val 1261899452 ecr 423702088], length 1448
+00:00:01.759715 IP client > youtube: Flags [.], ack 238246, win 33304, options [nop,nop,TS val 423702090 ecr 1261899452], length 0
+00:00:01.760086 IP youtube > client: Flags [.], seq 238246:239694, ack 2075, win 156, options [nop,nop,TS val 1261899452 ecr 423702088], length 1448
+00:00:01.761091 IP youtube > client: Flags [.], seq 239694:241142, ack 2075, win 156, options [nop,nop,TS val 1261899452 ecr 423702088], length 1448
+00:00:01.761114 IP client > youtube: Flags [.], ack 241142, win 33304, options [nop,nop,TS val 423702090 ecr 1261899452], length 0
+00:00:01.761470 IP youtube > client: Flags [.], seq 241142:242590, ack 2075, win 156, options [nop,nop,TS val 1261899452 ecr 423702088], length 1448
+00:00:01.778164 IP youtube > client: Flags [.], seq 242590:244038, ack 2075, win 156, options [nop,nop,TS val 1261899472 ecr 423702088], length 1448
+00:00:01.778247 IP client > youtube: Flags [.], ack 244038, win 33304, options [nop,nop,TS val 423702090 ecr 1261899452], length 0
+00:00:01.778426 IP youtube > client: Flags [.], seq 244038:245486, ack 2075, win 156, options [nop,nop,TS val 1261899472 ecr 423702088], length 1448
+00:00:01.779032 IP youtube > client: Flags [.], seq 245486:246934, ack 2075, win 156, options [nop,nop,TS val 1261899472 ecr 423702088], length 1448
+00:00:01.779074 IP client > youtube: Flags [.], ack 246934, win 33304, options [nop,nop,TS val 423702090 ecr 1261899472], length 0
+00:00:01.779600 IP youtube > client: Flags [.], seq 246934:248382, ack 2075, win 156, options [nop,nop,TS val 1261899472 ecr 423702088], length 1448
+00:00:01.846819 IP youtube > client: Flags [.], seq 248382:249830, ack 2075, win 156, options [nop,nop,TS val 1261899541 ecr 423702089], length 1448
+00:00:01.846860 IP client > youtube: Flags [.], ack 249830, win 32580, options [nop,nop,TS val 423702091 ecr 1261899472], length 0
+00:00:01.847096 IP youtube > client: Flags [.], seq 249830:251278, ack 2075, win 156, options [nop,nop,TS val 1261899541 ecr 423702089], length 1448
+00:00:01.847126 IP client > youtube: Flags [.], ack 251278, win 33304, options [nop,nop,TS val 423702091 ecr 1261899541], length 0
+00:00:01.892320 IP youtube > client: Flags [.], seq 251278:252726, ack 2075, win 156, options [nop,nop,TS val 1261899587 ecr 423702090], length 1448
+00:00:01.896313 IP youtube > client: Flags [.], seq 252726:254174, ack 2075, win 156, options [nop,nop,TS val 1261899591 ecr 423702090], length 1448
+00:00:01.896391 IP client > youtube: Flags [.], ack 254174, win 33304, options [nop,nop,TS val 423702091 ecr 1261899587], length 0
+00:00:01.896630 IP youtube > client: Flags [.], seq 254174:255622, ack 2075, win 156, options [nop,nop,TS val 1261899591 ecr 423702090], length 1448
+00:00:01.900395 IP youtube > client: Flags [.], seq 255622:257070, ack 2075, win 156, options [nop,nop,TS val 1261899595 ecr 423702090], length 1448
+00:00:01.900509 IP client > youtube: Flags [.], ack 257070, win 33304, options [nop,nop,TS val 423702091 ecr 1261899591], length 0
+00:00:01.900608 IP youtube > client: Flags [.], seq 257070:258518, ack 2075, win 156, options [nop,nop,TS val 1261899595 ecr 423702090], length 1448
+00:00:01.904379 IP youtube > client: Flags [.], seq 258518:259966, ack 2075, win 156, options [nop,nop,TS val 1261899599 ecr 423702090], length 1448
+00:00:01.904479 IP client > youtube: Flags [.], ack 259966, win 33304, options [nop,nop,TS val 423702091 ecr 1261899595], length 0
+00:00:01.910406 IP youtube > client: Flags [.], seq 259966:261414, ack 2075, win 156, options [nop,nop,TS val 1261899603 ecr 423702090], length 1448
+00:00:01.910624 IP youtube > client: Flags [.], seq 261414:262862, ack 2075, win 156, options [nop,nop,TS val 1261899603 ecr 423702090], length 1448
+00:00:01.910644 IP client > youtube: Flags [.], ack 262862, win 32580, options [nop,nop,TS val 423702091 ecr 1261899603], length 0
+00:00:01.914219 IP youtube > client: Flags [.], seq 262862:264310, ack 2075, win 156, options [nop,nop,TS val 1261899603 ecr 423702090], length 1448
+00:00:01.914318 IP client > youtube: Flags [.], ack 264310, win 33304, options [nop,nop,TS val 423702091 ecr 1261899603], length 0
+00:00:01.914668 IP youtube > client: Flags [.], seq 264310:265758, ack 2075, win 156, options [nop,nop,TS val 1261899603 ecr 423702090], length 1448
+00:00:01.915178 IP youtube > client: Flags [.], seq 265758:267206, ack 2075, win 156, options [nop,nop,TS val 1261899603 ecr 423702090], length 1448
+00:00:01.915219 IP client > youtube: Flags [.], ack 267206, win 33304, options [nop,nop,TS val 423702091 ecr 1261899603], length 0
+00:00:01.916788 IP youtube > client: Flags [P.], seq 267206:268654, ack 2075, win 156, options [nop,nop,TS val 1261899607 ecr 423702090], length 1448
+00:00:01.916813 IP client > youtube: Flags [.], ack 268654, win 32580, options [nop,nop,TS val 423702091 ecr 1261899607], length 0
+00:00:01.920840 IP youtube > client: Flags [.], seq 268654:270102, ack 2075, win 156, options [nop,nop,TS val 1261899607 ecr 423702090], length 1448
+00:00:01.920962 IP client > youtube: Flags [.], ack 270102, win 33304, options [nop,nop,TS val 423702091 ecr 1261899607], length 0
+00:00:01.921244 IP youtube > client: Flags [.], seq 270102:271550, ack 2075, win 156, options [nop,nop,TS val 1261899607 ecr 423702090], length 1448
+00:00:01.921544 IP client > youtube: Flags [.], ack 271550, win 33304, options [nop,nop,TS val 423702091 ecr 1261899607], length 0
+00:00:01.921791 IP youtube > client: Flags [.], seq 271550:272998, ack 2075, win 156, options [nop,nop,TS val 1261899607 ecr 423702090], length 1448
+00:00:01.922777 IP youtube > client: Flags [.], seq 272998:274446, ack 2075, win 156, options [nop,nop,TS val 1261899611 ecr 423702090], length 1448
+00:00:01.922811 IP client > youtube: Flags [.], ack 274446, win 33304, options [nop,nop,TS val 423702092 ecr 1261899607], length 0
+00:00:01.923361 IP youtube > client: Flags [.], seq 274446:275894, ack 2075, win 156, options [nop,nop,TS val 1261899611 ecr 423702090], length 1448
+00:00:01.923667 IP youtube > client: Flags [.], seq 275894:277342, ack 2075, win 156, options [nop,nop,TS val 1261899611 ecr 423702090], length 1448
+00:00:01.923694 IP client > youtube: Flags [.], ack 277342, win 33304, options [nop,nop,TS val 423702092 ecr 1261899611], length 0
+00:00:01.923989 IP youtube > client: Flags [.], seq 277342:278790, ack 2075, win 156, options [nop,nop,TS val 1261899611 ecr 423702090], length 1448
+00:00:01.924532 IP youtube > client: Flags [.], seq 278790:280238, ack 2075, win 156, options [nop,nop,TS val 1261899611 ecr 423702090], length 1448
+00:00:01.924562 IP client > youtube: Flags [.], ack 280238, win 33304, options [nop,nop,TS val 423702092 ecr 1261899611], length 0
+00:00:01.924855 IP youtube > client: Flags [.], seq 280238:281686, ack 2075, win 156, options [nop,nop,TS val 1261899611 ecr 423702090], length 1448
+00:00:01.925410 IP youtube > client: Flags [.], seq 281686:283134, ack 2075, win 156, options [nop,nop,TS val 1261899611 ecr 423702090], length 1448
+00:00:01.925444 IP client > youtube: Flags [.], ack 283134, win 33304, options [nop,nop,TS val 423702092 ecr 1261899611], length 0
+00:00:01.925770 IP youtube > client: Flags [.], seq 283134:284582, ack 2075, win 156, options [nop,nop,TS val 1261899611 ecr 423702090], length 1448
+00:00:01.925785 IP client > youtube: Flags [.], ack 284582, win 32580, options [nop,nop,TS val 423702092 ecr 1261899611], length 0
+00:00:01.926404 IP youtube > client: Flags [.], seq 284582:286030, ack 2075, win 156, options [nop,nop,TS val 1261899611 ecr 423702090], length 1448
+00:00:01.926433 IP client > youtube: Flags [.], ack 286030, win 33304, options [nop,nop,TS val 423702092 ecr 1261899611], length 0
+00:00:01.926760 IP youtube > client: Flags [.], seq 286030:287478, ack 2075, win 156, options [nop,nop,TS val 1261899615 ecr 423702090], length 1448
+00:00:01.927347 IP youtube > client: Flags [.], seq 287478:288926, ack 2075, win 156, options [nop,nop,TS val 1261899615 ecr 423702090], length 1448
+00:00:01.927381 IP client > youtube: Flags [.], ack 288926, win 33304, options [nop,nop,TS val 423702092 ecr 1261899615], length 0
+00:00:01.927693 IP youtube > client: Flags [.], seq 288926:290374, ack 2075, win 156, options [nop,nop,TS val 1261899615 ecr 423702090], length 1448
+00:00:01.928604 IP youtube > client: Flags [.], seq 290374:291822, ack 2075, win 156, options [nop,nop,TS val 1261899615 ecr 423702090], length 1448
+00:00:01.928607 IP youtube > client: Flags [.], seq 291822:293270, ack 2075, win 156, options [nop,nop,TS val 1261899615 ecr 423702090], length 1448
+00:00:01.928657 IP client > youtube: Flags [.], ack 293270, win 33304, options [nop,nop,TS val 423702092 ecr 1261899615], length 0
+00:00:01.929170 IP youtube > client: Flags [.], seq 293270:294718, ack 2075, win 156, options [nop,nop,TS val 1261899615 ecr 423702090], length 1448
+00:00:01.929519 IP youtube > client: Flags [.], seq 294718:296166, ack 2075, win 156, options [nop,nop,TS val 1261899615 ecr 423702090], length 1448
+00:00:01.929556 IP client > youtube: Flags [.], ack 296166, win 33304, options [nop,nop,TS val 423702092 ecr 1261899615], length 0
+00:00:01.930050 IP youtube > client: Flags [.], seq 296166:297614, ack 2075, win 156, options [nop,nop,TS val 1261899615 ecr 423702090], length 1448
+00:00:01.930066 IP client > youtube: Flags [.], ack 297614, win 32580, options [nop,nop,TS val 423702092 ecr 1261899615], length 0
+00:00:01.930398 IP youtube > client: Flags [.], seq 297614:299062, ack 2075, win 156, options [nop,nop,TS val 1261899619 ecr 423702090], length 1448
+00:00:01.930434 IP client > youtube: Flags [.], ack 299062, win 33304, options [nop,nop,TS val 423702092 ecr 1261899619], length 0
+00:00:01.931083 IP youtube > client: Flags [P.], seq 299062:300510, ack 2075, win 156, options [nop,nop,TS val 1261899619 ecr 423702090], length 1448
+00:00:01.931098 IP client > youtube: Flags [.], ack 300510, win 32580, options [nop,nop,TS val 423702092 ecr 1261899619], length 0
+00:00:01.931627 IP youtube > client: Flags [.], seq 300510:301958, ack 2075, win 156, options [nop,nop,TS val 1261899619 ecr 423702090], length 1448
+00:00:01.931655 IP client > youtube: Flags [.], ack 301958, win 33304, options [nop,nop,TS val 423702092 ecr 1261899619], length 0
+00:00:01.932193 IP youtube > client: Flags [.], seq 301958:303406, ack 2075, win 156, options [nop,nop,TS val 1261899619 ecr 423702090], length 1448
+00:00:01.932635 IP youtube > client: Flags [.], seq 303406:304854, ack 2075, win 156, options [nop,nop,TS val 1261899619 ecr 423702090], length 1448
+00:00:01.932663 IP client > youtube: Flags [.], ack 304854, win 33304, options [nop,nop,TS val 423702092 ecr 1261899619], length 0
+00:00:01.933152 IP youtube > client: Flags [.], seq 304854:306302, ack 2075, win 156, options [nop,nop,TS val 1261899619 ecr 423702090], length 1448
+00:00:01.935001 IP youtube > client: Flags [.], seq 306302:307750, ack 2075, win 156, options [nop,nop,TS val 1261899619 ecr 423702090], length 1448
+00:00:01.935043 IP client > youtube: Flags [.], ack 307750, win 33304, options [nop,nop,TS val 423702092 ecr 1261899619], length 0
+00:00:01.941749 IP youtube > client: Flags [.], seq 307750:309198, ack 2075, win 156, options [nop,nop,TS val 1261899635 ecr 423702090], length 1448
+00:00:01.941753 IP youtube > client: Flags [.], seq 309198:310646, ack 2075, win 156, options [nop,nop,TS val 1261899635 ecr 423702090], length 1448
+00:00:01.941824 IP client > youtube: Flags [.], ack 310646, win 33304, options [nop,nop,TS val 423702092 ecr 1261899635], length 0
+00:00:01.945203 IP youtube > client: Flags [.], seq 310646:312094, ack 2075, win 156, options [nop,nop,TS val 1261899639 ecr 423702090], length 1448
+00:00:01.945207 IP youtube > client: Flags [.], seq 312094:313542, ack 2075, win 156, options [nop,nop,TS val 1261899639 ecr 423702090], length 1448
+00:00:01.945260 IP client > youtube: Flags [.], ack 313542, win 31856, options [nop,nop,TS val 423702092 ecr 1261899639], length 0
+00:00:02.012193 IP youtube > client: Flags [.], seq 313542:314990, ack 2075, win 156, options [nop,nop,TS val 1261899705 ecr 423702091], length 1448
+00:00:02.012281 IP client > youtube: Flags [.], ack 314990, win 33304, options [nop,nop,TS val 423702092 ecr 1261899705], length 0
+00:00:02.012870 IP youtube > client: Flags [.], seq 314990:316438, ack 2075, win 156, options [nop,nop,TS val 1261899705 ecr 423702091], length 1448
+00:00:02.013237 IP youtube > client: Flags [.], seq 316438:317886, ack 2075, win 156, options [nop,nop,TS val 1261899705 ecr 423702091], length 1448
+00:00:02.013285 IP client > youtube: Flags [.], ack 317886, win 33304, options [nop,nop,TS val 423702092 ecr 1261899705], length 0
+00:00:02.058606 IP youtube > client: Flags [.], seq 317886:319334, ack 2075, win 156, options [nop,nop,TS val 1261899752 ecr 423702091], length 1448
+00:00:02.058810 IP youtube > client: Flags [.], seq 319334:320782, ack 2075, win 156, options [nop,nop,TS val 1261899752 ecr 423702091], length 1448
+00:00:02.058845 IP client > youtube: Flags [.], ack 320782, win 33304, options [nop,nop,TS val 423702093 ecr 1261899752], length 0
+00:00:02.062120 IP youtube > client: Flags [.], seq 320782:322230, ack 2075, win 156, options [nop,nop,TS val 1261899756 ecr 423702091], length 1448
+00:00:02.062320 IP youtube > client: Flags [.], seq 322230:323678, ack 2075, win 156, options [nop,nop,TS val 1261899756 ecr 423702091], length 1448
+00:00:02.062353 IP client > youtube: Flags [.], ack 323678, win 33304, options [nop,nop,TS val 423702093 ecr 1261899756], length 0
+00:00:02.067101 IP youtube > client: Flags [.], seq 323678:325126, ack 2075, win 156, options [nop,nop,TS val 1261899760 ecr 423702091], length 1448
+00:00:02.067364 IP youtube > client: Flags [.], seq 325126:326574, ack 2075, win 156, options [nop,nop,TS val 1261899760 ecr 423702091], length 1448
+00:00:02.067386 IP client > youtube: Flags [.], ack 326574, win 32580, options [nop,nop,TS val 423702093 ecr 1261899760], length 0
+00:00:02.074105 IP youtube > client: Flags [.], seq 326574:328022, ack 2075, win 156, options [nop,nop,TS val 1261899768 ecr 423702091], length 1448
+00:00:02.074207 IP client > youtube: Flags [.], ack 328022, win 33304, options [nop,nop,TS val 423702093 ecr 1261899768], length 0
+00:00:02.078161 IP youtube > client: Flags [.], seq 328022:329470, ack 2075, win 156, options [nop,nop,TS val 1261899772 ecr 423702091], length 1448
+00:00:02.078264 IP youtube > client: Flags [.], seq 329470:330918, ack 2075, win 156, options [nop,nop,TS val 1261899772 ecr 423702091], length 1448
+00:00:02.078293 IP client > youtube: Flags [.], ack 330918, win 33304, options [nop,nop,TS val 423702093 ecr 1261899772], length 0
+00:00:02.078653 IP youtube > client: Flags [.], seq 330918:332366, ack 2075, win 156, options [nop,nop,TS val 1261899772 ecr 423702091], length 1448
+00:00:02.079139 IP youtube > client: Flags [P.], seq 332366:333814, ack 2075, win 156, options [nop,nop,TS val 1261899772 ecr 423702091], length 1448
+00:00:02.079162 IP client > youtube: Flags [.], ack 333814, win 32580, options [nop,nop,TS val 423702093 ecr 1261899772], length 0
+00:00:02.089641 IP youtube > client: Flags [.], seq 333814:335262, ack 2075, win 156, options [nop,nop,TS val 1261899784 ecr 423702092], length 1448
+00:00:02.089751 IP client > youtube: Flags [.], ack 335262, win 33304, options [nop,nop,TS val 423702093 ecr 1261899784], length 0
+00:00:02.089842 IP youtube > client: Flags [.], seq 335262:336710, ack 2075, win 156, options [nop,nop,TS val 1261899784 ecr 423702092], length 1448
+00:00:02.090353 IP youtube > client: Flags [.], seq 336710:338158, ack 2075, win 156, options [nop,nop,TS val 1261899784 ecr 423702092], length 1448
+00:00:02.090388 IP client > youtube: Flags [.], ack 338158, win 33304, options [nop,nop,TS val 423702093 ecr 1261899784], length 0
+00:00:02.091185 IP youtube > client: Flags [.], seq 338158:339606, ack 2075, win 156, options [nop,nop,TS val 1261899784 ecr 423702092], length 1448
+00:00:02.091540 IP youtube > client: Flags [.], seq 339606:341054, ack 2075, win 156, options [nop,nop,TS val 1261899784 ecr 423702092], length 1448
+00:00:02.091575 IP client > youtube: Flags [.], ack 341054, win 33304, options [nop,nop,TS val 423702093 ecr 1261899784], length 0
+00:00:02.091915 IP youtube > client: Flags [.], seq 341054:342502, ack 2075, win 156, options [nop,nop,TS val 1261899784 ecr 423702092], length 1448
+00:00:02.092260 IP youtube > client: Flags [.], seq 342502:343950, ack 2075, win 156, options [nop,nop,TS val 1261899784 ecr 423702092], length 1448
+00:00:02.092288 IP client > youtube: Flags [.], ack 343950, win 33304, options [nop,nop,TS val 423702093 ecr 1261899784], length 0
+00:00:02.092622 IP youtube > client: Flags [.], seq 343950:345398, ack 2075, win 156, options [nop,nop,TS val 1261899784 ecr 423702092], length 1448
+00:00:02.093420 IP youtube > client: Flags [.], seq 345398:346846, ack 2075, win 156, options [nop,nop,TS val 1261899784 ecr 423702092], length 1448
+00:00:02.093455 IP client > youtube: Flags [.], ack 346846, win 32580, options [nop,nop,TS val 423702093 ecr 1261899784], length 0
+00:00:02.093760 IP youtube > client: Flags [.], seq 346846:348294, ack 2075, win 156, options [nop,nop,TS val 1261899784 ecr 423702092], length 1448
+00:00:02.093787 IP client > youtube: Flags [.], ack 348294, win 33304, options [nop,nop,TS val 423702093 ecr 1261899784], length 0
+00:00:02.094436 IP youtube > client: Flags [.], seq 348294:349742, ack 2075, win 156, options [nop,nop,TS val 1261899784 ecr 423702092], length 1448
+00:00:02.094879 IP youtube > client: Flags [.], seq 349742:351190, ack 2075, win 156, options [nop,nop,TS val 1261899788 ecr 423702092], length 1448
+00:00:02.094923 IP client > youtube: Flags [.], ack 351190, win 33304, options [nop,nop,TS val 423702093 ecr 1261899784], length 0
+00:00:02.095463 IP youtube > client: Flags [.], seq 351190:352638, ack 2075, win 156, options [nop,nop,TS val 1261899788 ecr 423702092], length 1448
+00:00:02.095825 IP youtube > client: Flags [.], seq 352638:354086, ack 2075, win 156, options [nop,nop,TS val 1261899788 ecr 423702092], length 1448
+00:00:02.095857 IP client > youtube: Flags [.], ack 354086, win 33304, options [nop,nop,TS val 423702093 ecr 1261899788], length 0
+00:00:02.096188 IP youtube > client: Flags [.], seq 354086:355534, ack 2075, win 156, options [nop,nop,TS val 1261899788 ecr 423702092], length 1448
+00:00:02.096685 IP youtube > client: Flags [.], seq 355534:356982, ack 2075, win 156, options [nop,nop,TS val 1261899788 ecr 423702092], length 1448
+00:00:02.096720 IP client > youtube: Flags [.], ack 356982, win 33304, options [nop,nop,TS val 423702093 ecr 1261899788], length 0
+00:00:02.097023 IP youtube > client: Flags [.], seq 356982:358430, ack 2075, win 156, options [nop,nop,TS val 1261899788 ecr 423702092], length 1448
+00:00:02.097616 IP youtube > client: Flags [.], seq 358430:359878, ack 2075, win 156, options [nop,nop,TS val 1261899788 ecr 423702092], length 1448
+00:00:02.097633 IP client > youtube: Flags [.], ack 359878, win 32580, options [nop,nop,TS val 423702093 ecr 1261899788], length 0
+00:00:02.097949 IP youtube > client: Flags [.], seq 359878:361326, ack 2075, win 156, options [nop,nop,TS val 1261899788 ecr 423702092], length 1448
+00:00:02.097976 IP client > youtube: Flags [.], ack 361326, win 33304, options [nop,nop,TS val 423702093 ecr 1261899788], length 0
+00:00:02.099031 IP youtube > client: Flags [.], seq 361326:362774, ack 2075, win 156, options [nop,nop,TS val 1261899788 ecr 423702092], length 1448
+00:00:02.099341 IP youtube > client: Flags [.], seq 362774:364222, ack 2075, win 156, options [nop,nop,TS val 1261899792 ecr 423702092], length 1448
+00:00:02.099378 IP client > youtube: Flags [.], ack 364222, win 33304, options [nop,nop,TS val 423702093 ecr 1261899788], length 0
+00:00:02.099899 IP youtube > client: Flags [.], seq 364222:365670, ack 2075, win 156, options [nop,nop,TS val 1261899792 ecr 423702092], length 1448
+00:00:02.100324 IP youtube > client: Flags [.], seq 365670:367118, ack 2075, win 156, options [nop,nop,TS val 1261899792 ecr 423702092], length 1448
+00:00:02.100356 IP client > youtube: Flags [.], ack 367118, win 33304, options [nop,nop,TS val 423702093 ecr 1261899792], length 0
+00:00:02.101397 IP youtube > client: Flags [P.], seq 367118:368566, ack 2075, win 156, options [nop,nop,TS val 1261899792 ecr 423702092], length 1448
+00:00:02.101419 IP client > youtube: Flags [.], ack 368566, win 32580, options [nop,nop,TS val 423702093 ecr 1261899792], length 0
+00:00:02.101730 IP youtube > client: Flags [.], seq 368566:370014, ack 2075, win 156, options [nop,nop,TS val 1261899792 ecr 423702092], length 1448
+00:00:02.101759 IP client > youtube: Flags [.], ack 370014, win 33304, options [nop,nop,TS val 423702093 ecr 1261899792], length 0
+00:00:02.102716 IP youtube > client: Flags [.], seq 370014:371462, ack 2075, win 156, options [nop,nop,TS val 1261899792 ecr 423702092], length 1448
+00:00:02.103051 IP youtube > client: Flags [.], seq 371462:372910, ack 2075, win 156, options [nop,nop,TS val 1261899796 ecr 423702092], length 1448
+00:00:02.103088 IP client > youtube: Flags [.], ack 372910, win 33304, options [nop,nop,TS val 423702093 ecr 1261899792], length 0
+00:00:02.103394 IP youtube > client: Flags [.], seq 372910:374358, ack 2075, win 156, options [nop,nop,TS val 1261899796 ecr 423702092], length 1448
+00:00:02.111739 IP youtube > client: Flags [.], seq 374358:375806, ack 2075, win 156, options [nop,nop,TS val 1261899800 ecr 423702092], length 1448
+00:00:02.111838 IP client > youtube: Flags [.], ack 375806, win 33304, options [nop,nop,TS val 423702093 ecr 1261899796], length 0
+00:00:02.112155 IP youtube > client: Flags [P.], seq 375806:377254, ack 2075, win 156, options [nop,nop,TS val 1261899800 ecr 423702092], length 1448
+00:00:02.112176 IP client > youtube: Flags [.], ack 377254, win 32580, options [nop,nop,TS val 423702093 ecr 1261899800], length 0
+00:00:02.178208 IP youtube > client: Flags [.], seq 377254:378702, ack 2075, win 156, options [nop,nop,TS val 1261899872 ecr 423702092], length 1448
+00:00:02.178282 IP client > youtube: Flags [.], ack 378702, win 33304, options [nop,nop,TS val 423702094 ecr 1261899872], length 0
+00:00:02.178981 IP youtube > client: Flags [.], seq 378702:380150, ack 2075, win 156, options [nop,nop,TS val 1261899872 ecr 423702092], length 1448
+00:00:02.179424 IP youtube > client: Flags [.], seq 380150:381598, ack 2075, win 156, options [nop,nop,TS val 1261899872 ecr 423702092], length 1448
+00:00:02.179479 IP client > youtube: Flags [.], ack 381598, win 33304, options [nop,nop,TS val 423702094 ecr 1261899872], length 0
+00:00:02.179717 IP youtube > client: Flags [.], seq 381598:383046, ack 2075, win 156, options [nop,nop,TS val 1261899872 ecr 423702092], length 1448
+00:00:02.180038 IP youtube > client: Flags [.], seq 383046:384494, ack 2075, win 156, options [nop,nop,TS val 1261899872 ecr 423702092], length 1448
+00:00:02.180072 IP client > youtube: Flags [.], ack 384494, win 33304, options [nop,nop,TS val 423702094 ecr 1261899872], length 0
+00:00:02.221318 IP youtube > client: Flags [.], seq 384494:385942, ack 2075, win 156, options [nop,nop,TS val 1261899914 ecr 423702093], length 1448
+00:00:02.221615 IP youtube > client: Flags [.], seq 385942:387390, ack 2075, win 156, options [nop,nop,TS val 1261899914 ecr 423702093], length 1448
+00:00:02.221646 IP client > youtube: Flags [.], ack 387390, win 33304, options [nop,nop,TS val 423702094 ecr 1261899914], length 0
+00:00:02.227873 IP youtube > client: Flags [.], seq 387390:388838, ack 2075, win 156, options [nop,nop,TS val 1261899918 ecr 423702093], length 1448
+00:00:02.228264 IP youtube > client: Flags [.], seq 388838:390286, ack 2075, win 156, options [nop,nop,TS val 1261899918 ecr 423702093], length 1448
+00:00:02.228282 IP client > youtube: Flags [.], ack 390286, win 32580, options [nop,nop,TS val 423702095 ecr 1261899918], length 0
+00:00:02.230110 IP youtube > client: Flags [.], seq 390286:391734, ack 2075, win 156, options [nop,nop,TS val 1261899925 ecr 423702093], length 1448
+00:00:02.230154 IP client > youtube: Flags [.], ack 391734, win 33304, options [nop,nop,TS val 423702095 ecr 1261899925], length 0
+00:00:02.237277 IP youtube > client: Flags [.], seq 391734:393182, ack 2075, win 156, options [nop,nop,TS val 1261899931 ecr 423702093], length 1448
+00:00:02.237664 IP youtube > client: Flags [.], seq 393182:394630, ack 2075, win 156, options [nop,nop,TS val 1261899931 ecr 423702093], length 1448
+00:00:02.237693 IP client > youtube: Flags [.], ack 394630, win 33304, options [nop,nop,TS val 423702095 ecr 1261899931], length 0
+00:00:02.240800 IP youtube > client: Flags [.], seq 394630:396078, ack 2075, win 156, options [nop,nop,TS val 1261899935 ecr 423702093], length 1448
+00:00:02.241108 IP youtube > client: Flags [.], seq 396078:397526, ack 2075, win 156, options [nop,nop,TS val 1261899935 ecr 423702093], length 1448
+00:00:02.241147 IP client > youtube: Flags [.], ack 397526, win 33304, options [nop,nop,TS val 423702095 ecr 1261899935], length 0
+00:00:02.246016 IP youtube > client: Flags [.], seq 397526:398974, ack 2075, win 156, options [nop,nop,TS val 1261899939 ecr 423702093], length 1448
+00:00:02.252653 IP youtube > client: Flags [.], seq 398974:400422, ack 2075, win 156, options [nop,nop,TS val 1261899947 ecr 423702093], length 1448
+00:00:02.252716 IP client > youtube: Flags [.], ack 400422, win 33304, options [nop,nop,TS val 423702095 ecr 1261899939], length 0
+00:00:02.253497 IP youtube > client: Flags [.], seq 400422:401870, ack 2075, win 156, options [nop,nop,TS val 1261899947 ecr 423702093], length 1448
+00:00:02.256824 IP youtube > client: Flags [.], seq 401870:403318, ack 2075, win 156, options [nop,nop,TS val 1261899951 ecr 423702093], length 1448
+00:00:02.256863 IP client > youtube: Flags [.], ack 403318, win 32580, options [nop,nop,TS val 423702095 ecr 1261899947], length 0
+00:00:02.256989 IP youtube > client: Flags [.], seq 403318:404766, ack 2075, win 156, options [nop,nop,TS val 1261899951 ecr 423702093], length 1448
+00:00:02.257012 IP client > youtube: Flags [.], ack 404766, win 33304, options [nop,nop,TS val 423702095 ecr 1261899951], length 0
+00:00:02.257670 IP youtube > client: Flags [.], seq 404766:406214, ack 2075, win 156, options [nop,nop,TS val 1261899951 ecr 423702093], length 1448
+00:00:02.260840 IP youtube > client: Flags [.], seq 406214:407662, ack 2075, win 156, options [nop,nop,TS val 1261899951 ecr 423702093], length 1448
+00:00:02.260911 IP client > youtube: Flags [.], ack 407662, win 33304, options [nop,nop,TS val 423702095 ecr 1261899951], length 0
+00:00:02.261261 IP youtube > client: Flags [.], seq 407662:409110, ack 2075, win 156, options [nop,nop,TS val 1261899951 ecr 423702093], length 1448
+00:00:02.261869 IP youtube > client: Flags [P.], seq 409110:410558, ack 2075, win 156, options [nop,nop,TS val 1261899951 ecr 423702093], length 1448
+00:00:02.261914 IP client > youtube: Flags [.], ack 410558, win 32580, options [nop,nop,TS val 423702095 ecr 1261899951], length 0
+00:00:02.262841 IP youtube > client: Flags [.], seq 410558:412006, ack 2075, win 156, options [nop,nop,TS val 1261899955 ecr 423702093], length 1448
+00:00:02.262886 IP client > youtube: Flags [.], ack 412006, win 33304, options [nop,nop,TS val 423702095 ecr 1261899955], length 0
+00:00:02.265270 IP youtube > client: Flags [.], seq 412006:413454, ack 2075, win 156, options [nop,nop,TS val 1261899955 ecr 423702093], length 1448
+00:00:02.265275 IP youtube > client: Flags [.], seq 413454:414902, ack 2075, win 156, options [nop,nop,TS val 1261899955 ecr 423702093], length 1448
+00:00:02.265345 IP client > youtube: Flags [.], ack 414902, win 33304, options [nop,nop,TS val 423702095 ecr 1261899955], length 0
+00:00:02.265388 IP youtube > client: Flags [.], seq 414902:416350, ack 2075, win 156, options [nop,nop,TS val 1261899955 ecr 423702093], length 1448
+00:00:02.266331 IP youtube > client: Flags [.], seq 416350:417798, ack 2075, win 156, options [nop,nop,TS val 1261899955 ecr 423702093], length 1448
+00:00:02.266374 IP client > youtube: Flags [.], ack 417798, win 33304, options [nop,nop,TS val 423702095 ecr 1261899955], length 0
+00:00:02.266979 IP youtube > client: Flags [.], seq 417798:419246, ack 2075, win 156, options [nop,nop,TS val 1261899955 ecr 423702093], length 1448
+00:00:02.267363 IP youtube > client: Flags [.], seq 419246:420694, ack 2075, win 156, options [nop,nop,TS val 1261899955 ecr 423702093], length 1448
+00:00:02.267390 IP client > youtube: Flags [.], ack 420694, win 33304, options [nop,nop,TS val 423702095 ecr 1261899955], length 0
+00:00:02.267703 IP youtube > client: Flags [.], seq 420694:422142, ack 2075, win 156, options [nop,nop,TS val 1261899955 ecr 423702093], length 1448
+00:00:02.268259 IP youtube > client: Flags [.], seq 422142:423590, ack 2075, win 156, options [nop,nop,TS val 1261899955 ecr 423702093], length 1448
+00:00:02.268279 IP client > youtube: Flags [.], ack 423590, win 32580, options [nop,nop,TS val 423702095 ecr 1261899955], length 0
+00:00:02.268843 IP youtube > client: Flags [.], seq 423590:425038, ack 2075, win 156, options [nop,nop,TS val 1261899959 ecr 423702093], length 1448
+00:00:02.268875 IP client > youtube: Flags [.], ack 425038, win 33304, options [nop,nop,TS val 423702095 ecr 1261899959], length 0
+00:00:02.269187 IP youtube > client: Flags [.], seq 425038:426486, ack 2075, win 156, options [nop,nop,TS val 1261899959 ecr 423702093], length 1448
+00:00:02.269744 IP youtube > client: Flags [.], seq 426486:427934, ack 2075, win 156, options [nop,nop,TS val 1261899959 ecr 423702093], length 1448
+00:00:02.269778 IP client > youtube: Flags [.], ack 427934, win 33304, options [nop,nop,TS val 423702095 ecr 1261899959], length 0
+00:00:02.270354 IP youtube > client: Flags [.], seq 427934:429382, ack 2075, win 156, options [nop,nop,TS val 1261899959 ecr 423702093], length 1448
+00:00:02.270789 IP youtube > client: Flags [.], seq 429382:430830, ack 2075, win 156, options [nop,nop,TS val 1261899959 ecr 423702093], length 1448
+00:00:02.270828 IP client > youtube: Flags [.], ack 430830, win 33304, options [nop,nop,TS val 423702095 ecr 1261899959], length 0
+00:00:02.271160 IP youtube > client: Flags [.], seq 430830:432278, ack 2075, win 156, options [nop,nop,TS val 1261899959 ecr 423702093], length 1448
+00:00:02.271778 IP youtube > client: Flags [.], seq 432278:433726, ack 2075, win 156, options [nop,nop,TS val 1261899959 ecr 423702093], length 1448
+00:00:02.271832 IP client > youtube: Flags [.], ack 433726, win 33304, options [nop,nop,TS val 423702095 ecr 1261899959], length 0
+00:00:02.272184 IP youtube > client: Flags [.], seq 433726:435174, ack 2075, win 156, options [nop,nop,TS val 1261899963 ecr 423702093], length 1448
+00:00:02.272732 IP youtube > client: Flags [.], seq 435174:436622, ack 2075, win 156, options [nop,nop,TS val 1261899963 ecr 423702093], length 1448
+00:00:02.272755 IP client > youtube: Flags [.], ack 436622, win 32580, options [nop,nop,TS val 423702095 ecr 1261899963], length 0
+00:00:02.273073 IP youtube > client: Flags [.], seq 436622:438070, ack 2075, win 156, options [nop,nop,TS val 1261899963 ecr 423702093], length 1448
+00:00:02.273104 IP client > youtube: Flags [.], ack 438070, win 33304, options [nop,nop,TS val 423702095 ecr 1261899963], length 0
+00:00:02.274638 IP youtube > client: Flags [.], seq 438070:439518, ack 2075, win 156, options [nop,nop,TS val 1261899963 ecr 423702093], length 1448
+00:00:02.276837 IP youtube > client: Flags [.], seq 439518:440966, ack 2075, win 156, options [nop,nop,TS val 1261899971 ecr 423702093], length 1448
+00:00:02.276885 IP client > youtube: Flags [.], ack 440966, win 33304, options [nop,nop,TS val 423702095 ecr 1261899963], length 0
+00:00:02.277140 IP youtube > client: Flags [.], seq 440966:442414, ack 2075, win 156, options [nop,nop,TS val 1261899971 ecr 423702093], length 1448
+00:00:02.321996 IP client > youtube: Flags [.], ack 442414, win 33304, options [nop,nop,TS val 423702095 ecr 1261899971], length 0
+00:00:02.340482 IP youtube > client: Flags [.], seq 442414:443862, ack 2075, win 156, options [nop,nop,TS val 1261900035 ecr 423702094], length 1448
+00:00:02.340761 IP youtube > client: Flags [P.], seq 443862:445310, ack 2075, win 156, options [nop,nop,TS val 1261900035 ecr 423702094], length 1448
+00:00:02.340782 IP client > youtube: Flags [.], ack 445310, win 32580, options [nop,nop,TS val 423702096 ecr 1261900035], length 0
+00:00:02.346307 IP youtube > client: Flags [.], seq 445310:446758, ack 2075, win 156, options [nop,nop,TS val 1261900040 ecr 423702094], length 1448
+00:00:02.346389 IP client > youtube: Flags [.], ack 446758, win 33304, options [nop,nop,TS val 423702096 ecr 1261900040], length 0
+00:00:02.349571 IP youtube > client: Flags [.], seq 446758:448206, ack 2075, win 156, options [nop,nop,TS val 1261900040 ecr 423702094], length 1448
+00:00:02.349788 IP youtube > client: Flags [P.], seq 448206:449654, ack 2075, win 156, options [nop,nop,TS val 1261900040 ecr 423702094], length 1448
+00:00:02.349810 IP client > youtube: Flags [.], ack 449654, win 32580, options [nop,nop,TS val 423702096 ecr 1261900040], length 0
+00:00:02.389047 IP youtube > client: Flags [.], seq 449654:451102, ack 2075, win 156, options [nop,nop,TS val 1261900083 ecr 423702095], length 1448
+00:00:02.389116 IP client > youtube: Flags [.], ack 451102, win 33304, options [nop,nop,TS val 423702096 ecr 1261900083], length 0
+00:00:02.389332 IP youtube > client: Flags [.], seq 451102:452550, ack 2075, win 156, options [nop,nop,TS val 1261900083 ecr 423702095], length 1448
+00:00:02.389829 IP youtube > client: Flags [.], seq 452550:453998, ack 2075, win 156, options [nop,nop,TS val 1261900083 ecr 423702095], length 1448
+00:00:02.389863 IP client > youtube: Flags [.], ack 453998, win 33304, options [nop,nop,TS val 423702096 ecr 1261900083], length 0
+00:00:02.390222 IP youtube > client: Flags [.], seq 453998:455446, ack 2075, win 156, options [nop,nop,TS val 1261900083 ecr 423702095], length 1448
+00:00:02.393025 IP youtube > client: Flags [.], seq 455446:456894, ack 2075, win 156, options [nop,nop,TS val 1261900087 ecr 423702095], length 1448
+00:00:02.393095 IP client > youtube: Flags [.], ack 456894, win 33304, options [nop,nop,TS val 423702096 ecr 1261900083], length 0
+00:00:02.393202 IP youtube > client: Flags [.], seq 456894:458342, ack 2075, win 156, options [nop,nop,TS val 1261900087 ecr 423702095], length 1448
+00:00:02.399064 IP youtube > client: Flags [.], seq 458342:459790, ack 2075, win 156, options [nop,nop,TS val 1261900093 ecr 423702095], length 1448
+00:00:02.399137 IP client > youtube: Flags [.], ack 459790, win 33304, options [nop,nop,TS val 423702096 ecr 1261900087], length 0
+00:00:02.399281 IP youtube > client: Flags [.], seq 459790:461238, ack 2075, win 156, options [nop,nop,TS val 1261900093 ecr 423702095], length 1448
+00:00:02.405087 IP youtube > client: Flags [.], seq 461238:462686, ack 2075, win 156, options [nop,nop,TS val 1261900097 ecr 423702095], length 1448
+00:00:02.405150 IP client > youtube: Flags [.], ack 462686, win 32580, options [nop,nop,TS val 423702096 ecr 1261900093], length 0
+00:00:02.405362 IP youtube > client: Flags [.], seq 462686:464134, ack 2075, win 156, options [nop,nop,TS val 1261900097 ecr 423702095], length 1448
+00:00:02.405388 IP client > youtube: Flags [.], ack 464134, win 33304, options [nop,nop,TS val 423702096 ecr 1261900097], length 0
+00:00:02.423045 IP youtube > client: Flags [.], seq 464134:465582, ack 2075, win 156, options [nop,nop,TS val 1261900110 ecr 423702095], length 1448
+00:00:02.423232 IP youtube > client: Flags [.], seq 465582:467030, ack 2075, win 156, options [nop,nop,TS val 1261900110 ecr 423702095], length 1448
+00:00:02.423269 IP client > youtube: Flags [.], ack 467030, win 33304, options [nop,nop,TS val 423702097 ecr 1261900110], length 0
+00:00:02.423825 IP youtube > client: Flags [.], seq 467030:468478, ack 2075, win 156, options [nop,nop,TS val 1261900114 ecr 423702095], length 1448
+00:00:02.426899 IP youtube > client: Flags [.], seq 468478:469926, ack 2075, win 156, options [nop,nop,TS val 1261900114 ecr 423702095], length 1448
+00:00:02.426976 IP client > youtube: Flags [.], ack 469926, win 33304, options [nop,nop,TS val 423702097 ecr 1261900114], length 0
+00:00:02.427323 IP youtube > client: Flags [.], seq 469926:471374, ack 2075, win 156, options [nop,nop,TS val 1261900114 ecr 423702095], length 1448
+00:00:02.427879 IP youtube > client: Flags [.], seq 471374:472822, ack 2075, win 156, options [nop,nop,TS val 1261900118 ecr 423702095], length 1448
+00:00:02.427915 IP client > youtube: Flags [.], ack 472822, win 33304, options [nop,nop,TS val 423702097 ecr 1261900114], length 0
+00:00:02.428967 IP youtube > client: Flags [.], seq 472822:474270, ack 2075, win 156, options [nop,nop,TS val 1261900118 ecr 423702095], length 1448
+00:00:02.429371 IP youtube > client: Flags [.], seq 474270:475718, ack 2075, win 156, options [nop,nop,TS val 1261900122 ecr 423702095], length 1448
+00:00:02.429391 IP client > youtube: Flags [.], ack 475718, win 32580, options [nop,nop,TS val 423702097 ecr 1261900118], length 0
+00:00:02.430128 IP youtube > client: Flags [.], seq 475718:477166, ack 2075, win 156, options [nop,nop,TS val 1261900122 ecr 423702095], length 1448
+00:00:02.430171 IP client > youtube: Flags [.], ack 477166, win 33304, options [nop,nop,TS val 423702097 ecr 1261900122], length 0
+00:00:02.430482 IP youtube > client: Flags [.], seq 477166:478614, ack 2075, win 156, options [nop,nop,TS val 1261900122 ecr 423702095], length 1448
+00:00:02.431078 IP youtube > client: Flags [.], seq 478614:480062, ack 2075, win 156, options [nop,nop,TS val 1261900126 ecr 423702095], length 1448
+00:00:02.431109 IP client > youtube: Flags [.], ack 480062, win 33304, options [nop,nop,TS val 423702097 ecr 1261900122], length 0
+00:00:02.431429 IP youtube > client: Flags [.], seq 480062:481510, ack 2075, win 156, options [nop,nop,TS val 1261900126 ecr 423702095], length 1448
+00:00:02.431974 IP youtube > client: Flags [P.], seq 481510:482958, ack 2075, win 156, options [nop,nop,TS val 1261900126 ecr 423702095], length 1448
+00:00:02.431991 IP client > youtube: Flags [.], ack 482958, win 32580, options [nop,nop,TS val 423702097 ecr 1261900126], length 0
+00:00:02.437032 IP youtube > client: Flags [.], seq 482958:484406, ack 2075, win 156, options [nop,nop,TS val 1261900130 ecr 423702095], length 1448
+00:00:02.437158 IP client > youtube: Flags [.], ack 484406, win 33304, options [nop,nop,TS val 423702097 ecr 1261900130], length 0
+00:00:02.437404 IP youtube > client: Flags [.], seq 484406:485854, ack 2075, win 156, options [nop,nop,TS val 1261900130 ecr 423702095], length 1448
+00:00:02.437980 IP youtube > client: Flags [.], seq 485854:487302, ack 2075, win 156, options [nop,nop,TS val 1261900130 ecr 423702095], length 1448
+00:00:02.438015 IP client > youtube: Flags [.], ack 487302, win 33304, options [nop,nop,TS val 423702097 ecr 1261900130], length 0
+00:00:02.438890 IP youtube > client: Flags [.], seq 487302:488750, ack 2075, win 156, options [nop,nop,TS val 1261900130 ecr 423702095], length 1448
+00:00:02.439266 IP youtube > client: Flags [.], seq 488750:490198, ack 2075, win 156, options [nop,nop,TS val 1261900130 ecr 423702095], length 1448
+00:00:02.439298 IP client > youtube: Flags [.], ack 490198, win 33304, options [nop,nop,TS val 423702097 ecr 1261900130], length 0
+00:00:02.439619 IP youtube > client: Flags [.], seq 490198:491646, ack 2075, win 156, options [nop,nop,TS val 1261900130 ecr 423702095], length 1448
+00:00:02.440098 IP youtube > client: Flags [.], seq 491646:493094, ack 2075, win 156, options [nop,nop,TS val 1261900130 ecr 423702095], length 1448
+00:00:02.440143 IP client > youtube: Flags [.], ack 493094, win 33304, options [nop,nop,TS val 423702097 ecr 1261900130], length 0
+00:00:02.440422 IP youtube > client: Flags [.], seq 493094:494542, ack 2075, win 156, options [nop,nop,TS val 1261900130 ecr 423702095], length 1448
+00:00:02.440991 IP youtube > client: Flags [.], seq 494542:495990, ack 2075, win 156, options [nop,nop,TS val 1261900130 ecr 423702095], length 1448
+00:00:02.441016 IP client > youtube: Flags [.], ack 495990, win 32580, options [nop,nop,TS val 423702097 ecr 1261900130], length 0
+00:00:02.441523 IP youtube > client: Flags [.], seq 495990:497438, ack 2075, win 156, options [nop,nop,TS val 1261900130 ecr 423702095], length 1448
+00:00:02.441552 IP client > youtube: Flags [.], ack 497438, win 33304, options [nop,nop,TS val 423702097 ecr 1261900130], length 0
+00:00:02.442115 IP youtube > client: Flags [.], seq 497438:498886, ack 2075, win 156, options [nop,nop,TS val 1261900130 ecr 423702095], length 1448
+00:00:02.442559 IP youtube > client: Flags [.], seq 498886:500334, ack 2075, win 156, options [nop,nop,TS val 1261900130 ecr 423702095], length 1448
+00:00:02.442591 IP client > youtube: Flags [.], ack 500334, win 33304, options [nop,nop,TS val 423702097 ecr 1261900130], length 0
+00:00:02.443167 IP youtube > client: Flags [.], seq 500334:501782, ack 2075, win 156, options [nop,nop,TS val 1261900134 ecr 423702095], length 1448
+00:00:02.443519 IP youtube > client: Flags [.], seq 501782:503230, ack 2075, win 156, options [nop,nop,TS val 1261900134 ecr 423702095], length 1448
+00:00:02.443552 IP client > youtube: Flags [.], ack 503230, win 33304, options [nop,nop,TS val 423702097 ecr 1261900134], length 0
+00:00:02.444050 IP youtube > client: Flags [.], seq 503230:504678, ack 2075, win 156, options [nop,nop,TS val 1261900134 ecr 423702095], length 1448
+00:00:02.446625 IP youtube > client: Flags [.], seq 504678:506126, ack 2075, win 156, options [nop,nop,TS val 1261900138 ecr 423702095], length 1448
+00:00:02.446682 IP client > youtube: Flags [.], ack 506126, win 33304, options [nop,nop,TS val 423702097 ecr 1261900134], length 0
+00:00:02.446922 IP youtube > client: Flags [.], seq 506126:507574, ack 2075, win 156, options [nop,nop,TS val 1261900138 ecr 423702095], length 1448
+00:00:02.488202 IP youtube > client: Flags [.], seq 507574:509022, ack 2075, win 156, options [nop,nop,TS val 1261900183 ecr 423702095], length 1448
+00:00:02.488244 IP client > youtube: Flags [.], ack 509022, win 32580, options [nop,nop,TS val 423702097 ecr 1261900138], length 0
+00:00:02.502127 IP youtube > client: Flags [.], seq 509022:510470, ack 2075, win 156, options [nop,nop,TS val 1261900196 ecr 423702096], length 1448
+00:00:02.502246 IP client > youtube: Flags [.], ack 510470, win 33304, options [nop,nop,TS val 423702097 ecr 1261900196], length 0
+00:00:02.522283 IP youtube > client: Flags [.], seq 510470:511918, ack 2075, win 156, options [nop,nop,TS val 1261900212 ecr 423702096], length 1448
+00:00:02.522610 IP youtube > client: Flags [.], seq 511918:513366, ack 2075, win 156, options [nop,nop,TS val 1261900212 ecr 423702096], length 1448
+00:00:02.522644 IP client > youtube: Flags [.], ack 513366, win 33304, options [nop,nop,TS val 423702098 ecr 1261900212], length 0
+00:00:02.523185 IP youtube > client: Flags [.], seq 513366:514814, ack 2075, win 156, options [nop,nop,TS val 1261900217 ecr 423702096], length 1448
+00:00:02.551849 IP youtube > client: Flags [.], seq 514814:516262, ack 2075, win 156, options [nop,nop,TS val 1261900246 ecr 423702096], length 1448
+00:00:02.551950 IP client > youtube: Flags [.], ack 516262, win 33304, options [nop,nop,TS val 423702098 ecr 1261900217], length 0
+00:00:02.552071 IP youtube > client: Flags [P.], seq 516262:517710, ack 2075, win 156, options [nop,nop,TS val 1261900246 ecr 423702096], length 1448
+00:00:02.552085 IP client > youtube: Flags [.], ack 517710, win 32580, options [nop,nop,TS val 423702098 ecr 1261900246], length 0
+00:00:02.555797 IP youtube > client: Flags [.], seq 517710:519158, ack 2075, win 156, options [nop,nop,TS val 1261900250 ecr 423702096], length 1448
+00:00:02.555873 IP client > youtube: Flags [.], ack 519158, win 33304, options [nop,nop,TS val 423702098 ecr 1261900250], length 0
+00:00:02.556086 IP youtube > client: Flags [.], seq 519158:520606, ack 2075, win 156, options [nop,nop,TS val 1261900250 ecr 423702096], length 1448
+00:00:02.559818 IP youtube > client: Flags [.], seq 520606:522054, ack 2075, win 156, options [nop,nop,TS val 1261900254 ecr 423702096], length 1448
+00:00:02.559904 IP client > youtube: Flags [.], ack 522054, win 33304, options [nop,nop,TS val 423702098 ecr 1261900250], length 0
+00:00:02.560087 IP youtube > client: Flags [.], seq 522054:523502, ack 2075, win 156, options [nop,nop,TS val 1261900254 ecr 423702096], length 1448
+00:00:02.567617 IP youtube > client: Flags [.], seq 523502:524950, ack 2075, win 156, options [nop,nop,TS val 1261900258 ecr 423702096], length 1448
+00:00:02.567683 IP client > youtube: Flags [.], ack 524950, win 33304, options [nop,nop,TS val 423702098 ecr 1261900254], length 0
+00:00:02.567791 IP youtube > client: Flags [P.], seq 524950:526398, ack 2075, win 156, options [nop,nop,TS val 1261900258 ecr 423702096], length 1448
+00:00:02.567805 IP client > youtube: Flags [.], ack 526398, win 32580, options [nop,nop,TS val 423702098 ecr 1261900258], length 0
+00:00:02.587512 IP youtube > client: Flags [.], seq 526398:527846, ack 2075, win 156, options [nop,nop,TS val 1261900280 ecr 423702097], length 1448
+00:00:02.587641 IP client > youtube: Flags [.], ack 527846, win 33304, options [nop,nop,TS val 423702098 ecr 1261900280], length 0
+00:00:02.587710 IP youtube > client: Flags [.], seq 527846:529294, ack 2075, win 156, options [nop,nop,TS val 1261900280 ecr 423702097], length 1448
+00:00:02.588267 IP youtube > client: Flags [.], seq 529294:530742, ack 2075, win 156, options [nop,nop,TS val 1261900280 ecr 423702097], length 1448
+00:00:02.588353 IP client > youtube: Flags [.], ack 530742, win 33304, options [nop,nop,TS val 423702098 ecr 1261900280], length 0
+00:00:02.588584 IP youtube > client: Flags [.], seq 530742:532190, ack 2075, win 156, options [nop,nop,TS val 1261900280 ecr 423702097], length 1448
+00:00:02.589138 IP youtube > client: Flags [.], seq 532190:533638, ack 2075, win 156, options [nop,nop,TS val 1261900280 ecr 423702097], length 1448
+00:00:02.589176 IP client > youtube: Flags [.], ack 533638, win 33304, options [nop,nop,TS val 423702098 ecr 1261900280], length 0
+00:00:02.589937 IP youtube > client: Flags [.], seq 533638:535086, ack 2075, win 156, options [nop,nop,TS val 1261900284 ecr 423702097], length 1448
+00:00:02.590360 IP youtube > client: Flags [.], seq 535086:536534, ack 2075, win 156, options [nop,nop,TS val 1261900284 ecr 423702097], length 1448
+00:00:02.590397 IP client > youtube: Flags [.], ack 536534, win 33304, options [nop,nop,TS val 423702098 ecr 1261900284], length 0
+00:00:02.590723 IP youtube > client: Flags [.], seq 536534:537982, ack 2075, win 156, options [nop,nop,TS val 1261900284 ecr 423702097], length 1448
+00:00:02.591286 IP youtube > client: Flags [.], seq 537982:539430, ack 2075, win 156, options [nop,nop,TS val 1261900284 ecr 423702097], length 1448
+00:00:02.591306 IP client > youtube: Flags [.], ack 539430, win 32580, options [nop,nop,TS val 423702098 ecr 1261900284], length 0
+00:00:02.594874 IP youtube > client: Flags [.], seq 539430:540878, ack 2075, win 156, options [nop,nop,TS val 1261900288 ecr 423702097], length 1448
+00:00:02.594960 IP client > youtube: Flags [.], ack 540878, win 33304, options [nop,nop,TS val 423702098 ecr 1261900288], length 0
+00:00:02.595114 IP youtube > client: Flags [.], seq 540878:542326, ack 2075, win 156, options [nop,nop,TS val 1261900288 ecr 423702097], length 1448
+00:00:02.595652 IP youtube > client: Flags [.], seq 542326:543774, ack 2075, win 156, options [nop,nop,TS val 1261900289 ecr 423702097], length 1448
+00:00:02.595694 IP client > youtube: Flags [.], ack 543774, win 33304, options [nop,nop,TS val 423702098 ecr 1261900288], length 0
+00:00:02.598900 IP youtube > client: Flags [.], seq 543774:545222, ack 2075, win 156, options [nop,nop,TS val 1261900293 ecr 423702097], length 1448
+00:00:02.599167 IP youtube > client: Flags [.], seq 545222:546670, ack 2075, win 156, options [nop,nop,TS val 1261900293 ecr 423702097], length 1448
+00:00:02.599227 IP client > youtube: Flags [.], ack 546670, win 33304, options [nop,nop,TS val 423702098 ecr 1261900293], length 0
+00:00:02.599591 IP youtube > client: Flags [.], seq 546670:548118, ack 2075, win 156, options [nop,nop,TS val 1261900293 ecr 423702097], length 1448
+00:00:02.602399 IP youtube > client: Flags [.], seq 548118:549566, ack 2075, win 156, options [nop,nop,TS val 1261900297 ecr 423702097], length 1448
+00:00:02.602481 IP client > youtube: Flags [.], ack 549566, win 33304, options [nop,nop,TS val 423702098 ecr 1261900293], length 0
+00:00:02.602585 IP youtube > client: Flags [.], seq 549566:551014, ack 2075, win 156, options [nop,nop,TS val 1261900297 ecr 423702097], length 1448
+00:00:02.603154 IP youtube > client: Flags [.], seq 551014:552462, ack 2075, win 156, options [nop,nop,TS val 1261900297 ecr 423702097], length 1448
+00:00:02.603171 IP client > youtube: Flags [.], ack 552462, win 32580, options [nop,nop,TS val 423702098 ecr 1261900297], length 0
+00:00:02.603677 IP youtube > client: Flags [.], seq 552462:553910, ack 2075, win 156, options [nop,nop,TS val 1261900297 ecr 423702097], length 1448
+00:00:02.603702 IP client > youtube: Flags [.], ack 553910, win 33304, options [nop,nop,TS val 423702098 ecr 1261900297], length 0
+00:00:02.606217 IP youtube > client: Flags [.], seq 553910:555358, ack 2075, win 156, options [nop,nop,TS val 1261900301 ecr 423702097], length 1448
+00:00:02.606574 IP youtube > client: Flags [.], seq 555358:556806, ack 2075, win 156, options [nop,nop,TS val 1261900301 ecr 423702097], length 1448
+00:00:02.606601 IP client > youtube: Flags [.], ack 556806, win 33304, options [nop,nop,TS val 423702098 ecr 1261900301], length 0
+00:00:02.606891 IP youtube > client: Flags [.], seq 556806:558254, ack 2075, win 156, options [nop,nop,TS val 1261900301 ecr 423702097], length 1448
+00:00:02.607467 IP youtube > client: Flags [P.], seq 558254:559702, ack 2075, win 156, options [nop,nop,TS val 1261900301 ecr 423702097], length 1448
+00:00:02.607481 IP client > youtube: Flags [.], ack 559702, win 32580, options [nop,nop,TS val 423702098 ecr 1261900301], length 0
+00:00:02.607987 IP youtube > client: Flags [.], seq 559702:561150, ack 2075, win 156, options [nop,nop,TS val 1261900301 ecr 423702097], length 1448
+00:00:02.608010 IP client > youtube: Flags [.], ack 561150, win 33304, options [nop,nop,TS val 423702098 ecr 1261900301], length 0
+00:00:02.608527 IP youtube > client: Flags [.], seq 561150:562598, ack 2075, win 156, options [nop,nop,TS val 1261900301 ecr 423702097], length 1448
+00:00:02.608870 IP youtube > client: Flags [.], seq 562598:564046, ack 2075, win 156, options [nop,nop,TS val 1261900301 ecr 423702097], length 1448
+00:00:02.608899 IP client > youtube: Flags [.], ack 564046, win 33304, options [nop,nop,TS val 423702098 ecr 1261900301], length 0
+00:00:02.609203 IP youtube > client: Flags [.], seq 564046:565494, ack 2075, win 156, options [nop,nop,TS val 1261900301 ecr 423702097], length 1448
+00:00:02.609750 IP youtube > client: Flags [.], seq 565494:566942, ack 2075, win 156, options [nop,nop,TS val 1261900301 ecr 423702097], length 1448
+00:00:02.609772 IP client > youtube: Flags [.], ack 566942, win 33304, options [nop,nop,TS val 423702098 ecr 1261900301], length 0
+00:00:02.610546 IP youtube > client: Flags [.], seq 566942:568390, ack 2075, win 156, options [nop,nop,TS val 1261900305 ecr 423702097], length 1448
+00:00:02.610879 IP youtube > client: Flags [.], seq 568390:569838, ack 2075, win 156, options [nop,nop,TS val 1261900305 ecr 423702097], length 1448
+00:00:02.610904 IP client > youtube: Flags [.], ack 569838, win 33304, options [nop,nop,TS val 423702098 ecr 1261900305], length 0
+00:00:02.611444 IP youtube > client: Flags [.], seq 569838:571286, ack 2075, win 156, options [nop,nop,TS val 1261900305 ecr 423702097], length 1448
+00:00:02.611828 IP youtube > client: Flags [.], seq 571286:572734, ack 2075, win 156, options [nop,nop,TS val 1261900305 ecr 423702097], length 1448
+00:00:02.611841 IP client > youtube: Flags [.], ack 572734, win 32580, options [nop,nop,TS val 423702098 ecr 1261900305], length 0
+00:00:02.651554 IP youtube > client: Flags [.], seq 572734:574182, ack 2075, win 156, options [nop,nop,TS val 1261900345 ecr 423702097], length 1448
+00:00:02.651674 IP client > youtube: Flags [.], ack 574182, win 33304, options [nop,nop,TS val 423702099 ecr 1261900345], length 0
+00:00:02.670372 IP youtube > client: Flags [.], seq 574182:575630, ack 2075, win 156, options [nop,nop,TS val 1261900365 ecr 423702097], length 1448
+00:00:02.670783 IP youtube > client: Flags [.], seq 575630:577078, ack 2075, win 156, options [nop,nop,TS val 1261900365 ecr 423702097], length 1448
+00:00:02.670818 IP client > youtube: Flags [.], ack 577078, win 33304, options [nop,nop,TS val 423702099 ecr 1261900365], length 0
+00:00:02.684656 IP youtube > client: Flags [.], seq 577078:578526, ack 2075, win 156, options [nop,nop,TS val 1261900379 ecr 423702098], length 1448
+00:00:02.685866 IP youtube > client: Flags [.], seq 578526:579974, ack 2075, win 156, options [nop,nop,TS val 1261900379 ecr 423702098], length 1448
+00:00:02.685927 IP client > youtube: Flags [.], ack 579974, win 33304, options [nop,nop,TS val 423702099 ecr 1261900379], length 0
+00:00:02.715008 IP youtube > client: Flags [.], seq 579974:581422, ack 2075, win 156, options [nop,nop,TS val 1261900409 ecr 423702098], length 1448
+00:00:02.715069 IP youtube > client: Flags [.], seq 581422:582870, ack 2075, win 156, options [nop,nop,TS val 1261900409 ecr 423702098], length 1448
+00:00:02.715112 IP client > youtube: Flags [.], ack 582870, win 33304, options [nop,nop,TS val 423702099 ecr 1261900409], length 0
+00:00:02.718604 IP youtube > client: Flags [.], seq 582870:584318, ack 2075, win 156, options [nop,nop,TS val 1261900413 ecr 423702098], length 1448
+00:00:02.722465 IP client > youtube: Flags [.], ack 584318, win 33304, options [nop,nop,TS val 423702099 ecr 1261900413], length 0
+00:00:02.726111 IP youtube > client: Flags [.], seq 584318:585766, ack 2075, win 156, options [nop,nop,TS val 1261900413 ecr 423702098], length 1448
+00:00:02.726702 IP youtube > client: Flags [.], seq 585766:587214, ack 2075, win 156, options [nop,nop,TS val 1261900418 ecr 423702098], length 1448
+00:00:02.726737 IP client > youtube: Flags [.], ack 587214, win 31856, options [nop,nop,TS val 423702100 ecr 1261900413], length 0
+00:00:02.727064 IP youtube > client: Flags [.], seq 587214:588662, ack 2075, win 156, options [nop,nop,TS val 1261900418 ecr 423702098], length 1448
+00:00:02.727527 IP client > youtube: Flags [.], ack 588662, win 33180, options [nop,nop,TS val 423702100 ecr 1261900418], length 0
+00:00:02.733713 IP youtube > client: Flags [.], seq 588662:590110, ack 2075, win 156, options [nop,nop,TS val 1261900423 ecr 423702098], length 1448
+00:00:02.733752 IP client > youtube: Flags [.], ack 590110, win 32580, options [nop,nop,TS val 423702100 ecr 1261900423], length 0
+00:00:02.734118 IP youtube > client: Flags [.], seq 590110:591558, ack 2075, win 156, options [nop,nop,TS val 1261900423 ecr 423702098], length 1448
+00:00:02.734786 IP client > youtube: Flags [.], ack 591558, win 33304, options [nop,nop,TS val 423702100 ecr 1261900423], length 0
+00:00:02.750206 IP youtube > client: Flags [P.], seq 591558:593006, ack 2075, win 156, options [nop,nop,TS val 1261900445 ecr 423702098], length 1448
+00:00:02.750281 IP client > youtube: Flags [.], ack 593006, win 32580, options [nop,nop,TS val 423702100 ecr 1261900445], length 0
+00:00:02.752977 IP youtube > client: Flags [.], seq 593006:594454, ack 2075, win 156, options [nop,nop,TS val 1261900448 ecr 423702098], length 1448
+00:00:02.753040 IP client > youtube: Flags [.], ack 594454, win 33304, options [nop,nop,TS val 423702100 ecr 1261900448], length 0
+00:00:02.753561 IP youtube > client: Flags [.], seq 594454:595902, ack 2075, win 156, options [nop,nop,TS val 1261900448 ecr 423702098], length 1448
+00:00:02.753924 IP youtube > client: Flags [.], seq 595902:597350, ack 2075, win 156, options [nop,nop,TS val 1261900448 ecr 423702098], length 1448
+00:00:02.753951 IP client > youtube: Flags [.], ack 597350, win 33304, options [nop,nop,TS val 423702100 ecr 1261900448], length 0
+00:00:02.754339 IP youtube > client: Flags [.], seq 597350:598798, ack 2075, win 156, options [nop,nop,TS val 1261900448 ecr 423702098], length 1448
+00:00:02.755910 IP youtube > client: Flags [.], seq 598798:600246, ack 2075, win 156, options [nop,nop,TS val 1261900448 ecr 423702098], length 1448
+00:00:02.755992 IP client > youtube: Flags [.], ack 600246, win 33304, options [nop,nop,TS val 423702100 ecr 1261900448], length 0
+00:00:02.758595 IP youtube > client: Flags [.], seq 600246:601694, ack 2075, win 156, options [nop,nop,TS val 1261900451 ecr 423702098], length 1448
+00:00:02.759348 IP youtube > client: Flags [.], seq 601694:603142, ack 2075, win 156, options [nop,nop,TS val 1261900451 ecr 423702098], length 1448
+00:00:02.759390 IP client > youtube: Flags [.], ack 603142, win 33304, options [nop,nop,TS val 423702100 ecr 1261900451], length 0
+00:00:02.759702 IP youtube > client: Flags [.], seq 603142:604590, ack 2075, win 156, options [nop,nop,TS val 1261900451 ecr 423702098], length 1448
+00:00:02.761425 IP youtube > client: Flags [.], seq 604590:606038, ack 2075, win 156, options [nop,nop,TS val 1261900455 ecr 423702098], length 1448
+00:00:02.761461 IP client > youtube: Flags [.], ack 606038, win 32580, options [nop,nop,TS val 423702100 ecr 1261900451], length 0
+00:00:02.761959 IP youtube > client: Flags [.], seq 606038:607486, ack 2075, win 156, options [nop,nop,TS val 1261900455 ecr 423702098], length 1448
+00:00:02.761993 IP client > youtube: Flags [.], ack 607486, win 33304, options [nop,nop,TS val 423702100 ecr 1261900455], length 0
+00:00:02.762559 IP youtube > client: Flags [.], seq 607486:608934, ack 2075, win 156, options [nop,nop,TS val 1261900455 ecr 423702098], length 1448
+00:00:02.762963 IP youtube > client: Flags [.], seq 608934:610382, ack 2075, win 156, options [nop,nop,TS val 1261900455 ecr 423702098], length 1448
+00:00:02.765136 IP youtube > client: Flags [.], seq 610382:611830, ack 2075, win 156, options [nop,nop,TS val 1261900459 ecr 423702098], length 1448
+00:00:02.765420 IP youtube > client: Flags [.], seq 611830:613278, ack 2075, win 156, options [nop,nop,TS val 1261900459 ecr 423702098], length 1448
+00:00:02.765625 IP client > youtube: Flags [.], ack 613278, win 32456, options [nop,nop,TS val 423702100 ecr 1261900455], length 0
+00:00:02.769149 IP youtube > client: Flags [.], seq 613278:614726, ack 2075, win 156, options [nop,nop,TS val 1261900463 ecr 423702098], length 1448
+00:00:02.769221 IP client > youtube: Flags [.], ack 614726, win 33304, options [nop,nop,TS val 423702100 ecr 1261900463], length 0
+00:00:02.769318 IP youtube > client: Flags [.], seq 614726:616174, ack 2075, win 156, options [nop,nop,TS val 1261900463 ecr 423702098], length 1448
+00:00:02.769798 IP youtube > client: Flags [.], seq 616174:617622, ack 2075, win 156, options [nop,nop,TS val 1261900463 ecr 423702098], length 1448
+00:00:02.769830 IP client > youtube: Flags [.], ack 617622, win 33304, options [nop,nop,TS val 423702100 ecr 1261900463], length 0
+00:00:02.772541 IP youtube > client: Flags [.], seq 617622:619070, ack 2075, win 156, options [nop,nop,TS val 1261900463 ecr 423702098], length 1448
+00:00:02.772604 IP client > youtube: Flags [.], ack 619070, win 32580, options [nop,nop,TS val 423702100 ecr 1261900463], length 0
+00:00:02.772797 IP youtube > client: Flags [.], seq 619070:620518, ack 2075, win 156, options [nop,nop,TS val 1261900463 ecr 423702098], length 1448
+00:00:02.772830 IP client > youtube: Flags [.], ack 620518, win 33304, options [nop,nop,TS val 423702100 ecr 1261900463], length 0
+00:00:02.773570 IP youtube > client: Flags [.], seq 620518:621966, ack 2075, win 156, options [nop,nop,TS val 1261900467 ecr 423702098], length 1448
+00:00:02.774038 IP youtube > client: Flags [.], seq 621966:623414, ack 2075, win 156, options [nop,nop,TS val 1261900467 ecr 423702098], length 1448
+00:00:02.774067 IP client > youtube: Flags [.], ack 623414, win 33304, options [nop,nop,TS val 423702100 ecr 1261900467], length 0
+00:00:02.776129 IP youtube > client: Flags [.], seq 623414:624862, ack 2075, win 156, options [nop,nop,TS val 1261900467 ecr 423702098], length 1448
+00:00:02.776471 IP youtube > client: Flags [P.], seq 624862:626310, ack 2075, win 156, options [nop,nop,TS val 1261900467 ecr 423702098], length 1448
+00:00:02.776492 IP client > youtube: Flags [.], ack 626310, win 32580, options [nop,nop,TS val 423702100 ecr 1261900467], length 0
+00:00:02.777060 IP youtube > client: Flags [.], seq 626310:627758, ack 2075, win 156, options [nop,nop,TS val 1261900467 ecr 423702098], length 1448
+00:00:02.777089 IP client > youtube: Flags [.], ack 627758, win 33304, options [nop,nop,TS val 423702100 ecr 1261900467], length 0
+00:00:02.777432 IP youtube > client: Flags [.], seq 627758:629206, ack 2075, win 156, options [nop,nop,TS val 1261900467 ecr 423702098], length 1448
+00:00:02.777913 IP youtube > client: Flags [.], seq 629206:630654, ack 2075, win 156, options [nop,nop,TS val 1261900467 ecr 423702098], length 1448
+00:00:02.777955 IP client > youtube: Flags [.], ack 630654, win 33304, options [nop,nop,TS val 423702100 ecr 1261900467], length 0
+00:00:02.778296 IP youtube > client: Flags [.], seq 630654:632102, ack 2075, win 156, options [nop,nop,TS val 1261900468 ecr 423702098], length 1448
+00:00:02.778897 IP youtube > client: Flags [.], seq 632102:633550, ack 2075, win 156, options [nop,nop,TS val 1261900468 ecr 423702098], length 1448
+00:00:02.778940 IP client > youtube: Flags [.], ack 633550, win 33304, options [nop,nop,TS val 423702100 ecr 1261900468], length 0
+00:00:02.779279 IP youtube > client: Flags [.], seq 633550:634998, ack 2075, win 156, options [nop,nop,TS val 1261900471 ecr 423702098], length 1448
+00:00:02.779798 IP youtube > client: Flags [.], seq 634998:636446, ack 2075, win 156, options [nop,nop,TS val 1261900471 ecr 423702098], length 1448
+00:00:02.779826 IP client > youtube: Flags [.], ack 636446, win 33304, options [nop,nop,TS val 423702100 ecr 1261900471], length 0
+00:00:02.780133 IP youtube > client: Flags [.], seq 636446:637894, ack 2075, win 156, options [nop,nop,TS val 1261900471 ecr 423702098], length 1448
+00:00:02.816268 IP youtube > client: Flags [.], seq 637894:639342, ack 2075, win 156, options [nop,nop,TS val 1261900511 ecr 423702099], length 1448
+00:00:02.816305 IP client > youtube: Flags [.], ack 639342, win 32580, options [nop,nop,TS val 423702100 ecr 1261900471], length 0
+00:00:02.816514 IP youtube > client: Flags [.], seq 639342:640790, ack 2075, win 156, options [nop,nop,TS val 1261900511 ecr 423702099], length 1448
+00:00:02.816539 IP client > youtube: Flags [.], ack 640790, win 33304, options [nop,nop,TS val 423702100 ecr 1261900511], length 0
+00:00:02.831244 IP youtube > client: Flags [.], seq 640790:642238, ack 2075, win 156, options [nop,nop,TS val 1261900526 ecr 423702099], length 1448
+00:00:02.831533 IP youtube > client: Flags [.], seq 642238:643686, ack 2075, win 156, options [nop,nop,TS val 1261900526 ecr 423702099], length 1448
+00:00:02.831884 IP client > youtube: Flags [.], ack 643686, win 33304, options [nop,nop,TS val 423702101 ecr 1261900526], length 0
+00:00:02.847141 IP youtube > client: Flags [.], seq 643686:645134, ack 2075, win 156, options [nop,nop,TS val 1261900542 ecr 423702099], length 1448
+00:00:02.847600 IP youtube > client: Flags [.], seq 645134:646582, ack 2075, win 156, options [nop,nop,TS val 1261900542 ecr 423702099], length 1448
+00:00:02.847637 IP client > youtube: Flags [.], ack 646582, win 33304, options [nop,nop,TS val 423702101 ecr 1261900542], length 0
+00:00:02.876251 IP youtube > client: Flags [.], seq 646582:648030, ack 2075, win 156, options [nop,nop,TS val 1261900570 ecr 423702099], length 1448
+00:00:02.876330 IP youtube > client: Flags [.], seq 648030:649478, ack 2075, win 156, options [nop,nop,TS val 1261900570 ecr 423702099], length 1448
+00:00:02.876391 IP client > youtube: Flags [.], ack 649478, win 33304, options [nop,nop,TS val 423702101 ecr 1261900570], length 0
+00:00:02.888415 IP youtube > client: Flags [.], seq 649478:650926, ack 2075, win 156, options [nop,nop,TS val 1261900583 ecr 423702099], length 1448
+00:00:02.899189 IP youtube > client: Flags [.], seq 650926:652374, ack 2075, win 156, options [nop,nop,TS val 1261900590 ecr 423702100], length 1448
+00:00:02.899241 IP client > youtube: Flags [.], ack 652374, win 32580, options [nop,nop,TS val 423702101 ecr 1261900583], length 0
+00:00:02.899925 IP youtube > client: Flags [.], seq 652374:653822, ack 2075, win 156, options [nop,nop,TS val 1261900590 ecr 423702100], length 1448
+00:00:02.899956 IP client > youtube: Flags [.], ack 653822, win 33304, options [nop,nop,TS val 423702101 ecr 1261900590], length 0
+00:00:02.900467 IP youtube > client: Flags [.], seq 653822:655270, ack 2075, win 156, options [nop,nop,TS val 1261900590 ecr 423702100], length 1448
+00:00:02.902416 IP youtube > client: Flags [.], seq 655270:656718, ack 2075, win 156, options [nop,nop,TS val 1261900594 ecr 423702100], length 1448
+00:00:02.902462 IP client > youtube: Flags [.], ack 656718, win 33304, options [nop,nop,TS val 423702101 ecr 1261900590], length 0
+00:00:02.902633 IP youtube > client: Flags [.], seq 656718:658166, ack 2075, win 156, options [nop,nop,TS val 1261900594 ecr 423702100], length 1448
+00:00:02.916402 IP youtube > client: Flags [P.], seq 658166:659614, ack 2075, win 156, options [nop,nop,TS val 1261900610 ecr 423702100], length 1448
+00:00:02.916467 IP client > youtube: Flags [.], ack 659614, win 32580, options [nop,nop,TS val 423702101 ecr 1261900594], length 0
+00:00:02.919795 IP youtube > client: Flags [.], seq 659614:661062, ack 2075, win 156, options [nop,nop,TS val 1261900614 ecr 423702100], length 1448
+00:00:02.919888 IP client > youtube: Flags [.], ack 661062, win 33304, options [nop,nop,TS val 423702101 ecr 1261900614], length 0
+00:00:02.920150 IP youtube > client: Flags [.], seq 661062:662510, ack 2075, win 156, options [nop,nop,TS val 1261900614 ecr 423702100], length 1448
+00:00:02.920465 IP youtube > client: Flags [.], seq 662510:663958, ack 2075, win 156, options [nop,nop,TS val 1261900614 ecr 423702100], length 1448
+00:00:02.920516 IP client > youtube: Flags [.], ack 663958, win 33304, options [nop,nop,TS val 423702101 ecr 1261900614], length 0
+00:00:02.921080 IP youtube > client: Flags [.], seq 663958:665406, ack 2075, win 156, options [nop,nop,TS val 1261900614 ecr 423702100], length 1448
+00:00:02.921526 IP youtube > client: Flags [.], seq 665406:666854, ack 2075, win 156, options [nop,nop,TS val 1261900614 ecr 423702100], length 1448
+00:00:02.921566 IP client > youtube: Flags [.], ack 666854, win 33304, options [nop,nop,TS val 423702101 ecr 1261900614], length 0
+00:00:02.923897 IP youtube > client: Flags [.], seq 666854:668302, ack 2075, win 156, options [nop,nop,TS val 1261900618 ecr 423702100], length 1448
+00:00:02.924189 IP youtube > client: Flags [.], seq 668302:669750, ack 2075, win 156, options [nop,nop,TS val 1261900618 ecr 423702100], length 1448
+00:00:02.924228 IP client > youtube: Flags [.], ack 669750, win 33304, options [nop,nop,TS val 423702102 ecr 1261900618], length 0
+00:00:02.928090 IP youtube > client: Flags [.], seq 669750:671198, ack 2075, win 156, options [nop,nop,TS val 1261900622 ecr 423702100], length 1448
+00:00:02.928336 IP youtube > client: Flags [.], seq 671198:672646, ack 2075, win 156, options [nop,nop,TS val 1261900622 ecr 423702100], length 1448
+00:00:02.928359 IP client > youtube: Flags [.], ack 672646, win 31856, options [nop,nop,TS val 423702102 ecr 1261900622], length 0
+00:00:02.928907 IP youtube > client: Flags [.], seq 672646:674094, ack 2075, win 156, options [nop,nop,TS val 1261900622 ecr 423702100], length 1448
+00:00:02.928954 IP client > youtube: Flags [.], ack 674094, win 33180, options [nop,nop,TS val 423702102 ecr 1261900622], length 0
+00:00:02.933413 IP youtube > client: Flags [.], seq 674094:675542, ack 2075, win 156, options [nop,nop,TS val 1261900626 ecr 423702100], length 1448
+00:00:02.933672 IP youtube > client: Flags [.], seq 675542:676990, ack 2075, win 156, options [nop,nop,TS val 1261900626 ecr 423702100], length 1448
+00:00:02.933707 IP client > youtube: Flags [.], ack 676990, win 33304, options [nop,nop,TS val 423702102 ecr 1261900626], length 0
+00:00:02.935939 IP youtube > client: Flags [.], seq 676990:678438, ack 2075, win 156, options [nop,nop,TS val 1261900630 ecr 423702100], length 1448
+00:00:02.943029 IP youtube > client: Flags [.], seq 678438:679886, ack 2075, win 156, options [nop,nop,TS val 1261900630 ecr 423702100], length 1448
+00:00:02.943153 IP client > youtube: Flags [.], ack 679886, win 33304, options [nop,nop,TS val 423702102 ecr 1261900630], length 0
+00:00:02.943442 IP youtube > client: Flags [.], seq 679886:681334, ack 2075, win 156, options [nop,nop,TS val 1261900630 ecr 423702100], length 1448
+00:00:02.943891 IP youtube > client: Flags [.], seq 681334:682782, ack 2075, win 156, options [nop,nop,TS val 1261900630 ecr 423702100], length 1448
+00:00:02.943939 IP client > youtube: Flags [.], ack 682782, win 33304, options [nop,nop,TS val 423702102 ecr 1261900630], length 0
+00:00:02.944289 IP youtube > client: Flags [.], seq 682782:684230, ack 2075, win 156, options [nop,nop,TS val 1261900630 ecr 423702100], length 1448
+00:00:02.944882 IP youtube > client: Flags [.], seq 684230:685678, ack 2075, win 156, options [nop,nop,TS val 1261900630 ecr 423702100], length 1448
+00:00:02.944899 IP client > youtube: Flags [.], ack 685678, win 32580, options [nop,nop,TS val 423702102 ecr 1261900630], length 0
+00:00:02.945423 IP youtube > client: Flags [.], seq 685678:687126, ack 2075, win 156, options [nop,nop,TS val 1261900630 ecr 423702100], length 1448
+00:00:02.945450 IP client > youtube: Flags [.], ack 687126, win 33304, options [nop,nop,TS val 423702102 ecr 1261900630], length 0
+00:00:02.945780 IP youtube > client: Flags [.], seq 687126:688574, ack 2075, win 156, options [nop,nop,TS val 1261900634 ecr 423702100], length 1448
+00:00:02.946657 IP youtube > client: Flags [.], seq 688574:690022, ack 2075, win 156, options [nop,nop,TS val 1261900634 ecr 423702100], length 1448
+00:00:02.946703 IP client > youtube: Flags [.], ack 690022, win 33304, options [nop,nop,TS val 423702102 ecr 1261900634], length 0
+00:00:02.946991 IP youtube > client: Flags [.], seq 690022:691470, ack 2075, win 156, options [nop,nop,TS val 1261900634 ecr 423702100], length 1448
+00:00:02.947556 IP youtube > client: Flags [P.], seq 691470:692918, ack 2075, win 156, options [nop,nop,TS val 1261900639 ecr 423702100], length 1448
+00:00:02.947638 IP client > youtube: Flags [.], ack 692918, win 32580, options [nop,nop,TS val 423702102 ecr 1261900634], length 0
+00:00:02.947993 IP youtube > client: Flags [.], seq 692918:694366, ack 2075, win 156, options [nop,nop,TS val 1261900639 ecr 423702100], length 1448
+00:00:02.948022 IP client > youtube: Flags [.], ack 694366, win 33304, options [nop,nop,TS val 423702102 ecr 1261900639], length 0
+00:00:02.948572 IP youtube > client: Flags [.], seq 694366:695814, ack 2075, win 156, options [nop,nop,TS val 1261900639 ecr 423702100], length 1448
+00:00:02.949010 IP youtube > client: Flags [.], seq 695814:697262, ack 2075, win 156, options [nop,nop,TS val 1261900639 ecr 423702100], length 1448
+00:00:02.949041 IP client > youtube: Flags [.], ack 697262, win 33304, options [nop,nop,TS val 423702102 ecr 1261900639], length 0
+00:00:02.949354 IP youtube > client: Flags [.], seq 697262:698710, ack 2075, win 156, options [nop,nop,TS val 1261900639 ecr 423702100], length 1448
+00:00:02.949924 IP youtube > client: Flags [.], seq 698710:700158, ack 2075, win 156, options [nop,nop,TS val 1261900639 ecr 423702100], length 1448
+00:00:02.950084 IP client > youtube: Flags [.], ack 700158, win 33304, options [nop,nop,TS val 423702102 ecr 1261900639], length 0
+00:00:02.950268 IP youtube > client: Flags [.], seq 700158:701606, ack 2075, win 156, options [nop,nop,TS val 1261900639 ecr 423702100], length 1448
+00:00:02.950797 IP youtube > client: Flags [.], seq 701606:703054, ack 2075, win 156, options [nop,nop,TS val 1261900639 ecr 423702100], length 1448
+00:00:02.950832 IP client > youtube: Flags [.], ack 703054, win 33304, options [nop,nop,TS val 423702102 ecr 1261900639], length 0
+00:00:02.979530 IP youtube > client: Flags [.], seq 703054:704502, ack 2075, win 156, options [nop,nop,TS val 1261900673 ecr 423702100], length 1448
+00:00:02.979667 IP youtube > client: Flags [.], seq 704502:705950, ack 2075, win 156, options [nop,nop,TS val 1261900673 ecr 423702100], length 1448
+00:00:02.979688 IP client > youtube: Flags [.], ack 705950, win 32580, options [nop,nop,TS val 423702102 ecr 1261900673], length 0
+00:00:02.980044 IP youtube > client: Flags [.], seq 705950:707398, ack 2075, win 156, options [nop,nop,TS val 1261900673 ecr 423702100], length 1448
+00:00:02.980076 IP client > youtube: Flags [.], ack 707398, win 33304, options [nop,nop,TS val 423702102 ecr 1261900673], length 0
+00:00:02.994497 IP youtube > client: Flags [.], seq 707398:708846, ack 2075, win 156, options [nop,nop,TS val 1261900689 ecr 423702101], length 1448
+00:00:02.994668 IP youtube > client: Flags [.], seq 708846:710294, ack 2075, win 156, options [nop,nop,TS val 1261900689 ecr 423702101], length 1448
+00:00:02.994699 IP client > youtube: Flags [.], ack 710294, win 33304, options [nop,nop,TS val 423702102 ecr 1261900689], length 0
+00:00:03.008561 IP youtube > client: Flags [.], seq 710294:711742, ack 2075, win 156, options [nop,nop,TS val 1261900703 ecr 423702101], length 1448
+00:00:03.008832 IP youtube > client: Flags [.], seq 711742:713190, ack 2075, win 156, options [nop,nop,TS val 1261900703 ecr 423702101], length 1448
+00:00:03.008865 IP client > youtube: Flags [.], ack 713190, win 33304, options [nop,nop,TS val 423702102 ecr 1261900703], length 0
+00:00:03.041448 IP youtube > client: Flags [.], seq 713190:714638, ack 2075, win 156, options [nop,nop,TS val 1261900733 ecr 423702101], length 1448
+00:00:03.041877 IP youtube > client: Flags [.], seq 714638:716086, ack 2075, win 156, options [nop,nop,TS val 1261900733 ecr 423702101], length 1448
+00:00:03.041911 IP client > youtube: Flags [.], ack 716086, win 33304, options [nop,nop,TS val 423702103 ecr 1261900733], length 0
+00:00:03.061026 IP youtube > client: Flags [.], seq 716086:717534, ack 2075, win 156, options [nop,nop,TS val 1261900755 ecr 423702101], length 1448
+00:00:03.067906 IP youtube > client: Flags [.], seq 717534:718982, ack 2075, win 156, options [nop,nop,TS val 1261900759 ecr 423702101], length 1448
+00:00:03.067973 IP client > youtube: Flags [.], ack 718982, win 32580, options [nop,nop,TS val 423702103 ecr 1261900755], length 0
+00:00:03.068015 IP youtube > client: Flags [.], seq 718982:720430, ack 2075, win 156, options [nop,nop,TS val 1261900759 ecr 423702101], length 1448
+00:00:03.068036 IP client > youtube: Flags [.], ack 720430, win 33304, options [nop,nop,TS val 423702103 ecr 1261900759], length 0
+00:00:03.068696 IP youtube > client: Flags [.], seq 720430:721878, ack 2075, win 156, options [nop,nop,TS val 1261900763 ecr 423702101], length 1448
+00:00:03.069079 IP youtube > client: Flags [.], seq 721878:723326, ack 2075, win 156, options [nop,nop,TS val 1261900763 ecr 423702101], length 1448
+00:00:03.069104 IP client > youtube: Flags [.], ack 723326, win 33304, options [nop,nop,TS val 423702103 ecr 1261900763], length 0
+00:00:03.081169 IP youtube > client: Flags [.], seq 723326:724774, ack 2075, win 156, options [nop,nop,TS val 1261900773 ecr 423702101], length 1448
+00:00:03.083135 IP youtube > client: Flags [.], seq 724774:726222, ack 2075, win 156, options [nop,nop,TS val 1261900777 ecr 423702101], length 1448
+00:00:03.083228 IP client > youtube: Flags [.], ack 726222, win 33304, options [nop,nop,TS val 423702103 ecr 1261900773], length 0
+00:00:03.083253 IP youtube > client: Flags [P.], seq 726222:727670, ack 2075, win 156, options [nop,nop,TS val 1261900777 ecr 423702101], length 1448
+00:00:03.083275 IP client > youtube: Flags [.], ack 727670, win 32580, options [nop,nop,TS val 423702103 ecr 1261900777], length 0
+00:00:03.083604 IP youtube > client: Flags [P.], seq 727670:729118, ack 2075, win 156, options [nop,nop,TS val 1261900777 ecr 423702101], length 1448
+00:00:03.083618 IP client > youtube: Flags [.], ack 729118, win 32580, options [nop,nop,TS val 423702103 ecr 1261900777], length 0
+00:00:03.088620 IP youtube > client: Flags [.], seq 729118:730566, ack 2075, win 156, options [nop,nop,TS val 1261900783 ecr 423702102], length 1448
+00:00:03.088711 IP client > youtube: Flags [.], ack 730566, win 33304, options [nop,nop,TS val 423702103 ecr 1261900783], length 0
+00:00:03.089355 IP youtube > client: Flags [.], seq 730566:732014, ack 2075, win 156, options [nop,nop,TS val 1261900783 ecr 423702102], length 1448
+00:00:03.089476 IP youtube > client: Flags [.], seq 732014:733462, ack 2075, win 156, options [nop,nop,TS val 1261900783 ecr 423702102], length 1448
+00:00:03.089506 IP client > youtube: Flags [.], ack 733462, win 33304, options [nop,nop,TS val 423702103 ecr 1261900783], length 0
+00:00:03.089815 IP youtube > client: Flags [.], seq 733462:734910, ack 2075, win 156, options [nop,nop,TS val 1261900783 ecr 423702102], length 1448
+00:00:03.091452 IP youtube > client: Flags [.], seq 734910:736358, ack 2075, win 156, options [nop,nop,TS val 1261900783 ecr 423702102], length 1448
+00:00:03.091497 IP client > youtube: Flags [.], ack 736358, win 33304, options [nop,nop,TS val 423702103 ecr 1261900783], length 0
+00:00:03.092861 IP youtube > client: Flags [.], seq 736358:737806, ack 2075, win 156, options [nop,nop,TS val 1261900787 ecr 423702102], length 1448
+00:00:03.096214 IP youtube > client: Flags [.], seq 737806:739254, ack 2075, win 156, options [nop,nop,TS val 1261900787 ecr 423702102], length 1448
+00:00:03.096299 IP client > youtube: Flags [.], ack 739254, win 33304, options [nop,nop,TS val 423702103 ecr 1261900787], length 0
+00:00:03.098654 IP youtube > client: Flags [.], seq 739254:740702, ack 2075, win 156, options [nop,nop,TS val 1261900791 ecr 423702102], length 1448
+00:00:03.098819 IP youtube > client: Flags [.], seq 740702:742150, ack 2075, win 156, options [nop,nop,TS val 1261900791 ecr 423702102], length 1448
+00:00:03.098839 IP client > youtube: Flags [.], ack 742150, win 32580, options [nop,nop,TS val 423702103 ecr 1261900791], length 0
+00:00:03.099155 IP youtube > client: Flags [.], seq 742150:743598, ack 2075, win 156, options [nop,nop,TS val 1261900791 ecr 423702102], length 1448
+00:00:03.099189 IP client > youtube: Flags [.], ack 743598, win 33304, options [nop,nop,TS val 423702103 ecr 1261900791], length 0
+00:00:03.106053 IP youtube > client: Flags [.], seq 743598:745046, ack 2075, win 156, options [nop,nop,TS val 1261900799 ecr 423702102], length 1448
+00:00:03.106203 IP youtube > client: Flags [.], seq 745046:746494, ack 2075, win 156, options [nop,nop,TS val 1261900799 ecr 423702102], length 1448
+00:00:03.106242 IP client > youtube: Flags [.], ack 746494, win 33304, options [nop,nop,TS val 423702103 ecr 1261900799], length 0
+00:00:03.109208 IP youtube > client: Flags [.], seq 746494:747942, ack 2075, win 156, options [nop,nop,TS val 1261900803 ecr 423702102], length 1448
+00:00:03.109517 IP youtube > client: Flags [.], seq 747942:749390, ack 2075, win 156, options [nop,nop,TS val 1261900803 ecr 423702102], length 1448
+00:00:03.109609 IP client > youtube: Flags [.], ack 749390, win 33304, options [nop,nop,TS val 423702103 ecr 1261900803], length 0
+00:00:03.109999 IP youtube > client: Flags [.], seq 749390:750838, ack 2075, win 156, options [nop,nop,TS val 1261900803 ecr 423702102], length 1448
+00:00:03.113161 IP youtube > client: Flags [.], seq 750838:752286, ack 2075, win 156, options [nop,nop,TS val 1261900807 ecr 423702102], length 1448
+00:00:03.113215 IP client > youtube: Flags [.], ack 752286, win 33304, options [nop,nop,TS val 423702103 ecr 1261900803], length 0
+00:00:03.113374 IP youtube > client: Flags [.], seq 752286:753734, ack 2075, win 156, options [nop,nop,TS val 1261900807 ecr 423702102], length 1448
+00:00:03.113887 IP youtube > client: Flags [.], seq 753734:755182, ack 2075, win 156, options [nop,nop,TS val 1261900807 ecr 423702102], length 1448
+00:00:03.113905 IP client > youtube: Flags [.], ack 755182, win 32580, options [nop,nop,TS val 423702103 ecr 1261900807], length 0
+00:00:03.114385 IP youtube > client: Flags [.], seq 755182:756630, ack 2075, win 156, options [nop,nop,TS val 1261900807 ecr 423702102], length 1448
+00:00:03.114416 IP client > youtube: Flags [.], ack 756630, win 33304, options [nop,nop,TS val 423702103 ecr 1261900807], length 0
+00:00:03.114968 IP youtube > client: Flags [.], seq 756630:758078, ack 2075, win 156, options [nop,nop,TS val 1261900807 ecr 423702102], length 1448
+00:00:03.115375 IP youtube > client: Flags [.], seq 758078:759526, ack 2075, win 156, options [nop,nop,TS val 1261900807 ecr 423702102], length 1448
+00:00:03.115430 IP client > youtube: Flags [.], ack 759526, win 33304, options [nop,nop,TS val 423702103 ecr 1261900807], length 0
+00:00:03.115707 IP youtube > client: Flags [.], seq 759526:760974, ack 2075, win 156, options [nop,nop,TS val 1261900807 ecr 423702102], length 1448
+00:00:03.116297 IP youtube > client: Flags [P.], seq 760974:762422, ack 2075, win 156, options [nop,nop,TS val 1261900807 ecr 423702102], length 1448
+00:00:03.116314 IP client > youtube: Flags [.], ack 762422, win 32580, options [nop,nop,TS val 423702103 ecr 1261900807], length 0
+00:00:03.116799 IP youtube > client: Flags [.], seq 762422:763870, ack 2075, win 156, options [nop,nop,TS val 1261900811 ecr 423702102], length 1448
+00:00:03.116835 IP client > youtube: Flags [.], ack 763870, win 33304, options [nop,nop,TS val 423702103 ecr 1261900811], length 0
+00:00:03.117136 IP youtube > client: Flags [.], seq 763870:765318, ack 2075, win 156, options [nop,nop,TS val 1261900811 ecr 423702102], length 1448
+00:00:03.118006 IP youtube > client: Flags [.], seq 765318:766766, ack 2075, win 156, options [nop,nop,TS val 1261900811 ecr 423702102], length 1448
+00:00:03.118032 IP client > youtube: Flags [.], ack 766766, win 33304, options [nop,nop,TS val 423702103 ecr 1261900811], length 0
+00:00:03.118637 IP youtube > client: Flags [.], seq 766766:768214, ack 2075, win 156, options [nop,nop,TS val 1261900811 ecr 423702102], length 1448
+00:00:03.119075 IP youtube > client: Flags [.], seq 768214:769662, ack 2075, win 156, options [nop,nop,TS val 1261900811 ecr 423702102], length 1448
+00:00:03.119101 IP client > youtube: Flags [.], ack 769662, win 33304, options [nop,nop,TS val 423702103 ecr 1261900811], length 0
+00:00:03.142945 IP youtube > client: Flags [.], seq 769662:771110, ack 2075, win 156, options [nop,nop,TS val 1261900835 ecr 423702102], length 1448
+00:00:03.143249 IP youtube > client: Flags [.], seq 771110:772558, ack 2075, win 156, options [nop,nop,TS val 1261900835 ecr 423702102], length 1448
+00:00:03.143286 IP client > youtube: Flags [.], ack 772558, win 33304, options [nop,nop,TS val 423702104 ecr 1261900835], length 0
+00:00:03.143574 IP youtube > client: Flags [.], seq 772558:774006, ack 2075, win 156, options [nop,nop,TS val 1261900835 ecr 423702102], length 1448
+00:00:03.156476 IP youtube > client: Flags [.], seq 774006:775454, ack 2075, win 156, options [nop,nop,TS val 1261900850 ecr 423702102], length 1448
+00:00:03.156517 IP client > youtube: Flags [.], ack 775454, win 32580, options [nop,nop,TS val 423702104 ecr 1261900835], length 0
+00:00:03.156684 IP youtube > client: Flags [.], seq 775454:776902, ack 2075, win 156, options [nop,nop,TS val 1261900850 ecr 423702102], length 1448
+00:00:03.156715 IP client > youtube: Flags [.], ack 776902, win 33304, options [nop,nop,TS val 423702104 ecr 1261900850], length 0
+00:00:03.171209 IP youtube > client: Flags [.], seq 776902:778350, ack 2075, win 156, options [nop,nop,TS val 1261900866 ecr 423702102], length 1448
+00:00:03.171415 IP youtube > client: Flags [.], seq 778350:779798, ack 2075, win 156, options [nop,nop,TS val 1261900866 ecr 423702102], length 1448
+00:00:03.171450 IP client > youtube: Flags [.], ack 779798, win 33304, options [nop,nop,TS val 423702104 ecr 1261900866], length 0
+00:00:03.203785 IP youtube > client: Flags [.], seq 779798:781246, ack 2075, win 156, options [nop,nop,TS val 1261900898 ecr 423702103], length 1448
+00:00:03.204060 IP youtube > client: Flags [.], seq 781246:782694, ack 2075, win 156, options [nop,nop,TS val 1261900898 ecr 423702103], length 1448
+00:00:03.204101 IP client > youtube: Flags [.], ack 782694, win 33304, options [nop,nop,TS val 423702104 ecr 1261900898], length 0
+00:00:03.229830 IP youtube > client: Flags [.], seq 782694:784142, ack 2075, win 156, options [nop,nop,TS val 1261900924 ecr 423702103], length 1448
+00:00:03.236640 IP youtube > client: Flags [.], seq 784142:785590, ack 2075, win 156, options [nop,nop,TS val 1261900931 ecr 423702103], length 1448
+00:00:03.236753 IP client > youtube: Flags [.], ack 785590, win 33304, options [nop,nop,TS val 423702105 ecr 1261900924], length 0
+00:00:03.236845 IP youtube > client: Flags [.], seq 785590:787038, ack 2075, win 156, options [nop,nop,TS val 1261900931 ecr 423702103], length 1448
+00:00:03.237373 IP youtube > client: Flags [.], seq 787038:788486, ack 2075, win 156, options [nop,nop,TS val 1261900931 ecr 423702103], length 1448
+00:00:03.237388 IP client > youtube: Flags [.], ack 788486, win 32580, options [nop,nop,TS val 423702105 ecr 1261900931], length 0
+00:00:03.237707 IP youtube > client: Flags [.], seq 788486:789934, ack 2075, win 156, options [nop,nop,TS val 1261900931 ecr 423702103], length 1448
+00:00:03.237732 IP client > youtube: Flags [.], ack 789934, win 33304, options [nop,nop,TS val 423702105 ecr 1261900931], length 0
+00:00:03.249060 IP youtube > client: Flags [.], seq 789934:791382, ack 2075, win 156, options [nop,nop,TS val 1261900940 ecr 423702103], length 1448
+00:00:03.249370 IP youtube > client: Flags [.], seq 791382:792830, ack 2075, win 156, options [nop,nop,TS val 1261900940 ecr 423702103], length 1448
+00:00:03.249401 IP client > youtube: Flags [.], ack 792830, win 33304, options [nop,nop,TS val 423702105 ecr 1261900940], length 0
+00:00:03.249756 IP youtube > client: Flags [.], seq 792830:794278, ack 2075, win 156, options [nop,nop,TS val 1261900940 ecr 423702103], length 1448
+00:00:03.250268 IP youtube > client: Flags [P.], seq 794278:795726, ack 2075, win 156, options [nop,nop,TS val 1261900944 ecr 423702103], length 1448
+00:00:03.250284 IP client > youtube: Flags [.], ack 795726, win 32580, options [nop,nop,TS val 423702105 ecr 1261900940], length 0
+00:00:03.258381 IP youtube > client: Flags [.], seq 795726:797174, ack 2075, win 156, options [nop,nop,TS val 1261900952 ecr 423702103], length 1448
+00:00:03.258493 IP client > youtube: Flags [.], ack 797174, win 33304, options [nop,nop,TS val 423702105 ecr 1261900952], length 0
+00:00:03.258652 IP youtube > client: Flags [.], seq 797174:798622, ack 2075, win 156, options [nop,nop,TS val 1261900952 ecr 423702103], length 1448
+00:00:03.259243 IP youtube > client: Flags [.], seq 798622:800070, ack 2075, win 156, options [nop,nop,TS val 1261900952 ecr 423702103], length 1448
+00:00:03.259281 IP client > youtube: Flags [.], ack 800070, win 33304, options [nop,nop,TS val 423702105 ecr 1261900952], length 0
+00:00:03.259585 IP youtube > client: Flags [.], seq 800070:801518, ack 2075, win 156, options [nop,nop,TS val 1261900952 ecr 423702103], length 1448
+00:00:03.260073 IP youtube > client: Flags [.], seq 801518:802966, ack 2075, win 156, options [nop,nop,TS val 1261900952 ecr 423702103], length 1448
+00:00:03.260104 IP client > youtube: Flags [.], ack 802966, win 33304, options [nop,nop,TS val 423702105 ecr 1261900952], length 0
+00:00:03.262369 IP youtube > client: Flags [.], seq 802966:804414, ack 2075, win 156, options [nop,nop,TS val 1261900956 ecr 423702103], length 1448
+00:00:03.262598 IP youtube > client: Flags [.], seq 804414:805862, ack 2075, win 156, options [nop,nop,TS val 1261900956 ecr 423702103], length 1448
+00:00:03.262637 IP client > youtube: Flags [.], ack 805862, win 33304, options [nop,nop,TS val 423702105 ecr 1261900956], length 0
+00:00:03.266390 IP youtube > client: Flags [.], seq 805862:807310, ack 2075, win 156, options [nop,nop,TS val 1261900960 ecr 423702103], length 1448
+00:00:03.266584 IP youtube > client: Flags [.], seq 807310:808758, ack 2075, win 156, options [nop,nop,TS val 1261900960 ecr 423702103], length 1448
+00:00:03.266608 IP client > youtube: Flags [.], ack 808758, win 32580, options [nop,nop,TS val 423702105 ecr 1261900960], length 0
+00:00:03.268029 IP youtube > client: Flags [.], seq 808758:810206, ack 2075, win 156, options [nop,nop,TS val 1261900960 ecr 423702103], length 1448
+00:00:03.268093 IP client > youtube: Flags [.], ack 810206, win 33304, options [nop,nop,TS val 423702105 ecr 1261900960], length 0
+00:00:03.270382 IP youtube > client: Flags [.], seq 810206:811654, ack 2075, win 156, options [nop,nop,TS val 1261900964 ecr 423702103], length 1448
+00:00:03.270652 IP youtube > client: Flags [.], seq 811654:813102, ack 2075, win 156, options [nop,nop,TS val 1261900964 ecr 423702103], length 1448
+00:00:03.270687 IP client > youtube: Flags [.], ack 813102, win 33304, options [nop,nop,TS val 423702105 ecr 1261900964], length 0
+00:00:03.274306 IP youtube > client: Flags [.], seq 813102:814550, ack 2075, win 156, options [nop,nop,TS val 1261900968 ecr 423702103], length 1448
+00:00:03.274520 IP youtube > client: Flags [.], seq 814550:815998, ack 2075, win 156, options [nop,nop,TS val 1261900968 ecr 423702103], length 1448
+00:00:03.274555 IP client > youtube: Flags [.], ack 815998, win 33304, options [nop,nop,TS val 423702105 ecr 1261900968], length 0
+00:00:03.277996 IP youtube > client: Flags [.], seq 815998:817446, ack 2075, win 156, options [nop,nop,TS val 1261900972 ecr 423702103], length 1448
+00:00:03.278120 IP youtube > client: Flags [.], seq 817446:818894, ack 2075, win 156, options [nop,nop,TS val 1261900972 ecr 423702103], length 1448
+00:00:03.278185 IP client > youtube: Flags [.], ack 818894, win 33304, options [nop,nop,TS val 423702105 ecr 1261900972], length 0
+00:00:03.278519 IP youtube > client: Flags [.], seq 818894:820342, ack 2075, win 156, options [nop,nop,TS val 1261900972 ecr 423702103], length 1448
+00:00:03.278979 IP youtube > client: Flags [.], seq 820342:821790, ack 2075, win 156, options [nop,nop,TS val 1261900972 ecr 423702103], length 1448
+00:00:03.278998 IP client > youtube: Flags [.], ack 821790, win 32580, options [nop,nop,TS val 423702105 ecr 1261900972], length 0
+00:00:03.279550 IP youtube > client: Flags [.], seq 821790:823238, ack 2075, win 156, options [nop,nop,TS val 1261900972 ecr 423702103], length 1448
+00:00:03.279580 IP client > youtube: Flags [.], ack 823238, win 33304, options [nop,nop,TS val 423702105 ecr 1261900972], length 0
+00:00:03.283916 IP youtube > client: Flags [.], seq 823238:824686, ack 2075, win 156, options [nop,nop,TS val 1261900976 ecr 423702103], length 1448
+00:00:03.284303 IP youtube > client: Flags [.], seq 824686:826134, ack 2075, win 156, options [nop,nop,TS val 1261900976 ecr 423702103], length 1448
+00:00:03.284338 IP client > youtube: Flags [.], ack 826134, win 33304, options [nop,nop,TS val 423702105 ecr 1261900976], length 0
+00:00:03.284656 IP youtube > client: Flags [.], seq 826134:827582, ack 2075, win 156, options [nop,nop,TS val 1261900976 ecr 423702103], length 1448
+00:00:03.285190 IP youtube > client: Flags [P.], seq 827582:829030, ack 2075, win 156, options [nop,nop,TS val 1261900976 ecr 423702103], length 1448
+00:00:03.285212 IP client > youtube: Flags [.], ack 829030, win 32580, options [nop,nop,TS val 423702105 ecr 1261900976], length 0
+00:00:03.286529 IP youtube > client: Flags [.], seq 829030:830478, ack 2075, win 156, options [nop,nop,TS val 1261900980 ecr 423702103], length 1448
+00:00:03.286586 IP client > youtube: Flags [.], ack 830478, win 33304, options [nop,nop,TS val 423702105 ecr 1261900980], length 0
+00:00:03.286858 IP youtube > client: Flags [.], seq 830478:831926, ack 2075, win 156, options [nop,nop,TS val 1261900980 ecr 423702103], length 1448
+00:00:03.287437 IP youtube > client: Flags [.], seq 831926:833374, ack 2075, win 156, options [nop,nop,TS val 1261900980 ecr 423702103], length 1448
+00:00:03.287480 IP client > youtube: Flags [.], ack 833374, win 33304, options [nop,nop,TS val 423702105 ecr 1261900980], length 0
+00:00:03.287758 IP youtube > client: Flags [.], seq 833374:834822, ack 2075, win 156, options [nop,nop,TS val 1261900980 ecr 423702103], length 1448
+00:00:03.288286 IP youtube > client: Flags [.], seq 834822:836270, ack 2075, win 156, options [nop,nop,TS val 1261900980 ecr 423702103], length 1448
+00:00:03.288343 IP client > youtube: Flags [.], ack 836270, win 33304, options [nop,nop,TS val 423702105 ecr 1261900980], length 0
+00:00:03.306945 IP youtube > client: Flags [.], seq 836270:837718, ack 2075, win 156, options [nop,nop,TS val 1261901000 ecr 423702104], length 1448
+00:00:03.307221 IP youtube > client: Flags [.], seq 837718:839166, ack 2075, win 156, options [nop,nop,TS val 1261901000 ecr 423702104], length 1448
+00:00:03.307255 IP client > youtube: Flags [.], ack 839166, win 33304, options [nop,nop,TS val 423702105 ecr 1261901000], length 0
+00:00:03.319016 IP youtube > client: Flags [.], seq 839166:840614, ack 2075, win 156, options [nop,nop,TS val 1261901012 ecr 423702104], length 1448
+00:00:03.319142 IP youtube > client: Flags [.], seq 840614:842062, ack 2075, win 156, options [nop,nop,TS val 1261901012 ecr 423702104], length 1448
+00:00:03.319163 IP client > youtube: Flags [.], ack 842062, win 32580, options [nop,nop,TS val 423702105 ecr 1261901012], length 0
+00:00:03.319689 IP youtube > client: Flags [.], seq 842062:843510, ack 2075, win 156, options [nop,nop,TS val 1261901012 ecr 423702104], length 1448
+00:00:03.319760 IP client > youtube: Flags [.], ack 843510, win 33304, options [nop,nop,TS val 423702105 ecr 1261901012], length 0
+00:00:03.335027 IP youtube > client: Flags [.], seq 843510:844958, ack 2075, win 156, options [nop,nop,TS val 1261901028 ecr 423702104], length 1448
+00:00:03.335271 IP youtube > client: Flags [.], seq 844958:846406, ack 2075, win 156, options [nop,nop,TS val 1261901028 ecr 423702104], length 1448
+00:00:03.335312 IP client > youtube: Flags [.], ack 846406, win 33304, options [nop,nop,TS val 423702106 ecr 1261901028], length 0
+00:00:03.367940 IP youtube > client: Flags [.], seq 846406:847854, ack 2075, win 156, options [nop,nop,TS val 1261901061 ecr 423702104], length 1448
+00:00:03.368358 IP youtube > client: Flags [.], seq 847854:849302, ack 2075, win 156, options [nop,nop,TS val 1261901061 ecr 423702104], length 1448
+00:00:03.368414 IP client > youtube: Flags [.], ack 849302, win 33304, options [nop,nop,TS val 423702106 ecr 1261901061], length 0
+00:00:03.401739 IP youtube > client: Flags [.], seq 849302:850750, ack 2075, win 156, options [nop,nop,TS val 1261901093 ecr 423702105], length 1448
+00:00:03.402053 IP youtube > client: Flags [.], seq 850750:852198, ack 2075, win 156, options [nop,nop,TS val 1261901093 ecr 423702105], length 1448
+00:00:03.402087 IP client > youtube: Flags [.], ack 852198, win 33304, options [nop,nop,TS val 423702106 ecr 1261901093], length 0
+00:00:03.402874 IP youtube > client: Flags [.], seq 852198:853646, ack 2075, win 156, options [nop,nop,TS val 1261901097 ecr 423702105], length 1448
+00:00:03.406833 IP youtube > client: Flags [.], seq 853646:855094, ack 2075, win 156, options [nop,nop,TS val 1261901097 ecr 423702105], length 1448
+00:00:03.406881 IP client > youtube: Flags [.], ack 855094, win 32580, options [nop,nop,TS val 423702106 ecr 1261901097], length 0
+00:00:03.407721 IP youtube > client: Flags [.], seq 855094:856542, ack 2075, win 156, options [nop,nop,TS val 1261901097 ecr 423702105], length 1448
+00:00:03.407786 IP client > youtube: Flags [.], ack 856542, win 33304, options [nop,nop,TS val 423702106 ecr 1261901097], length 0
+00:00:03.411124 IP youtube > client: Flags [.], seq 856542:857990, ack 2075, win 156, options [nop,nop,TS val 1261901105 ecr 423702105], length 1448
+00:00:03.411415 IP youtube > client: Flags [.], seq 857990:859438, ack 2075, win 156, options [nop,nop,TS val 1261901105 ecr 423702105], length 1448
+00:00:03.411445 IP client > youtube: Flags [.], ack 859438, win 33304, options [nop,nop,TS val 423702106 ecr 1261901105], length 0
+00:00:03.422297 IP youtube > client: Flags [.], seq 859438:860886, ack 2075, win 156, options [nop,nop,TS val 1261901111 ecr 423702105], length 1448
+00:00:03.422626 IP youtube > client: Flags [P.], seq 860886:862334, ack 2075, win 156, options [nop,nop,TS val 1261901115 ecr 423702105], length 1448
+00:00:03.422646 IP client > youtube: Flags [.], ack 862334, win 32580, options [nop,nop,TS val 423702106 ecr 1261901111], length 0
+00:00:03.430070 IP youtube > client: Flags [.], seq 862334:863782, ack 2075, win 156, options [nop,nop,TS val 1261901119 ecr 423702105], length 1448
+00:00:03.430137 IP client > youtube: Flags [.], ack 863782, win 33304, options [nop,nop,TS val 423702107 ecr 1261901119], length 0
+00:00:03.430470 IP youtube > client: Flags [.], seq 863782:865230, ack 2075, win 156, options [nop,nop,TS val 1261901119 ecr 423702105], length 1448
+00:00:03.431018 IP youtube > client: Flags [.], seq 865230:866678, ack 2075, win 156, options [nop,nop,TS val 1261901119 ecr 423702105], length 1448
+00:00:03.431064 IP client > youtube: Flags [.], ack 866678, win 33304, options [nop,nop,TS val 423702107 ecr 1261901119], length 0
+00:00:03.431353 IP youtube > client: Flags [.], seq 866678:868126, ack 2075, win 156, options [nop,nop,TS val 1261901119 ecr 423702105], length 1448
+00:00:03.432808 IP youtube > client: Flags [.], seq 868126:869574, ack 2075, win 156, options [nop,nop,TS val 1261901119 ecr 423702105], length 1448
+00:00:03.432874 IP client > youtube: Flags [.], ack 869574, win 33304, options [nop,nop,TS val 423702107 ecr 1261901119], length 0
+00:00:03.433192 IP youtube > client: Flags [.], seq 869574:871022, ack 2075, win 156, options [nop,nop,TS val 1261901123 ecr 423702105], length 1448
+00:00:03.433551 IP youtube > client: Flags [.], seq 871022:872470, ack 2075, win 156, options [nop,nop,TS val 1261901123 ecr 423702105], length 1448
+00:00:03.433582 IP client > youtube: Flags [.], ack 872470, win 33304, options [nop,nop,TS val 423702107 ecr 1261901123], length 0
+00:00:03.433999 IP youtube > client: Flags [.], seq 872470:873918, ack 2075, win 156, options [nop,nop,TS val 1261901127 ecr 423702105], length 1448
+00:00:03.434410 IP youtube > client: Flags [.], seq 873918:875366, ack 2075, win 156, options [nop,nop,TS val 1261901127 ecr 423702105], length 1448
+00:00:03.434426 IP client > youtube: Flags [.], ack 875366, win 32580, options [nop,nop,TS val 423702107 ecr 1261901127], length 0
+00:00:03.434812 IP youtube > client: Flags [.], seq 875366:876814, ack 2075, win 156, options [nop,nop,TS val 1261901127 ecr 423702105], length 1448
+00:00:03.434842 IP client > youtube: Flags [.], ack 876814, win 33304, options [nop,nop,TS val 423702107 ecr 1261901127], length 0
+00:00:03.440232 IP youtube > client: Flags [.], seq 876814:878262, ack 2075, win 156, options [nop,nop,TS val 1261901131 ecr 423702105], length 1448
+00:00:03.440635 IP youtube > client: Flags [.], seq 878262:879710, ack 2075, win 156, options [nop,nop,TS val 1261901131 ecr 423702105], length 1448
+00:00:03.440668 IP client > youtube: Flags [.], ack 879710, win 33304, options [nop,nop,TS val 423702107 ecr 1261901131], length 0
+00:00:03.441536 IP youtube > client: Flags [.], seq 879710:881158, ack 2075, win 156, options [nop,nop,TS val 1261901135 ecr 423702105], length 1448
+00:00:03.441995 IP youtube > client: Flags [.], seq 881158:882606, ack 2075, win 156, options [nop,nop,TS val 1261901135 ecr 423702105], length 1448
+00:00:03.442019 IP client > youtube: Flags [.], ack 882606, win 33304, options [nop,nop,TS val 423702107 ecr 1261901135], length 0
+00:00:03.445116 IP youtube > client: Flags [.], seq 882606:884054, ack 2075, win 156, options [nop,nop,TS val 1261901139 ecr 423702105], length 1448
+00:00:03.445707 IP youtube > client: Flags [.], seq 884054:885502, ack 2075, win 156, options [nop,nop,TS val 1261901139 ecr 423702105], length 1448
+00:00:03.445732 IP client > youtube: Flags [.], ack 885502, win 33304, options [nop,nop,TS val 423702107 ecr 1261901139], length 0
+00:00:03.446177 IP youtube > client: Flags [.], seq 885502:886950, ack 2075, win 156, options [nop,nop,TS val 1261901139 ecr 423702105], length 1448
+00:00:03.446517 IP youtube > client: Flags [.], seq 886950:888398, ack 2075, win 156, options [nop,nop,TS val 1261901139 ecr 423702105], length 1448
+00:00:03.446529 IP client > youtube: Flags [.], ack 888398, win 32580, options [nop,nop,TS val 423702107 ecr 1261901139], length 0
+00:00:03.447151 IP youtube > client: Flags [.], seq 888398:889846, ack 2075, win 156, options [nop,nop,TS val 1261901139 ecr 423702105], length 1448
+00:00:03.447173 IP client > youtube: Flags [.], ack 889846, win 33304, options [nop,nop,TS val 423702107 ecr 1261901139], length 0
+00:00:03.451329 IP youtube > client: Flags [.], seq 889846:891294, ack 2075, win 156, options [nop,nop,TS val 1261901143 ecr 423702105], length 1448
+00:00:03.451756 IP youtube > client: Flags [.], seq 891294:892742, ack 2075, win 156, options [nop,nop,TS val 1261901143 ecr 423702105], length 1448
+00:00:03.451790 IP client > youtube: Flags [.], ack 892742, win 33304, options [nop,nop,TS val 423702107 ecr 1261901143], length 0
+00:00:03.458616 IP youtube > client: Flags [.], seq 892742:894190, ack 2075, win 156, options [nop,nop,TS val 1261901143 ecr 423702105], length 1448
+00:00:03.461452 IP youtube > client: Flags [P.], seq 894190:895638, ack 2075, win 156, options [nop,nop,TS val 1261901147 ecr 423702105], length 1448
+00:00:03.461493 IP client > youtube: Flags [.], ack 895638, win 32580, options [nop,nop,TS val 423702107 ecr 1261901143], length 0
+00:00:03.461840 IP youtube > client: Flags [.], seq 895638:897086, ack 2075, win 156, options [nop,nop,TS val 1261901147 ecr 423702105], length 1448
+00:00:03.461876 IP client > youtube: Flags [.], ack 897086, win 33304, options [nop,nop,TS val 423702107 ecr 1261901147], length 0
+00:00:03.462477 IP youtube > client: Flags [.], seq 897086:898534, ack 2075, win 156, options [nop,nop,TS val 1261901147 ecr 423702105], length 1448
+00:00:03.462834 IP youtube > client: Flags [.], seq 898534:899982, ack 2075, win 156, options [nop,nop,TS val 1261901147 ecr 423702105], length 1448
+00:00:03.462876 IP client > youtube: Flags [.], ack 899982, win 33304, options [nop,nop,TS val 423702107 ecr 1261901147], length 0
+00:00:03.463276 IP youtube > client: Flags [.], seq 899982:901430, ack 2075, win 156, options [nop,nop,TS val 1261901147 ecr 423702105], length 1448
+00:00:03.464081 IP youtube > client: Flags [.], seq 901430:902878, ack 2075, win 156, options [nop,nop,TS val 1261901147 ecr 423702105], length 1448
+00:00:03.464162 IP client > youtube: Flags [.], ack 902878, win 33304, options [nop,nop,TS val 423702107 ecr 1261901147], length 0
+00:00:03.468730 IP youtube > client: Flags [.], seq 902878:904326, ack 2075, win 156, options [nop,nop,TS val 1261901163 ecr 423702105], length 1448
+00:00:03.468997 IP youtube > client: Flags [.], seq 904326:905774, ack 2075, win 156, options [nop,nop,TS val 1261901163 ecr 423702105], length 1448
+00:00:03.469036 IP client > youtube: Flags [.], ack 905774, win 33304, options [nop,nop,TS val 423702107 ecr 1261901163], length 0
+00:00:03.482525 IP youtube > client: Flags [.], seq 905774:907222, ack 2075, win 156, options [nop,nop,TS val 1261901176 ecr 423702105], length 1448
+00:00:03.485297 IP youtube > client: Flags [.], seq 907222:908670, ack 2075, win 156, options [nop,nop,TS val 1261901180 ecr 423702105], length 1448
+00:00:03.485361 IP client > youtube: Flags [.], ack 908670, win 32580, options [nop,nop,TS val 423702107 ecr 1261901176], length 0
+00:00:03.485523 IP youtube > client: Flags [.], seq 908670:910118, ack 2075, win 156, options [nop,nop,TS val 1261901180 ecr 423702105], length 1448
+00:00:03.485549 IP client > youtube: Flags [.], ack 910118, win 33304, options [nop,nop,TS val 423702107 ecr 1261901180], length 0
+00:00:03.498280 IP youtube > client: Flags [.], seq 910118:911566, ack 2075, win 156, options [nop,nop,TS val 1261901192 ecr 423702106], length 1448
+00:00:03.498493 IP youtube > client: Flags [.], seq 911566:913014, ack 2075, win 156, options [nop,nop,TS val 1261901192 ecr 423702106], length 1448
+00:00:03.498531 IP client > youtube: Flags [.], ack 913014, win 33304, options [nop,nop,TS val 423702107 ecr 1261901192], length 0
+00:00:03.529296 IP youtube > client: Flags [.], seq 913014:914462, ack 2075, win 156, options [nop,nop,TS val 1261901224 ecr 423702106], length 1448
+00:00:03.529562 IP youtube > client: Flags [.], seq 914462:915910, ack 2075, win 156, options [nop,nop,TS val 1261901224 ecr 423702106], length 1448
+00:00:03.529601 IP client > youtube: Flags [.], ack 915910, win 33304, options [nop,nop,TS val 423702108 ecr 1261901224], length 0
+00:00:03.563865 IP youtube > client: Flags [.], seq 915910:917358, ack 2075, win 156, options [nop,nop,TS val 1261901258 ecr 423702106], length 1448
+00:00:03.564188 IP youtube > client: Flags [.], seq 917358:918806, ack 2075, win 156, options [nop,nop,TS val 1261901258 ecr 423702106], length 1448
+00:00:03.564225 IP client > youtube: Flags [.], ack 918806, win 33304, options [nop,nop,TS val 423702108 ecr 1261901258], length 0
+00:00:03.569885 IP youtube > client: Flags [.], seq 918806:920254, ack 2075, win 156, options [nop,nop,TS val 1261901264 ecr 423702106], length 1448
+00:00:03.570188 IP youtube > client: Flags [.], seq 920254:921702, ack 2075, win 156, options [nop,nop,TS val 1261901264 ecr 423702106], length 1448
+00:00:03.570221 IP client > youtube: Flags [.], ack 921702, win 32580, options [nop,nop,TS val 423702108 ecr 1261901264], length 0
+00:00:03.570504 IP youtube > client: Flags [.], seq 921702:923150, ack 2075, win 156, options [nop,nop,TS val 1261901264 ecr 423702106], length 1448
+00:00:03.570534 IP client > youtube: Flags [.], ack 923150, win 33304, options [nop,nop,TS val 423702108 ecr 1261901264], length 0
+00:00:03.574425 IP youtube > client: Flags [.], seq 923150:924598, ack 2075, win 156, options [nop,nop,TS val 1261901268 ecr 423702106], length 1448
+00:00:03.574567 IP youtube > client: Flags [.], seq 924598:926046, ack 2075, win 156, options [nop,nop,TS val 1261901268 ecr 423702106], length 1448
+00:00:03.574593 IP client > youtube: Flags [.], ack 926046, win 33304, options [nop,nop,TS val 423702108 ecr 1261901268], length 0
+00:00:03.583438 IP youtube > client: Flags [.], seq 926046:927494, ack 2075, win 156, options [nop,nop,TS val 1261901278 ecr 423702106], length 1448
+00:00:03.591808 IP youtube > client: Flags [P.], seq 927494:928942, ack 2075, win 156, options [nop,nop,TS val 1261901286 ecr 423702107], length 1448
+00:00:03.591865 IP client > youtube: Flags [.], ack 928942, win 32580, options [nop,nop,TS val 423702108 ecr 1261901278], length 0
+00:00:03.598413 IP youtube > client: Flags [.], seq 928942:930390, ack 2075, win 156, options [nop,nop,TS val 1261901292 ecr 423702107], length 1448
+00:00:03.598484 IP client > youtube: Flags [.], ack 930390, win 33304, options [nop,nop,TS val 423702108 ecr 1261901292], length 0
+00:00:03.598690 IP youtube > client: Flags [.], seq 930390:931838, ack 2075, win 156, options [nop,nop,TS val 1261901292 ecr 423702107], length 1448
+00:00:03.599198 IP youtube > client: Flags [.], seq 931838:933286, ack 2075, win 156, options [nop,nop,TS val 1261901292 ecr 423702107], length 1448
+00:00:03.599230 IP client > youtube: Flags [.], ack 933286, win 33304, options [nop,nop,TS val 423702108 ecr 1261901292], length 0
+00:00:03.600135 IP youtube > client: Flags [.], seq 933286:934734, ack 2075, win 156, options [nop,nop,TS val 1261901292 ecr 423702107], length 1448
+00:00:03.600138 IP youtube > client: Flags [.], seq 934734:936182, ack 2075, win 156, options [nop,nop,TS val 1261901292 ecr 423702107], length 1448
+00:00:03.600186 IP client > youtube: Flags [.], ack 936182, win 33304, options [nop,nop,TS val 423702108 ecr 1261901292], length 0
+00:00:03.600569 IP youtube > client: Flags [.], seq 936182:937630, ack 2075, win 156, options [nop,nop,TS val 1261901292 ecr 423702107], length 1448
+00:00:03.601118 IP youtube > client: Flags [.], seq 937630:939078, ack 2075, win 156, options [nop,nop,TS val 1261901292 ecr 423702107], length 1448
+00:00:03.601145 IP client > youtube: Flags [.], ack 939078, win 33304, options [nop,nop,TS val 423702108 ecr 1261901292], length 0
+00:00:03.601754 IP youtube > client: Flags [.], seq 939078:940526, ack 2075, win 156, options [nop,nop,TS val 1261901292 ecr 423702107], length 1448
+00:00:03.602146 IP youtube > client: Flags [.], seq 940526:941974, ack 2075, win 156, options [nop,nop,TS val 1261901292 ecr 423702107], length 1448
+00:00:03.602162 IP client > youtube: Flags [.], ack 941974, win 32580, options [nop,nop,TS val 423702108 ecr 1261901292], length 0
+00:00:03.602511 IP youtube > client: Flags [.], seq 941974:943422, ack 2075, win 156, options [nop,nop,TS val 1261901292 ecr 423702107], length 1448
+00:00:03.602536 IP client > youtube: Flags [.], ack 943422, win 33304, options [nop,nop,TS val 423702108 ecr 1261901292], length 0
+00:00:03.604081 IP youtube > client: Flags [.], seq 943422:944870, ack 2075, win 156, options [nop,nop,TS val 1261901298 ecr 423702107], length 1448
+00:00:03.604484 IP youtube > client: Flags [.], seq 944870:946318, ack 2075, win 156, options [nop,nop,TS val 1261901298 ecr 423702107], length 1448
+00:00:03.604508 IP client > youtube: Flags [.], ack 946318, win 33304, options [nop,nop,TS val 423702108 ecr 1261901298], length 0
+00:00:03.605815 IP youtube > client: Flags [.], seq 946318:947766, ack 2075, win 156, options [nop,nop,TS val 1261901298 ecr 423702107], length 1448
+00:00:03.606687 IP youtube > client: Flags [.], seq 947766:949214, ack 2075, win 156, options [nop,nop,TS val 1261901298 ecr 423702107], length 1448
+00:00:03.606765 IP client > youtube: Flags [.], ack 949214, win 33304, options [nop,nop,TS val 423702108 ecr 1261901298], length 0
+00:00:03.608329 IP youtube > client: Flags [.], seq 949214:950662, ack 2075, win 156, options [nop,nop,TS val 1261901302 ecr 423702107], length 1448
+00:00:03.608746 IP youtube > client: Flags [.], seq 950662:952110, ack 2075, win 156, options [nop,nop,TS val 1261901302 ecr 423702107], length 1448
+00:00:03.608771 IP client > youtube: Flags [.], ack 952110, win 33304, options [nop,nop,TS val 423702108 ecr 1261901302], length 0
+00:00:03.609317 IP youtube > client: Flags [.], seq 952110:953558, ack 2075, win 156, options [nop,nop,TS val 1261901302 ecr 423702107], length 1448
+00:00:03.612440 IP youtube > client: Flags [.], seq 953558:955006, ack 2075, win 156, options [nop,nop,TS val 1261901306 ecr 423702107], length 1448
+00:00:03.612469 IP client > youtube: Flags [.], ack 955006, win 32580, options [nop,nop,TS val 423702108 ecr 1261901302], length 0
+00:00:03.612761 IP youtube > client: Flags [.], seq 955006:956454, ack 2075, win 156, options [nop,nop,TS val 1261901306 ecr 423702107], length 1448
+00:00:03.612787 IP client > youtube: Flags [.], ack 956454, win 33304, options [nop,nop,TS val 423702108 ecr 1261901306], length 0
+00:00:03.615974 IP youtube > client: Flags [.], seq 956454:957902, ack 2075, win 156, options [nop,nop,TS val 1261901310 ecr 423702107], length 1448
+00:00:03.616192 IP youtube > client: Flags [.], seq 957902:959350, ack 2075, win 156, options [nop,nop,TS val 1261901310 ecr 423702107], length 1448
+00:00:03.616231 IP client > youtube: Flags [.], ack 959350, win 33304, options [nop,nop,TS val 423702108 ecr 1261901310], length 0
+00:00:03.623482 IP youtube > client: Flags [.], seq 959350:960798, ack 2075, win 156, options [nop,nop,TS val 1261901318 ecr 423702107], length 1448
+00:00:03.623997 IP youtube > client: Flags [.], seq 960798:962246, ack 2075, win 156, options [nop,nop,TS val 1261901318 ecr 423702107], length 1448
+00:00:03.624042 IP client > youtube: Flags [.], ack 962246, win 33304, options [nop,nop,TS val 423702109 ecr 1261901318], length 0
+00:00:03.624244 IP youtube > client: Flags [P.], seq 962246:963694, ack 2075, win 156, options [nop,nop,TS val 1261901318 ecr 423702107], length 1448
+00:00:03.624261 IP client > youtube: Flags [.], ack 963694, win 32580, options [nop,nop,TS val 423702109 ecr 1261901318], length 0
+00:00:03.627811 IP youtube > client: Flags [.], seq 963694:965142, ack 2075, win 156, options [nop,nop,TS val 1261901322 ecr 423702107], length 1448
+00:00:03.627907 IP client > youtube: Flags [.], ack 965142, win 33304, options [nop,nop,TS val 423702109 ecr 1261901322], length 0
+00:00:03.628167 IP youtube > client: Flags [.], seq 965142:966590, ack 2075, win 156, options [nop,nop,TS val 1261901322 ecr 423702107], length 1448
+00:00:03.628772 IP youtube > client: Flags [.], seq 966590:968038, ack 2075, win 156, options [nop,nop,TS val 1261901322 ecr 423702107], length 1448
+00:00:03.628820 IP client > youtube: Flags [.], ack 968038, win 33304, options [nop,nop,TS val 423702109 ecr 1261901322], length 0
+00:00:03.629144 IP youtube > client: Flags [P.], seq 968038:969486, ack 2075, win 156, options [nop,nop,TS val 1261901322 ecr 423702107], length 1448
+00:00:03.629158 IP client > youtube: Flags [.], ack 969486, win 32580, options [nop,nop,TS val 423702109 ecr 1261901322], length 0
+00:00:03.648452 IP youtube > client: Flags [.], seq 969486:970934, ack 2075, win 156, options [nop,nop,TS val 1261901342 ecr 423702107], length 1448
+00:00:03.648533 IP client > youtube: Flags [.], ack 970934, win 33304, options [nop,nop,TS val 423702109 ecr 1261901342], length 0
+00:00:03.648760 IP youtube > client: Flags [.], seq 970934:972382, ack 2075, win 156, options [nop,nop,TS val 1261901342 ecr 423702107], length 1448
+00:00:03.649234 IP youtube > client: Flags [.], seq 972382:973830, ack 2075, win 156, options [nop,nop,TS val 1261901342 ecr 423702107], length 1448
+00:00:03.649268 IP client > youtube: Flags [.], ack 973830, win 33304, options [nop,nop,TS val 423702109 ecr 1261901342], length 0
+00:00:03.649665 IP youtube > client: Flags [.], seq 973830:975278, ack 2075, win 156, options [nop,nop,TS val 1261901342 ecr 423702107], length 1448
+00:00:03.650041 IP youtube > client: Flags [.], seq 975278:976726, ack 2075, win 156, options [nop,nop,TS val 1261901342 ecr 423702107], length 1448
+00:00:03.650066 IP client > youtube: Flags [.], ack 976726, win 33304, options [nop,nop,TS val 423702109 ecr 1261901342], length 0
+00:00:03.661027 IP youtube > client: Flags [.], seq 976726:978174, ack 2075, win 156, options [nop,nop,TS val 1261901354 ecr 423702107], length 1448
+00:00:03.665744 IP youtube > client: Flags [.], seq 978174:979622, ack 2075, win 156, options [nop,nop,TS val 1261901354 ecr 423702107], length 1448
+00:00:03.665832 IP client > youtube: Flags [.], ack 979622, win 33304, options [nop,nop,TS val 423702109 ecr 1261901354], length 0
+00:00:03.693564 IP youtube > client: Flags [.], seq 979622:981070, ack 2075, win 156, options [nop,nop,TS val 1261901386 ecr 423702108], length 1448
+00:00:03.694015 IP youtube > client: Flags [.], seq 981070:982518, ack 2075, win 156, options [nop,nop,TS val 1261901386 ecr 423702108], length 1448
+00:00:03.694045 IP client > youtube: Flags [.], ack 982518, win 32580, options [nop,nop,TS val 423702109 ecr 1261901386], length 0
+00:00:03.726650 IP youtube > client: Flags [.], seq 982518:983966, ack 2075, win 156, options [nop,nop,TS val 1261901421 ecr 423702108], length 1448
+00:00:03.726715 IP client > youtube: Flags [.], ack 983966, win 33304, options [nop,nop,TS val 423702110 ecr 1261901421], length 0
+00:00:03.726887 IP youtube > client: Flags [.], seq 983966:985414, ack 2075, win 156, options [nop,nop,TS val 1261901421 ecr 423702108], length 1448
+00:00:03.726901 IP client > youtube: Flags [.], ack 985414, win 32580, options [nop,nop,TS val 423702110 ecr 1261901421], length 0
+00:00:03.731902 IP youtube > client: Flags [.], seq 985414:986862, ack 2075, win 156, options [nop,nop,TS val 1261901427 ecr 423702108], length 1448
+00:00:03.731964 IP client > youtube: Flags [.], ack 986862, win 33304, options [nop,nop,TS val 423702110 ecr 1261901427], length 0
+00:00:03.732572 IP youtube > client: Flags [.], seq 986862:988310, ack 2075, win 156, options [nop,nop,TS val 1261901427 ecr 423702108], length 1448
+00:00:03.732594 IP client > youtube: Flags [.], ack 988310, win 32580, options [nop,nop,TS val 423702110 ecr 1261901427], length 0
+00:00:03.732883 IP youtube > client: Flags [.], seq 988310:989758, ack 2075, win 156, options [nop,nop,TS val 1261901427 ecr 423702108], length 1448
+00:00:03.732913 IP client > youtube: Flags [.], ack 989758, win 33304, options [nop,nop,TS val 423702110 ecr 1261901427], length 0
+00:00:03.736089 IP youtube > client: Flags [.], seq 989758:991206, ack 2075, win 156, options [nop,nop,TS val 1261901431 ecr 423702108], length 1448
+00:00:03.736128 IP client > youtube: Flags [.], ack 991206, win 32580, options [nop,nop,TS val 423702110 ecr 1261901431], length 0
+00:00:03.736384 IP youtube > client: Flags [.], seq 991206:992654, ack 2075, win 156, options [nop,nop,TS val 1261901431 ecr 423702108], length 1448
+00:00:03.736409 IP client > youtube: Flags [.], ack 992654, win 33304, options [nop,nop,TS val 423702110 ecr 1261901431], length 0
+00:00:03.752571 IP youtube > client: Flags [.], seq 992654:994102, ack 2075, win 156, options [nop,nop,TS val 1261901447 ecr 423702108], length 1448
+00:00:03.763896 IP youtube > client: Flags [.], seq 994102:995550, ack 2075, win 156, options [nop,nop,TS val 1261901455 ecr 423702108], length 1448
+00:00:03.763975 IP client > youtube: Flags [.], ack 995550, win 33304, options [nop,nop,TS val 423702110 ecr 1261901447], length 0
+00:00:03.764221 IP youtube > client: Flags [.], seq 995550:996998, ack 2075, win 156, options [nop,nop,TS val 1261901455 ecr 423702108], length 1448
+00:00:03.765634 IP youtube > client: Flags [.], seq 996998:998446, ack 2075, win 156, options [nop,nop,TS val 1261901459 ecr 423702108], length 1448
+00:00:03.765686 IP client > youtube: Flags [.], ack 998446, win 33304, options [nop,nop,TS val 423702110 ecr 1261901455], length 0
+00:00:03.766020 IP youtube > client: Flags [.], seq 998446:999894, ack 2075, win 156, options [nop,nop,TS val 1261901459 ecr 423702108], length 1448
+00:00:03.766472 IP youtube > client: Flags [.], seq 999894:1001342, ack 2075, win 156, options [nop,nop,TS val 1261901459 ecr 423702108], length 1448
+00:00:03.766509 IP client > youtube: Flags [.], ack 1001342, win 33304, options [nop,nop,TS val 423702110 ecr 1261901459], length 0
+00:00:03.766808 IP youtube > client: Flags [P.], seq 1001342:1002790, ack 2075, win 156, options [nop,nop,TS val 1261901459 ecr 423702108], length 1448
+00:00:03.766824 IP client > youtube: Flags [.], ack 1002790, win 32580, options [nop,nop,TS val 423702110 ecr 1261901459], length 0
+00:00:03.769569 IP youtube > client: Flags [.], seq 1002790:1004238, ack 2075, win 156, options [nop,nop,TS val 1261901463 ecr 423702108], length 1448
+00:00:03.769642 IP client > youtube: Flags [.], ack 1004238, win 33304, options [nop,nop,TS val 423702110 ecr 1261901463], length 0
+00:00:03.769936 IP youtube > client: Flags [.], seq 1004238:1005686, ack 2075, win 156, options [nop,nop,TS val 1261901463 ecr 423702108], length 1448
+00:00:03.771371 IP youtube > client: Flags [.], seq 1005686:1007134, ack 2075, win 156, options [nop,nop,TS val 1261901463 ecr 423702108], length 1448
+00:00:03.771449 IP client > youtube: Flags [.], ack 1007134, win 33304, options [nop,nop,TS val 423702110 ecr 1261901463], length 0
+00:00:03.771674 IP youtube > client: Flags [.], seq 1007134:1008582, ack 2075, win 156, options [nop,nop,TS val 1261901463 ecr 423702108], length 1448
+00:00:03.772213 IP youtube > client: Flags [.], seq 1008582:1010030, ack 2075, win 156, options [nop,nop,TS val 1261901463 ecr 423702108], length 1448
+00:00:03.772249 IP client > youtube: Flags [.], ack 1010030, win 33304, options [nop,nop,TS val 423702110 ecr 1261901463], length 0
+00:00:03.773580 IP youtube > client: Flags [.], seq 1010030:1011478, ack 2075, win 156, options [nop,nop,TS val 1261901467 ecr 423702108], length 1448
+00:00:03.773963 IP youtube > client: Flags [.], seq 1011478:1012926, ack 2075, win 156, options [nop,nop,TS val 1261901467 ecr 423702108], length 1448
+00:00:03.773997 IP client > youtube: Flags [.], ack 1012926, win 33304, options [nop,nop,TS val 423702110 ecr 1261901467], length 0
+00:00:03.774335 IP youtube > client: Flags [.], seq 1012926:1014374, ack 2075, win 156, options [nop,nop,TS val 1261901467 ecr 423702108], length 1448
+00:00:03.774883 IP youtube > client: Flags [.], seq 1014374:1015822, ack 2075, win 156, options [nop,nop,TS val 1261901467 ecr 423702108], length 1448
+00:00:03.774903 IP client > youtube: Flags [.], ack 1015822, win 32580, options [nop,nop,TS val 423702110 ecr 1261901467], length 0
+00:00:03.775393 IP youtube > client: Flags [.], seq 1015822:1017270, ack 2075, win 156, options [nop,nop,TS val 1261901467 ecr 423702108], length 1448
+00:00:03.775427 IP client > youtube: Flags [.], ack 1017270, win 33304, options [nop,nop,TS val 423702110 ecr 1261901467], length 0
+00:00:03.775751 IP youtube > client: Flags [.], seq 1017270:1018718, ack 2075, win 156, options [nop,nop,TS val 1261901467 ecr 423702108], length 1448
+00:00:03.776502 IP youtube > client: Flags [.], seq 1018718:1020166, ack 2075, win 156, options [nop,nop,TS val 1261901471 ecr 423702108], length 1448
+00:00:03.776548 IP client > youtube: Flags [.], ack 1020166, win 33304, options [nop,nop,TS val 423702110 ecr 1261901467], length 0
+00:00:03.776838 IP youtube > client: Flags [.], seq 1020166:1021614, ack 2075, win 156, options [nop,nop,TS val 1261901471 ecr 423702108], length 1448
+00:00:03.777323 IP youtube > client: Flags [.], seq 1021614:1023062, ack 2075, win 156, options [nop,nop,TS val 1261901471 ecr 423702108], length 1448
+00:00:03.777359 IP client > youtube: Flags [.], ack 1023062, win 33304, options [nop,nop,TS val 423702110 ecr 1261901471], length 0
+00:00:03.780749 IP youtube > client: Flags [.], seq 1023062:1024510, ack 2075, win 156, options [nop,nop,TS val 1261901475 ecr 423702108], length 1448
+00:00:03.780842 IP youtube > client: Flags [.], seq 1024510:1025958, ack 2075, win 156, options [nop,nop,TS val 1261901475 ecr 423702108], length 1448
+00:00:03.780863 IP client > youtube: Flags [.], ack 1025958, win 33304, options [nop,nop,TS val 423702110 ecr 1261901475], length 0
+00:00:03.788049 IP youtube > client: Flags [.], seq 1025958:1027406, ack 2075, win 156, options [nop,nop,TS val 1261901482 ecr 423702109], length 1448
+00:00:03.788402 IP youtube > client: Flags [.], seq 1027406:1028854, ack 2075, win 156, options [nop,nop,TS val 1261901482 ecr 423702109], length 1448
+00:00:03.788426 IP client > youtube: Flags [.], ack 1028854, win 32580, options [nop,nop,TS val 423702110 ecr 1261901482], length 0
+00:00:03.792815 IP youtube > client: Flags [.], seq 1028854:1030302, ack 2075, win 156, options [nop,nop,TS val 1261901487 ecr 423702109], length 1448
+00:00:03.792927 IP client > youtube: Flags [.], ack 1030302, win 33304, options [nop,nop,TS val 423702110 ecr 1261901487], length 0
+00:00:03.793013 IP youtube > client: Flags [.], seq 1030302:1031750, ack 2075, win 156, options [nop,nop,TS val 1261901487 ecr 423702109], length 1448
+00:00:03.793511 IP youtube > client: Flags [.], seq 1031750:1033198, ack 2075, win 156, options [nop,nop,TS val 1261901487 ecr 423702109], length 1448
+00:00:03.793561 IP client > youtube: Flags [.], ack 1033198, win 33304, options [nop,nop,TS val 423702110 ecr 1261901487], length 0
+00:00:03.793869 IP youtube > client: Flags [.], seq 1033198:1034646, ack 2075, win 156, options [nop,nop,TS val 1261901487 ecr 423702109], length 1448
+00:00:03.812801 IP youtube > client: Flags [P.], seq 1034646:1036094, ack 2075, win 156, options [nop,nop,TS val 1261901507 ecr 423702109], length 1448
+00:00:03.812860 IP client > youtube: Flags [.], ack 1036094, win 32580, options [nop,nop,TS val 423702110 ecr 1261901487], length 0
+00:00:03.812988 IP youtube > client: Flags [.], seq 1036094:1037542, ack 2075, win 156, options [nop,nop,TS val 1261901507 ecr 423702109], length 1448
+00:00:03.813014 IP client > youtube: Flags [.], ack 1037542, win 33304, options [nop,nop,TS val 423702110 ecr 1261901507], length 0
+00:00:03.813590 IP youtube > client: Flags [.], seq 1037542:1038990, ack 2075, win 156, options [nop,nop,TS val 1261901507 ecr 423702109], length 1448
+00:00:03.814011 IP youtube > client: Flags [.], seq 1038990:1040438, ack 2075, win 156, options [nop,nop,TS val 1261901507 ecr 423702109], length 1448
+00:00:03.814044 IP client > youtube: Flags [.], ack 1040438, win 33304, options [nop,nop,TS val 423702110 ecr 1261901507], length 0
+00:00:03.814335 IP youtube > client: Flags [.], seq 1040438:1041886, ack 2075, win 156, options [nop,nop,TS val 1261901507 ecr 423702109], length 1448
+00:00:03.814903 IP youtube > client: Flags [.], seq 1041886:1043334, ack 2075, win 156, options [nop,nop,TS val 1261901507 ecr 423702109], length 1448
+00:00:03.814929 IP client > youtube: Flags [.], ack 1043334, win 33304, options [nop,nop,TS val 423702110 ecr 1261901507], length 0
+00:00:03.826639 IP youtube > client: Flags [.], seq 1043334:1044782, ack 2075, win 156, options [nop,nop,TS val 1261901521 ecr 423702109], length 1448
+00:00:03.827044 IP youtube > client: Flags [.], seq 1044782:1046230, ack 2075, win 156, options [nop,nop,TS val 1261901521 ecr 423702109], length 1448
+00:00:03.827080 IP client > youtube: Flags [.], ack 1046230, win 33304, options [nop,nop,TS val 423702111 ecr 1261901521], length 0
+00:00:03.854892 IP youtube > client: Flags [.], seq 1046230:1047678, ack 2075, win 156, options [nop,nop,TS val 1261901549 ecr 423702109], length 1448
+00:00:03.895935 IP youtube > client: Flags [.], seq 1047678:1049126, ack 2075, win 156, options [nop,nop,TS val 1261901590 ecr 423702110], length 1448
+00:00:03.895980 IP client > youtube: Flags [.], ack 1049126, win 32580, options [nop,nop,TS val 423702111 ecr 1261901549], length 0
+00:00:03.896173 IP youtube > client: Flags [.], seq 1049126:1050574, ack 2075, win 156, options [nop,nop,TS val 1261901590 ecr 423702110], length 1448
+00:00:03.896199 IP client > youtube: Flags [.], ack 1050574, win 33304, options [nop,nop,TS val 423702111 ecr 1261901590], length 0
+00:00:03.899858 IP youtube > client: Flags [.], seq 1050574:1052022, ack 2075, win 156, options [nop,nop,TS val 1261901594 ecr 423702110], length 1448
+00:00:03.900202 IP youtube > client: Flags [.], seq 1052022:1053470, ack 2075, win 156, options [nop,nop,TS val 1261901594 ecr 423702110], length 1448
+00:00:03.900235 IP client > youtube: Flags [.], ack 1053470, win 33304, options [nop,nop,TS val 423702111 ecr 1261901594], length 0
+00:00:03.900580 IP youtube > client: Flags [.], seq 1053470:1054918, ack 2075, win 156, options [nop,nop,TS val 1261901594 ecr 423702110], length 1448
+00:00:03.901611 IP youtube > client: Flags [.], seq 1054918:1056366, ack 2075, win 156, options [nop,nop,TS val 1261901594 ecr 423702110], length 1448
+00:00:03.901643 IP client > youtube: Flags [.], ack 1056366, win 33304, options [nop,nop,TS val 423702111 ecr 1261901594], length 0
+00:00:03.901920 IP youtube > client: Flags [.], seq 1056366:1057814, ack 2075, win 156, options [nop,nop,TS val 1261901594 ecr 423702110], length 1448
+00:00:03.902477 IP youtube > client: Flags [.], seq 1057814:1059262, ack 2075, win 156, options [nop,nop,TS val 1261901594 ecr 423702110], length 1448
+00:00:03.902507 IP client > youtube: Flags [.], ack 1059262, win 33304, options [nop,nop,TS val 423702111 ecr 1261901594], length 0
+00:00:03.931922 IP youtube > client: Flags [.], seq 1059262:1060710, ack 2075, win 156, options [nop,nop,TS val 1261901626 ecr 423702110], length 1448
+00:00:03.932113 IP youtube > client: Flags [.], seq 1060710:1062158, ack 2075, win 156, options [nop,nop,TS val 1261901626 ecr 423702110], length 1448
+00:00:03.932137 IP client > youtube: Flags [.], ack 1062158, win 31856, options [nop,nop,TS val 423702112 ecr 1261901626], length 0
+00:00:03.932465 IP youtube > client: Flags [.], seq 1062158:1063606, ack 2075, win 156, options [nop,nop,TS val 1261901626 ecr 423702110], length 1448
+00:00:03.932488 IP client > youtube: Flags [.], ack 1063606, win 33180, options [nop,nop,TS val 423702112 ecr 1261901626], length 0
+00:00:03.933139 IP youtube > client: Flags [.], seq 1063606:1065054, ack 2075, win 156, options [nop,nop,TS val 1261901626 ecr 423702110], length 1448
+00:00:03.936006 IP youtube > client: Flags [.], seq 1065054:1066502, ack 2075, win 156, options [nop,nop,TS val 1261901630 ecr 423702110], length 1448
+00:00:03.936099 IP client > youtube: Flags [.], ack 1066502, win 33304, options [nop,nop,TS val 423702112 ecr 1261901626], length 0
+00:00:03.936219 IP youtube > client: Flags [.], seq 1066502:1067950, ack 2075, win 156, options [nop,nop,TS val 1261901630 ecr 423702110], length 1448
+00:00:03.936529 IP youtube > client: Flags [P.], seq 1067950:1069398, ack 2075, win 156, options [nop,nop,TS val 1261901630 ecr 423702110], length 1448
+00:00:03.936549 IP client > youtube: Flags [.], ack 1069398, win 31856, options [nop,nop,TS val 423702112 ecr 1261901630], length 0
+00:00:03.937158 IP youtube > client: Flags [.], seq 1069398:1070846, ack 2075, win 156, options [nop,nop,TS val 1261901630 ecr 423702110], length 1448
+00:00:03.937198 IP client > youtube: Flags [.], ack 1070846, win 33180, options [nop,nop,TS val 423702112 ecr 1261901630], length 0
+00:00:03.937746 IP youtube > client: Flags [.], seq 1070846:1072294, ack 2075, win 156, options [nop,nop,TS val 1261901630 ecr 423702110], length 1448
+00:00:03.938159 IP youtube > client: Flags [.], seq 1072294:1073742, ack 2075, win 156, options [nop,nop,TS val 1261901630 ecr 423702110], length 1448
+00:00:03.938197 IP client > youtube: Flags [.], ack 1073742, win 33304, options [nop,nop,TS val 423702112 ecr 1261901630], length 0
+00:00:03.938682 IP youtube > client: Flags [.], seq 1073742:1075190, ack 2075, win 156, options [nop,nop,TS val 1261901630 ecr 423702110], length 1448
+00:00:03.939132 IP youtube > client: Flags [.], seq 1075190:1076638, ack 2075, win 156, options [nop,nop,TS val 1261901630 ecr 423702110], length 1448
+00:00:03.939167 IP client > youtube: Flags [.], ack 1076638, win 33304, options [nop,nop,TS val 423702112 ecr 1261901630], length 0
+00:00:03.939806 IP youtube > client: Flags [.], seq 1076638:1078086, ack 2075, win 156, options [nop,nop,TS val 1261901634 ecr 423702110], length 1448
+00:00:03.940239 IP youtube > client: Flags [.], seq 1078086:1079534, ack 2075, win 156, options [nop,nop,TS val 1261901634 ecr 423702110], length 1448
+00:00:03.940269 IP client > youtube: Flags [.], ack 1079534, win 33304, options [nop,nop,TS val 423702112 ecr 1261901634], length 0
+00:00:03.940781 IP youtube > client: Flags [.], seq 1079534:1080982, ack 2075, win 156, options [nop,nop,TS val 1261901634 ecr 423702110], length 1448
+00:00:03.941200 IP youtube > client: Flags [.], seq 1080982:1082430, ack 2075, win 156, options [nop,nop,TS val 1261901634 ecr 423702110], length 1448
+00:00:03.941217 IP client > youtube: Flags [.], ack 1082430, win 32580, options [nop,nop,TS val 423702112 ecr 1261901634], length 0
+00:00:03.941751 IP youtube > client: Flags [.], seq 1082430:1083878, ack 2075, win 156, options [nop,nop,TS val 1261901634 ecr 423702110], length 1448
+00:00:03.941782 IP client > youtube: Flags [.], ack 1083878, win 33304, options [nop,nop,TS val 423702112 ecr 1261901634], length 0
+00:00:03.944524 IP youtube > client: Flags [.], seq 1083878:1085326, ack 2075, win 156, options [nop,nop,TS val 1261901638 ecr 423702110], length 1448
+00:00:03.944704 IP youtube > client: Flags [.], seq 1085326:1086774, ack 2075, win 156, options [nop,nop,TS val 1261901638 ecr 423702110], length 1448
+00:00:03.944741 IP client > youtube: Flags [.], ack 1086774, win 33304, options [nop,nop,TS val 423702112 ecr 1261901638], length 0
+00:00:03.945263 IP youtube > client: Flags [.], seq 1086774:1088222, ack 2075, win 156, options [nop,nop,TS val 1261901638 ecr 423702110], length 1448
+00:00:03.945670 IP youtube > client: Flags [.], seq 1088222:1089670, ack 2075, win 156, options [nop,nop,TS val 1261901638 ecr 423702110], length 1448
+00:00:03.945698 IP client > youtube: Flags [.], ack 1089670, win 33304, options [nop,nop,TS val 423702112 ecr 1261901638], length 0
+00:00:03.946228 IP youtube > client: Flags [.], seq 1089670:1091118, ack 2075, win 156, options [nop,nop,TS val 1261901638 ecr 423702110], length 1448
+00:00:03.946584 IP youtube > client: Flags [.], seq 1091118:1092566, ack 2075, win 156, options [nop,nop,TS val 1261901638 ecr 423702110], length 1448
+00:00:03.946608 IP client > youtube: Flags [.], ack 1092566, win 33304, options [nop,nop,TS val 423702112 ecr 1261901638], length 0
+00:00:03.959074 IP youtube > client: Flags [.], seq 1092566:1094014, ack 2075, win 156, options [nop,nop,TS val 1261901644 ecr 423702110], length 1448
+00:00:03.959195 IP youtube > client: Flags [.], seq 1094014:1095462, ack 2075, win 156, options [nop,nop,TS val 1261901650 ecr 423702110], length 1448
+00:00:03.959232 IP client > youtube: Flags [.], ack 1095462, win 32580, options [nop,nop,TS val 423702112 ecr 1261901644], length 0
+00:00:03.959559 IP youtube > client: Flags [.], seq 1095462:1096910, ack 2075, win 156, options [nop,nop,TS val 1261901650 ecr 423702110], length 1448
+00:00:03.960650 IP client > youtube: Flags [.], ack 1096910, win 33304, options [nop,nop,TS val 423702112 ecr 1261901650], length 0
+00:00:03.962829 IP youtube > client: Flags [.], seq 1096910:1098358, ack 2075, win 156, options [nop,nop,TS val 1261901654 ecr 423702110], length 1448
+00:00:03.963459 IP youtube > client: Flags [.], seq 1098358:1099806, ack 2075, win 156, options [nop,nop,TS val 1261901654 ecr 423702110], length 1448
+00:00:03.964093 IP client > youtube: Flags [.], ack 1099806, win 33304, options [nop,nop,TS val 423702112 ecr 1261901654], length 0
+00:00:03.981877 IP youtube > client: Flags [.], seq 1099806:1101254, ack 2075, win 156, options [nop,nop,TS val 1261901676 ecr 423702110], length 1448
+00:00:03.982203 IP youtube > client: Flags [P.], seq 1101254:1102702, ack 2075, win 156, options [nop,nop,TS val 1261901676 ecr 423702110], length 1448
+00:00:03.982229 IP client > youtube: Flags [.], ack 1102702, win 32580, options [nop,nop,TS val 423702112 ecr 1261901676], length 0
+00:00:03.986505 IP youtube > client: Flags [.], seq 1102702:1104150, ack 2075, win 156, options [nop,nop,TS val 1261901680 ecr 423702110], length 1448
+00:00:03.986630 IP client > youtube: Flags [.], ack 1104150, win 33304, options [nop,nop,TS val 423702112 ecr 1261901680], length 0
+00:00:03.986855 IP youtube > client: Flags [.], seq 1104150:1105598, ack 2075, win 156, options [nop,nop,TS val 1261901680 ecr 423702110], length 1448
+00:00:03.987372 IP youtube > client: Flags [.], seq 1105598:1107046, ack 2075, win 156, options [nop,nop,TS val 1261901680 ecr 423702110], length 1448
+00:00:03.987423 IP client > youtube: Flags [.], ack 1107046, win 33304, options [nop,nop,TS val 423702112 ecr 1261901680], length 0
+00:00:03.987696 IP youtube > client: Flags [.], seq 1107046:1108494, ack 2075, win 156, options [nop,nop,TS val 1261901680 ecr 423702110], length 1448
+00:00:03.988253 IP youtube > client: Flags [.], seq 1108494:1109942, ack 2075, win 156, options [nop,nop,TS val 1261901680 ecr 423702110], length 1448
+00:00:03.988291 IP client > youtube: Flags [.], ack 1109942, win 33304, options [nop,nop,TS val 423702112 ecr 1261901680], length 0
+00:00:03.996218 IP youtube > client: Flags [.], seq 1109942:1111390, ack 2075, win 156, options [nop,nop,TS val 1261901688 ecr 423702111], length 1448
+00:00:03.996470 IP youtube > client: Flags [.], seq 1111390:1112838, ack 2075, win 156, options [nop,nop,TS val 1261901688 ecr 423702111], length 1448
+00:00:03.996517 IP client > youtube: Flags [.], ack 1112838, win 33304, options [nop,nop,TS val 423702112 ecr 1261901688], length 0
