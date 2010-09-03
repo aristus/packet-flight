@@ -11,10 +11,10 @@ import re, fileinput
 # 00:00:00.022019 IP client > server: Flags [S], seq 232647348, win 65535, options [mss 1460,nop,wscale 1,nop,nop,TS val 423667877 ecr 0,sackOK,eol], length 0
 verbose = re.compile(r'^\d\d:\d\d:(\d\d\.\d+) IP (\S+) > (\S+): Flags \[([^\[]+)\], .+ length (\d+)')
 
+# -tt
 # 1283448128.608708 IP client > dns: 59461+ AAAA? www.facebook.com. (34)
 # 1283449103.832338 IP client > www.facebook: Flags [S], seq 875995199, win 65535, options [mss 1460,nop,wscale 3,nop,nop,TS val 424662549 ecr 0,sackOK,eol], length 0
 tt_verbose = re.compile(r'^(\d+\.\d+) IP (\S+) > (\S+): .+? \(?(\d+)\)?$')
-
 
 # -tt -q
 # 1283397211.023307 IP client > webserver: tcp 0
@@ -32,7 +32,7 @@ def flags(s):
 # results from using the time between the first SYN/ACK divided
 # by two. For > 2 nodes this won't work, of course.
 scale = 120 * 1000.0
-time = 1 * scale
+time = 0
 maxtime = 0
 
 machines = {}
@@ -44,6 +44,7 @@ spos = 0
 title = "Packet Visualization"
 
 epoch = None
+first_seen = None
 
 for line in fileinput.input():
     # if the first line is a comment, use it as the title
@@ -61,7 +62,11 @@ for line in fileinput.input():
         if epoch == None:
             epoch = float(sec) * 1000000.0
 
-        start = (float(sec) * 1000000.0) - epoch # microseconds
+        # Assumes the src of the first packet is the Node the tcp dump comes from.
+        if first_seen == None:
+            first_seen = src
+
+        start = (float(sec) * 1000000.0) - epoch + (3 * scale) # microseconds
         time = start
 
         cls = 'DATA'
@@ -78,7 +83,7 @@ for line in fileinput.input():
             cls = 'PUSH'
 
         ## move start time for received packets backwards to account for latency.
-        if dest == "client":
+        if dest == first_seen:
             start -= (1 * scale)
 
         if not machines.has_key(src):

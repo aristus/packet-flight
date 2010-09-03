@@ -33,7 +33,7 @@ void setup() {
   Ani.init(this);
   Ani.setDefaultEasing(Ani.CUBIC_OUT);
 
-  for (int i=0; i<packets.size()-1; i++) {
+  for (int i=0; i<packets.size(); i++) {
     Packet s = (Packet)packets.get(i);
     Ani.from(s.dest, flight_time, s.start, "y", s.pos.y);
     Ani.from(s.dest, flight_time, s.start, "x", s.pos.x);
@@ -53,6 +53,8 @@ void setup() {
   myFont = createFont("Helvetica", 14);
   textFont(myFont);
 
+  initLegend();
+
 }
 
 void draw() {
@@ -63,7 +65,7 @@ void draw() {
 
   current = (millis() / 1000.0);
 
-  for (int i=0; i<packets.size()-1; i++) {
+  for (int i=0; i<packets.size(); i++) {
    ((Packet)packets.get(i)).draw();
   }
 
@@ -88,12 +90,32 @@ void draw() {
 
   timeline.draw();
 
+  legend();
+
   mm.addFrame();
 
   // stop recording one second after it's done.
   if (millis() >= (maxtime + 1) * 1000.0) {
     stop();
   }
+}
+
+void initLegend() {
+  packets.add(new Packet(0,0, 70, 455, -1, 0));
+  packets.add(new CtrlPacket(0,0, 170, 455, -1, 0));
+  packets.add(new SynPacket(0,0, 270, 455, -1, 0));
+  packets.add(new UdpPacket(0,0, 370, 455, -1, 0));
+  packets.add(new FinPacket(0,0, 470, 455, -1, 0));
+}
+
+void legend() {
+  textAlign(LEFT);
+  fill(66);
+  text("Data", 80, 460);
+  text("ACK", 180, 460);
+  text("SYN", 280, 460);
+  text("UDP", 380, 460);
+  text("FIN", 480, 460);
 }
 
 void keyPressed() {
@@ -140,7 +162,7 @@ class Packet {
  }
 
  void draw() {
-   if (start <= current && current <= (start + flight_time)) {
+   if (start == -1 || (start <= current && current <= (start + flight_time))) {
      shape();
    }
  }
@@ -183,7 +205,7 @@ class UdpPacket extends Packet {
     super(x,y,dx,dy,dlay,bytes);
   }
   void shape() {
-     fill(#deb039);
+     fill(#ec9234);
      ellipse(dest.x, dest.y, 10, 10);
   }
 }
