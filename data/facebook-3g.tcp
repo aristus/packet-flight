@@ -1,0 +1,1144 @@
+# Facebook News Feed, over 3G connection @8X
+1283449103.742932 IP client > dns: 59121+ A? www.facebook.com. (34)
+1283449103.752888 IP client > dns: 38565+ AAAA? www.facebook.com. (34)
+1283449103.830272 IP dns > client: 38565 0/1/0 (101)
+1283449103.831667 IP dns > client: 59121 1/4/4 A 66.220.153.11 (223)
+1283449103.832338 IP client > www.facebook: Flags [S], seq 875995199, win 65535, options [mss 1460,nop,wscale 3,nop,nop,TS val 424662549 ecr 0,sackOK,eol], length 0
+1283449104.020340 IP www.facebook > client: Flags [S.], seq 758905567, ack 875995200, win 4380, options [mss 1460,nop,wscale 0,nop,nop,TS val 3548950849 ecr 424662549,sackOK,eol], length 0
+1283449104.020465 IP client > www.facebook: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662551 ecr 3548950849], length 0
+1283449104.020721 IP client > www.facebook: Flags [P.], seq 1:1117, ack 1, win 65535, options [nop,nop,TS val 424662551 ecr 3548950849], length 1116
+1283449104.378748 IP www.facebook > client: Flags [P.], seq 1:1173, ack 1117, win 5496, options [nop,nop,TS val 3548951211 ecr 424662551], length 1172
+1283449104.378835 IP client > www.facebook: Flags [.], ack 1173, win 65535, options [nop,nop,TS val 424662555 ecr 3548951211], length 0
+1283449104.395538 IP client > dns: 7854+ A? static.ak.fbcdn.net. (37)
+1283449104.405924 IP client > dns: 56864+ AAAA? static.ak.fbcdn.net. (37)
+1283449104.490500 IP www.facebook > client: Flags [P.], seq 1173:2621, ack 1117, win 5496, options [nop,nop,TS val 3548951327 ecr 424662551], length 1448
+1283449104.490558 IP client > www.facebook: Flags [.], ack 2621, win 65522, options [nop,nop,TS val 424662556 ecr 3548951327], length 0
+1283449104.499098 IP www.facebook > client: Flags [P.], seq 2621:4069, ack 1117, win 5496, options [nop,nop,TS val 3548951327 ecr 424662551], length 1448
+1283449104.499132 IP client > www.facebook: Flags [.], ack 4069, win 65522, options [nop,nop,TS val 424662556 ecr 3548951327], length 0
+1283449104.508204 IP dns > client: 7854 4/9/9 CNAME static.ak.facebook.com.edgesuite.net., CNAME a749.g.akamai.net., A 65.171.167.136, A 65.171.167.123 (450)
+1283449104.513735 IP dns > client: 56864 2/1/0 CNAME static.ak.facebook.com.edgesuite.net., CNAME a749.g.akamai.net. (173)
+1283449104.540893 IP www.facebook > client: Flags [.], seq 4069:5517, ack 1117, win 5496, options [nop,nop,TS val 3548951376 ecr 424662555], length 1448
+1283449104.622685 IP client > static.akamai: Flags [S], seq 3870379584, win 65535, options [mss 1460,nop,wscale 3,nop,nop,TS val 424662557 ecr 0,sackOK,eol], length 0
+1283449104.622818 IP client > static.akamai: Flags [S], seq 1044397634, win 65535, options [mss 1460,nop,wscale 3,nop,nop,TS val 424662557 ecr 0,sackOK,eol], length 0
+1283449104.622905 IP client > static.akamai: Flags [S], seq 2123289141, win 65535, options [mss 1460,nop,wscale 3,nop,nop,TS val 424662557 ecr 0,sackOK,eol], length 0
+1283449104.622982 IP client > static.akamai: Flags [S], seq 1573497609, win 65535, options [mss 1460,nop,wscale 3,nop,nop,TS val 424662557 ecr 0,sackOK,eol], length 0
+1283449104.623079 IP client > static.akamai: Flags [S], seq 2066738158, win 65535, options [mss 1460,nop,wscale 3,nop,nop,TS val 424662557 ecr 0,sackOK,eol], length 0
+1283449104.623133 IP client > static.akamai: Flags [S], seq 899875681, win 65535, options [mss 1460,nop,wscale 3,nop,nop,TS val 424662557 ecr 0,sackOK,eol], length 0
+1283449104.627364 IP www.facebook > client: Flags [.], seq 5517:6965, ack 1117, win 5496, options [nop,nop,TS val 3548951462 ecr 424662556], length 1448
+1283449104.627396 IP client > www.facebook: Flags [.], ack 6965, win 65522, options [nop,nop,TS val 424662557 ecr 3548951376], length 0
+1283449104.632576 IP www.facebook > client: Flags [.], seq 6965:8413, ack 1117, win 5496, options [nop,nop,TS val 3548951462 ecr 424662556], length 1448
+1283449104.660952 IP client > www.facebook: Flags [.], ack 8413, win 65535, options [nop,nop,TS val 424662557 ecr 3548951462], length 0
+1283449104.680020 IP www.facebook > client: Flags [.], seq 8413:9861, ack 1117, win 5496, options [nop,nop,TS val 3548951516 ecr 424662556], length 1448
+1283449104.693569 IP www.facebook > client: Flags [.], seq 9861:11309, ack 1117, win 5496, options [nop,nop,TS val 3548951516 ecr 424662556], length 1448
+1283449104.693613 IP client > www.facebook: Flags [.], ack 11309, win 65522, options [nop,nop,TS val 424662558 ecr 3548951516], length 0
+1283449104.744689 IP static.akamai > client: Flags [S.], seq 2912895908, ack 3870379585, win 5792, options [mss 1460,sackOK,TS val 1322162117 ecr 424662557,nop,wscale 5], length 0
+1283449104.744729 IP client > static.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662558 ecr 1322162117], length 0
+1283449104.744857 IP client > static.akamai: Flags [P.], seq 1:403, ack 1, win 65535, options [nop,nop,TS val 424662558 ecr 1322162117], length 402
+1283449104.745752 IP static.akamai > client: Flags [S.], seq 2910289464, ack 1044397635, win 5792, options [mss 1460,sackOK,TS val 1322162117 ecr 424662557,nop,wscale 5], length 0
+1283449104.745768 IP static.akamai > client: Flags [S.], seq 2906492357, ack 2123289142, win 5792, options [mss 1460,sackOK,TS val 1322162126 ecr 424662557,nop,wscale 5], length 0
+1283449104.745770 IP client > static.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662558 ecr 1322162117], length 0
+1283449104.745779 IP client > static.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662558 ecr 1322162126], length 0
+1283449104.745847 IP client > static.akamai: Flags [P.], seq 1:403, ack 1, win 65535, options [nop,nop,TS val 424662558 ecr 1322162117], length 402
+1283449104.745863 IP client > static.akamai: Flags [P.], seq 1:403, ack 1, win 65535, options [nop,nop,TS val 424662558 ecr 1322162126], length 402
+1283449104.771609 IP static.akamai > client: Flags [S.], seq 2906923802, ack 1573497610, win 5792, options [mss 1460,sackOK,TS val 1322162126 ecr 424662557,nop,wscale 5], length 0
+1283449104.771647 IP client > static.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662559 ecr 1322162126], length 0
+1283449104.771756 IP client > static.akamai: Flags [P.], seq 1:403, ack 1, win 65535, options [nop,nop,TS val 424662559 ecr 1322162126], length 402
+1283449104.773063 IP static.akamai > client: Flags [S.], seq 2906024227, ack 2066738159, win 5792, options [mss 1460,sackOK,TS val 1322162126 ecr 424662557,nop,wscale 5], length 0
+1283449104.773079 IP client > static.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662559 ecr 1322162126], length 0
+1283449104.773088 IP static.akamai > client: Flags [S.], seq 2899516981, ack 899875682, win 5792, options [mss 1460,sackOK,TS val 1322162126 ecr 424662557,nop,wscale 5], length 0
+1283449104.773090 IP static.akamai > client: Flags [S.], seq 2910289464, ack 1044397635, win 5792, options [mss 1460,sackOK,TS val 1322162131 ecr 424662557,nop,wscale 5], length 0
+1283449104.773100 IP client > static.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662559 ecr 1322162126], length 0
+1283449104.773107 IP client > static.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662559 ecr 1322162131], length 0
+1283449104.773148 IP client > static.akamai: Flags [P.], seq 1:403, ack 1, win 65535, options [nop,nop,TS val 424662559 ecr 1322162126], length 402
+1283449104.773188 IP client > static.akamai: Flags [P.], seq 1:403, ack 1, win 65535, options [nop,nop,TS val 424662559 ecr 1322162126], length 402
+1283449104.808446 IP www.facebook > client: Flags [.], seq 11309:12757, ack 1117, win 5496, options [nop,nop,TS val 3548951645 ecr 424662557], length 1448
+1283449104.816397 IP www.facebook > client: Flags [.], seq 12757:14205, ack 1117, win 5496, options [nop,nop,TS val 3548951645 ecr 424662557], length 1448
+1283449104.816498 IP client > www.facebook: Flags [.], ack 14205, win 65535, options [nop,nop,TS val 424662559 ecr 3548951645], length 0
+1283449104.843112 IP www.facebook > client: Flags [.], seq 14205:15653, ack 1117, win 5496, options [nop,nop,TS val 3548951645 ecr 424662557], length 1448
+1283449104.846429 IP www.facebook > client: Flags [.], seq 15653:17101, ack 1117, win 5496, options [nop,nop,TS val 3548951645 ecr 424662557], length 1448
+1283449104.846501 IP client > www.facebook: Flags [.], ack 17101, win 65535, options [nop,nop,TS val 424662559 ecr 3548951645], length 0
+1283449104.852704 IP www.facebook > client: Flags [.], seq 17101:18549, ack 1117, win 5496, options [nop,nop,TS val 3548951650 ecr 424662557], length 1448
+1283449104.856532 IP www.facebook > client: Flags [.], seq 18549:19997, ack 1117, win 5496, options [nop,nop,TS val 3548951650 ecr 424662557], length 1448
+1283449104.856604 IP client > www.facebook: Flags [.], ack 19997, win 65535, options [nop,nop,TS val 424662559 ecr 3548951650], length 0
+1283449104.857672 IP static.akamai > client: Flags [.], ack 403, win 215, options [nop,nop,TS val 1322162231 ecr 424662558], length 0
+1283449104.864191 IP static.akamai > client: Flags [.], seq 1:1449, ack 403, win 215, options [nop,nop,TS val 1322162232 ecr 424662558], length 1448
+1283449104.864726 IP static.akamai > client: Flags [P.], seq 4345:4680, ack 403, win 215, options [nop,nop,TS val 1322162232 ecr 424662558], length 335
+1283449104.864748 IP client > static.akamai: Flags [.], ack 1449, win 65535, options [nop,nop,TS val 424662560 ecr 1322162232,nop,nop,sack 1 {4345:4680}], length 0
+1283449104.875264 IP static.akamai > client: Flags [.], seq 1449:2897, ack 403, win 215, options [nop,nop,TS val 1322162232 ecr 424662558], length 1448
+1283449104.875332 IP client > static.akamai: Flags [.], ack 2897, win 65522, options [nop,nop,TS val 424662560 ecr 1322162232,nop,nop,sack 1 {4345:4680}], length 0
+1283449104.885522 IP static.akamai > client: Flags [.], seq 2897:4345, ack 403, win 215, options [nop,nop,TS val 1322162232 ecr 424662558], length 1448
+1283449104.885573 IP client > static.akamai: Flags [.], ack 4680, win 65480, options [nop,nop,TS val 424662560 ecr 1322162232], length 0
+1283449104.885718 IP client > static.akamai: Flags [P.], seq 403:805, ack 4680, win 65535, options [nop,nop,TS val 424662560 ecr 1322162232], length 402
+1283449104.895642 IP www.facebook > client: Flags [.], seq 19997:21445, ack 1117, win 5496, options [nop,nop,TS val 3548951728 ecr 424662558], length 1448
+1283449104.903706 IP www.facebook > client: Flags [.], seq 21445:22893, ack 1117, win 5496, options [nop,nop,TS val 3548951728 ecr 424662558], length 1448
+1283449104.903817 IP client > www.facebook: Flags [.], ack 22893, win 65535, options [nop,nop,TS val 424662560 ecr 3548951728], length 0
+1283449104.911012 IP www.facebook > client: Flags [.], seq 22893:24341, ack 1117, win 5496, options [nop,nop,TS val 3548951728 ecr 424662558], length 1448
+1283449104.911062 IP client > www.facebook: Flags [.], ack 24341, win 65522, options [nop,nop,TS val 424662560 ecr 3548951728], length 0
+1283449104.941371 IP www.facebook > client: Flags [.], seq 24341:25789, ack 1117, win 5496, options [nop,nop,TS val 3548951728 ecr 424662558], length 1448
+1283449104.942528 IP static.akamai > client: Flags [.], ack 403, win 215, options [nop,nop,TS val 1322162287 ecr 424662558], length 0
+1283449104.945481 IP static.akamai > client: Flags [.], seq 1:1449, ack 403, win 215, options [nop,nop,TS val 1322162287 ecr 424662558], length 1448
+1283449104.957394 IP static.akamai > client: Flags [.], seq 1449:2897, ack 403, win 215, options [nop,nop,TS val 1322162287 ecr 424662558], length 1448
+1283449104.957445 IP client > static.akamai: Flags [.], ack 2897, win 65522, options [nop,nop,TS val 424662560 ecr 1322162287], length 0
+1283449104.962550 IP static.akamai > client: Flags [.], seq 2897:4345, ack 403, win 215, options [nop,nop,TS val 1322162287 ecr 424662558], length 1448
+1283449104.969461 IP static.akamai > client: Flags [P.], seq 4345:5791, ack 403, win 215, options [nop,nop,TS val 1322162287 ecr 424662558], length 1446
+1283449104.969510 IP client > static.akamai: Flags [.], ack 5791, win 65522, options [nop,nop,TS val 424662561 ecr 1322162287], length 0
+1283449104.969639 IP client > static.akamai: Flags [P.], seq 403:805, ack 5791, win 65535, options [nop,nop,TS val 424662561 ecr 1322162287], length 402
+1283449104.970498 IP static.akamai > client: Flags [.], ack 403, win 215, options [nop,nop,TS val 1322162304 ecr 424662558], length 0
+1283449104.972939 IP static.akamai > client: Flags [.], seq 1:1449, ack 403, win 215, options [nop,nop,TS val 1322162306 ecr 424662558], length 1448
+1283449104.973808 IP static.akamai > client: Flags [P.], seq 4345:4728, ack 403, win 215, options [nop,nop,TS val 1322162306 ecr 424662558], length 383
+1283449104.973822 IP client > static.akamai: Flags [.], ack 1449, win 65535, options [nop,nop,TS val 424662561 ecr 1322162306,nop,nop,sack 1 {4345:4728}], length 0
+1283449104.983988 IP static.akamai > client: Flags [.], seq 1449:2897, ack 403, win 215, options [nop,nop,TS val 1322162306 ecr 424662558], length 1448
+1283449104.984021 IP client > static.akamai: Flags [.], ack 2897, win 65522, options [nop,nop,TS val 424662561 ecr 1322162306,nop,nop,sack 1 {4345:4728}], length 0
+1283449104.994571 IP static.akamai > client: Flags [.], seq 2897:4345, ack 403, win 215, options [nop,nop,TS val 1322162306 ecr 424662558], length 1448
+1283449104.994610 IP client > static.akamai: Flags [.], ack 4728, win 65474, options [nop,nop,TS val 424662561 ecr 1322162306], length 0
+1283449104.994748 IP client > static.akamai: Flags [P.], seq 403:805, ack 4728, win 65535, options [nop,nop,TS val 424662561 ecr 1322162306], length 402
+1283449104.995620 IP static.akamai > client: Flags [.], ack 403, win 215, options [nop,nop,TS val 1322162329 ecr 424662559], length 0
+1283449105.005301 IP static.akamai > client: Flags [.], seq 1:1449, ack 403, win 215, options [nop,nop,TS val 1322162329 ecr 424662559], length 1448
+1283449105.033955 IP static.akamai > client: Flags [.], seq 1449:2897, ack 403, win 215, options [nop,nop,TS val 1322162329 ecr 424662559], length 1448
+1283449105.034050 IP client > static.akamai: Flags [.], ack 2897, win 65522, options [nop,nop,TS val 424662561 ecr 1322162329], length 0
+1283449105.037534 IP static.akamai > client: Flags [.], seq 2897:4345, ack 403, win 215, options [nop,nop,TS val 1322162329 ecr 424662559], length 1448
+1283449105.041756 IP static.akamai > client: Flags [.], seq 4345:5793, ack 403, win 215, options [nop,nop,TS val 1322162329 ecr 424662559], length 1448
+1283449105.041787 IP client > static.akamai: Flags [.], ack 5793, win 65522, options [nop,nop,TS val 424662561 ecr 1322162329], length 0
+1283449105.042387 IP static.akamai > client: Flags [.], ack 403, win 215, options [nop,nop,TS val 1322162396 ecr 424662559], length 0
+1283449105.045146 IP static.akamai > client: Flags [.], seq 1:1449, ack 403, win 215, options [nop,nop,TS val 1322162396 ecr 424662559], length 1448
+1283449105.050463 IP static.akamai > client: Flags [.], seq 1449:2897, ack 403, win 215, options [nop,nop,TS val 1322162396 ecr 424662559], length 1448
+1283449105.050510 IP client > static.akamai: Flags [.], ack 2897, win 65522, options [nop,nop,TS val 424662561 ecr 1322162396], length 0
+1283449105.052268 IP static.akamai > client: Flags [P.], seq 4345:4668, ack 403, win 215, options [nop,nop,TS val 1322162396 ecr 424662559], length 323
+1283449105.052298 IP client > static.akamai: Flags [.], ack 2897, win 65535, options [nop,nop,TS val 424662561 ecr 1322162396,nop,nop,sack 1 {4345:4668}], length 0
+1283449105.061621 IP client > www.facebook: Flags [.], ack 25789, win 65535, options [nop,nop,TS val 424662561 ecr 3548951728], length 0
+1283449105.062996 IP static.akamai > client: Flags [.], seq 2897:4345, ack 403, win 215, options [nop,nop,TS val 1322162396 ecr 424662559], length 1448
+1283449105.063089 IP client > static.akamai: Flags [.], ack 4668, win 65481, options [nop,nop,TS val 424662562 ecr 1322162396], length 0
+1283449105.063577 IP client > static.akamai: Flags [P.], seq 403:805, ack 4668, win 65535, options [nop,nop,TS val 424662562 ecr 1322162396], length 402
+1283449105.107918 IP static.akamai > client: Flags [.], ack 403, win 215, options [nop,nop,TS val 1322162411 ecr 424662559], length 0
+1283449105.120481 IP static.akamai > client: Flags [.], seq 1:1449, ack 403, win 215, options [nop,nop,TS val 1322162411 ecr 424662559], length 1448
+1283449105.130493 IP static.akamai > client: Flags [P.], seq 2897:4319, ack 403, win 215, options [nop,nop,TS val 1322162411 ecr 424662559], length 1422
+1283449105.130529 IP client > static.akamai: Flags [.], ack 1449, win 65535, options [nop,nop,TS val 424662562 ecr 1322162411,nop,nop,sack 1 {2897:4319}], length 0
+1283449105.139383 IP static.akamai > client: Flags [.], seq 1449:2897, ack 403, win 215, options [nop,nop,TS val 1322162411 ecr 424662559], length 1448
+1283449105.139439 IP client > static.akamai: Flags [.], ack 4319, win 65344, options [nop,nop,TS val 424662562 ecr 1322162411], length 0
+1283449105.139612 IP client > static.akamai: Flags [P.], seq 403:789, ack 4319, win 65535, options [nop,nop,TS val 424662562 ecr 1322162411], length 386
+1283449105.149405 IP www.facebook > client: Flags [.], seq 25789:27237, ack 1117, win 5496, options [nop,nop,TS val 3548951932 ecr 424662559], length 1448
+1283449105.153263 IP static.akamai > client: Flags [P.], seq 4680:5648, ack 805, win 248, options [nop,nop,TS val 1322162477 ecr 424662560], length 968
+1283449105.153309 IP client > static.akamai: Flags [.], ack 5648, win 65535, options [nop,nop,TS val 424662562 ecr 1322162477], length 0
+1283449105.188721 IP static.akamai > client: Flags [.], seq 5791:7239, ack 805, win 248, options [nop,nop,TS val 1322162512 ecr 424662561], length 1448
+1283449105.189309 IP static.akamai > client: Flags [P.], seq 10135:10153, ack 805, win 248, options [nop,nop,TS val 1322162512 ecr 424662561], length 18
+1283449105.189327 IP client > static.akamai: Flags [.], ack 7239, win 65535, options [nop,nop,TS val 424662563 ecr 1322162512,nop,nop,sack 1 {10135:10153}], length 0
+1283449105.197538 IP static.akamai > client: Flags [.], seq 7239:8687, ack 805, win 248, options [nop,nop,TS val 1322162512 ecr 424662561], length 1448
+1283449105.197600 IP client > static.akamai: Flags [.], ack 8687, win 65522, options [nop,nop,TS val 424662563 ecr 1322162512,nop,nop,sack 1 {10135:10153}], length 0
+1283449105.239002 IP static.akamai > client: Flags [.], seq 8687:10135, ack 805, win 248, options [nop,nop,TS val 1322162512 ecr 424662561], length 1448
+1283449105.239109 IP client > static.akamai: Flags [.], ack 10153, win 65519, options [nop,nop,TS val 424662563 ecr 1322162512], length 0
+1283449105.241139 IP static.akamai > client: Flags [P.], seq 4728:5890, ack 805, win 248, options [nop,nop,TS val 1322162564 ecr 424662561], length 1162
+1283449105.241165 IP client > static.akamai: Flags [.], ack 5890, win 65535, options [nop,nop,TS val 424662563 ecr 1322162564], length 0
+1283449105.252944 IP static.akamai > client: Flags [P.], seq 5793:6977, ack 403, win 215, options [nop,nop,TS val 1322162564 ecr 424662561], length 1184
+1283449105.252978 IP client > static.akamai: Flags [.], ack 6977, win 65535, options [nop,nop,TS val 424662563 ecr 1322162564], length 0
+1283449105.261796 IP client > www.facebook: Flags [.], ack 27237, win 65535, options [nop,nop,TS val 424662563 ecr 3548951932], length 0
+1283449105.265541 IP www.facebook > client: Flags [.], seq 27237:28685, ack 1117, win 5496, options [nop,nop,TS val 3548952080 ecr 424662560], length 1448
+1283449105.271048 IP www.facebook > client: Flags [.], seq 28685:30133, ack 1117, win 5496, options [nop,nop,TS val 3548952080 ecr 424662560], length 1448
+1283449105.271156 IP client > www.facebook: Flags [.], ack 30133, win 65535, options [nop,nop,TS val 424662564 ecr 3548952080], length 0
+1283449105.278848 IP www.facebook > client: Flags [.], seq 30133:31581, ack 1117, win 5496, options [nop,nop,TS val 3548952080 ecr 424662560], length 1448
+1283449105.285744 IP www.facebook > client: Flags [.], seq 31581:33029, ack 1117, win 5496, options [nop,nop,TS val 3548952081 ecr 424662560], length 1448
+1283449105.285907 IP client > www.facebook: Flags [.], ack 33029, win 65535, options [nop,nop,TS val 424662564 ecr 3548952080], length 0
+1283449105.296958 IP www.facebook > client: Flags [.], seq 33029:34477, ack 1117, win 5496, options [nop,nop,TS val 3548952081 ecr 424662560], length 1448
+1283449105.308545 IP www.facebook > client: Flags [.], seq 34477:35925, ack 1117, win 5496, options [nop,nop,TS val 3548952107 ecr 424662560], length 1448
+1283449105.308740 IP client > www.facebook: Flags [.], ack 35925, win 65535, options [nop,nop,TS val 424662564 ecr 3548952081], length 0
+1283449105.332126 IP www.facebook > client: Flags [.], seq 35925:37373, ack 1117, win 5496, options [nop,nop,TS val 3548952107 ecr 424662560], length 1448
+1283449105.333981 IP static.akamai > client: Flags [P.], seq 6116:6182, ack 805, win 248, options [nop,nop,TS val 1322162671 ecr 424662562], length 66
+1283449105.334079 IP client > static.akamai: Flags [.], ack 4668, win 65535, options [nop,nop,TS val 424662564 ecr 1322162396,nop,nop,sack 1 {6116:6182}], length 0
+1283449105.334295 IP static.akamai > client: Flags [.], seq 4668:6116, ack 805, win 248, options [nop,nop,TS val 1322162671 ecr 424662562], length 1448
+1283449105.334318 IP client > static.akamai: Flags [.], ack 6182, win 65513, options [nop,nop,TS val 424662564 ecr 1322162671], length 0
+1283449105.413875 IP static.akamai > client: Flags [.], seq 4319:5767, ack 789, win 248, options [nop,nop,TS val 1322162671 ecr 424662562], length 1448
+1283449105.415268 IP static.akamai > client: Flags [.], seq 5767:7215, ack 789, win 248, options [nop,nop,TS val 1322162671 ecr 424662562], length 1448
+1283449105.415365 IP client > static.akamai: Flags [.], ack 7215, win 65535, options [nop,nop,TS val 424662565 ecr 1322162671], length 0
+1283449105.416958 IP static.akamai > client: Flags [.], seq 7215:8663, ack 789, win 248, options [nop,nop,TS val 1322162671 ecr 424662562], length 1448
+1283449105.416985 IP client > static.akamai: Flags [.], ack 8663, win 65522, options [nop,nop,TS val 424662565 ecr 1322162671], length 0
+1283449105.419577 IP static.akamai > client: Flags [.], seq 8663:10111, ack 789, win 248, options [nop,nop,TS val 1322162671 ecr 424662562], length 1448
+1283449105.420533 IP static.akamai > client: Flags [.], seq 10111:11559, ack 789, win 248, options [nop,nop,TS val 1322162671 ecr 424662562], length 1448
+1283449105.420584 IP client > static.akamai: Flags [.], ack 11559, win 65535, options [nop,nop,TS val 424662565 ecr 1322162671], length 0
+1283449105.423198 IP www.facebook > client: Flags [.], seq 37373:38821, ack 1117, win 5496, options [nop,nop,TS val 3548952152 ecr 424662561], length 1448
+1283449105.423230 IP client > www.facebook: Flags [.], ack 38821, win 65522, options [nop,nop,TS val 424662565 ecr 3548952107], length 0
+1283449105.425077 IP www.facebook > client: Flags [.], seq 38821:40269, ack 1117, win 5496, options [nop,nop,TS val 3548952152 ecr 424662561], length 1448
+1283449105.427700 IP www.facebook > client: Flags [.], seq 40269:41717, ack 1117, win 5496, options [nop,nop,TS val 3548952152 ecr 424662561], length 1448
+1283449105.427719 IP client > www.facebook: Flags [.], ack 41717, win 65522, options [nop,nop,TS val 424662565 ecr 3548952152], length 0
+1283449105.428694 IP www.facebook > client: Flags [.], seq 41717:43165, ack 1117, win 5496, options [nop,nop,TS val 3548952152 ecr 424662561], length 1448
+1283449105.431772 IP www.facebook > client: Flags [.], seq 43165:44613, ack 1117, win 5496, options [nop,nop,TS val 3548952152 ecr 424662561], length 1448
+1283449105.431800 IP client > www.facebook: Flags [.], ack 44613, win 65522, options [nop,nop,TS val 424662565 ecr 3548952152], length 0
+1283449105.432631 IP www.facebook > client: Flags [.], seq 44613:46061, ack 1117, win 5496, options [nop,nop,TS val 3548952181 ecr 424662561], length 1448
+1283449105.434368 IP www.facebook > client: Flags [P.], seq 46061:46635, ack 1117, win 5496, options [nop,nop,TS val 3548952183 ecr 424662561], length 574
+1283449105.434395 IP client > www.facebook: Flags [.], ack 46635, win 65535, options [nop,nop,TS val 424662565 ecr 3548952181], length 0
+1283449105.557137 IP static.akamai > client: Flags [.], seq 11559:13007, ack 789, win 248, options [nop,nop,TS val 1322162923 ecr 424662565], length 1448
+1283449105.566820 IP static.akamai > client: Flags [.], seq 13007:14455, ack 789, win 248, options [nop,nop,TS val 1322162923 ecr 424662565], length 1448
+1283449105.566923 IP client > static.akamai: Flags [.], ack 14455, win 65535, options [nop,nop,TS val 424662567 ecr 1322162923], length 0
+1283449105.575400 IP static.akamai > client: Flags [P.], seq 14455:15683, ack 789, win 248, options [nop,nop,TS val 1322162923 ecr 424662565], length 1228
+1283449105.575440 IP client > static.akamai: Flags [.], ack 15683, win 65535, options [nop,nop,TS val 424662567 ecr 1322162923], length 0
+1283449105.591760 IP client > static.akamai: Flags [P.], seq 805:1222, ack 5648, win 65535, options [nop,nop,TS val 424662567 ecr 1322162477], length 417
+1283449105.593032 IP client > static.akamai: Flags [P.], seq 805:1222, ack 10153, win 65535, options [nop,nop,TS val 424662567 ecr 1322162512], length 417
+1283449105.594924 IP client > dns: 16804+ A? profile.ak.fbcdn.net. (38)
+1283449105.597920 IP client > static.akamai: Flags [P.], seq 805:1257, ack 5890, win 65535, options [nop,nop,TS val 424662567 ecr 1322162564], length 452
+1283449105.605168 IP client > dns: 49429+ AAAA? profile.ak.fbcdn.net. (38)
+1283449105.635231 IP client > static.akamai: Flags [P.], seq 403:855, ack 6977, win 65535, options [nop,nop,TS val 424662567 ecr 1322162564], length 452
+1283449105.636329 IP client > static.akamai: Flags [P.], seq 805:1257, ack 6182, win 65535, options [nop,nop,TS val 424662567 ecr 1322162671], length 452
+1283449105.638146 IP client > static.akamai: Flags [P.], seq 789:1191, ack 15683, win 65535, options [nop,nop,TS val 424662567 ecr 1322162923], length 402
+1283449105.662015 IP client > dns: 12344+ A? external.ak.fbcdn.net. (39)
+1283449105.672260 IP client > dns: 10510+ AAAA? external.ak.fbcdn.net. (39)
+1283449105.694424 IP client > static.akamai: Flags [S], seq 4272120904, win 65535, options [mss 1460,nop,wscale 3,nop,nop,TS val 424662568 ecr 0,sackOK,eol], length 0
+1283449105.758274 IP static.akamai > client: Flags [P.], seq 5648:6452, ack 1222, win 282, options [nop,nop,TS val 1322163105 ecr 424662567], length 804
+1283449105.758313 IP client > static.akamai: Flags [.], ack 6452, win 65535, options [nop,nop,TS val 424662568 ecr 1322163105], length 0
+1283449105.758513 IP client > static.akamai: Flags [P.], seq 1222:1639, ack 6452, win 65535, options [nop,nop,TS val 424662568 ecr 1322163105], length 417
+1283449105.761400 IP dns > client: 16804 7/9/9 CNAME profile.ak.facebook.com.edgesuite.net., CNAME a1725.l.akamai.net., A 65.171.167.122, A 65.171.167.128, A 65.171.167.138, A 65.171.167.145, A 65.171.167.121 (501)
+1283449105.763150 IP static.akamai > client: Flags [P.], seq 10153:10528, ack 1222, win 282, options [nop,nop,TS val 1322163116 ecr 424662567], length 375
+1283449105.763186 IP client > static.akamai: Flags [.], ack 10528, win 65535, options [nop,nop,TS val 424662569 ecr 1322163116], length 0
+1283449105.763348 IP client > static.akamai: Flags [P.], seq 1222:1674, ack 10528, win 65535, options [nop,nop,TS val 424662569 ecr 1322163116], length 452
+1283449105.853884 IP dns > client: 49429 2/1/0 CNAME profile.ak.facebook.com.edgesuite.net., CNAME a1725.l.akamai.net. (176)
+1283449105.862752 IP static.akamai > client: Flags [.], seq 5890:7338, ack 1257, win 282, options [nop,nop,TS val 1322163176 ecr 424662567], length 1448
+1283449105.873001 IP static.akamai > client: Flags [P.], seq 8786:9563, ack 1257, win 282, options [nop,nop,TS val 1322163176 ecr 424662567], length 777
+1283449105.873048 IP client > static.akamai: Flags [.], ack 7338, win 65535, options [nop,nop,TS val 424662570 ecr 1322163176,nop,nop,sack 1 {8786:9563}], length 0
+1283449105.887096 IP static.akamai > client: Flags [.], seq 7338:8786, ack 1257, win 282, options [nop,nop,TS val 1322163176 ecr 424662567], length 1448
+1283449105.887148 IP client > static.akamai: Flags [.], ack 9563, win 65424, options [nop,nop,TS val 424662570 ecr 1322163176], length 0
+1283449105.887282 IP client > static.akamai: Flags [P.], seq 1257:1709, ack 9563, win 65535, options [nop,nop,TS val 424662570 ecr 1322163176], length 452
+1283449105.911897 IP static.akamai > client: Flags [P.], seq 8425:9392, ack 855, win 248, options [nop,nop,TS val 1322163218 ecr 424662567], length 967
+1283449105.911994 IP client > static.akamai: Flags [.], ack 6977, win 65535, options [nop,nop,TS val 424662570 ecr 1322162564,nop,nop,sack 1 {8425:9392}], length 0
+1283449105.919944 IP static.akamai > client: Flags [.], seq 6977:8425, ack 855, win 248, options [nop,nop,TS val 1322163218 ecr 424662567], length 1448
+1283449105.920031 IP client > static.akamai: Flags [.], ack 9392, win 65401, options [nop,nop,TS val 424662570 ecr 1322163218], length 0
+1283449105.920552 IP client > static.akamai: Flags [P.], seq 855:1307, ack 9392, win 65535, options [nop,nop,TS val 424662570 ecr 1322163218], length 452
+1283449105.920776 IP static.akamai > client: Flags [P.], seq 7630:7857, ack 1257, win 282, options [nop,nop,TS val 1322163231 ecr 424662567], length 227
+1283449105.920798 IP client > static.akamai: Flags [.], ack 6182, win 65535, options [nop,nop,TS val 424662570 ecr 1322162671,nop,nop,sack 1 {7630:7857}], length 0
+1283449105.930630 IP client > profile.akamai: Flags [S], seq 1572967574, win 65535, options [mss 1460,nop,wscale 3,nop,nop,TS val 424662570 ecr 0,sackOK,eol], length 0
+1283449105.930814 IP client > profile.akamai: Flags [S], seq 2319349633, win 65535, options [mss 1460,nop,wscale 3,nop,nop,TS val 424662570 ecr 0,sackOK,eol], length 0
+1283449105.931080 IP static.akamai > client: Flags [.], seq 6182:7630, ack 1257, win 282, options [nop,nop,TS val 1322163231 ecr 424662567], length 1448
+1283449105.931108 IP client > static.akamai: Flags [.], ack 7857, win 65493, options [nop,nop,TS val 424662570 ecr 1322163231], length 0
+1283449105.931187 IP client > profile.akamai: Flags [S], seq 3696646200, win 65535, options [mss 1460,nop,wscale 3,nop,nop,TS val 424662570 ecr 0,sackOK,eol], length 0
+1283449105.931373 IP client > profile.akamai: Flags [S], seq 2769947929, win 65535, options [mss 1460,nop,wscale 3,nop,nop,TS val 424662570 ecr 0,sackOK,eol], length 0
+1283449105.931489 IP client > profile.akamai: Flags [S], seq 4292387092, win 65535, options [mss 1460,nop,wscale 3,nop,nop,TS val 424662570 ecr 0,sackOK,eol], length 0
+1283449105.931578 IP client > profile.akamai: Flags [S], seq 2195630901, win 65535, options [mss 1460,nop,wscale 3,nop,nop,TS val 424662570 ecr 0,sackOK,eol], length 0
+1283449105.931713 IP client > static.akamai: Flags [P.], seq 1257:1709, ack 7857, win 65535, options [nop,nop,TS val 424662570 ecr 1322163231], length 452
+1283449105.931864 IP dns > client: 10510 2/1/0 CNAME external.ak.fbcdn.net.edgesuite.net., CNAME a1920.g.akamai.net. (175)
+1283449105.932122 IP client > dns: 42+ A? a1920.g.akamai.net. (36)
+1283449105.935268 IP dns > client: 12344 4/9/9 CNAME external.ak.fbcdn.net.edgesuite.net., CNAME a1920.g.akamai.net., A 65.171.167.139, A 65.171.167.138 (452)
+1283449105.935779 IP static.akamai > client: Flags [S.], seq 2930142480, ack 4272120905, win 5792, options [mss 1460,sackOK,TS val 1322163278 ecr 424662568,nop,wscale 5], length 0
+1283449105.935814 IP client > static.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662570 ecr 1322163278], length 0
+1283449105.935923 IP client > static.akamai: Flags [P.], seq 1:1156, ack 1, win 65535, options [nop,nop,TS val 424662570 ecr 1322163278], length 1155
+1283449105.942925 IP client > dns: 45569+ AAAA? a1920.g.akamai.net. (36)
+1283449105.947040 IP static.akamai > client: Flags [P.], seq 15683:16922, ack 1191, win 282, options [nop,nop,TS val 1322163279 ecr 424662567], length 1239
+1283449105.947086 IP client > static.akamai: Flags [.], ack 16922, win 65535, options [nop,nop,TS val 424662570 ecr 1322163279], length 0
+1283449105.953906 IP static.akamai > client: Flags [P.], seq 6452:6955, ack 1639, win 315, options [nop,nop,TS val 1322163331 ecr 424662568], length 503
+1283449105.953941 IP client > static.akamai: Flags [.], ack 6955, win 65535, options [nop,nop,TS val 424662570 ecr 1322163331], length 0
+1283449105.954423 IP static.akamai > client: Flags [S.], seq 2930142480, ack 4272120905, win 5792, options [mss 1460,sackOK,TS val 1322163331 ecr 424662568,nop,wscale 5], length 0
+1283449105.954436 IP client > static.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662570 ecr 1322163331], length 0
+1283449105.961466 IP static.akamai > client: Flags [P.], seq 10528:11122, ack 1674, win 315, options [nop,nop,TS val 1322163337 ecr 424662569], length 594
+1283449105.961514 IP client > static.akamai: Flags [.], ack 11122, win 65535, options [nop,nop,TS val 424662570 ecr 1322163337], length 0
+1283449106.017033 IP client > static.akamai: Flags [P.], seq 1191:1593, ack 16922, win 65535, options [nop,nop,TS val 424662571 ecr 1322163279], length 402
+1283449106.019566 IP client > static.akamai: Flags [P.], seq 1639:2041, ack 6955, win 65535, options [nop,nop,TS val 424662571 ecr 1322163331], length 402
+1283449106.022298 IP client > static.akamai: Flags [P.], seq 1674:2126, ack 11122, win 65535, options [nop,nop,TS val 424662571 ecr 1322163337], length 452
+1283449106.029500 IP static.akamai > client: Flags [.], seq 9563:11011, ack 1709, win 315, options [nop,nop,TS val 1322163392 ecr 424662570], length 1448
+1283449106.037632 IP static.akamai > client: Flags [.], seq 11011:12459, ack 1709, win 315, options [nop,nop,TS val 1322163392 ecr 424662570], length 1448
+1283449106.037696 IP client > static.akamai: Flags [.], ack 12459, win 65535, options [nop,nop,TS val 424662571 ecr 1322163392], length 0
+1283449106.042611 IP static.akamai > client: Flags [.], seq 12459:13907, ack 1709, win 315, options [nop,nop,TS val 1322163392 ecr 424662570], length 1448
+1283449106.042629 IP client > static.akamai: Flags [.], ack 13907, win 65522, options [nop,nop,TS val 424662571 ecr 1322163392], length 0
+1283449106.044803 IP client > dns: 33656+ A? photos-d.ak.fbcdn.net. (39)
+1283449106.051560 IP static.akamai > client: Flags [P.], seq 15355:16457, ack 1709, win 315, options [nop,nop,TS val 1322163392 ecr 424662570], length 1102
+1283449106.051586 IP client > static.akamai: Flags [.], ack 13907, win 65535, options [nop,nop,TS val 424662571 ecr 1322163392,nop,nop,sack 1 {15355:16457}], length 0
+1283449106.053960 IP client > dns: 26818+ AAAA? photos-d.ak.fbcdn.net. (39)
+1283449106.063749 IP static.akamai > client: Flags [.], seq 13907:15355, ack 1709, win 315, options [nop,nop,TS val 1322163392 ecr 424662570], length 1448
+1283449106.063777 IP client > static.akamai: Flags [.], ack 16457, win 65384, options [nop,nop,TS val 424662572 ecr 1322163392], length 0
+1283449106.063893 IP client > static.akamai: Flags [P.], seq 1709:2111, ack 16457, win 65535, options [nop,nop,TS val 424662572 ecr 1322163392], length 402
+1283449106.064131 IP client > dns: 40836+ A? platform.ak.fbcdn.net. (39)
+1283449106.074337 IP client > dns: 40311+ AAAA? platform.ak.fbcdn.net. (39)
+1283449106.084604 IP client > dns: 52999+ A? photos-e.ak.fbcdn.net. (39)
+1283449106.094792 IP client > dns: 61897+ AAAA? photos-e.ak.fbcdn.net. (39)
+1283449106.103978 IP client > dns: 60131+ A? photos-h.ak.fbcdn.net. (39)
+1283449106.114519 IP client > dns: 29126+ AAAA? photos-h.ak.fbcdn.net. (39)
+1283449106.222661 IP static.akamai > client: Flags [P.], seq 9392:10253, ack 1307, win 282, options [nop,nop,TS val 1322163421 ecr 424662570], length 861
+1283449106.222719 IP client > static.akamai: Flags [.], ack 10253, win 65535, options [nop,nop,TS val 424662573 ecr 1322163421], length 0
+1283449106.222930 IP client > static.akamai: Flags [P.], seq 1307:1709, ack 10253, win 65535, options [nop,nop,TS val 424662573 ecr 1322163421], length 402
+1283449106.223633 IP profile.akamai > client: Flags [S.], seq 3254076212, ack 3696646201, win 5792, options [mss 1460,sackOK,TS val 1026597128 ecr 424662570,nop,wscale 5], length 0
+1283449106.223655 IP client > profile.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662573 ecr 1026597128], length 0
+1283449106.223766 IP client > profile.akamai: Flags [P.], seq 1:442, ack 1, win 65535, options [nop,nop,TS val 424662573 ecr 1026597128], length 441
+1283449106.225250 IP profile.akamai > client: Flags [S.], seq 3245450721, ack 2195630902, win 5792, options [mss 1460,sackOK,TS val 1026597128 ecr 424662570,nop,wscale 5], length 0
+1283449106.225273 IP client > profile.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662573 ecr 1026597128], length 0
+1283449106.225392 IP client > profile.akamai: Flags [P.], seq 1:441, ack 1, win 65535, options [nop,nop,TS val 424662573 ecr 1026597128], length 440
+1283449106.225492 IP profile.akamai > client: Flags [S.], seq 3247300890, ack 1572967575, win 5792, options [mss 1460,sackOK,TS val 1026597128 ecr 424662570,nop,wscale 5], length 0
+1283449106.225512 IP client > profile.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662573 ecr 1026597128], length 0
+1283449106.225599 IP client > profile.akamai: Flags [P.], seq 1:447, ack 1, win 65535, options [nop,nop,TS val 424662573 ecr 1026597128], length 446
+1283449106.226757 IP profile.akamai > client: Flags [S.], seq 3252707619, ack 2319349634, win 5792, options [mss 1460,sackOK,TS val 1026597128 ecr 424662570,nop,wscale 5], length 0
+1283449106.226780 IP client > profile.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662573 ecr 1026597128], length 0
+1283449106.226875 IP client > profile.akamai: Flags [P.], seq 1:441, ack 1, win 65535, options [nop,nop,TS val 424662573 ecr 1026597128], length 440
+1283449106.227521 IP profile.akamai > client: Flags [S.], seq 3248393254, ack 2769947930, win 5792, options [mss 1460,sackOK,TS val 1026597128 ecr 424662570,nop,wscale 5], length 0
+1283449106.227545 IP client > profile.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662573 ecr 1026597128], length 0
+1283449106.227557 IP profile.akamai > client: Flags [S.], seq 3242547418, ack 4292387093, win 5792, options [mss 1460,sackOK,TS val 1026597128 ecr 424662570,nop,wscale 5], length 0
+1283449106.227569 IP client > profile.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662573 ecr 1026597128], length 0
+1283449106.228051 IP client > profile.akamai: Flags [P.], seq 1:443, ack 1, win 65535, options [nop,nop,TS val 424662573 ecr 1026597128], length 442
+1283449106.228082 IP client > profile.akamai: Flags [P.], seq 1:441, ack 1, win 65535, options [nop,nop,TS val 424662573 ecr 1026597128], length 440
+1283449106.229287 IP dns > client: 42 2/9/9 A 65.171.167.138, A 65.171.167.139 (374)
+1283449106.231566 IP static.akamai > client: Flags [P.], seq 7857:8250, ack 1709, win 315, options [nop,nop,TS val 1322163452 ecr 424662570], length 393
+1283449106.231615 IP client > static.akamai: Flags [.], ack 8250, win 65535, options [nop,nop,TS val 424662573 ecr 1322163452], length 0
+1283449106.231879 IP client > static.akamai: Flags [P.], seq 1709:2111, ack 8250, win 65535, options [nop,nop,TS val 424662573 ecr 1322163452], length 402
+1283449106.232380 IP static.akamai > client: Flags [.], ack 1156, win 254, options [nop,nop,TS val 1322163500 ecr 424662570], length 0
+1283449106.237742 IP static.akamai > client: Flags [P.], seq 1:603, ack 1156, win 254, options [nop,nop,TS val 1322163502 ecr 424662570], length 602
+1283449106.237791 IP client > static.akamai: Flags [.], ack 603, win 65535, options [nop,nop,TS val 424662573 ecr 1322163502], length 0
+1283449106.238052 IP dns > client: 45569 0/1/0 (97)
+1283449106.238055 IP profile.akamai > client: Flags [S.], seq 3247300890, ack 1572967575, win 5792, options [mss 1460,sackOK,TS val 1026597223 ecr 424662570,nop,wscale 5], length 0
+1283449106.238056 IP profile.akamai > client: Flags [S.], seq 3242547418, ack 4292387093, win 5792, options [mss 1460,sackOK,TS val 1026597223 ecr 424662570,nop,wscale 5], length 0
+1283449106.238093 IP client > profile.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662573 ecr 1026597223], length 0
+1283449106.238103 IP client > profile.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662573 ecr 1026597223], length 0
+1283449106.238664 IP client > profile.akamai: Flags [S], seq 2316802969, win 65535, options [mss 1460,nop,wscale 3,nop,nop,TS val 424662573 ecr 0,sackOK,eol], length 0
+1283449106.238734 IP client > profile.akamai: Flags [S], seq 944360302, win 65535, options [mss 1460,nop,wscale 3,nop,nop,TS val 424662573 ecr 0,sackOK,eol], length 0
+1283449106.251118 IP static.akamai > client: Flags [P.], seq 16922:17915, ack 1593, win 315, options [nop,nop,TS val 1322163531 ecr 424662571], length 993
+1283449106.251172 IP client > static.akamai: Flags [.], ack 17915, win 65535, options [nop,nop,TS val 424662573 ecr 1322163531], length 0
+1283449106.251423 IP client > static.akamai: Flags [P.], seq 1593:1995, ack 17915, win 65535, options [nop,nop,TS val 424662573 ecr 1322163531], length 402
+1283449106.252514 IP dns > client: 26818 2/1/0 CNAME photos-d.ak.facebook.com.edgesuite.net., CNAME a998.mm1.akamai.net. (181)
+1283449106.252606 IP dns > client: 33656 10/9/5 CNAME photos-d.ak.facebook.com.edgesuite.net., CNAME a998.mm1.akamai.net., A 80.154.117.10, A 80.154.117.11, A 80.154.117.24, A 80.154.117.35, A 80.154.117.40, A 80.154.117.42, A 80.154.117.51, A 80.154.117.9 (506)
+1283449106.255471 IP static.akamai > client: Flags [P.], seq 6955:7547, ack 2041, win 349, options [nop,nop,TS val 1322163538 ecr 424662571], length 592
+1283449106.255500 IP client > static.akamai: Flags [.], ack 7547, win 65535, options [nop,nop,TS val 424662573 ecr 1322163538], length 0
+1283449106.255711 IP client > static.akamai: Flags [P.], seq 2041:2458, ack 7547, win 65535, options [nop,nop,TS val 424662573 ecr 1322163538], length 417
+1283449106.268492 IP static.akamai > client: Flags [P.], seq 11122:11903, ack 2126, win 349, options [nop,nop,TS val 1322163545 ecr 424662571], length 781
+1283449106.268514 IP client > static.akamai: Flags [.], ack 11903, win 65535, options [nop,nop,TS val 424662574 ecr 1322163545], length 0
+1283449106.268661 IP client > static.akamai: Flags [P.], seq 2126:2543, ack 11903, win 65535, options [nop,nop,TS val 424662574 ecr 1322163545], length 417
+1283449106.298363 IP static.akamai > client: Flags [P.], seq 16457:17161, ack 2111, win 349, options [nop,nop,TS val 1322163551 ecr 424662572], length 704
+1283449106.298396 IP client > static.akamai: Flags [.], ack 17161, win 65535, options [nop,nop,TS val 424662574 ecr 1322163551], length 0
+1283449106.298622 IP client > static.akamai: Flags [P.], seq 2111:2563, ack 17161, win 65535, options [nop,nop,TS val 424662574 ecr 1322163551], length 452
+1283449106.299745 IP dns > client: 40311 2/1/0 CNAME platform.ak.facebook.com.edgesuite.net., CNAME a1814.g.akamai.net. (178)
+1283449106.302038 IP dns > client: 52999 10/9/5 CNAME photos-a.ak.facebook.com.edgesuite.net., CNAME a995.mm1.akamai.net., A 80.154.117.11, A 80.154.117.17, A 80.154.117.27, A 80.154.117.32, A 80.154.117.43, A 80.154.117.49, A 80.154.117.8, A 80.154.117.9 (506)
+1283449106.303035 IP dns > client: 40836 4/9/9 CNAME platform.ak.facebook.com.edgesuite.net., CNAME a1814.g.akamai.net., A 65.171.167.137, A 65.171.167.146 (455)
+1283449106.305488 IP dns > client: 61897 2/1/0 CNAME photos-a.ak.facebook.com.edgesuite.net., CNAME a995.mm1.akamai.net. (181)
+1283449106.310461 IP dns > client: 60131 10/9/5 CNAME photos-d.ak.facebook.com.edgesuite.net., CNAME a998.mm1.akamai.net., A 80.154.117.9, A 80.154.117.10, A 80.154.117.11, A 80.154.117.24, A 80.154.117.35, A 80.154.117.40, A 80.154.117.42, A 80.154.117.51 (506)
+1283449106.311503 IP dns > client: 29126 2/1/0 CNAME photos-d.ak.facebook.com.edgesuite.net., CNAME a998.mm1.akamai.net. (181)
+1283449106.325061 IP client > dns: 15350+ AAAA? a34.g.akamai.net. (34)
+1283449106.334728 IP client > dns: 15350+ AAAA? a34.g.akamai.net. (34)
+1283449106.341742 IP client > www.facebook: Flags [.], seq 1117:2565, ack 46635, win 65535, options [nop,nop,TS val 424662574 ecr 3548952181], length 1448
+1283449106.341750 IP client > www.facebook: Flags [P.], seq 2565:2997, ack 46635, win 65535, options [nop,nop,TS val 424662574 ecr 3548952181], length 432
+1283449106.462597 IP client > photos.akamai: Flags [S], seq 4247101716, win 65535, options [mss 1460,nop,wscale 3,nop,nop,TS val 424662576 ecr 0,sackOK,eol], length 0
+1283449106.470843 IP profile.akamai > client: Flags [S.], seq 3252707619, ack 2319349634, win 5792, options [mss 1460,sackOK,TS val 1026597423 ecr 424662570,nop,wscale 5], length 0
+1283449106.470894 IP client > profile.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662576 ecr 1026597423], length 0
+1283449106.472297 IP static.akamai > client: Flags [P.], seq 10253:10960, ack 1709, win 315, options [nop,nop,TS val 1322163743 ecr 424662573], length 707
+1283449106.472339 IP client > static.akamai: Flags [.], ack 10960, win 65535, options [nop,nop,TS val 424662576 ecr 1322163743], length 0
+1283449106.472613 IP client > static.akamai: Flags [P.], seq 1709:2161, ack 10960, win 65535, options [nop,nop,TS val 424662576 ecr 1322163743], length 452
+1283449106.497257 IP profile.akamai > client: Flags [.], ack 442, win 215, options [nop,nop,TS val 1026597495 ecr 424662573], length 0
+1283449106.506559 IP profile.akamai > client: Flags [.], seq 1:1449, ack 442, win 215, options [nop,nop,TS val 1026597507 ecr 424662573], length 1448
+1283449106.507792 IP profile.akamai > client: Flags [P.], seq 2897:3237, ack 442, win 215, options [nop,nop,TS val 1026597507 ecr 424662573], length 340
+1283449106.507816 IP client > profile.akamai: Flags [.], ack 1449, win 65535, options [nop,nop,TS val 424662576 ecr 1026597507,nop,nop,sack 1 {2897:3237}], length 0
+1283449106.516644 IP profile.akamai > client: Flags [.], seq 1449:2897, ack 442, win 215, options [nop,nop,TS val 1026597507 ecr 424662573], length 1448
+1283449106.516680 IP client > profile.akamai: Flags [.], ack 3237, win 65479, options [nop,nop,TS val 424662576 ecr 1026597507], length 0
+1283449106.516855 IP client > profile.akamai: Flags [P.], seq 442:880, ack 3237, win 65535, options [nop,nop,TS val 424662576 ecr 1026597507], length 438
+1283449106.517612 IP profile.akamai > client: Flags [.], ack 441, win 215, options [nop,nop,TS val 1026597528 ecr 424662573], length 0
+1283449106.517614 IP profile.akamai > client: Flags [.], ack 447, win 215, options [nop,nop,TS val 1026597528 ecr 424662573], length 0
+1283449106.533449 IP profile.akamai > client: Flags [P.], seq 1449:2637, ack 441, win 215, options [nop,nop,TS val 1026597533 ecr 424662573], length 1188
+1283449106.533491 IP client > profile.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662576 ecr 1026597528,nop,nop,sack 1 {1449:2637}], length 0
+1283449106.537031 IP profile.akamai > client: Flags [.], seq 1:1449, ack 441, win 215, options [nop,nop,TS val 1026597533 ecr 424662573], length 1448
+1283449106.537087 IP client > profile.akamai: Flags [.], ack 2637, win 65373, options [nop,nop,TS val 424662576 ecr 1026597533], length 0
+1283449106.537345 IP client > profile.akamai: Flags [P.], seq 441:882, ack 2637, win 65535, options [nop,nop,TS val 424662576 ecr 1026597533], length 441
+1283449106.543467 IP profile.akamai > client: Flags [P.], seq 1449:2723, ack 447, win 215, options [nop,nop,TS val 1026597532 ecr 424662573], length 1274
+1283449106.543514 IP client > profile.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662576 ecr 1026597528,nop,nop,sack 1 {1449:2723}], length 0
+1283449106.552378 IP profile.akamai > client: Flags [.], seq 1:1449, ack 447, win 215, options [nop,nop,TS val 1026597532 ecr 424662573], length 1448
+1283449106.552430 IP client > profile.akamai: Flags [.], ack 2723, win 65362, options [nop,nop,TS val 424662576 ecr 1026597532], length 0
+1283449106.552639 IP client > profile.akamai: Flags [P.], seq 447:887, ack 2723, win 65535, options [nop,nop,TS val 424662576 ecr 1026597532], length 440
+1283449106.553629 IP profile.akamai > client: Flags [.], ack 441, win 215, options [nop,nop,TS val 1026597535 ecr 424662573], length 0
+1283449106.565724 IP client > photos.akamai: Flags [S], seq 658973928, win 65535, options [mss 1460,nop,wscale 3,nop,nop,TS val 424662577 ecr 0,sackOK,eol], length 0
+1283449106.568426 IP client > platform.akamai: Flags [S], seq 3608460175, win 65535, options [mss 1460,nop,wscale 3,nop,nop,TS val 424662577 ecr 0,sackOK,eol], length 0
+1283449106.585114 IP profile.akamai > client: Flags [.], seq 1:1449, ack 441, win 215, options [nop,nop,TS val 1026597547 ecr 424662573], length 1448
+1283449106.585561 IP profile.akamai > client: Flags [P.], seq 2897:3037, ack 441, win 215, options [nop,nop,TS val 1026597547 ecr 424662573], length 140
+1283449106.585584 IP client > profile.akamai: Flags [.], ack 1449, win 65535, options [nop,nop,TS val 424662577 ecr 1026597547,nop,nop,sack 1 {2897:3037}], length 0
+1283449106.587534 IP client > dns: 2514+ AAAA? a998.mm1.akamai.net. (37)
+1283449106.593290 IP client > photos.akamai: Flags [S], seq 1147344416, win 65535, options [mss 1460,nop,wscale 3,nop,nop,TS val 424662577 ecr 0,sackOK,eol], length 0
+1283449106.597120 IP profile.akamai > client: Flags [.], seq 1449:2897, ack 441, win 215, options [nop,nop,TS val 1026597547 ecr 424662573], length 1448
+1283449106.597163 IP client > profile.akamai: Flags [.], ack 3037, win 65504, options [nop,nop,TS val 424662577 ecr 1026597547], length 0
+1283449106.597306 IP client > profile.akamai: Flags [P.], seq 441:878, ack 3037, win 65535, options [nop,nop,TS val 424662577 ecr 1026597547], length 437
+1283449106.597347 IP profile.akamai > client: Flags [.], ack 443, win 215, options [nop,nop,TS val 1026597562 ecr 424662573], length 0
+1283449106.601253 IP static.akamai > client: Flags [P.], seq 8250:9212, ack 2111, win 349, options [nop,nop,TS val 1322163866 ecr 424662573], length 962
+1283449106.601291 IP client > static.akamai: Flags [.], ack 9212, win 65535, options [nop,nop,TS val 424662577 ecr 1322163866], length 0
+1283449106.601471 IP client > static.akamai: Flags [P.], seq 2111:2563, ack 9212, win 65535, options [nop,nop,TS val 424662577 ecr 1322163866], length 452
+1283449106.601506 IP profile.akamai > client: Flags [.], ack 441, win 215, options [nop,nop,TS val 1026597568 ecr 424662573], length 0
+1283449106.601508 IP profile.akamai > client: Flags [S.], seq 3247082581, ack 2316802970, win 5792, options [mss 1460,sackOK,TS val 1026594275 ecr 424662573,nop,wscale 5], length 0
+1283449106.601509 IP profile.akamai > client: Flags [S.], seq 3253811582, ack 944360303, win 5792, options [mss 1460,sackOK,TS val 1026594275 ecr 424662573,nop,wscale 5], length 0
+1283449106.601546 IP client > profile.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662577 ecr 1026594275], length 0
+1283449106.601554 IP client > profile.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662577 ecr 1026594275], length 0
+1283449106.601630 IP client > profile.akamai: Flags [P.], seq 1:529, ack 1, win 65535, options [nop,nop,TS val 424662577 ecr 1026594275], length 528
+1283449106.601643 IP client > profile.akamai: Flags [P.], seq 1:561, ack 1, win 65535, options [nop,nop,TS val 424662577 ecr 1026594275], length 560
+1283449106.605764 IP profile.akamai > client: Flags [P.], seq 1449:2293, ack 441, win 215, options [nop,nop,TS val 1026597577 ecr 424662573], length 844
+1283449106.605790 IP client > profile.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662577 ecr 1026597568,nop,nop,sack 1 {1449:2293}], length 0
+1283449106.617295 IP profile.akamai > client: Flags [.], seq 1:1449, ack 441, win 215, options [nop,nop,TS val 1026597577 ecr 424662573], length 1448
+1283449106.617315 IP client > profile.akamai: Flags [.], ack 2293, win 65416, options [nop,nop,TS val 424662577 ecr 1026597577], length 0
+1283449106.617500 IP client > profile.akamai: Flags [P.], seq 441:880, ack 2293, win 65535, options [nop,nop,TS val 424662577 ecr 1026597577], length 439
+1283449106.625037 IP profile.akamai > client: Flags [P.], seq 1:1402, ack 443, win 215, options [nop,nop,TS val 1026597585 ecr 424662573], length 1401
+1283449106.625052 IP client > profile.akamai: Flags [.], ack 1402, win 65527, options [nop,nop,TS val 424662577 ecr 1026597585], length 0
+1283449106.650190 IP profile.akamai > client: Flags [P.], seq 2850:4072, ack 443, win 215, options [nop,nop,TS val 1026597585 ecr 424662573], length 1222
+1283449106.650232 IP client > profile.akamai: Flags [.], ack 1402, win 65535, options [nop,nop,TS val 424662577 ecr 1026597585,nop,nop,sack 1 {2850:4072}], length 0
+1283449106.651953 IP profile.akamai > client: Flags [.], seq 1402:2850, ack 443, win 215, options [nop,nop,TS val 1026597585 ecr 424662573], length 1448
+1283449106.652017 IP client > profile.akamai: Flags [.], ack 4072, win 65369, options [nop,nop,TS val 424662577 ecr 1026597585], length 0
+1283449106.652149 IP client > profile.akamai: Flags [P.], seq 443:882, ack 4072, win 65535, options [nop,nop,TS val 424662577 ecr 1026597585], length 439
+1283449106.653588 IP static.akamai > client: Flags [P.], seq 17915:18541, ack 1995, win 349, options [nop,nop,TS val 1322163898 ecr 424662573], length 626
+1283449106.653618 IP client > static.akamai: Flags [.], ack 18541, win 65535, options [nop,nop,TS val 424662577 ecr 1322163898], length 0
+1283449106.653777 IP client > static.akamai: Flags [P.], seq 1995:2447, ack 18541, win 65535, options [nop,nop,TS val 424662577 ecr 1322163898], length 452
+1283449106.655719 IP static.akamai > client: Flags [P.], seq 7547:8238, ack 2458, win 382, options [nop,nop,TS val 1322163925 ecr 424662573], length 691
+1283449106.655747 IP client > static.akamai: Flags [.], ack 8238, win 65535, options [nop,nop,TS val 424662577 ecr 1322163925], length 0
+1283449106.655938 IP client > static.akamai: Flags [P.], seq 2458:2910, ack 8238, win 65535, options [nop,nop,TS val 424662577 ecr 1322163925], length 452
+1283449106.656729 IP dns > client: 15350 0/1/0 (95)
+1283449106.656742 IP profile.akamai > client: Flags [S.], seq 3253811582, ack 944360303, win 5792, options [mss 1460,sackOK,TS val 1026594334 ecr 424662573,nop,wscale 5], length 0
+1283449106.656772 IP client > profile.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662577 ecr 1026594334], length 0
+1283449106.658864 IP static.akamai > client: Flags [P.], seq 11903:12653, ack 2543, win 382, options [nop,nop,TS val 1322163933 ecr 424662574], length 750
+1283449106.658896 IP client > static.akamai: Flags [.], ack 12653, win 65535, options [nop,nop,TS val 424662577 ecr 1322163933], length 0
+1283449106.659088 IP client > dns: 52499+ A? a34.g.akamai.net. (34)
+1283449106.659335 IP client > static.akamai: Flags [P.], seq 2543:2960, ack 12653, win 65535, options [nop,nop,TS val 424662577 ecr 1322163933], length 417
+1283449106.683059 IP static.akamai > client: Flags [P.], seq 17161:18137, ack 2563, win 382, options [nop,nop,TS val 1322163940 ecr 424662574], length 976
+1283449106.683106 IP client > static.akamai: Flags [.], ack 18137, win 65535, options [nop,nop,TS val 424662578 ecr 1322163940], length 0
+1283449106.683368 IP client > static.akamai: Flags [P.], seq 2563:3015, ack 18137, win 65535, options [nop,nop,TS val 424662578 ecr 1322163940], length 452
+1283449106.684471 IP photos.akamai > client: Flags [S.], seq 1222266272, ack 4247101717, win 5792, options [mss 1460,sackOK,TS val 1451189909 ecr 424662576,nop,wscale 5], length 0
+1283449106.684474 IP static.akamai > client: Flags [P.], seq 10960:11515, ack 2161, win 349, options [nop,nop,TS val 1322164026 ecr 424662576], length 555
+1283449106.684493 IP client > photos.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662578 ecr 1451189909], length 0
+1283449106.684503 IP client > static.akamai: Flags [.], ack 11515, win 65535, options [nop,nop,TS val 424662578 ecr 1322164026], length 0
+1283449106.684649 IP client > photos.akamai: Flags [P.], seq 1:447, ack 1, win 65535, options [nop,nop,TS val 424662578 ecr 1451189909], length 446
+1283449106.690189 IP profile.akamai > client: Flags [P.], seq 4685:6078, ack 880, win 248, options [nop,nop,TS val 1026597732 ecr 424662576], length 1393
+1283449106.690266 IP client > profile.akamai: Flags [.], ack 3237, win 65535, options [nop,nop,TS val 424662578 ecr 1026597507,nop,nop,sack 1 {4685:6078}], length 0
+1283449106.695043 IP profile.akamai > client: Flags [.], seq 3237:4685, ack 880, win 248, options [nop,nop,TS val 1026597732 ecr 424662576], length 1448
+1283449106.695085 IP client > profile.akamai: Flags [.], ack 6078, win 65347, options [nop,nop,TS val 424662578 ecr 1026597732], length 0
+1283449106.695343 IP www.facebook > client: Flags [.], ack 2997, win 7376, options [nop,nop,TS val 3548953519 ecr 424662574], length 0
+1283449106.697772 IP client > profile.akamai: Flags [P.], seq 880:1314, ack 6078, win 65535, options [nop,nop,TS val 424662578 ecr 1026597732], length 434
+1283449106.700422 IP profile.akamai > client: Flags [.], seq 2637:4085, ack 882, win 248, options [nop,nop,TS val 1026597766 ecr 424662576], length 1448
+1283449106.701520 IP profile.akamai > client: Flags [P.], seq 5533:5690, ack 882, win 248, options [nop,nop,TS val 1026597766 ecr 424662576], length 157
+1283449106.701543 IP client > profile.akamai: Flags [.], ack 4085, win 65535, options [nop,nop,TS val 424662578 ecr 1026597766,nop,nop,sack 1 {5533:5690}], length 0
+1283449106.710185 IP profile.akamai > client: Flags [.], seq 4085:5533, ack 882, win 248, options [nop,nop,TS val 1026597766 ecr 424662576], length 1448
+1283449106.710232 IP client > profile.akamai: Flags [.], ack 5690, win 65502, options [nop,nop,TS val 424662578 ecr 1026597766], length 0
+1283449106.710405 IP client > profile.akamai: Flags [P.], seq 882:1322, ack 5690, win 65535, options [nop,nop,TS val 424662578 ecr 1026597766], length 440
+1283449106.710495 IP platform.akamai > client: Flags [S.], seq 887053730, ack 3608460176, win 5792, options [mss 1460,sackOK,TS val 139496752 ecr 424662577,nop,wscale 5], length 0
+1283449106.710497 IP photos.akamai > client: Flags [S.], seq 4073738501, ack 658973929, win 5792, options [mss 1460,sackOK,TS val 4260990792 ecr 424662577,nop,wscale 5], length 0
+1283449106.710513 IP client > platform.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662578 ecr 139496752], length 0
+1283449106.710524 IP client > photos.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662578 ecr 4260990792], length 0
+1283449106.710604 IP client > photos.akamai: Flags [P.], seq 1:449, ack 1, win 65535, options [nop,nop,TS val 424662578 ecr 4260990792], length 448
+1283449106.710617 IP client > platform.akamai: Flags [P.], seq 1:536, ack 1, win 65535, options [nop,nop,TS val 424662578 ecr 139496752], length 535
+1283449106.710920 IP client > static.akamai: Flags [P.], seq 2161:2578, ack 11515, win 65535, options [nop,nop,TS val 424662578 ecr 1322164026], length 417
+1283449106.711556 IP client > photos.akamai: Flags [S], seq 2584929680, win 65535, options [mss 1460,nop,wscale 3,nop,nop,TS val 424662578 ecr 0,sackOK,eol], length 0
+1283449106.717965 IP profile.akamai > client: Flags [P.], seq 4171:5208, ack 887, win 248, options [nop,nop,TS val 1026597774 ecr 424662576], length 1037
+1283449106.717997 IP client > profile.akamai: Flags [.], ack 2723, win 65535, options [nop,nop,TS val 424662578 ecr 1026597532,nop,nop,sack 1 {4171:5208}], length 0
+1283449106.742805 IP profile.akamai > client: Flags [.], seq 2723:4171, ack 887, win 248, options [nop,nop,TS val 1026597774 ecr 424662576], length 1448
+1283449106.742841 IP client > profile.akamai: Flags [.], ack 5208, win 65392, options [nop,nop,TS val 424662578 ecr 1026597774], length 0
+1283449106.742994 IP client > profile.akamai: Flags [P.], seq 887:1325, ack 5208, win 65535, options [nop,nop,TS val 424662578 ecr 1026597774], length 438
+1283449106.744493 IP dns > client: 2514 0/1/0 (100)
+1283449106.745481 IP photos.akamai > client: Flags [S.], seq 1234398677, ack 1147344417, win 5792, options [mss 1460,sackOK,TS val 1451190002 ecr 424662577,nop,wscale 5], length 0
+1283449106.745508 IP client > photos.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662578 ecr 1451190002], length 0
+1283449106.745584 IP client > photos.akamai: Flags [P.], seq 1:464, ack 1, win 65535, options [nop,nop,TS val 424662578 ecr 1451190002], length 463
+1283449106.749892 IP profile.akamai > client: Flags [P.], seq 4485:5734, ack 878, win 248, options [nop,nop,TS val 1026597806 ecr 424662577], length 1249
+1283449106.749914 IP client > profile.akamai: Flags [.], ack 3037, win 65535, options [nop,nop,TS val 424662578 ecr 1026597547,nop,nop,sack 1 {4485:5734}], length 0
+1283449106.756668 IP profile.akamai > client: Flags [.], seq 3037:4485, ack 878, win 248, options [nop,nop,TS val 1026597806 ecr 424662577], length 1448
+1283449106.756720 IP client > profile.akamai: Flags [.], ack 5734, win 65365, options [nop,nop,TS val 424662578 ecr 1026597806], length 0
+1283449106.756907 IP client > profile.akamai: Flags [P.], seq 878:1314, ack 5734, win 65535, options [nop,nop,TS val 424662578 ecr 1026597806], length 436
+1283449106.759169 IP www.facebook > client: Flags [P.], seq 46635:47619, ack 2997, win 7376, options [nop,nop,TS val 3548953582 ecr 424662574], length 984
+1283449106.759200 IP client > www.facebook: Flags [.], ack 47619, win 65535, options [nop,nop,TS val 424662578 ecr 3548953582], length 0
+1283449106.760198 IP static.akamai > client: Flags [P.], seq 9212:9758, ack 2563, win 382, options [nop,nop,TS val 1322164125 ecr 424662577], length 546
+1283449106.760212 IP profile.akamai > client: Flags [.], ack 529, win 215, options [nop,nop,TS val 1026594545 ecr 424662577], length 0
+1283449106.760217 IP client > static.akamai: Flags [.], ack 9758, win 65535, options [nop,nop,TS val 424662578 ecr 1322164125], length 0
+1283449106.760353 IP client > static.akamai: Flags [P.], seq 2563:2965, ack 9758, win 65535, options [nop,nop,TS val 424662578 ecr 1322164125], length 402
+1283449106.762990 IP profile.akamai > client: Flags [.], ack 561, win 216, options [nop,nop,TS val 1026594545 ecr 424662577], length 0
+1283449106.770668 IP client > dns: 36503+ A? ad.doubleclick.net. (36)
+1283449106.771044 IP client > www.facebook: Flags [.], seq 2997:4445, ack 47619, win 65535, options [nop,nop,TS val 424662579 ecr 3548953582], length 1448
+1283449106.771048 IP client > www.facebook: Flags [P.], seq 4445:5600, ack 47619, win 65535, options [nop,nop,TS val 424662579 ecr 3548953582], length 1155
+1283449106.777946 IP profile.akamai > client: Flags [.], seq 1:1449, ack 561, win 216, options [nop,nop,TS val 1026594546 ecr 424662577], length 1448
+1283449106.782116 IP client > dns: 20007+ AAAA? ad.doubleclick.net. (36)
+1283449106.785160 IP profile.akamai > client: Flags [P.], seq 2897:4097, ack 561, win 216, options [nop,nop,TS val 1026594546 ecr 424662577], length 1200
+1283449106.785192 IP client > profile.akamai: Flags [.], ack 1449, win 65535, options [nop,nop,TS val 424662579 ecr 1026594546,nop,nop,sack 1 {2897:4097}], length 0
+1283449106.792604 IP profile.akamai > client: Flags [.], seq 1449:2897, ack 561, win 216, options [nop,nop,TS val 1026594546 ecr 424662577], length 1448
+1283449106.792646 IP client > profile.akamai: Flags [.], ack 4097, win 65372, options [nop,nop,TS val 424662579 ecr 1026594546], length 0
+1283449106.799402 IP profile.akamai > client: Flags [.], seq 1:1449, ack 529, win 215, options [nop,nop,TS val 1026594552 ecr 424662577], length 1448
+1283449106.803521 IP profile.akamai > client: Flags [P.], seq 2897:3647, ack 529, win 215, options [nop,nop,TS val 1026594552 ecr 424662577], length 750
+1283449106.803551 IP client > profile.akamai: Flags [.], ack 1449, win 65535, options [nop,nop,TS val 424662579 ecr 1026594552,nop,nop,sack 1 {2897:3647}], length 0
+1283449106.816055 IP profile.akamai > client: Flags [.], seq 1449:2897, ack 529, win 215, options [nop,nop,TS val 1026594552 ecr 424662577], length 1448
+1283449106.816114 IP client > profile.akamai: Flags [.], ack 3647, win 65428, options [nop,nop,TS val 424662579 ecr 1026594552], length 0
+1283449106.816638 IP profile.akamai > client: Flags [P.], seq 5189:5443, ack 880, win 248, options [nop,nop,TS val 1026597867 ecr 424662577], length 254
+1283449106.816657 IP client > profile.akamai: Flags [.], ack 2293, win 65535, options [nop,nop,TS val 424662579 ecr 1026597577,nop,nop,sack 1 {5189:5443}], length 0
+1283449106.829475 IP profile.akamai > client: Flags [.], seq 2293:3741, ack 880, win 248, options [nop,nop,TS val 1026597867 ecr 424662577], length 1448
+1283449106.829521 IP client > profile.akamai: Flags [.], ack 3741, win 65522, options [nop,nop,TS val 424662579 ecr 1026597867,nop,nop,sack 1 {5189:5443}], length 0
+1283449106.837823 IP profile.akamai > client: Flags [.], seq 3741:5189, ack 880, win 248, options [nop,nop,TS val 1026597867 ecr 424662577], length 1448
+1283449106.837871 IP client > profile.akamai: Flags [.], ack 5443, win 65490, options [nop,nop,TS val 424662579 ecr 1026597867], length 0
+1283449106.838004 IP client > profile.akamai: Flags [P.], seq 880:1321, ack 5443, win 65535, options [nop,nop,TS val 424662579 ecr 1026597867], length 441
+1283449106.845529 IP static.akamai > client: Flags [P.], seq 18541:19483, ack 2447, win 382, options [nop,nop,TS val 1322164189 ecr 424662577], length 942
+1283449106.845573 IP client > static.akamai: Flags [.], ack 19483, win 65535, options [nop,nop,TS val 424662579 ecr 1322164189], length 0
+1283449106.845823 IP dns > client: 52499 2/9/9 A 65.171.167.137, A 65.171.167.145 (372)
+1283449106.845844 IP client > static.akamai: Flags [P.], seq 2447:2849, ack 19483, win 65535, options [nop,nop,TS val 424662579 ecr 1322164189], length 402
+1283449106.846322 IP client > platform.akamai: Flags [S], seq 3990814901, win 65535, options [mss 1460,nop,wscale 3,nop,nop,TS val 424662579 ecr 0,sackOK,eol], length 0
+1283449106.857573 IP static.akamai > client: Flags [P.], seq 8238:9388, ack 2910, win 416, options [nop,nop,TS val 1322164203 ecr 424662577], length 1150
+1283449106.857626 IP client > static.akamai: Flags [.], ack 9388, win 65535, options [nop,nop,TS val 424662579 ecr 1322164203], length 0
+1283449106.857815 IP client > static.akamai: Flags [P.], seq 2910:3312, ack 9388, win 65535, options [nop,nop,TS val 424662579 ecr 1322164203], length 402
+1283449106.862106 IP static.akamai > client: Flags [P.], seq 18137:18837, ack 3015, win 416, options [nop,nop,TS val 1322164203 ecr 424662578], length 700
+1283449106.862135 IP client > static.akamai: Flags [.], ack 18837, win 65535, options [nop,nop,TS val 424662579 ecr 1322164203], length 0
+1283449106.862343 IP client > static.akamai: Flags [P.], seq 3015:3417, ack 18837, win 65535, options [nop,nop,TS val 424662579 ecr 1322164203], length 402
+1283449106.862895 IP profile.akamai > client: Flags [P.], seq 6968:7200, ack 882, win 248, options [nop,nop,TS val 1026597903 ecr 424662577], length 232
+1283449106.862910 IP client > profile.akamai: Flags [.], ack 4072, win 65535, options [nop,nop,TS val 424662580 ecr 1026597585,nop,nop,sack 1 {6968:7200}], length 0
+1283449106.878037 IP profile.akamai > client: Flags [.], seq 4072:5520, ack 882, win 248, options [nop,nop,TS val 1026597903 ecr 424662577], length 1448
+1283449106.878142 IP client > profile.akamai: Flags [.], ack 5520, win 65522, options [nop,nop,TS val 424662580 ecr 1026597903,nop,nop,sack 1 {6968:7200}], length 0
+1283449106.882998 IP profile.akamai > client: Flags [.], seq 5520:6968, ack 882, win 248, options [nop,nop,TS val 1026597903 ecr 424662577], length 1448
+1283449106.883030 IP client > profile.akamai: Flags [.], ack 7200, win 65493, options [nop,nop,TS val 424662580 ecr 1026597903], length 0
+1283449106.883271 IP client > profile.akamai: Flags [P.], seq 882:1322, ack 7200, win 65535, options [nop,nop,TS val 424662580 ecr 1026597903], length 440
+1283449106.885674 IP static.akamai > client: Flags [P.], seq 12653:13106, ack 2960, win 416, options [nop,nop,TS val 1322164203 ecr 424662577], length 453
+1283449106.885713 IP client > static.akamai: Flags [.], ack 13106, win 65535, options [nop,nop,TS val 424662580 ecr 1322164203], length 0
+1283449106.885904 IP client > static.akamai: Flags [P.], seq 2960:3362, ack 13106, win 65535, options [nop,nop,TS val 424662580 ecr 1322164203], length 402
+1283449106.886501 IP photos.akamai > client: Flags [.], ack 447, win 215, options [nop,nop,TS val 1451190137 ecr 424662578], length 0
+1283449106.898689 IP profile.akamai > client: Flags [.], seq 6078:7526, ack 1314, win 282, options [nop,nop,TS val 1026597935 ecr 424662578], length 1448
+1283449106.899696 IP profile.akamai > client: Flags [P.], seq 8974:9230, ack 1314, win 282, options [nop,nop,TS val 1026597935 ecr 424662578], length 256
+1283449106.899719 IP client > profile.akamai: Flags [.], ack 7526, win 65535, options [nop,nop,TS val 424662580 ecr 1026597935,nop,nop,sack 1 {8974:9230}], length 0
+1283449106.910288 IP profile.akamai > client: Flags [.], seq 7526:8974, ack 1314, win 282, options [nop,nop,TS val 1026597935 ecr 424662578], length 1448
+1283449106.910367 IP client > profile.akamai: Flags [.], ack 9230, win 65490, options [nop,nop,TS val 424662580 ecr 1026597935], length 0
+1283449106.910694 IP client > profile.akamai: Flags [P.], seq 1314:1752, ack 9230, win 65535, options [nop,nop,TS val 424662580 ecr 1026597935], length 438
+1283449106.918693 IP photos.akamai > client: Flags [.], seq 1:1449, ack 447, win 215, options [nop,nop,TS val 1451190141 ecr 424662578], length 1448
+1283449106.920173 IP photos.akamai > client: Flags [P.], seq 2897:3590, ack 447, win 215, options [nop,nop,TS val 1451190141 ecr 424662578], length 693
+1283449106.920198 IP client > photos.akamai: Flags [.], ack 1449, win 65535, options [nop,nop,TS val 424662580 ecr 1451190141,nop,nop,sack 1 {2897:3590}], length 0
+1283449106.927111 IP photos.akamai > client: Flags [.], seq 1449:2897, ack 447, win 215, options [nop,nop,TS val 1451190141 ecr 424662578], length 1448
+1283449106.927162 IP client > photos.akamai: Flags [.], ack 3590, win 65435, options [nop,nop,TS val 424662580 ecr 1451190141], length 0
+1283449106.927483 IP platform.akamai > client: Flags [.], ack 536, win 215, options [nop,nop,TS val 139496943 ecr 424662578], length 0
+1283449106.927501 IP photos.akamai > client: Flags [.], ack 449, win 215, options [nop,nop,TS val 4260990983 ecr 424662578], length 0
+1283449106.945250 IP profile.akamai > client: Flags [P.], seq 5690:7091, ack 1322, win 282, options [nop,nop,TS val 1026597964 ecr 424662578], length 1401
+1283449106.945330 IP client > profile.akamai: Flags [.], ack 7091, win 65527, options [nop,nop,TS val 424662580 ecr 1026597964], length 0
+1283449106.946566 IP profile.akamai > client: Flags [P.], seq 7091:8072, ack 1322, win 282, options [nop,nop,TS val 1026597964 ecr 424662578], length 981
+1283449106.946596 IP client > profile.akamai: Flags [.], ack 8072, win 65535, options [nop,nop,TS val 424662580 ecr 1026597964], length 0
+1283449106.946744 IP client > profile.akamai: Flags [P.], seq 1322:1759, ack 8072, win 65535, options [nop,nop,TS val 424662580 ecr 1026597964], length 437
+1283449106.956316 IP platform.akamai > client: Flags [.], seq 1:1449, ack 536, win 215, options [nop,nop,TS val 139496950 ecr 424662578], length 1448
+1283449106.963031 IP platform.akamai > client: Flags [.], seq 1449:2897, ack 536, win 215, options [nop,nop,TS val 139496950 ecr 424662578], length 1448
+1283449106.963063 IP client > platform.akamai: Flags [.], ack 2897, win 65522, options [nop,nop,TS val 424662581 ecr 139496950], length 0
+1283449106.971859 IP platform.akamai > client: Flags [.], seq 2897:4345, ack 536, win 215, options [nop,nop,TS val 139496950 ecr 424662578], length 1448
+1283449106.975507 IP photos.akamai > client: Flags [P.], seq 1:934, ack 449, win 215, options [nop,nop,TS val 4260990988 ecr 424662578], length 933
+1283449106.975541 IP client > photos.akamai: Flags [.], ack 934, win 65535, options [nop,nop,TS val 424662581 ecr 4260990988], length 0
+1283449106.985819 IP platform.akamai > client: Flags [.], seq 4345:5793, ack 536, win 215, options [nop,nop,TS val 139496950 ecr 424662578], length 1448
+1283449106.985866 IP client > platform.akamai: Flags [.], ack 5793, win 65522, options [nop,nop,TS val 424662581 ecr 139496950], length 0
+1283449107.027961 IP static.akamai > client: Flags [P.], seq 11515:12095, ack 2578, win 382, options [nop,nop,TS val 1322164288 ecr 424662578], length 580
+1283449107.028003 IP client > static.akamai: Flags [.], ack 12095, win 65535, options [nop,nop,TS val 424662581 ecr 1322164288], length 0
+1283449107.028189 IP client > static.akamai: Flags [P.], seq 2578:2980, ack 12095, win 65535, options [nop,nop,TS val 424662581 ecr 1322164288], length 402
+1283449107.028982 IP photos.akamai > client: Flags [S.], seq 4079794550, ack 2584929681, win 5792, options [mss 1460,sackOK,TS val 4260991016 ecr 424662578,nop,wscale 5], length 0
+1283449107.028999 IP client > photos.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662581 ecr 4260991016], length 0
+1283449107.029039 IP dns > client: 36503 3/4/4 CNAME dart-ad.l.doubleclick.net., A 74.125.65.148, A 74.125.65.149 (238)
+1283449107.029116 IP client > photos.akamai: Flags [P.], seq 1:459, ack 1, win 65535, options [nop,nop,TS val 424662581 ecr 4260991016], length 458
+1283449107.038516 IP profile.akamai > client: Flags [.], seq 5208:6656, ack 1325, win 282, options [nop,nop,TS val 1026598002 ecr 424662578], length 1448
+1283449107.039503 IP profile.akamai > client: Flags [P.], seq 8104:8226, ack 1325, win 282, options [nop,nop,TS val 1026598002 ecr 424662578], length 122
+1283449107.039521 IP client > profile.akamai: Flags [.], ack 6656, win 65535, options [nop,nop,TS val 424662581 ecr 1026598002,nop,nop,sack 1 {8104:8226}], length 0
+1283449107.049316 IP profile.akamai > client: Flags [.], seq 6656:8104, ack 1325, win 282, options [nop,nop,TS val 1026598002 ecr 424662578], length 1448
+1283449107.049372 IP client > profile.akamai: Flags [.], ack 8226, win 65506, options [nop,nop,TS val 424662581 ecr 1026598002], length 0
+1283449107.049558 IP client > profile.akamai: Flags [P.], seq 1325:1763, ack 8226, win 65535, options [nop,nop,TS val 424662581 ecr 1026598002], length 438
+1283449107.051872 IP static.akamai > client: Flags [P.], seq 9758:10513, ack 2965, win 416, options [nop,nop,TS val 1322164303 ecr 424662578], length 755
+1283449107.051902 IP client > static.akamai: Flags [.], ack 10513, win 65535, options [nop,nop,TS val 424662581 ecr 1322164303], length 0
+1283449107.052339 IP photos.akamai > client: Flags [.], ack 464, win 215, options [nop,nop,TS val 1451190212 ecr 424662578], length 0
+1283449107.100278 IP profile.akamai > client: Flags [.], seq 5734:7182, ack 1314, win 282, options [nop,nop,TS val 1026598029 ecr 424662578], length 1448
+1283449107.100649 IP profile.akamai > client: Flags [P.], seq 8630:8858, ack 1314, win 282, options [nop,nop,TS val 1026598029 ecr 424662578], length 228
+1283449107.100666 IP client > profile.akamai: Flags [.], ack 7182, win 65535, options [nop,nop,TS val 424662582 ecr 1026598029,nop,nop,sack 1 {8630:8858}], length 0
+1283449107.112605 IP profile.akamai > client: Flags [.], seq 7182:8630, ack 1314, win 282, options [nop,nop,TS val 1026598029 ecr 424662578], length 1448
+1283449107.112706 IP client > profile.akamai: Flags [.], ack 8858, win 65493, options [nop,nop,TS val 424662582 ecr 1026598029], length 0
+1283449107.113127 IP client > profile.akamai: Flags [P.], seq 1314:1753, ack 8858, win 65535, options [nop,nop,TS val 424662582 ecr 1026598029], length 439
+1283449107.119978 IP photos.akamai > client: Flags [.], seq 1:1449, ack 464, win 215, options [nop,nop,TS val 1451190236 ecr 424662578], length 1448
+1283449107.262870 IP client > photos.akamai: Flags [.], ack 1449, win 65535, options [nop,nop,TS val 424662583 ecr 1451190236], length 0
+1283449107.289175 IP client > ad.doubleclick: Flags [S], seq 2048525328, win 65535, options [mss 1460,nop,wscale 3,nop,nop,TS val 424662584 ecr 0,sackOK,eol], length 0
+1283449107.666737 IP static.akamai > client: Flags [P.], seq 19483:20449, ack 2849, win 416, options [nop,nop,TS val 1322164389 ecr 424662579], length 966
+1283449107.666793 IP client > static.akamai: Flags [.], ack 20449, win 65535, options [nop,nop,TS val 424662588 ecr 1322164389], length 0
+1283449107.667433 IP www.facebook > client: Flags [.], ack 5600, win 9979, options [nop,nop,TS val 3548953863 ecr 424662579], length 0
+1283449107.667454 IP platform.akamai > client: Flags [S.], seq 893713483, ack 3990814902, win 5792, options [mss 1460,sackOK,TS val 139497077 ecr 424662579,nop,wscale 5], length 0
+1283449107.667471 IP client > platform.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662588 ecr 139497077], length 0
+1283449107.667581 IP client > platform.akamai: Flags [P.], seq 1:436, ack 1, win 65535, options [nop,nop,TS val 424662588 ecr 139497077], length 435
+1283449107.670409 IP profile.akamai > client: Flags [.], seq 5443:6891, ack 1321, win 282, options [nop,nop,TS val 1026598093 ecr 424662579], length 1448
+1283449107.672414 IP profile.akamai > client: Flags [P.], seq 8339:8752, ack 1321, win 282, options [nop,nop,TS val 1026598093 ecr 424662579], length 413
+1283449107.672434 IP client > profile.akamai: Flags [.], ack 6891, win 65535, options [nop,nop,TS val 424662588 ecr 1026598093,nop,nop,sack 1 {8339:8752}], length 0
+1283449107.673614 IP profile.akamai > client: Flags [.], seq 6891:8339, ack 1321, win 282, options [nop,nop,TS val 1026598093 ecr 424662579], length 1448
+1283449107.673629 IP client > profile.akamai: Flags [.], ack 8752, win 65470, options [nop,nop,TS val 424662588 ecr 1026598093], length 0
+1283449107.673748 IP client > profile.akamai: Flags [P.], seq 1321:1761, ack 8752, win 65535, options [nop,nop,TS val 424662588 ecr 1026598093], length 440
+1283449107.674423 IP static.akamai > client: Flags [P.], seq 18837:19570, ack 3417, win 449, options [nop,nop,TS val 1322164396 ecr 424662579], length 733
+1283449107.674437 IP client > static.akamai: Flags [.], ack 19570, win 65535, options [nop,nop,TS val 424662588 ecr 1322164396], length 0
+1283449107.675538 IP static.akamai > client: Flags [P.], seq 9388:9998, ack 3312, win 449, options [nop,nop,TS val 1322164397 ecr 424662579], length 610
+1283449107.675552 IP client > static.akamai: Flags [.], ack 9998, win 65535, options [nop,nop,TS val 424662588 ecr 1322164397], length 0
+1283449107.678526 IP profile.akamai > client: Flags [.], seq 7200:8648, ack 1322, win 282, options [nop,nop,TS val 1026598099 ecr 424662580], length 1448
+1283449107.678531 IP profile.akamai > client: Flags [P.], seq 10096:10290, ack 1322, win 282, options [nop,nop,TS val 1026598099 ecr 424662580], length 194
+1283449107.678545 IP client > profile.akamai: Flags [.], ack 8648, win 65522, options [nop,nop,TS val 424662588 ecr 1026598099,nop,nop,sack 1 {10096:10290}], length 0
+1283449107.696430 IP static.akamai > client: Flags [P.], seq 14554:15290, ack 3362, win 449, options [nop,nop,TS val 1322164420 ecr 424662580], length 736
+1283449107.696455 IP client > static.akamai: Flags [.], ack 13106, win 65535, options [nop,nop,TS val 424662588 ecr 1322164203,nop,nop,sack 1 {14554:15290}], length 0
+1283449107.698854 IP static.akamai > client: Flags [.], seq 13106:14554, ack 3362, win 449, options [nop,nop,TS val 1322164420 ecr 424662580], length 1448
+1283449107.698884 IP client > static.akamai: Flags [.], ack 15290, win 65430, options [nop,nop,TS val 424662588 ecr 1322164420], length 0
+1283449107.701285 IP profile.akamai > client: Flags [.], seq 9230:10678, ack 1752, win 315, options [nop,nop,TS val 1026598126 ecr 424662580], length 1448
+1283449107.701288 IP profile.akamai > client: Flags [P.], seq 12126:12366, ack 1752, win 315, options [nop,nop,TS val 1026598126 ecr 424662580], length 240
+1283449107.701320 IP client > profile.akamai: Flags [.], ack 10678, win 65522, options [nop,nop,TS val 424662588 ecr 1026598126,nop,nop,sack 1 {12126:12366}], length 0
+1283449107.703290 IP profile.akamai > client: Flags [.], seq 10678:12126, ack 1752, win 315, options [nop,nop,TS val 1026598126 ecr 424662580], length 1448
+1283449107.703292 IP www.facebook > client: Flags [P.], seq 47619:47919, ack 5600, win 9979, options [nop,nop,TS val 3548953897 ecr 424662579], length 300
+1283449107.703317 IP client > profile.akamai: Flags [.], ack 12366, win 65492, options [nop,nop,TS val 424662588 ecr 1026598126], length 0
+1283449107.703331 IP client > www.facebook: Flags [.], ack 47919, win 65535, options [nop,nop,TS val 424662588 ecr 3548953897], length 0
+1283449107.703488 IP client > profile.akamai: Flags [P.], seq 1752:2190, ack 12366, win 65535, options [nop,nop,TS val 424662588 ecr 1026598126], length 438
+1283449107.705903 IP profile.akamai > client: Flags [.], seq 8072:9520, ack 1759, win 315, options [nop,nop,TS val 1026598155 ecr 424662580], length 1448
+1283449107.705906 IP profile.akamai > client: Flags [P.], seq 10968:11168, ack 1759, win 315, options [nop,nop,TS val 1026598155 ecr 424662580], length 200
+1283449107.705930 IP client > profile.akamai: Flags [.], ack 9520, win 65522, options [nop,nop,TS val 424662588 ecr 1026598155,nop,nop,sack 1 {10968:11168}], length 0
+1283449107.707974 IP profile.akamai > client: Flags [.], seq 9520:10968, ack 1759, win 315, options [nop,nop,TS val 1026598155 ecr 424662580], length 1448
+1283449107.707988 IP client > profile.akamai: Flags [.], ack 11168, win 65497, options [nop,nop,TS val 424662588 ecr 1026598155], length 0
+1283449107.708078 IP client > profile.akamai: Flags [P.], seq 1759:2198, ack 11168, win 65535, options [nop,nop,TS val 424662588 ecr 1026598155], length 439
+1283449107.710941 IP platform.akamai > client: Flags [.], seq 5793:7241, ack 536, win 215, options [nop,nop,TS val 139497145 ecr 424662581], length 1448
+1283449107.711045 IP platform.akamai > client: Flags [P.], seq 8689:9363, ack 536, win 215, options [nop,nop,TS val 139497145 ecr 424662581], length 674
+1283449107.711054 IP client > platform.akamai: Flags [.], ack 7241, win 65522, options [nop,nop,TS val 424662588 ecr 139497145,nop,nop,sack 1 {8689:9363}], length 0
+1283449107.713443 IP platform.akamai > client: Flags [.], seq 7241:8689, ack 536, win 215, options [nop,nop,TS val 139497145 ecr 424662581], length 1448
+1283449107.713446 IP platform.akamai > client: Flags [S.], seq 893713483, ack 3990814902, win 5792, options [mss 1460,sackOK,TS val 139497155 ecr 424662579,nop,wscale 5], length 0
+1283449107.713467 IP client > platform.akamai: Flags [.], ack 9363, win 65437, options [nop,nop,TS val 424662588 ecr 139497145], length 0
+1283449107.713476 IP client > platform.akamai: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662588 ecr 139497155], length 0
+1283449107.713812 IP static.akamai > client: Flags [P.], seq 12095:12828, ack 2980, win 416, options [nop,nop,TS val 1322164532 ecr 424662581], length 733
+1283449107.713826 IP client > static.akamai: Flags [.], ack 12828, win 65535, options [nop,nop,TS val 424662588 ecr 1322164532], length 0
+1283449107.714643 IP photos.akamai > client: Flags [.], ack 459, win 215, options [nop,nop,TS val 4260991286 ecr 424662581], length 0
+1283449107.717095 IP photos.akamai > client: Flags [.], seq 1:1449, ack 459, win 215, options [nop,nop,TS val 4260991288 ecr 424662581], length 1448
+1283449107.718486 IP photos.akamai > client: Flags [P.], seq 2897:3888, ack 459, win 215, options [nop,nop,TS val 4260991288 ecr 424662581], length 991
+1283449107.718515 IP client > photos.akamai: Flags [.], ack 1449, win 65535, options [nop,nop,TS val 424662588 ecr 4260991288,nop,nop,sack 1 {2897:3888}], length 0
+1283449107.720847 IP photos.akamai > client: Flags [.], seq 1449:2897, ack 459, win 215, options [nop,nop,TS val 4260991288 ecr 424662581], length 1448
+1283449107.720897 IP client > photos.akamai: Flags [.], ack 3888, win 65398, options [nop,nop,TS val 424662588 ecr 4260991288], length 0
+1283449107.723212 IP profile.akamai > client: Flags [P.], seq 8226:9627, ack 1763, win 315, options [nop,nop,TS val 1026598270 ecr 424662581], length 1401
+1283449107.723236 IP client > profile.akamai: Flags [.], ack 9627, win 65527, options [nop,nop,TS val 424662588 ecr 1026598270], length 0
+1283449107.724823 IP profile.akamai > client: Flags [P.], seq 9627:10975, ack 1763, win 315, options [nop,nop,TS val 1026598271 ecr 424662581], length 1348
+1283449107.724839 IP client > profile.akamai: Flags [.], ack 10975, win 65534, options [nop,nop,TS val 424662588 ecr 1026598271], length 0
+1283449107.724946 IP client > profile.akamai: Flags [P.], seq 1763:2203, ack 10975, win 65535, options [nop,nop,TS val 424662588 ecr 1026598271], length 440
+1283449107.727937 IP profile.akamai > client: Flags [P.], seq 10306:11488, ack 1753, win 315, options [nop,nop,TS val 1026598310 ecr 424662582], length 1182
+1283449107.727961 IP client > profile.akamai: Flags [.], ack 8858, win 65535, options [nop,nop,TS val 424662588 ecr 1026598029,nop,nop,sack 1 {10306:11488}], length 0
+1283449107.728642 IP profile.akamai > client: Flags [.], seq 8858:10306, ack 1753, win 315, options [nop,nop,TS val 1026598310 ecr 424662582], length 1448
+1283449107.728645 IP ad.doubleclick > client: Flags [S.], seq 1194647965, ack 2048525329, win 5672, options [mss 1430,sackOK,TS val 1828490160 ecr 424662584,nop,wscale 6], length 0
+1283449107.728661 IP client > profile.akamai: Flags [.], ack 11488, win 65374, options [nop,nop,TS val 424662588 ecr 1026598310], length 0
+1283449107.728673 IP client > ad.doubleclick: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662588 ecr 1828490160], length 0
+1283449107.728850 IP client > ad.doubleclick: Flags [P.], seq 1:1275, ack 1, win 65535, options [nop,nop,TS val 424662588 ecr 1828490160], length 1274
+1283449107.728933 IP client > profile.akamai: Flags [P.], seq 1753:2184, ack 11488, win 65535, options [nop,nop,TS val 424662588 ecr 1026598310], length 431
+1283449107.731328 IP static.akamai > client: Flags [P.], seq 18837:19570, ack 3417, win 449, options [nop,nop,TS val 1322164874 ecr 424662579], length 733
+1283449107.731349 IP client > static.akamai: Flags [.], ack 19570, win 65535, options [nop,nop,TS val 424662588 ecr 1322164874], length 0
+1283449107.733071 IP static.akamai > client: Flags [P.], seq 19483:20449, ack 2849, win 416, options [nop,nop,TS val 1322164897 ecr 424662579], length 966
+1283449107.733087 IP client > static.akamai: Flags [.], ack 20449, win 65535, options [nop,nop,TS val 424662588 ecr 1322164897], length 0
+1283449107.733724 IP static.akamai > client: Flags [P.], seq 9388:9998, ack 3312, win 449, options [nop,nop,TS val 1322164931 ecr 424662579], length 610
+1283449107.733736 IP client > static.akamai: Flags [.], ack 9998, win 65535, options [nop,nop,TS val 424662588 ecr 1322164931], length 0
+1283449107.737259 IP static.akamai > client: Flags [.], seq 13106:14554, ack 3362, win 449, options [nop,nop,TS val 1322164960 ecr 424662580], length 1448
+1283449107.737291 IP client > static.akamai: Flags [.], ack 15290, win 65535, options [nop,nop,TS val 424662588 ecr 1322164420], length 0
+1283449107.738954 IP static.akamai > client: Flags [P.], seq 12095:12828, ack 2980, win 416, options [nop,nop,TS val 1322164987 ecr 424662581], length 733
+1283449107.738979 IP client > static.akamai: Flags [.], ack 12828, win 65535, options [nop,nop,TS val 424662588 ecr 1322164987], length 0
+1283449107.740533 IP platform.akamai > client: Flags [.], seq 5793:7241, ack 536, win 215, options [nop,nop,TS val 139497724 ecr 424662581], length 1448
+1283449107.740557 IP client > platform.akamai: Flags [.], ack 9363, win 65535, options [nop,nop,TS val 424662588 ecr 139497145], length 0
+1283449107.740609 IP www.facebook > client: Flags [P.], seq 47619:47919, ack 5600, win 9979, options [nop,nop,TS val 3548954515 ecr 424662579], length 300
+1283449107.740623 IP client > www.facebook: Flags [.], ack 47919, win 65535, options [nop,nop,TS val 424662588 ecr 3548954515], length 0
+1283449107.811445 IP platform.akamai > client: Flags [.], ack 436, win 215, options [nop,nop,TS val 139497877 ecr 424662588], length 0
+1283449107.823061 IP client > static.akamai: Flags [P.], seq 2965:3417, ack 10513, win 65535, options [nop,nop,TS val 424662589 ecr 1322164303], length 452
+1283449107.823773 IP client > static.akamai: Flags [P.], seq 2849:3301, ack 20449, win 65535, options [nop,nop,TS val 424662589 ecr 1322164897], length 452
+1283449107.824543 IP client > static.akamai: Flags [P.], seq 3417:3869, ack 19570, win 65535, options [nop,nop,TS val 424662589 ecr 1322164874], length 452
+1283449107.825456 IP client > static.akamai: Flags [P.], seq 3312:3764, ack 9998, win 65535, options [nop,nop,TS val 424662589 ecr 1322164931], length 452
+1283449107.826113 IP platform.akamai > client: Flags [.], seq 1:1449, ack 436, win 215, options [nop,nop,TS val 139497877 ecr 424662588], length 1448
+1283449107.835607 IP platform.akamai > client: Flags [.], seq 1449:2897, ack 436, win 215, options [nop,nop,TS val 139497877 ecr 424662588], length 1448
+1283449107.835641 IP client > platform.akamai: Flags [.], ack 2897, win 65522, options [nop,nop,TS val 424662589 ecr 139497877], length 0
+1283449107.843621 IP platform.akamai > client: Flags [.], seq 2897:4345, ack 436, win 215, options [nop,nop,TS val 139497877 ecr 424662588], length 1448
+1283449107.851738 IP platform.akamai > client: Flags [.], seq 4345:5793, ack 436, win 215, options [nop,nop,TS val 139497877 ecr 424662588], length 1448
+1283449107.851773 IP client > platform.akamai: Flags [.], ack 5793, win 65522, options [nop,nop,TS val 424662589 ecr 139497877], length 0
+1283449107.852399 IP ad.doubleclick > client: Flags [S.], seq 1194647965, ack 2048525329, win 5672, options [mss 1430,sackOK,TS val 1828490587 ecr 424662584,nop,wscale 6], length 0
+1283449107.852421 IP client > ad.doubleclick: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662589 ecr 1828490587], length 0
+1283449107.889847 IP client > static.akamai: Flags [P.], seq 3362:3715, ack 15290, win 65535, options [nop,nop,TS val 424662590 ecr 1322164420], length 353
+1283449107.890612 IP client > static.akamai: Flags [P.], seq 2980:3333, ack 12828, win 65535, options [nop,nop,TS val 424662590 ecr 1322164987], length 353
+1283449107.898432 IP profile.akamai > client: Flags [P.], seq 10200:11436, ack 1761, win 315, options [nop,nop,TS val 1026598950 ecr 424662588], length 1236
+1283449107.898463 IP client > profile.akamai: Flags [.], ack 8752, win 65535, options [nop,nop,TS val 424662590 ecr 1026598093,nop,nop,sack 1 {10200:11436}], length 0
+1283449107.905486 IP profile.akamai > client: Flags [.], seq 8752:10200, ack 1761, win 315, options [nop,nop,TS val 1026598950 ecr 424662588], length 1448
+1283449107.905582 IP client > profile.akamai: Flags [.], ack 11436, win 65367, options [nop,nop,TS val 424662590 ecr 1026598950], length 0
+1283449107.906077 IP client > profile.akamai: Flags [P.], seq 1761:2199, ack 11436, win 65535, options [nop,nop,TS val 424662590 ecr 1026598950], length 438
+1283449107.961917 IP photos.akamai > client: Flags [.], seq 1:1449, ack 459, win 215, options [nop,nop,TS val 4260992023 ecr 424662581], length 1448
+1283449107.961969 IP client > photos.akamai: Flags [.], ack 3888, win 65535, options [nop,nop,TS val 424662590 ecr 4260991288], length 0
+1283449107.970232 IP profile.akamai > client: Flags [.], seq 12366:13814, ack 2190, win 349, options [nop,nop,TS val 1026599001 ecr 424662588], length 1448
+1283449107.970580 IP profile.akamai > client: Flags [P.], seq 15262:15381, ack 2190, win 349, options [nop,nop,TS val 1026599001 ecr 424662588], length 119
+1283449107.970600 IP client > profile.akamai: Flags [.], ack 13814, win 65535, options [nop,nop,TS val 424662591 ecr 1026599001,nop,nop,sack 1 {15262:15381}], length 0
+1283449107.981300 IP profile.akamai > client: Flags [.], seq 13814:15262, ack 2190, win 349, options [nop,nop,TS val 1026599001 ecr 424662588], length 1448
+1283449107.981342 IP client > profile.akamai: Flags [.], ack 15381, win 65507, options [nop,nop,TS val 424662591 ecr 1026599001], length 0
+1283449107.981627 IP client > profile.akamai: Flags [P.], seq 2190:2636, ack 15381, win 65535, options [nop,nop,TS val 424662591 ecr 1026599001], length 446
+1283449107.989073 IP profile.akamai > client: Flags [P.], seq 12616:13814, ack 2198, win 349, options [nop,nop,TS val 1026599050 ecr 424662588], length 1198
+1283449107.989120 IP client > profile.akamai: Flags [.], ack 11168, win 65535, options [nop,nop,TS val 424662591 ecr 1026598155,nop,nop,sack 1 {12616:13814}], length 0
+1283449107.996899 IP profile.akamai > client: Flags [.], seq 11168:12616, ack 2198, win 349, options [nop,nop,TS val 1026599050 ecr 424662588], length 1448
+1283449107.996957 IP client > profile.akamai: Flags [.], ack 13814, win 65372, options [nop,nop,TS val 424662591 ecr 1026599050], length 0
+1283449107.997193 IP client > profile.akamai: Flags [P.], seq 2198:2638, ack 13814, win 65535, options [nop,nop,TS val 424662591 ecr 1026599050], length 440
+1283449108.060819 IP profile.akamai > client: Flags [.], seq 10975:12423, ack 2203, win 349, options [nop,nop,TS val 1026599087 ecr 424662588], length 1448
+1283449108.060875 IP profile.akamai > client: Flags [P.], seq 13871:13879, ack 2203, win 349, options [nop,nop,TS val 1026599087 ecr 424662588], length 8
+1283449108.060919 IP client > profile.akamai: Flags [.], ack 12423, win 65522, options [nop,nop,TS val 424662591 ecr 1026599087,nop,nop,sack 1 {13871:13879}], length 0
+1283449108.072061 IP profile.akamai > client: Flags [.], seq 12423:13871, ack 2203, win 349, options [nop,nop,TS val 1026599087 ecr 424662588], length 1448
+1283449108.072120 IP client > profile.akamai: Flags [.], ack 13879, win 65521, options [nop,nop,TS val 424662592 ecr 1026599087], length 0
+1283449108.072320 IP client > profile.akamai: Flags [P.], seq 2203:2649, ack 13879, win 65535, options [nop,nop,TS val 424662592 ecr 1026599087], length 446
+1283449108.137475 IP profile.akamai > client: Flags [P.], seq 12936:14359, ack 2184, win 349, options [nop,nop,TS val 1026599137 ecr 424662588], length 1423
+1283449108.137572 IP client > profile.akamai: Flags [.], ack 11488, win 65535, options [nop,nop,TS val 424662592 ecr 1026598310,nop,nop,sack 1 {12936:14359}], length 0
+1283449108.149232 IP profile.akamai > client: Flags [.], seq 11488:12936, ack 2184, win 349, options [nop,nop,TS val 1026599137 ecr 424662588], length 1448
+1283449108.149525 IP client > profile.akamai: Flags [.], ack 14359, win 65344, options [nop,nop,TS val 424662592 ecr 1026599137], length 0
+1283449108.149630 IP ad.doubleclick > client: Flags [.], ack 1275, win 129, options [nop,nop,TS val 1828490843 ecr 424662588], length 0
+1283449108.150215 IP client > profile.akamai: Flags [P.], seq 2184:2630, ack 14359, win 65535, options [nop,nop,TS val 424662592 ecr 1026599137], length 446
+1283449108.193600 IP photos.akamai > client: Flags [.], seq 1449:2897, ack 464, win 215, options [nop,nop,TS val 1451191376 ecr 424662583], length 1448
+1283449108.201067 IP static.akamai > client: Flags [.], seq 20449:21897, ack 3301, win 449, options [nop,nop,TS val 1322165478 ecr 424662589], length 1448
+1283449108.209358 IP static.akamai > client: Flags [.], seq 21897:23345, ack 3301, win 449, options [nop,nop,TS val 1322165478 ecr 424662589], length 1448
+1283449108.209467 IP client > static.akamai: Flags [.], ack 23345, win 65535, options [nop,nop,TS val 424662593 ecr 1322165478], length 0
+1283449108.209791 IP static.akamai > client: Flags [P.], seq 11961:12401, ack 3417, win 449, options [nop,nop,TS val 1322165478 ecr 424662589], length 440
+1283449108.209806 IP client > static.akamai: Flags [.], ack 10513, win 65535, options [nop,nop,TS val 424662593 ecr 1322164303,nop,nop,sack 1 {11961:12401}], length 0
+1283449108.212826 IP static.akamai > client: Flags [.], seq 23345:24793, ack 3301, win 449, options [nop,nop,TS val 1322165478 ecr 424662589], length 1448
+1283449108.212854 IP client > static.akamai: Flags [.], ack 24793, win 65522, options [nop,nop,TS val 424662593 ecr 1322165478], length 0
+1283449108.216431 IP static.akamai > client: Flags [.], seq 10513:11961, ack 3417, win 449, options [nop,nop,TS val 1322165478 ecr 424662589], length 1448
+1283449108.216470 IP client > static.akamai: Flags [.], ack 12401, win 65467, options [nop,nop,TS val 424662593 ecr 1322165478], length 0
+1283449108.216729 IP client > static.akamai: Flags [P.], seq 3417:3770, ack 12401, win 65535, options [nop,nop,TS val 424662593 ecr 1322165478], length 353
+1283449108.218037 IP ad.doubleclick > client: Flags [P.], seq 1:231, ack 1275, win 129, options [nop,nop,TS val 1828490875 ecr 424662588], length 230
+1283449108.218062 IP client > ad.doubleclick: Flags [.], ack 231, win 65535, options [nop,nop,TS val 424662593 ecr 1828490875], length 0
+1283449108.222765 IP static.akamai > client: Flags [P.], seq 19570:20585, ack 3869, win 483, options [nop,nop,TS val 1322165494 ecr 424662589], length 1015
+1283449108.222799 IP client > static.akamai: Flags [.], ack 20585, win 65535, options [nop,nop,TS val 424662593 ecr 1322165494], length 0
+1283449108.222935 IP client > static.akamai: Flags [P.], seq 3869:4222, ack 20585, win 65535, options [nop,nop,TS val 424662593 ecr 1322165494], length 353
+1283449108.224422 IP static.akamai > client: Flags [P.], seq 9998:10484, ack 3764, win 483, options [nop,nop,TS val 1322165526 ecr 424662589], length 486
+1283449108.224445 IP client > static.akamai: Flags [.], ack 10484, win 65535, options [nop,nop,TS val 424662593 ecr 1322165526], length 0
+1283449108.224570 IP client > static.akamai: Flags [P.], seq 3764:4117, ack 10484, win 65535, options [nop,nop,TS val 424662593 ecr 1322165526], length 353
+1283449108.263672 IP static.akamai > client: Flags [.], seq 15290:16738, ack 3715, win 483, options [nop,nop,TS val 1322165526 ecr 424662590], length 1448
+1283449108.263683 IP client > photos.akamai: Flags [.], ack 2897, win 65535, options [nop,nop,TS val 424662593 ecr 1451191376], length 0
+1283449108.263706 IP client > static.akamai: Flags [.], ack 16738, win 65522, options [nop,nop,TS val 424662593 ecr 1322165526], length 0
+1283449108.270094 IP static.akamai > client: Flags [.], seq 16738:18186, ack 3715, win 483, options [nop,nop,TS val 1322165526 ecr 424662590], length 1448
+1283449108.276098 IP static.akamai > client: Flags [.], seq 18186:19634, ack 3715, win 483, options [nop,nop,TS val 1322165526 ecr 424662590], length 1448
+1283449108.276147 IP client > static.akamai: Flags [.], ack 19634, win 65522, options [nop,nop,TS val 424662594 ecr 1322165526], length 0
+1283449108.283470 IP platform.akamai > client: Flags [.], seq 5793:7241, ack 436, win 215, options [nop,nop,TS val 139498213 ecr 424662589], length 1448
+1283449108.291805 IP platform.akamai > client: Flags [.], seq 7241:8689, ack 436, win 215, options [nop,nop,TS val 139498213 ecr 424662589], length 1448
+1283449108.291846 IP client > platform.akamai: Flags [.], ack 8689, win 65522, options [nop,nop,TS val 424662594 ecr 139498213], length 0
+1283449108.301486 IP platform.akamai > client: Flags [.], seq 8689:10137, ack 436, win 215, options [nop,nop,TS val 139498213 ecr 424662589], length 1448
+1283449108.310223 IP platform.akamai > client: Flags [.], seq 10137:11585, ack 436, win 215, options [nop,nop,TS val 139498213 ecr 424662589], length 1448
+1283449108.310345 IP client > platform.akamai: Flags [.], ack 11585, win 65535, options [nop,nop,TS val 424662594 ecr 139498213], length 0
+1283449108.321786 IP platform.akamai > client: Flags [.], seq 11585:13033, ack 436, win 215, options [nop,nop,TS val 139498213 ecr 424662589], length 1448
+1283449108.330278 IP platform.akamai > client: Flags [.], seq 13033:14481, ack 436, win 215, options [nop,nop,TS val 139498213 ecr 424662589], length 1448
+1283449108.330481 IP client > platform.akamai: Flags [.], ack 14481, win 65535, options [nop,nop,TS val 424662594 ecr 139498213], length 0
+1283449108.464505 IP static.akamai > client: Flags [.], seq 12828:14276, ack 3333, win 449, options [nop,nop,TS val 1322165551 ecr 424662590], length 1448
+1283449108.474409 IP static.akamai > client: Flags [.], seq 14276:15724, ack 3333, win 449, options [nop,nop,TS val 1322165551 ecr 424662590], length 1448
+1283449108.474543 IP client > static.akamai: Flags [.], ack 15724, win 65535, options [nop,nop,TS val 424662596 ecr 1322165551], length 0
+1283449108.869539 IP profile.akamai > client: Flags [P.], seq 12884:14114, ack 2199, win 349, options [nop,nop,TS val 1026599266 ecr 424662590], length 1230
+1283449108.869621 IP client > profile.akamai: Flags [.], ack 11436, win 65535, options [nop,nop,TS val 424662600 ecr 1026598950,nop,nop,sack 1 {12884:14114}], length 0
+1283449108.871240 IP profile.akamai > client: Flags [.], seq 11436:12884, ack 2199, win 349, options [nop,nop,TS val 1026599266 ecr 424662590], length 1448
+1283449108.871270 IP client > profile.akamai: Flags [.], ack 14114, win 65368, options [nop,nop,TS val 424662600 ecr 1026599266], length 0
+1283449108.871603 IP client > profile.akamai: Flags [P.], seq 2199:2634, ack 14114, win 65535, options [nop,nop,TS val 424662600 ecr 1026599266], length 435
+1283449108.872801 IP profile.akamai > client: Flags [P.], seq 16829:17652, ack 2636, win 382, options [nop,nop,TS val 1026599272 ecr 424662591], length 823
+1283449108.872824 IP client > profile.akamai: Flags [.], ack 15381, win 65535, options [nop,nop,TS val 424662600 ecr 1026599001,nop,nop,sack 1 {16829:17652}], length 0
+1283449108.889682 IP profile.akamai > client: Flags [.], seq 13879:15327, ack 2649, win 382, options [nop,nop,TS val 1026599300 ecr 424662592], length 1448
+1283449108.891432 IP profile.akamai > client: Flags [P.], seq 16775:17075, ack 2649, win 382, options [nop,nop,TS val 1026599300 ecr 424662592], length 300
+1283449108.891586 IP client > profile.akamai: Flags [.], ack 15327, win 65535, options [nop,nop,TS val 424662600 ecr 1026599300,nop,nop,sack 1 {16775:17075}], length 0
+1283449108.892396 IP profile.akamai > client: Flags [.], seq 15327:16775, ack 2649, win 382, options [nop,nop,TS val 1026599300 ecr 424662592], length 1448
+1283449108.892424 IP client > profile.akamai: Flags [.], ack 17075, win 65484, options [nop,nop,TS val 424662600 ecr 1026599300], length 0
+1283449108.893784 IP profile.akamai > client: Flags [P.], seq 15262:16563, ack 2638, win 382, options [nop,nop,TS val 1026599305 ecr 424662591], length 1301
+1283449108.893812 IP client > profile.akamai: Flags [.], ack 13814, win 65535, options [nop,nop,TS val 424662600 ecr 1026599050,nop,nop,sack 1 {15262:16563}], length 0
+1283449108.896204 IP profile.akamai > client: Flags [.], seq 13814:15262, ack 2638, win 382, options [nop,nop,TS val 1026599305 ecr 424662591], length 1448
+1283449108.896237 IP client > profile.akamai: Flags [.], ack 16563, win 65359, options [nop,nop,TS val 424662600 ecr 1026599305], length 0
+1283449108.897519 IP static.akamai > client: Flags [P.], seq 24793:25656, ack 3301, win 449, options [nop,nop,TS val 1322165715 ecr 424662593], length 863
+1283449108.897539 IP client > static.akamai: Flags [.], ack 25656, win 65535, options [nop,nop,TS val 424662600 ecr 1322165715], length 0
+1283449108.897652 IP client > static.akamai: Flags [P.], seq 3301:3654, ack 25656, win 65535, options [nop,nop,TS val 424662600 ecr 1322165715], length 353
+1283449108.900107 IP profile.akamai > client: Flags [.], seq 14359:15807, ack 2630, win 382, options [nop,nop,TS val 1026599422 ecr 424662592], length 1448
+1283449108.900174 IP profile.akamai > client: Flags [P.], seq 17255:17644, ack 2630, win 382, options [nop,nop,TS val 1026599422 ecr 424662592], length 389
+1283449108.900185 IP client > profile.akamai: Flags [.], ack 15807, win 65535, options [nop,nop,TS val 424662600 ecr 1026599422,nop,nop,sack 1 {17255:17644}], length 0
+1283449108.902632 IP profile.akamai > client: Flags [.], seq 15807:17255, ack 2630, win 382, options [nop,nop,TS val 1026599422 ecr 424662592], length 1448
+1283449108.902650 IP client > profile.akamai: Flags [.], ack 17644, win 65473, options [nop,nop,TS val 424662600 ecr 1026599422], length 0
+1283449108.902682 IP dns > client: 52855 2/4/4 A 74.125.65.149, A 74.125.65.148 (210)
+1283449108.903592 IP static.akamai > client: Flags [.], seq 12401:13849, ack 3770, win 483, options [nop,nop,TS val 1322165774 ecr 424662593], length 1448
+1283449108.906416 IP static.akamai > client: Flags [.], seq 13849:15297, ack 3770, win 483, options [nop,nop,TS val 1322165774 ecr 424662593], length 1448
+1283449108.906484 IP client > static.akamai: Flags [.], ack 15297, win 65535, options [nop,nop,TS val 424662600 ecr 1322165774], length 0
+1283449108.907500 IP static.akamai > client: Flags [.], seq 15297:16745, ack 3770, win 483, options [nop,nop,TS val 1322165774 ecr 424662593], length 1448
+1283449108.907524 IP client > static.akamai: Flags [.], ack 16745, win 65522, options [nop,nop,TS val 424662600 ecr 1322165774], length 0
+1283449108.910443 IP static.akamai > client: Flags [.], seq 16745:18193, ack 3770, win 483, options [nop,nop,TS val 1322165774 ecr 424662593], length 1448
+1283449108.911515 IP static.akamai > client: Flags [.], seq 18193:19641, ack 3770, win 483, options [nop,nop,TS val 1322165774 ecr 424662593], length 1448
+1283449108.911549 IP client > static.akamai: Flags [.], ack 19641, win 65522, options [nop,nop,TS val 424662600 ecr 1322165774], length 0
+1283449108.913519 IP static.akamai > client: Flags [P.], seq 20585:21485, ack 4222, win 516, options [nop,nop,TS val 1322165785 ecr 424662593], length 900
+1283449108.913562 IP client > static.akamai: Flags [.], ack 21485, win 65535, options [nop,nop,TS val 424662600 ecr 1322165785], length 0
+1283449108.913728 IP client > static.akamai: Flags [P.], seq 4222:4575, ack 21485, win 65535, options [nop,nop,TS val 424662600 ecr 1322165785], length 353
+1283449108.915135 IP dns > client: 36698 0/1/0 (92)
+1283449108.916052 IP static.akamai > client: Flags [.], seq 19634:21082, ack 3715, win 483, options [nop,nop,TS val 1322165831 ecr 424662593], length 1448
+1283449108.917151 IP static.akamai > client: Flags [.], seq 21082:22530, ack 3715, win 483, options [nop,nop,TS val 1322165831 ecr 424662593], length 1448
+1283449108.917178 IP client > static.akamai: Flags [.], ack 22530, win 65522, options [nop,nop,TS val 424662600 ecr 1322165831], length 0
+1283449108.919430 IP static.akamai > client: Flags [.], seq 22530:23978, ack 3715, win 483, options [nop,nop,TS val 1322165831 ecr 424662594], length 1448
+1283449108.920896 IP static.akamai > client: Flags [.], seq 23978:25426, ack 3715, win 483, options [nop,nop,TS val 1322165831 ecr 424662594], length 1448
+1283449108.920918 IP client > static.akamai: Flags [.], ack 25426, win 65522, options [nop,nop,TS val 424662600 ecr 1322165831], length 0
+1283449108.922249 IP static.akamai > client: Flags [.], seq 25426:26874, ack 3715, win 483, options [nop,nop,TS val 1322165831 ecr 424662594], length 1448
+1283449109.064981 IP client > static.akamai: Flags [.], ack 26874, win 65535, options [nop,nop,TS val 424662601 ecr 1322165831], length 0
+1283449109.222832 IP platform.akamai > client: Flags [.], seq 24617:26065, ack 436, win 215, options [nop,nop,TS val 139498520 ecr 424662594], length 1448
+1283449109.222889 IP client > platform.akamai: Flags [.], ack 14481, win 65535, options [nop,nop,TS val 424662603 ecr 139498213,nop,nop,sack 1 {24617:26065}], length 0
+1283449109.225157 IP platform.akamai > client: Flags [.], seq 26065:27513, ack 436, win 215, options [nop,nop,TS val 139498520 ecr 424662594], length 1448
+1283449109.225209 IP client > platform.akamai: Flags [.], ack 14481, win 65535, options [nop,nop,TS val 424662603 ecr 139498213,nop,nop,sack 1 {24617:27513}], length 0
+1283449109.227099 IP photos.akamai > client: Flags [.], seq 2897:4345, ack 464, win 215, options [nop,nop,TS val 1451191741 ecr 424662593], length 1448
+1283449109.228894 IP static.akamai > client: Flags [.], seq 17172:18620, ack 3333, win 449, options [nop,nop,TS val 1322165948 ecr 424662596], length 1448
+1283449109.228924 IP client > static.akamai: Flags [.], ack 15724, win 65535, options [nop,nop,TS val 424662603 ecr 1322165551,nop,nop,sack 1 {17172:18620}], length 0
+1283449109.230885 IP static.akamai > client: Flags [.], seq 18620:20068, ack 3333, win 449, options [nop,nop,TS val 1322165948 ecr 424662596], length 1448
+1283449109.230907 IP client > static.akamai: Flags [.], ack 15724, win 65535, options [nop,nop,TS val 424662603 ecr 1322165551,nop,nop,sack 1 {17172:20068}], length 0
+1283449109.232873 IP static.akamai > client: Flags [P.], seq 20068:21426, ack 3333, win 449, options [nop,nop,TS val 1322165948 ecr 424662596], length 1358
+1283449109.232897 IP client > static.akamai: Flags [.], ack 15724, win 65535, options [nop,nop,TS val 424662603 ecr 1322165551,nop,nop,sack 1 {17172:21426}], length 0
+1283449109.234888 IP static.akamai > client: Flags [.], seq 12401:13849, ack 3770, win 483, options [nop,nop,TS val 1322166332 ecr 424662593], length 1448
+1283449109.234908 IP client > static.akamai: Flags [.], ack 19641, win 65535, options [nop,nop,TS val 424662603 ecr 1322165774], length 0
+1283449109.237368 IP profile.akamai > client: Flags [P.], seq 14114:15514, ack 2634, win 382, options [nop,nop,TS val 1026600136 ecr 424662600], length 1400
+1283449109.237522 IP client > profile.akamai: Flags [.], ack 15514, win 65528, options [nop,nop,TS val 424662603 ecr 1026600136], length 0
+1283449109.237987 IP profile.akamai > client: Flags [P.], seq 15514:16586, ack 2634, win 382, options [nop,nop,TS val 1026600136 ecr 424662600], length 1072
+1283449109.238004 IP client > profile.akamai: Flags [.], ack 16586, win 65535, options [nop,nop,TS val 424662603 ecr 1026600136], length 0
+1283449109.239848 IP static.akamai > client: Flags [.], seq 25656:27104, ack 3654, win 483, options [nop,nop,TS val 1322166471 ecr 424662600], length 1448
+1283449109.241821 IP static.akamai > client: Flags [.], seq 27104:28552, ack 3654, win 483, options [nop,nop,TS val 1322166471 ecr 424662600], length 1448
+1283449109.241863 IP client > static.akamai: Flags [.], ack 28552, win 65535, options [nop,nop,TS val 424662603 ecr 1322166471], length 0
+1283449109.243841 IP static.akamai > client: Flags [.], seq 28552:30000, ack 3654, win 483, options [nop,nop,TS val 1322166471 ecr 424662600], length 1448
+1283449109.243858 IP client > static.akamai: Flags [.], ack 30000, win 65522, options [nop,nop,TS val 424662603 ecr 1322166471], length 0
+1283449109.245830 IP static.akamai > client: Flags [.], seq 30000:31448, ack 3654, win 483, options [nop,nop,TS val 1322166471 ecr 424662600], length 1448
+1283449109.247840 IP static.akamai > client: Flags [.], seq 31448:32896, ack 3654, win 483, options [nop,nop,TS val 1322166471 ecr 424662600], length 1448
+1283449109.247871 IP client > static.akamai: Flags [.], ack 32896, win 65522, options [nop,nop,TS val 424662603 ecr 1322166471], length 0
+1283449109.249828 IP static.akamai > client: Flags [.], seq 19641:21089, ack 3770, win 483, options [nop,nop,TS val 1322166487 ecr 424662600], length 1448
+1283449109.252564 IP static.akamai > client: Flags [.], seq 21089:22537, ack 3770, win 483, options [nop,nop,TS val 1322166487 ecr 424662600], length 1448
+1283449109.252586 IP client > static.akamai: Flags [.], ack 22537, win 65522, options [nop,nop,TS val 424662603 ecr 1322166487], length 0
+1283449109.253441 IP static.akamai > client: Flags [.], seq 22537:23985, ack 3770, win 483, options [nop,nop,TS val 1322166487 ecr 424662600], length 1448
+1283449109.256676 IP static.akamai > client: Flags [.], seq 23985:25433, ack 3770, win 483, options [nop,nop,TS val 1322166516 ecr 424662600], length 1448
+1283449109.256695 IP client > static.akamai: Flags [.], ack 25433, win 65522, options [nop,nop,TS val 424662603 ecr 1322166487], length 0
+1283449109.257556 IP static.akamai > client: Flags [.], seq 26874:28322, ack 3715, win 483, options [nop,nop,TS val 1322166523 ecr 424662600], length 1448
+1283449109.260706 IP static.akamai > client: Flags [.], seq 28322:29770, ack 3715, win 483, options [nop,nop,TS val 1322166523 ecr 424662600], length 1448
+1283449109.260735 IP client > static.akamai: Flags [.], ack 29770, win 65522, options [nop,nop,TS val 424662603 ecr 1322166523], length 0
+1283449109.261555 IP static.akamai > client: Flags [.], seq 29770:31218, ack 3715, win 483, options [nop,nop,TS val 1322166523 ecr 424662600], length 1448
+1283449109.264151 IP static.akamai > client: Flags [.], seq 31218:32666, ack 3715, win 483, options [nop,nop,TS val 1322166523 ecr 424662600], length 1448
+1283449109.264182 IP client > static.akamai: Flags [.], ack 32666, win 65522, options [nop,nop,TS val 424662603 ecr 1322166523], length 0
+1283449109.265270 IP client > photos.akamai: Flags [.], ack 4345, win 65535, options [nop,nop,TS val 424662603 ecr 1451191741], length 0
+1283449109.266151 IP static.akamai > client: Flags [.], seq 32666:34114, ack 3715, win 483, options [nop,nop,TS val 1322166523 ecr 424662600], length 1448
+1283449109.268255 IP static.akamai > client: Flags [.], seq 34114:35562, ack 3715, win 483, options [nop,nop,TS val 1322166523 ecr 424662600], length 1448
+1283449109.268278 IP client > static.akamai: Flags [.], ack 35562, win 65522, options [nop,nop,TS val 424662604 ecr 1322166523], length 0
+1283449109.270448 IP static.akamai > client: Flags [P.], seq 22933:24201, ack 4575, win 550, options [nop,nop,TS val 1322166528 ecr 424662600], length 1268
+1283449109.270479 IP client > static.akamai: Flags [.], ack 21485, win 65535, options [nop,nop,TS val 424662604 ecr 1322165785,nop,nop,sack 1 {22933:24201}], length 0
+1283449109.278784 IP static.akamai > client: Flags [.], seq 21485:22933, ack 4575, win 550, options [nop,nop,TS val 1322166528 ecr 424662600], length 1448
+1283449109.278837 IP client > static.akamai: Flags [.], ack 24201, win 65363, options [nop,nop,TS val 424662604 ecr 1322166528], length 0
+1283449109.279201 IP client > static.akamai: Flags [P.], seq 4575:4928, ack 24201, win 65535, options [nop,nop,TS val 424662604 ecr 1322166528], length 353
+1283449109.292476 IP static.akamai > client: Flags [.], seq 35562:37010, ack 3715, win 483, options [nop,nop,TS val 1322166549 ecr 424662601], length 1448
+1283449109.298398 IP static.akamai > client: Flags [.], seq 37010:38458, ack 3715, win 483, options [nop,nop,TS val 1322166549 ecr 424662601], length 1448
+1283449109.298493 IP client > static.akamai: Flags [.], ack 38458, win 65535, options [nop,nop,TS val 424662604 ecr 1322166549], length 0
+1283449109.465569 IP client > static.akamai: Flags [P.], seq 3764:4117, ack 10484, win 65535, options [nop,nop,TS val 424662605 ecr 1322165526], length 353
+1283449109.519693 IP photos.akamai > client: Flags [.], seq 2897:4345, ack 464, win 215, options [nop,nop,TS val 1451192505 ecr 424662593], length 1448
+1283449109.519784 IP client > photos.akamai: Flags [.], ack 4345, win 65535, options [nop,nop,TS val 424662606 ecr 1451192505], length 0
+1283449109.521252 IP profile.akamai > client: Flags [.], seq 8648:10096, ack 1322, win 282, options [nop,nop,TS val 1026600375 ecr 424662588], length 1448
+1283449109.521322 IP client > profile.akamai: Flags [.], ack 10290, win 65497, options [nop,nop,TS val 424662606 ecr 1026600375], length 0
+1283449109.523174 IP platform.akamai > client: Flags [.], seq 14481:15929, ack 436, win 215, options [nop,nop,TS val 139499384 ecr 424662603], length 1448
+1283449109.523197 IP client > platform.akamai: Flags [.], ack 15929, win 65522, options [nop,nop,TS val 424662606 ecr 139499384,nop,nop,sack 1 {24617:27513}], length 0
+1283449109.524909 IP platform.akamai > client: Flags [.], seq 15929:17377, ack 436, win 215, options [nop,nop,TS val 139499411 ecr 424662603], length 1448
+1283449109.524940 IP client > platform.akamai: Flags [.], ack 17377, win 65522, options [nop,nop,TS val 424662606 ecr 139499411,nop,nop,sack 1 {24617:27513}], length 0
+1283449109.526886 IP static.akamai > client: Flags [.], seq 15724:17172, ack 3333, win 449, options [nop,nop,TS val 1322166729 ecr 424662603], length 1448
+1283449109.526926 IP client > static.akamai: Flags [.], ack 21426, win 64990, options [nop,nop,TS val 424662606 ecr 1322166729], length 0
+1283449109.527175 IP client > static.akamai: Flags [P.], seq 3333:3686, ack 21426, win 65535, options [nop,nop,TS val 424662606 ecr 1322166729], length 353
+1283449109.529266 IP static.akamai > client: Flags [.], seq 32896:34344, ack 3654, win 483, options [nop,nop,TS val 1322166736 ecr 424662603], length 1448
+1283449109.531050 IP static.akamai > client: Flags [.], seq 34344:35792, ack 3654, win 483, options [nop,nop,TS val 1322166736 ecr 424662603], length 1448
+1283449109.531085 IP client > static.akamai: Flags [.], ack 35792, win 65522, options [nop,nop,TS val 424662606 ecr 1322166736], length 0
+1283449109.533666 IP static.akamai > client: Flags [.], seq 35792:37240, ack 3654, win 483, options [nop,nop,TS val 1322166736 ecr 424662603], length 1448
+1283449109.534515 IP static.akamai > client: Flags [.], seq 37240:38688, ack 3654, win 483, options [nop,nop,TS val 1322166736 ecr 424662603], length 1448
+1283449109.534562 IP client > static.akamai: Flags [.], ack 38688, win 65535, options [nop,nop,TS val 424662606 ecr 1322166736], length 0
+1283449109.537702 IP static.akamai > client: Flags [.], seq 38688:40136, ack 3654, win 483, options [nop,nop,TS val 1322166736 ecr 424662603], length 1448
+1283449109.538471 IP static.akamai > client: Flags [.], seq 40136:41584, ack 3654, win 483, options [nop,nop,TS val 1322166783 ecr 424662603], length 1448
+1283449109.538513 IP client > static.akamai: Flags [.], ack 41584, win 65535, options [nop,nop,TS val 424662606 ecr 1322166736], length 0
+1283449109.541234 IP static.akamai > client: Flags [.], seq 41584:43032, ack 3654, win 483, options [nop,nop,TS val 1322166783 ecr 424662603], length 1448
+1283449109.550421 IP static.akamai > client: Flags [.], seq 25433:26881, ack 3770, win 483, options [nop,nop,TS val 1322166783 ecr 424662603], length 1448
+1283449109.573862 IP static.akamai > client: Flags [.], seq 26881:28329, ack 3770, win 483, options [nop,nop,TS val 1322166783 ecr 424662603], length 1448
+1283449109.573963 IP client > static.akamai: Flags [.], ack 28329, win 65522, options [nop,nop,TS val 424662607 ecr 1322166783], length 0
+1283449109.583377 IP static.akamai > client: Flags [.], seq 43032:44480, ack 3654, win 483, options [nop,nop,TS val 1322166783 ecr 424662603], length 1448
+1283449109.583511 IP client > static.akamai: Flags [.], ack 44480, win 65535, options [nop,nop,TS val 424662607 ecr 1322166783], length 0
+1283449109.591755 IP static.akamai > client: Flags [.], seq 38458:39906, ack 3715, win 483, options [nop,nop,TS val 1322166783 ecr 424662603], length 1448
+1283449109.603644 IP static.akamai > client: Flags [.], seq 39906:41354, ack 3715, win 483, options [nop,nop,TS val 1322166783 ecr 424662603], length 1448
+1283449109.603753 IP client > static.akamai: Flags [.], ack 41354, win 65535, options [nop,nop,TS val 424662607 ecr 1322166783], length 0
+1283449109.610893 IP static.akamai > client: Flags [.], seq 41354:42802, ack 3715, win 483, options [nop,nop,TS val 1322166783 ecr 424662603], length 1448
+1283449109.620687 IP static.akamai > client: Flags [.], seq 24201:25649, ack 4928, win 583, options [nop,nop,TS val 1322166811 ecr 424662604], length 1448
+1283449109.629439 IP static.akamai > client: Flags [.], seq 25649:27097, ack 4928, win 583, options [nop,nop,TS val 1322166811 ecr 424662604], length 1448
+1283449109.629558 IP client > static.akamai: Flags [.], ack 27097, win 65535, options [nop,nop,TS val 424662607 ecr 1322166811], length 0
+1283449109.631326 IP static.akamai > client: Flags [P.], seq 28545:29090, ack 4928, win 583, options [nop,nop,TS val 1322166811 ecr 424662604], length 545
+1283449109.631357 IP client > static.akamai: Flags [.], ack 27097, win 65535, options [nop,nop,TS val 424662607 ecr 1322166811,nop,nop,sack 1 {28545:29090}], length 0
+1283449109.665955 IP client > static.akamai: Flags [.], ack 42802, win 65535, options [nop,nop,TS val 424662607 ecr 1322166783], length 0
+1283449109.737589 IP static.akamai > client: Flags [.], seq 27097:28545, ack 4928, win 583, options [nop,nop,TS val 1322166811 ecr 424662604], length 1448
+1283449109.737696 IP client > static.akamai: Flags [.], ack 29090, win 65453, options [nop,nop,TS val 424662608 ecr 1322166811], length 0
+1283449109.738147 IP client > static.akamai: Flags [P.], seq 4928:5281, ack 29090, win 65535, options [nop,nop,TS val 424662608 ecr 1322166811], length 353
+1283449109.745324 IP static.akamai > client: Flags [.], seq 42802:44250, ack 3715, win 483, options [nop,nop,TS val 1322166810 ecr 424662603], length 1448
+1283449109.866439 IP client > static.akamai: Flags [.], ack 44250, win 65535, options [nop,nop,TS val 424662609 ecr 1322166810], length 0
+1283449110.148595 IP static.akamai > client: Flags [.], seq 47146:48594, ack 3715, win 483, options [nop,nop,TS val 1322166810 ecr 424662604], length 1448
+1283449110.148682 IP client > static.akamai: Flags [.], ack 44250, win 65535, options [nop,nop,TS val 424662612 ecr 1322166810,nop,nop,sack 1 {47146:48594}], length 0
+1283449110.150215 IP static.akamai > client: Flags [.], seq 48594:50042, ack 3715, win 483, options [nop,nop,TS val 1322166810 ecr 424662604], length 1448
+1283449110.150260 IP client > static.akamai: Flags [.], ack 44250, win 65535, options [nop,nop,TS val 424662612 ecr 1322166810,nop,nop,sack 1 {47146:50042}], length 0
+1283449110.155773 IP photos.akamai > client: Flags [.], seq 5793:7241, ack 464, win 215, options [nop,nop,TS val 1451192721 ecr 424662603], length 1448
+1283449110.155807 IP client > photos.akamai: Flags [.], ack 4345, win 65535, options [nop,nop,TS val 424662612 ecr 1451192505,nop,nop,sack 1 {5793:7241}], length 0
+1283449110.158789 IP static.akamai > client: Flags [.], seq 10484:11932, ack 4117, win 516, options [nop,nop,TS val 1322166927 ecr 424662593], length 1448
+1283449110.159418 IP static.akamai > client: Flags [.], ack 4117, win 516, options [nop,nop,TS val 1322166975 ecr 424662605,nop,nop,sack 1 {3764:4117}], length 0
+1283449110.161891 IP platform.akamai > client: Flags [.], seq 17377:18825, ack 436, win 215, options [nop,nop,TS val 139499698 ecr 424662606], length 1448
+1283449110.161917 IP client > platform.akamai: Flags [.], ack 18825, win 65522, options [nop,nop,TS val 424662612 ecr 139499698,nop,nop,sack 1 {24617:27513}], length 0
+1283449110.163973 IP static.akamai > client: Flags [.], seq 44480:45928, ack 3654, win 483, options [nop,nop,TS val 1322167063 ecr 424662606], length 1448
+1283449110.164002 IP client > static.akamai: Flags [.], ack 45928, win 65522, options [nop,nop,TS val 424662612 ecr 1322167063], length 0
+1283449110.166512 IP static.akamai > client: Flags [.], seq 45928:47376, ack 3654, win 483, options [nop,nop,TS val 1322167063 ecr 424662606], length 1448
+1283449110.167505 IP static.akamai > client: Flags [.], seq 47376:48824, ack 3654, win 483, options [nop,nop,TS val 1322167063 ecr 424662606], length 1448
+1283449110.167528 IP client > static.akamai: Flags [.], ack 48824, win 65522, options [nop,nop,TS val 424662613 ecr 1322167063], length 0
+1283449110.170749 IP static.akamai > client: Flags [.], seq 48824:50272, ack 3654, win 483, options [nop,nop,TS val 1322167063 ecr 424662606], length 1448
+1283449110.171668 IP static.akamai > client: Flags [.], seq 50272:51720, ack 3654, win 483, options [nop,nop,TS val 1322167063 ecr 424662606], length 1448
+1283449110.171689 IP client > static.akamai: Flags [.], ack 51720, win 65522, options [nop,nop,TS val 424662613 ecr 1322167063], length 0
+1283449110.174620 IP static.akamai > client: Flags [.], seq 51720:53168, ack 3654, win 483, options [nop,nop,TS val 1322167063 ecr 424662606], length 1448
+1283449110.175655 IP static.akamai > client: Flags [P.], seq 21426:22189, ack 3686, win 483, options [nop,nop,TS val 1322167064 ecr 424662606], length 763
+1283449110.175673 IP client > static.akamai: Flags [.], ack 22189, win 65535, options [nop,nop,TS val 424662613 ecr 1322167064], length 0
+1283449110.175827 IP client > static.akamai: Flags [P.], seq 3686:4039, ack 22189, win 65535, options [nop,nop,TS val 424662613 ecr 1322167064], length 353
+1283449110.176838 IP static.akamai > client: Flags [.], seq 53168:54616, ack 3654, win 483, options [nop,nop,TS val 1322167068 ecr 424662606], length 1448
+1283449110.176854 IP client > static.akamai: Flags [.], ack 54616, win 65522, options [nop,nop,TS val 424662613 ecr 1322167063], length 0
+1283449110.178806 IP static.akamai > client: Flags [.], seq 28329:29777, ack 3770, win 483, options [nop,nop,TS val 1322167068 ecr 424662607], length 1448
+1283449110.178872 IP static.akamai > client: Flags [P.], seq 29777:30177, ack 3770, win 483, options [nop,nop,TS val 1322167068 ecr 424662607], length 400
+1283449110.178883 IP client > static.akamai: Flags [.], ack 30177, win 65535, options [nop,nop,TS val 424662613 ecr 1322167068], length 0
+1283449110.178975 IP client > static.akamai: Flags [P.], seq 3770:4123, ack 30177, win 65535, options [nop,nop,TS val 424662613 ecr 1322167068], length 353
+1283449110.181996 IP static.akamai > client: Flags [.], seq 54616:56064, ack 3654, win 483, options [nop,nop,TS val 1322167068 ecr 424662606], length 1448
+1283449110.183163 IP static.akamai > client: Flags [.], seq 56064:57512, ack 3654, win 483, options [nop,nop,TS val 1322167068 ecr 424662606], length 1448
+1283449110.183195 IP client > static.akamai: Flags [.], ack 57512, win 65535, options [nop,nop,TS val 424662613 ecr 1322167068], length 0
+1283449110.184380 IP static.akamai > client: Flags [.], seq 57512:58960, ack 3654, win 483, options [nop,nop,TS val 1322167068 ecr 424662607], length 1448
+1283449110.186853 IP static.akamai > client: Flags [.], seq 58960:60408, ack 3654, win 483, options [nop,nop,TS val 1322167068 ecr 424662607], length 1448
+1283449110.186891 IP client > static.akamai: Flags [.], ack 60408, win 65535, options [nop,nop,TS val 424662613 ecr 1322167068], length 0
+1283449110.188013 IP static.akamai > client: Flags [.], seq 60408:61856, ack 3654, win 483, options [nop,nop,TS val 1322167068 ecr 424662607], length 1448
+1283449110.189819 IP profile.akamai > client: Flags [.], seq 15381:16829, ack 2636, win 382, options [nop,nop,TS val 1026600859 ecr 424662600], length 1448
+1283449110.189836 IP client > profile.akamai: Flags [.], ack 17652, win 65419, options [nop,nop,TS val 424662613 ecr 1026600859], length 0
+1283449110.190134 IP static.akamai > client: Flags [P.], seq 29090:30105, ack 5281, win 617, options [nop,nop,TS val 1322167245 ecr 424662608], length 1015
+1283449110.190149 IP client > static.akamai: Flags [.], ack 30105, win 65535, options [nop,nop,TS val 424662613 ecr 1322167245], length 0
+1283449110.262995 IP static.akamai > client: Flags [.], seq 44250:45698, ack 3715, win 483, options [nop,nop,TS val 1322167628 ecr 424662612], length 1448
+1283449110.263126 IP client > static.akamai: Flags [.], ack 45698, win 65522, options [nop,nop,TS val 424662613 ecr 1322167628,nop,nop,sack 1 {47146:50042}], length 0
+1283449110.266954 IP client > static.akamai: Flags [.], ack 61856, win 65535, options [nop,nop,TS val 424662613 ecr 1322167068], length 0
+1283449110.266969 IP client > static.akamai: Flags [.], ack 11932, win 65535, options [nop,nop,TS val 424662613 ecr 1322166927], length 0
+1283449110.298898 IP platform.akamai > client: Flags [.], seq 18825:20273, ack 436, win 215, options [nop,nop,TS val 139500348 ecr 424662612], length 1448
+1283449110.299002 IP client > platform.akamai: Flags [.], ack 20273, win 65522, options [nop,nop,TS val 424662614 ecr 139500348,nop,nop,sack 1 {24617:27513}], length 0
+1283449110.305366 IP static.akamai > client: Flags [.], seq 61856:63304, ack 3654, win 483, options [nop,nop,TS val 1322167662 ecr 424662612], length 1448
+1283449110.315832 IP static.akamai > client: Flags [.], seq 63304:64752, ack 3654, win 483, options [nop,nop,TS val 1322167662 ecr 424662612], length 1448
+1283449110.315940 IP client > static.akamai: Flags [.], ack 64752, win 65535, options [nop,nop,TS val 424662614 ecr 1322167662], length 0
+1283449110.325347 IP static.akamai > client: Flags [.], seq 64752:66200, ack 3654, win 483, options [nop,nop,TS val 1322167662 ecr 424662613], length 1448
+1283449110.334311 IP static.akamai > client: Flags [.], seq 66200:67648, ack 3654, win 483, options [nop,nop,TS val 1322167662 ecr 424662613], length 1448
+1283449110.334430 IP client > static.akamai: Flags [.], ack 67648, win 65535, options [nop,nop,TS val 424662614 ecr 1322167662], length 0
+1283449110.358538 IP static.akamai > client: Flags [.], seq 67648:69096, ack 3654, win 483, options [nop,nop,TS val 1322167662 ecr 424662613], length 1448
+1283449110.370839 IP static.akamai > client: Flags [.], seq 69096:70544, ack 3654, win 483, options [nop,nop,TS val 1322167662 ecr 424662613], length 1448
+1283449110.370930 IP client > static.akamai: Flags [.], ack 70544, win 65535, options [nop,nop,TS val 424662615 ecr 1322167662], length 0
+1283449110.379355 IP static.akamai > client: Flags [.], seq 70544:71992, ack 3654, win 483, options [nop,nop,TS val 1322167662 ecr 424662613], length 1448
+1283449110.384464 IP static.akamai > client: Flags [.], seq 71992:73440, ack 3654, win 483, options [nop,nop,TS val 1322167662 ecr 424662613], length 1448
+1283449110.384565 IP client > static.akamai: Flags [.], ack 73440, win 65535, options [nop,nop,TS val 424662615 ecr 1322167662], length 0
+1283449110.391157 IP photos.akamai > client: Flags [P.], seq 7241:8570, ack 464, win 215, options [nop,nop,TS val 1451193570 ecr 424662612], length 1329
+1283449110.391221 IP client > photos.akamai: Flags [.], ack 4345, win 65535, options [nop,nop,TS val 424662615 ecr 1451192505,nop,nop,sack 1 {5793:8570}], length 0
+1283449110.397984 IP static.akamai > client: Flags [.], seq 73440:74888, ack 3654, win 483, options [nop,nop,TS val 1322167722 ecr 424662613], length 1448
+1283449110.398081 IP client > static.akamai: Flags [.], ack 74888, win 65522, options [nop,nop,TS val 424662615 ecr 1322167722], length 0
+1283449110.403462 IP static.akamai > client: Flags [P.], seq 76336:77179, ack 3654, win 483, options [nop,nop,TS val 1322167722 ecr 424662613], length 843
+1283449110.403496 IP client > static.akamai: Flags [.], ack 74888, win 65535, options [nop,nop,TS val 424662615 ecr 1322167722,nop,nop,sack 1 {76336:77179}], length 0
+1283449110.408940 IP static.akamai > client: Flags [.], seq 74888:76336, ack 3654, win 483, options [nop,nop,TS val 1322167722 ecr 424662613], length 1448
+1283449110.408986 IP client > static.akamai: Flags [.], ack 77179, win 65416, options [nop,nop,TS val 424662615 ecr 1322167722], length 0
+1283449110.415269 IP static.akamai > client: Flags [.], seq 22189:23637, ack 4039, win 516, options [nop,nop,TS val 1322167722 ecr 424662613], length 1448
+1283449110.422760 IP static.akamai > client: Flags [.], seq 23637:25085, ack 4039, win 516, options [nop,nop,TS val 1322167722 ecr 424662613], length 1448
+1283449110.422840 IP client > static.akamai: Flags [.], ack 25085, win 65535, options [nop,nop,TS val 424662615 ecr 1322167722], length 0
+1283449110.451795 IP static.akamai > client: Flags [.], seq 25085:26533, ack 4039, win 516, options [nop,nop,TS val 1322167722 ecr 424662613], length 1448
+1283449110.451838 IP client > static.akamai: Flags [.], ack 26533, win 65522, options [nop,nop,TS val 424662615 ecr 1322167722], length 0
+1283449110.453502 IP static.akamai > client: Flags [P.], seq 11932:12340, ack 4117, win 516, options [nop,nop,TS val 1322167769 ecr 424662613], length 408
+1283449110.453529 IP client > static.akamai: Flags [.], ack 12340, win 65535, options [nop,nop,TS val 424662615 ecr 1322167769], length 0
+1283449110.453718 IP static.akamai > client: Flags [P.], seq 30177:30972, ack 4123, win 516, options [nop,nop,TS val 1322167791 ecr 424662613], length 795
+1283449110.453732 IP client > static.akamai: Flags [.], ack 30972, win 65535, options [nop,nop,TS val 424662615 ecr 1322167791], length 0
+1283449110.477147 IP platform.akamai > client: Flags [.], seq 20273:21721, ack 436, win 215, options [nop,nop,TS val 139500529 ecr 424662614], length 1448
+1283449110.477189 IP client > platform.akamai: Flags [.], ack 21721, win 65522, options [nop,nop,TS val 424662616 ecr 139500529,nop,nop,sack 1 {24617:27513}], length 0
+1283449110.548381 IP static.akamai > client: Flags [P.], seq 26533:27019, ack 4039, win 516, options [nop,nop,TS val 1322167921 ecr 424662615], length 486
+1283449110.548477 IP client > static.akamai: Flags [.], ack 27019, win 65535, options [nop,nop,TS val 424662616 ecr 1322167921], length 0
+1283449110.616958 IP platform.akamai > client: Flags [.], seq 21721:23169, ack 436, win 215, options [nop,nop,TS val 139500664 ecr 424662616], length 1448
+1283449110.617001 IP client > platform.akamai: Flags [.], ack 23169, win 65522, options [nop,nop,TS val 424662617 ecr 139500664,nop,nop,sack 1 {24617:27513}], length 0
+1283449110.719030 IP platform.akamai > client: Flags [.], seq 23169:24617, ack 436, win 215, options [nop,nop,TS val 139500768 ecr 424662617], length 1448
+1283449110.719138 IP client > platform.akamai: Flags [.], ack 27513, win 65160, options [nop,nop,TS val 424662618 ecr 139500768], length 0
+1283449110.832717 IP platform.akamai > client: Flags [.], seq 27513:28961, ack 436, win 215, options [nop,nop,TS val 139500884 ecr 424662618], length 1448
+1283449110.832914 IP client > platform.akamai: Flags [.], ack 28961, win 65535, options [nop,nop,TS val 424662619 ecr 139500884], length 0
+1283449110.916147 IP photos.akamai > client: Flags [.], seq 4345:5793, ack 464, win 215, options [nop,nop,TS val 1451194187 ecr 424662615], length 1448
+1283449110.916255 IP client > photos.akamai: Flags [.], ack 8570, win 65174, options [nop,nop,TS val 424662620 ecr 1451194187], length 0
+1283449110.955408 IP platform.akamai > client: Flags [P.], seq 28961:29067, ack 436, win 215, options [nop,nop,TS val 139501019 ecr 424662619], length 106
+1283449110.955502 IP client > platform.akamai: Flags [.], ack 29067, win 65535, options [nop,nop,TS val 424662620 ecr 139501019], length 0
+1283449110.963240 IP client > dns: 62954+ A? kara.allthingsd.com. (37)
+1283449110.973303 IP client > dns: 21161+ AAAA? kara.allthingsd.com. (37)
+1283449110.983827 IP client > dns: 34578+ A? www.heartsdesirejewelry.com. (45)
+1283449110.994414 IP client > dns: 37575+ AAAA? www.heartsdesirejewelry.com. (45)
+1283449111.004034 IP client > dns: 9348+ A? www.forrestday.com. (36)
+1283449111.014812 IP client > dns: 14277+ AAAA? www.forrestday.com. (36)
+1283449111.051923 IP dns > client: 62954 2/2/2 A 72.233.2.83, A 72.233.2.82 (151)
+1283449111.101889 IP dns > client: 21161 0/1/0 (112)
+1283449111.105398 IP client > dns: 10823+ A? twitter.com. (29)
+1283449111.115040 IP client > dns: 53764+ AAAA? twitter.com. (29)
+1283449111.198148 IP dns > client: 10823 3/4/4 A 128.242.245.180, A 128.242.245.212, A 168.143.161.20 (227)
+1283449111.211801 IP dns > client: 14277 0/1/0 (100)
+1283449111.220203 IP dns > client: 53764 0/1/0 (101)
+1283449111.223921 IP client > dns: 14364+ A? www.nytimes.com. (33)
+1283449111.234559 IP client > dns: 2927+ AAAA? www.nytimes.com. (33)
+1283449111.250208 IP dns > client: 37575 1/1/0 CNAME heartsdesirejewelry.com. (128)
+1283449111.250831 IP client > dns: 55001+ A? heartsdesirejewelry.com. (41)
+1283449111.261496 IP client > dns: 30359+ AAAA? heartsdesirejewelry.com. (41)
+1283449111.286972 IP dns > client: 34578 2/2/0 CNAME heartsdesirejewelry.com., A 67.20.78.36 (123)
+1283449111.373735 IP dns > client: 14364 1/2/0 A 199.239.136.200 (97)
+1283449111.374680 IP dns > client: 2927 0/1/0 (79)
+1283449111.374730 IP dns > client: 9348 1/2/2 A 72.47.228.121 (135)
+1283449111.376439 IP dns > client: 30359 0/1/0 (110)
+1283449111.377419 IP dns > client: 55001 1/2/0 A 67.20.78.36 (105)
+1283449111.378294 IP client > dns: 5792+ A? apps.facebook.com. (35)
+1283449111.387964 IP client > dns: 36928+ AAAA? apps.facebook.com. (35)
+1283449111.470485 IP dns > client: 5792 2/4/4 CNAME www-college.facebook.com., A 66.220.153.11 (250)
+1283449111.561904 IP dns > client: 36928 1/0/0 CNAME www-college.facebook.com. (61)
+1283449111.617270 IP dns > client: 13226 1/4/4 A 69.63.189.31 (228)
+1283449111.752243 IP static.akamai > client: Flags [.], seq 45698:47146, ack 3715, win 483, options [nop,nop,TS val 1322169112 ecr 424662613], length 1448
+1283449111.752345 IP client > static.akamai: Flags [.], ack 50042, win 65160, options [nop,nop,TS val 424662628 ecr 1322169112], length 0
+1283449111.884536 IP static.akamai > client: Flags [.], seq 50042:51490, ack 3715, win 483, options [nop,nop,TS val 1322169250 ecr 424662628], length 1448
+1283449111.884607 IP client > static.akamai: Flags [.], ack 51490, win 65535, options [nop,nop,TS val 424662630 ecr 1322169250], length 0
+1283449111.892593 IP static.akamai > client: Flags [.], seq 51490:52938, ack 3715, win 483, options [nop,nop,TS val 1322169250 ecr 424662628], length 1448
+1283449111.892641 IP client > static.akamai: Flags [.], ack 52938, win 65522, options [nop,nop,TS val 424662630 ecr 1322169250], length 0
+1283449111.963913 IP static.akamai > client: Flags [P.], seq 54386:54622, ack 3715, win 483, options [nop,nop,TS val 1322169341 ecr 424662630], length 236
+1283449111.964004 IP client > static.akamai: Flags [.], ack 52938, win 65535, options [nop,nop,TS val 424662630 ecr 1322169250,nop,nop,sack 1 {54386:54622}], length 0
+1283449111.977441 IP static.akamai > client: Flags [.], seq 52938:54386, ack 3715, win 483, options [nop,nop,TS val 1322169341 ecr 424662630], length 1448
+1283449111.977547 IP client > static.akamai: Flags [.], ack 54622, win 65492, options [nop,nop,TS val 424662631 ecr 1322169341], length 0
+1283449112.103048 IP dns > client: 1477 ServFail 0/0/0 (39)
+1283449112.189904 IP client > static.akamai: Flags [P.], seq 5281:5733, ack 30105, win 65535, options [nop,nop,TS val 424662633 ecr 1322167245], length 452
+1283449112.203435 IP client > dns: 8621+ A? error.facebook.com. (36)
+1283449112.212681 IP client > dns: 65269+ AAAA? error.facebook.com. (36)
+1283449112.216653 IP client > static.akamai: Flags [P.], seq 3654:4007, ack 77179, win 65535, options [nop,nop,TS val 424662633 ecr 1322167722], length 353
+1283449112.220956 IP client > static.akamai: Flags [P.], seq 4117:4470, ack 12340, win 65535, options [nop,nop,TS val 424662633 ecr 1322167769], length 353
+1283449112.222556 IP client > static.akamai: Flags [P.], seq 4123:4476, ack 30972, win 65535, options [nop,nop,TS val 424662633 ecr 1322167791], length 353
+1283449112.223563 IP client > static.akamai: Flags [P.], seq 4039:4392, ack 27019, win 65535, options [nop,nop,TS val 424662633 ecr 1322167921], length 353
+1283449112.224331 IP client > static.akamai: Flags [P.], seq 3715:4068, ack 54622, win 65535, options [nop,nop,TS val 424662633 ecr 1322169341], length 353
+1283449112.243330 IP client > www.facebook: Flags [P.], seq 5600:6769, ack 47919, win 65535, options [nop,nop,TS val 424662633 ecr 3548954515], length 1169
+1283449112.320847 IP static.akamai > client: Flags [P.], seq 30105:30601, ack 5733, win 650, options [nop,nop,TS val 1322169699 ecr 424662633], length 496
+1283449112.320950 IP client > static.akamai: Flags [.], ack 30601, win 65535, options [nop,nop,TS val 424662634 ecr 1322169699], length 0
+1283449112.321509 IP client > static.akamai: Flags [P.], seq 5733:6086, ack 30601, win 65535, options [nop,nop,TS val 424662634 ecr 1322169699], length 353
+1283449112.403907 IP dns > client: 8621 1/4/4 A 69.63.189.31 (225)
+1283449112.411989 IP static.akamai > client: Flags [P.], seq 77179:78155, ack 4007, win 516, options [nop,nop,TS val 1322169781 ecr 424662633], length 976
+1283449112.412048 IP client > static.akamai: Flags [.], ack 78155, win 65535, options [nop,nop,TS val 424662635 ecr 1322169781], length 0
+1283449112.477094 IP static.akamai > client: Flags [.], ack 4470, win 550, options [nop,nop,TS val 1322169857 ecr 424662633], length 0
+1283449112.489755 IP static.akamai > client: Flags [.], seq 12340:13788, ack 4470, win 550, options [nop,nop,TS val 1322169857 ecr 424662633], length 1448
+1283449112.519380 IP static.akamai > client: Flags [.], seq 13788:15236, ack 4470, win 550, options [nop,nop,TS val 1322169857 ecr 424662633], length 1448
+1283449112.519477 IP client > static.akamai: Flags [.], ack 15236, win 65522, options [nop,nop,TS val 424662636 ecr 1322169857], length 0
+1283449112.521173 IP static.akamai > client: Flags [.], seq 15236:16684, ack 4470, win 550, options [nop,nop,TS val 1322169857 ecr 424662633], length 1448
+1283449112.522756 IP static.akamai > client: Flags [P.], seq 30972:31883, ack 4476, win 550, options [nop,nop,TS val 1322169871 ecr 424662633], length 911
+1283449112.522787 IP client > static.akamai: Flags [.], ack 31883, win 65535, options [nop,nop,TS val 424662636 ecr 1322169871], length 0
+1283449112.606595 IP client > chat.facebook: Flags [S], seq 680150597, win 65535, options [mss 1460,nop,wscale 3,nop,nop,TS val 424662637 ecr 0,sackOK,eol], length 0
+1283449112.606896 IP client > chat.facebook: Flags [S], seq 690355798, win 65535, options [mss 1460,nop,wscale 3,nop,nop,TS val 424662637 ecr 0,sackOK,eol], length 0
+1283449112.664019 IP static.akamai > client: Flags [P.], seq 27019:28028, ack 4392, win 550, options [nop,nop,TS val 1322169929 ecr 424662633], length 1009
+1283449112.664104 IP client > static.akamai: Flags [.], ack 28028, win 65535, options [nop,nop,TS val 424662637 ecr 1322169929], length 0
+1283449112.664379 IP static.akamai > client: Flags [P.], seq 56070:56617, ack 4068, win 516, options [nop,nop,TS val 1322169944 ecr 424662633], length 547
+1283449112.664425 IP client > static.akamai: Flags [.], ack 54622, win 65535, options [nop,nop,TS val 424662637 ecr 1322169341,nop,nop,sack 1 {56070:56617}], length 0
+1283449112.666194 IP static.akamai > client: Flags [.], seq 54622:56070, ack 4068, win 516, options [nop,nop,TS val 1322169944 ecr 424662633], length 1448
+1283449112.666219 IP client > static.akamai: Flags [.], ack 56617, win 65453, options [nop,nop,TS val 424662637 ecr 1322169944], length 0
+1283449112.671079 IP client > static.akamai: Flags [.], ack 16684, win 65535, options [nop,nop,TS val 424662637 ecr 1322169857], length 0
+1283449112.726039 IP static.akamai > client: Flags [P.], seq 16684:17561, ack 4470, win 550, options [nop,nop,TS val 1322170101 ecr 424662636], length 877
+1283449112.726134 IP client > static.akamai: Flags [.], ack 17561, win 65535, options [nop,nop,TS val 424662638 ecr 1322170101], length 0
+1283449112.737783 IP static.akamai > client: Flags [.], seq 30601:32049, ack 6086, win 684, options [nop,nop,TS val 1322170101 ecr 424662634], length 1448
+1283449112.745753 IP static.akamai > client: Flags [.], seq 32049:33497, ack 6086, win 684, options [nop,nop,TS val 1322170101 ecr 424662634], length 1448
+1283449112.745800 IP client > static.akamai: Flags [.], ack 33497, win 65535, options [nop,nop,TS val 424662638 ecr 1322170101], length 0
+1283449112.756633 IP static.akamai > client: Flags [.], seq 33497:34945, ack 6086, win 684, options [nop,nop,TS val 1322170101 ecr 424662634], length 1448
+1283449112.756717 IP client > static.akamai: Flags [.], ack 34945, win 65522, options [nop,nop,TS val 424662638 ecr 1322170101], length 0
+1283449112.764493 IP static.akamai > client: Flags [.], seq 34945:36393, ack 6086, win 684, options [nop,nop,TS val 1322170101 ecr 424662634], length 1448
+1283449112.772891 IP static.akamai > client: Flags [.], seq 36393:37841, ack 6086, win 684, options [nop,nop,TS val 1322170101 ecr 424662634], length 1448
+1283449112.772946 IP client > static.akamai: Flags [.], ack 37841, win 65522, options [nop,nop,TS val 424662639 ecr 1322170101], length 0
+1283449112.791713 IP chat.facebook > client: Flags [S.], seq 1276888985, ack 690355799, win 4380, options [mss 1460,nop,wscale 0,nop,nop,TS val 3548809020 ecr 424662637,sackOK,eol], length 0
+1283449112.791811 IP client > chat.facebook: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662639 ecr 3548809020], length 0
+1283449112.792106 IP client > chat.facebook: Flags [P.], seq 1:1166, ack 1, win 65535, options [nop,nop,TS val 424662639 ecr 3548809020], length 1165
+1283449112.792558 IP chat.facebook > client: Flags [S.], seq 2248622794, ack 680150598, win 4380, options [mss 1460,nop,wscale 0,nop,nop,TS val 3548809021 ecr 424662637,sackOK,eol], length 0
+1283449112.792599 IP client > chat.facebook: Flags [.], ack 1, win 65535, options [nop,nop,TS val 424662639 ecr 3548809021], length 0
+1283449112.792912 IP client > chat.facebook: Flags [P.], seq 1:1188, ack 1, win 65535, options [nop,nop,TS val 424662639 ecr 3548809021], length 1187
+1283449112.807165 IP www.facebook > client: Flags [.], ack 6769, win 11148, options [nop,nop,TS val 3548959657 ecr 424662633], length 0
+1283449112.943259 IP dns > client: 65269 ServFail 0/0/0 (36)
+1283449112.990017 IP static.akamai > client: Flags [.], seq 37841:39289, ack 6086, win 684, options [nop,nop,TS val 1322170248 ecr 424662638], length 1448
+1283449112.996575 IP static.akamai > client: Flags [.], seq 39289:40737, ack 6086, win 684, options [nop,nop,TS val 1322170248 ecr 424662638], length 1448
+1283449112.996614 IP client > static.akamai: Flags [.], ack 40737, win 65522, options [nop,nop,TS val 424662641 ecr 1322170248], length 0
+1283449112.997604 IP static.akamai > client: Flags [P.], seq 42185:42292, ack 6086, win 684, options [nop,nop,TS val 1322170248 ecr 424662638], length 107
+1283449112.997621 IP client > static.akamai: Flags [.], ack 40737, win 65535, options [nop,nop,TS val 424662641 ecr 1322170248,nop,nop,sack 1 {42185:42292}], length 0
+1283449112.999958 IP static.akamai > client: Flags [.], seq 40737:42185, ack 6086, win 684, options [nop,nop,TS val 1322170248 ecr 424662638], length 1448
+1283449112.999989 IP client > static.akamai: Flags [.], ack 42292, win 65508, options [nop,nop,TS val 424662641 ecr 1322170248], length 0
+1283449113.002162 IP www.facebook > client: Flags [P.], seq 47919:48751, ack 6769, win 11148, options [nop,nop,TS val 3548959735 ecr 424662633], length 832
+1283449113.002185 IP client > www.facebook: Flags [.], ack 48751, win 65535, options [nop,nop,TS val 424662641 ecr 3548959735], length 0
+1283449113.087343 IP client > chat.facebook: Flags [S], seq 2056928620, win 65535, options [mss 1460,nop,wscale 3,nop,nop,TS val 424662642 ecr 0,sackOK,eol], length 0
+1283449113.102077 IP chat.facebook > client: Flags [P.], seq 1:196, ack 1166, win 5545, options [nop,nop,TS val 3548809261 ecr 424662639], length 195
+1283449113.102137 IP client > chat.facebook: Flags [.], ack 196, win 65535, options [nop,nop,TS val 424662642 ecr 3548809261], length 0
+1283449113.161756 IP chat.facebook > client: Flags [P.], seq 1:196, ack 1188, win 5567, options [nop,nop,TS val 3548809305 ecr 424662639], length 195
+1283449113.161792 IP client > chat.facebook: Flags [.], ack 196, win 65535, options [nop,nop,TS val 424662642 ecr 3548809305], length 0
+1283449113.339987 IP chat.facebook > client: Flags [S.], seq 3283382821, ack 2056928621, win 5840, options [mss 1460,nop,wscale 9], length 0
+1283449113.340028 IP client > chat.facebook: Flags [.], ack 1, win 65535, length 0
+1283449113.340124 IP client > chat.facebook: Flags [P.], seq 1:1333, ack 1, win 65535, length 1332
+1283449113.838178 IP chat.facebook > client: Flags [.], ack 1333, win 17, length 0
+1283449113.842773 IP chat.facebook > client: Flags [P.], seq 1:639, ack 1333, win 17, length 638
+1283449113.842814 IP client > chat.facebook: Flags [.], ack 639, win 65535, length 0
+1283449113.848002 IP client > static.akamai: Flags [P.], seq 4007:4723, ack 78155, win 65535, options [nop,nop,TS val 424662649 ecr 1322169781], length 716
+1283449113.849573 IP client > static.akamai: Flags [P.], seq 4476:5194, ack 31883, win 65535, options [nop,nop,TS val 424662649 ecr 1322169871], length 718
+1283449113.850416 IP client > static.akamai: Flags [P.], seq 4392:5110, ack 28028, win 65535, options [nop,nop,TS val 424662649 ecr 1322169929], length 718
+1283449113.851210 IP client > static.akamai: Flags [P.], seq 4068:4786, ack 56617, win 65535, options [nop,nop,TS val 424662649 ecr 1322169944], length 718
+1283449114.159222 IP static.akamai > client: Flags [.], seq 78155:79603, ack 4723, win 561, options [nop,nop,TS val 1322171410 ecr 424662649], length 1448
+1283449114.175499 IP static.akamai > client: Flags [.], seq 79603:81051, ack 4723, win 561, options [nop,nop,TS val 1322171410 ecr 424662649], length 1448
+1283449114.175622 IP client > static.akamai: Flags [.], ack 81051, win 65535, options [nop,nop,TS val 424662653 ecr 1322171410], length 0
+1283449114.186265 IP static.akamai > client: Flags [.], seq 81051:82499, ack 4723, win 561, options [nop,nop,TS val 1322171410 ecr 424662649], length 1448
+1283449114.186319 IP client > static.akamai: Flags [.], ack 82499, win 65522, options [nop,nop,TS val 424662653 ecr 1322171410], length 0
+1283449114.193657 IP static.akamai > client: Flags [.], seq 82499:83947, ack 4723, win 561, options [nop,nop,TS val 1322171410 ecr 424662649], length 1448
+1283449114.203576 IP static.akamai > client: Flags [.], seq 83947:85395, ack 4723, win 561, options [nop,nop,TS val 1322171410 ecr 424662649], length 1448
+1283449114.203630 IP client > static.akamai: Flags [.], ack 85395, win 65522, options [nop,nop,TS val 424662653 ecr 1322171410], length 0
+1283449114.215731 IP static.akamai > client: Flags [.], seq 85395:86843, ack 4723, win 561, options [nop,nop,TS val 1322171410 ecr 424662649], length 1448
+1283449114.222109 IP static.akamai > client: Flags [.], seq 86843:88291, ack 4723, win 561, options [nop,nop,TS val 1322171410 ecr 424662649], length 1448
+1283449114.222157 IP client > static.akamai: Flags [.], ack 88291, win 65522, options [nop,nop,TS val 424662653 ecr 1322171410], length 0
+1283449114.232192 IP static.akamai > client: Flags [.], seq 31883:33331, ack 5194, win 595, options [nop,nop,TS val 1322171470 ecr 424662649], length 1448
+1283449114.242477 IP static.akamai > client: Flags [.], seq 33331:34779, ack 5194, win 595, options [nop,nop,TS val 1322171470 ecr 424662649], length 1448
+1283449114.242581 IP client > static.akamai: Flags [.], ack 34779, win 65535, options [nop,nop,TS val 424662653 ecr 1322171470], length 0
+1283449114.250384 IP static.akamai > client: Flags [.], seq 34779:36227, ack 5194, win 595, options [nop,nop,TS val 1322171470 ecr 424662649], length 1448
+1283449114.250430 IP client > static.akamai: Flags [.], ack 36227, win 65522, options [nop,nop,TS val 424662653 ecr 1322171470], length 0
+1283449114.258969 IP static.akamai > client: Flags [.], seq 36227:37675, ack 5194, win 595, options [nop,nop,TS val 1322171470 ecr 424662649], length 1448
+1283449114.268799 IP static.akamai > client: Flags [.], seq 28028:29476, ack 5110, win 595, options [nop,nop,TS val 1322171518 ecr 424662649], length 1448
+1283449114.273618 IP client > static.akamai: Flags [.], ack 37675, win 65535, options [nop,nop,TS val 424662653 ecr 1322171470], length 0
+1283449114.273639 IP client > static.akamai: Flags [.], ack 29476, win 65535, options [nop,nop,TS val 424662653 ecr 1322171518], length 0
+1283449114.278836 IP static.akamai > client: Flags [.], seq 29476:30924, ack 5110, win 595, options [nop,nop,TS val 1322171518 ecr 424662649], length 1448
+1283449114.286745 IP static.akamai > client: Flags [.], seq 30924:32372, ack 5110, win 595, options [nop,nop,TS val 1322171518 ecr 424662649], length 1448
+1283449114.286799 IP client > static.akamai: Flags [.], ack 32372, win 65522, options [nop,nop,TS val 424662654 ecr 1322171518], length 0
+1283449114.297066 IP static.akamai > client: Flags [.], seq 32372:33820, ack 5110, win 595, options [nop,nop,TS val 1322171518 ecr 424662649], length 1448
+1283449114.305421 IP static.akamai > client: Flags [P.], seq 58065:59275, ack 4786, win 561, options [nop,nop,TS val 1322171571 ecr 424662649], length 1210
+1283449114.305475 IP client > static.akamai: Flags [.], ack 56617, win 65535, options [nop,nop,TS val 424662654 ecr 1322169944,nop,nop,sack 1 {58065:59275}], length 0
+1283449114.313626 IP static.akamai > client: Flags [.], seq 56617:58065, ack 4786, win 561, options [nop,nop,TS val 1322171571 ecr 424662649], length 1448
+1283449114.313682 IP client > static.akamai: Flags [.], ack 59275, win 65370, options [nop,nop,TS val 424662654 ecr 1322171571], length 0
+1283449114.322439 IP static.akamai > client: Flags [P.], seq 88291:89519, ack 4723, win 561, options [nop,nop,TS val 1322171649 ecr 424662653], length 1228
+1283449114.322484 IP client > static.akamai: Flags [.], ack 89519, win 65535, options [nop,nop,TS val 424662654 ecr 1322171649], length 0
+1283449114.350373 IP static.akamai > client: Flags [.], seq 37675:39123, ack 5194, win 595, options [nop,nop,TS val 1322171715 ecr 424662653], length 1448
+1283449114.358569 IP static.akamai > client: Flags [.], seq 39123:40571, ack 5194, win 595, options [nop,nop,TS val 1322171715 ecr 424662653], length 1448
+1283449114.358624 IP client > static.akamai: Flags [.], ack 40571, win 65522, options [nop,nop,TS val 424662654 ecr 1322171715], length 0
+1283449114.368541 IP static.akamai > client: Flags [.], seq 40571:42019, ack 5194, win 595, options [nop,nop,TS val 1322171721 ecr 424662653], length 1448
+1283449114.382199 IP static.akamai > client: Flags [.], seq 42019:43467, ack 5194, win 595, options [nop,nop,TS val 1322171748 ecr 424662653], length 1448
+1283449114.382274 IP client > static.akamai: Flags [.], ack 43467, win 65535, options [nop,nop,TS val 424662655 ecr 1322171721], length 0
+1283449114.393487 IP static.akamai > client: Flags [.], seq 33820:35268, ack 5110, win 595, options [nop,nop,TS val 1322171748 ecr 424662653], length 1448
+1283449114.393529 IP client > static.akamai: Flags [.], ack 35268, win 65522, options [nop,nop,TS val 424662655 ecr 1322171518], length 0
+1283449114.402426 IP static.akamai > client: Flags [.], seq 35268:36716, ack 5110, win 595, options [nop,nop,TS val 1322171765 ecr 424662654], length 1448
+1283449114.410019 IP static.akamai > client: Flags [.], seq 36716:38164, ack 5110, win 595, options [nop,nop,TS val 1322171765 ecr 424662654], length 1448
+1283449114.410054 IP client > static.akamai: Flags [.], ack 38164, win 65522, options [nop,nop,TS val 424662655 ecr 1322171765], length 0
+1283449114.484213 IP static.akamai > client: Flags [.], seq 43467:44915, ack 5194, win 595, options [nop,nop,TS val 1322171841 ecr 424662654], length 1448
+1283449114.489323 IP static.akamai > client: Flags [.], seq 44915:46363, ack 5194, win 595, options [nop,nop,TS val 1322171841 ecr 424662654], length 1448
+1283449114.489420 IP client > static.akamai: Flags [.], ack 46363, win 65535, options [nop,nop,TS val 424662656 ecr 1322171841], length 0
+1283449114.514757 IP static.akamai > client: Flags [.], seq 46363:47811, ack 5194, win 595, options [nop,nop,TS val 1322171875 ecr 424662655], length 1448
+1283449114.522165 IP static.akamai > client: Flags [.], seq 47811:49259, ack 5194, win 595, options [nop,nop,TS val 1322171875 ecr 424662655], length 1448
+1283449114.522290 IP client > static.akamai: Flags [.], ack 49259, win 65535, options [nop,nop,TS val 424662656 ecr 1322171875], length 0
+1283449114.530032 IP static.akamai > client: Flags [.], seq 49259:50707, ack 5194, win 595, options [nop,nop,TS val 1322171875 ecr 424662655], length 1448
+1283449114.551941 IP static.akamai > client: Flags [.], seq 38164:39612, ack 5110, win 595, options [nop,nop,TS val 1322171888 ecr 424662655], length 1448
+1283449114.559390 IP static.akamai > client: Flags [.], seq 39612:41060, ack 5110, win 595, options [nop,nop,TS val 1322171888 ecr 424662655], length 1448
+1283449114.559529 IP client > static.akamai: Flags [.], ack 41060, win 65535, options [nop,nop,TS val 424662656 ecr 1322171888], length 0
+1283449114.569372 IP static.akamai > client: Flags [.], seq 41060:42508, ack 5110, win 595, options [nop,nop,TS val 1322171902 ecr 424662655], length 1448
+1283449114.579122 IP static.akamai > client: Flags [.], seq 42508:43956, ack 5110, win 595, options [nop,nop,TS val 1322171902 ecr 424662655], length 1448
+1283449114.579236 IP client > static.akamai: Flags [.], ack 43956, win 65535, options [nop,nop,TS val 424662657 ecr 1322171902], length 0
+1283449114.589030 IP static.akamai > client: Flags [.], seq 43956:45404, ack 5110, win 595, options [nop,nop,TS val 1322171902 ecr 424662655], length 1448
+1283449114.599222 IP static.akamai > client: Flags [.], seq 50707:52155, ack 5194, win 595, options [nop,nop,TS val 1322171962 ecr 424662656], length 1448
+1283449114.599300 IP client > static.akamai: Flags [.], ack 52155, win 65535, options [nop,nop,TS val 424662657 ecr 1322171875], length 0
+1283449114.605233 IP static.akamai > client: Flags [.], seq 52155:53603, ack 5194, win 595, options [nop,nop,TS val 1322171962 ecr 424662656], length 1448
+1283449114.605294 IP client > static.akamai: Flags [.], ack 53603, win 65522, options [nop,nop,TS val 424662657 ecr 1322171962], length 0
+1283449114.674379 IP client > static.akamai: Flags [.], ack 45404, win 65535, options [nop,nop,TS val 424662657 ecr 1322171902], length 0
+1283449114.678933 IP static.akamai > client: Flags [.], seq 53603:55051, ack 5194, win 595, options [nop,nop,TS val 1322171995 ecr 424662656], length 1448
+1283449114.686616 IP static.akamai > client: Flags [.], seq 55051:56499, ack 5194, win 595, options [nop,nop,TS val 1322171995 ecr 424662656], length 1448
+1283449114.686712 IP client > static.akamai: Flags [.], ack 56499, win 65535, options [nop,nop,TS val 424662658 ecr 1322171995], length 0
+1283449114.696728 IP static.akamai > client: Flags [.], seq 45404:46852, ack 5110, win 595, options [nop,nop,TS val 1322172035 ecr 424662656], length 1448
+1283449114.709852 IP static.akamai > client: Flags [.], seq 46852:48300, ack 5110, win 595, options [nop,nop,TS val 1322172035 ecr 424662656], length 1448
+1283449114.709915 IP client > static.akamai: Flags [.], ack 48300, win 65535, options [nop,nop,TS val 424662658 ecr 1322172035], length 0
+1283449114.723365 IP static.akamai > client: Flags [.], seq 48300:49748, ack 5110, win 595, options [nop,nop,TS val 1322172063 ecr 424662657], length 1448
+1283449114.733352 IP static.akamai > client: Flags [.], seq 49748:51196, ack 5110, win 595, options [nop,nop,TS val 1322172063 ecr 424662657], length 1448
+1283449114.733414 IP client > static.akamai: Flags [.], ack 51196, win 65535, options [nop,nop,TS val 424662658 ecr 1322172063], length 0
+1283449114.760268 IP static.akamai > client: Flags [.], seq 56499:57947, ack 5194, win 595, options [nop,nop,TS val 1322172095 ecr 424662657], length 1448
+1283449114.769985 IP static.akamai > client: Flags [.], seq 57947:59395, ack 5194, win 595, options [nop,nop,TS val 1322172095 ecr 424662657], length 1448
+1283449114.773070 IP client > static.akamai: Flags [.], ack 59395, win 65535, options [nop,nop,TS val 424662658 ecr 1322172095], length 0
+1283449114.786947 IP static.akamai > client: Flags [.], seq 59395:60843, ack 5194, win 595, options [nop,nop,TS val 1322172108 ecr 424662657], length 1448
+1283449114.874579 IP client > static.akamai: Flags [.], ack 60843, win 65535, options [nop,nop,TS val 424662659 ecr 1322172108], length 0
+1283449114.895378 IP static.akamai > client: Flags [.], seq 51196:52644, ack 5110, win 595, options [nop,nop,TS val 1322172168 ecr 424662657], length 1448
+1283449114.905184 IP static.akamai > client: Flags [.], seq 60843:62291, ack 5194, win 595, options [nop,nop,TS val 1322172168 ecr 424662658], length 1448
+1283449114.915123 IP static.akamai > client: Flags [.], seq 62291:63739, ack 5194, win 595, options [nop,nop,TS val 1322172168 ecr 424662658], length 1448
+1283449114.915239 IP client > static.akamai: Flags [.], ack 63739, win 65535, options [nop,nop,TS val 424662660 ecr 1322172168], length 0
+1283449114.929038 IP static.akamai > client: Flags [.], seq 52644:54092, ack 5110, win 595, options [nop,nop,TS val 1322172194 ecr 424662658], length 1448
+1283449114.929147 IP client > static.akamai: Flags [.], ack 54092, win 65535, options [nop,nop,TS val 424662660 ecr 1322172168], length 0
+1283449114.937129 IP static.akamai > client: Flags [.], seq 54092:55540, ack 5110, win 595, options [nop,nop,TS val 1322172194 ecr 424662658], length 1448
+1283449114.948707 IP static.akamai > client: Flags [.], seq 55540:56988, ack 5110, win 595, options [nop,nop,TS val 1322172230 ecr 424662658], length 1448
+1283449114.948832 IP client > static.akamai: Flags [.], ack 56988, win 65535, options [nop,nop,TS val 424662660 ecr 1322172194], length 0
+1283449114.956941 IP static.akamai > client: Flags [.], seq 56988:58436, ack 5110, win 595, options [nop,nop,TS val 1322172230 ecr 424662658], length 1448
+1283449114.956991 IP client > static.akamai: Flags [.], ack 58436, win 65522, options [nop,nop,TS val 424662660 ecr 1322172230], length 0
+1283449114.967194 IP static.akamai > client: Flags [.], seq 63739:65187, ack 5194, win 595, options [nop,nop,TS val 1322172275 ecr 424662658], length 1448
+1283449114.977725 IP static.akamai > client: Flags [.], seq 65187:66635, ack 5194, win 595, options [nop,nop,TS val 1322172275 ecr 424662658], length 1448
+1283449114.977840 IP client > static.akamai: Flags [.], ack 66635, win 65535, options [nop,nop,TS val 424662661 ecr 1322172275], length 0
+1283449114.985740 IP static.akamai > client: Flags [.], seq 66635:68083, ack 5194, win 595, options [nop,nop,TS val 1322172275 ecr 424662658], length 1448
+1283449115.075122 IP client > static.akamai: Flags [.], ack 68083, win 65535, options [nop,nop,TS val 424662661 ecr 1322172275], length 0
+1283449115.077688 IP static.akamai > client: Flags [.], seq 68083:69531, ack 5194, win 595, options [nop,nop,TS val 1322172389 ecr 424662659], length 1448
+1283449115.077926 IP static.akamai > client: Flags [P.], seq 70979:71215, ack 5194, win 595, options [nop,nop,TS val 1322172395 ecr 424662660], length 236
+1283449115.077977 IP client > static.akamai: Flags [.], ack 69531, win 65535, options [nop,nop,TS val 424662662 ecr 1322172389,nop,nop,sack 1 {70979:71215}], length 0
+1283449115.083485 IP static.akamai > client: Flags [.], seq 69531:70979, ack 5194, win 595, options [nop,nop,TS val 1322172395 ecr 424662660], length 1448
+1283449115.083527 IP client > static.akamai: Flags [.], ack 71215, win 65492, options [nop,nop,TS val 424662662 ecr 1322172395], length 0
+1283449115.090269 IP static.akamai > client: Flags [.], seq 58436:59884, ack 5110, win 595, options [nop,nop,TS val 1322172401 ecr 424662660], length 1448
+1283449115.098983 IP static.akamai > client: Flags [.], seq 59884:61332, ack 5110, win 595, options [nop,nop,TS val 1322172401 ecr 424662660], length 1448
+1283449115.099031 IP client > static.akamai: Flags [.], ack 61332, win 65535, options [nop,nop,TS val 424662662 ecr 1322172401], length 0
+1283449115.119985 IP static.akamai > client: Flags [.], seq 61332:62780, ack 5110, win 595, options [nop,nop,TS val 1322172402 ecr 424662660], length 1448
+1283449115.153662 IP static.akamai > client: Flags [.], seq 62780:64228, ack 5110, win 595, options [nop,nop,TS val 1322172428 ecr 424662660], length 1448
+1283449115.153760 IP client > static.akamai: Flags [.], ack 64228, win 65535, options [nop,nop,TS val 424662662 ecr 1322172402], length 0
+1283449115.163459 IP static.akamai > client: Flags [.], seq 64228:65676, ack 5110, win 595, options [nop,nop,TS val 1322172428 ecr 424662660], length 1448
+1283449115.171747 IP static.akamai > client: Flags [.], seq 65676:67124, ack 5110, win 595, options [nop,nop,TS val 1322172428 ecr 424662660], length 1448
+1283449115.171851 IP client > static.akamai: Flags [.], ack 67124, win 65535, options [nop,nop,TS val 424662662 ecr 1322172428], length 0
+1283449115.267267 IP static.akamai > client: Flags [.], seq 67124:68572, ack 5110, win 595, options [nop,nop,TS val 1322172602 ecr 424662662], length 1448
+1283449115.267364 IP client > static.akamai: Flags [.], ack 68572, win 65522, options [nop,nop,TS val 424662663 ecr 1322172602], length 0
+1283449115.275793 IP static.akamai > client: Flags [.], seq 68572:70020, ack 5110, win 595, options [nop,nop,TS val 1322172602 ecr 424662662], length 1448
+1283449115.285174 IP static.akamai > client: Flags [.], seq 70020:71468, ack 5110, win 595, options [nop,nop,TS val 1322172648 ecr 424662662], length 1448
+1283449115.285228 IP client > static.akamai: Flags [.], ack 71468, win 65522, options [nop,nop,TS val 424662664 ecr 1322172602], length 0
+1283449115.295869 IP static.akamai > client: Flags [.], seq 71468:72916, ack 5110, win 595, options [nop,nop,TS val 1322172648 ecr 424662662], length 1448
+1283449115.306176 IP static.akamai > client: Flags [.], seq 72916:74364, ack 5110, win 595, options [nop,nop,TS val 1322172655 ecr 424662662], length 1448
+1283449115.306271 IP client > static.akamai: Flags [.], ack 74364, win 65522, options [nop,nop,TS val 424662664 ecr 1322172648], length 0
+1283449115.313879 IP static.akamai > client: Flags [.], seq 74364:75812, ack 5110, win 595, options [nop,nop,TS val 1322172655 ecr 424662662], length 1448
+1283449115.398499 IP static.akamai > client: Flags [.], seq 75812:77260, ack 5110, win 595, options [nop,nop,TS val 1322172741 ecr 424662663], length 1448
+1283449115.398553 IP client > static.akamai: Flags [.], ack 77260, win 65522, options [nop,nop,TS val 424662665 ecr 1322172655], length 0
+1283449115.431956 IP static.akamai > client: Flags [P.], seq 78708:79551, ack 5110, win 595, options [nop,nop,TS val 1322172768 ecr 424662664], length 843
+1283449115.432038 IP client > static.akamai: Flags [.], ack 77260, win 65535, options [nop,nop,TS val 424662665 ecr 1322172655,nop,nop,sack 1 {78708:79551}], length 0
+1283449115.445247 IP static.akamai > client: Flags [.], seq 77260:78708, ack 5110, win 595, options [nop,nop,TS val 1322172768 ecr 424662664], length 1448
+1283449115.445306 IP client > static.akamai: Flags [.], ack 79551, win 65416, options [nop,nop,TS val 424662665 ecr 1322172768], length 0
+1283449115.596172 IP client > chat.facebook: Flags [P.], seq 1333:2743, ack 639, win 65535, length 1410
+1283449115.988500 IP chat.facebook > client: Flags [.], ack 2743, win 23, length 0
+
+
+
