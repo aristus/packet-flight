@@ -31,7 +31,7 @@ void setup() {
   init_data();
 
   Ani.init(this);
-  Ani.setDefaultEasing(Ani.CUBIC_OUT);
+  Ani.setDefaultEasing(Ani.QUAD_OUT);
 
   for (int i=0; i<packets.size(); i++) {
     Packet s = (Packet)packets.get(i);
@@ -101,11 +101,12 @@ void draw() {
 }
 
 void initLegend() {
-  packets.add(new Packet(0,0, 70, 455, -1, 0));
-  packets.add(new CtrlPacket(0,0, 170, 455, -1, 0));
-  packets.add(new SynPacket(0,0, 270, 455, -1, 0));
-  packets.add(new UdpPacket(0,0, 370, 455, -1, 0));
-  packets.add(new FinPacket(0,0, 470, 455, -1, 0));
+  packets.add(new Packet(0,0, 70, 455, -1, 0, 1.0));
+  packets.add(new CtrlPacket(0,0, 170, 455, -1, 0, 1.0));
+  packets.add(new SynPacket(0,0, 270, 455, -1, 0, 1.0));
+  packets.add(new UdpPacket(0,0, 370, 455, -1, 0, 1.0));
+  packets.add(new FinPacket(0,0, 450, 455, -1, 0, 1.0));
+  packets.add(new RePacket(0,0, 520, 455, -1, 0, 1.0));
 }
 
 void legend() {
@@ -115,7 +116,8 @@ void legend() {
   text("ACK", 180, 460);
   text("SYN", 280, 460);
   text("UDP", 380, 460);
-  text("FIN", 480, 460);
+  text("FIN", 460, 460);
+  text("RETRANSMIT", 530, 460);
 }
 
 void keyPressed() {
@@ -141,11 +143,13 @@ int FIN = 2;
 int CTRL = 3;
 int UDP = 4;
 int PUSH = 5;
+int RETRANS = 6;
 
 class Packet {
  P pos;
  P dest;
  float start;
+  float flight = 1; // # of real seconds it spends flying
  float sz;
  color mycolor = #1689cf; // default blue
  boolean played = false;
@@ -153,16 +157,17 @@ class Packet {
  float channel = 0;
 
 
- Packet (float x, float y, float dx, float dy, float dlay, float bytes) {
+  Packet (float x, float y, float dx, float dy, float dlay, float bytes, float t) {
    // randomize the origin points so packets don't occlude.
-   pos = new P(random(-25, 25) + x, random(-25, 25) + y);
+   pos = new P(random(-15, 15) + x, random(-15, 15) + y);
    dest = new P(dx, dy);
    start = dlay;
    sz = (bytes + 200.0) / 150.0;
+   flight = t;
  }
 
  void draw() {
-   if (start == -1 || (start <= current && current <= (start + flight_time))) {
+   if (start == -1 || (start < current && current <= (start + (flight*1.5)))) {
      shape();
    }
  }
@@ -174,8 +179,8 @@ class Packet {
 }
 
 class SynPacket extends Packet {
-  SynPacket (float x, float y, float dx, float dy, float dlay, float bytes) {
-    super(x,y,dx,dy,dlay,bytes);
+  SynPacket (float x, float y, float dx, float dy, float dlay, float bytes, float t) {
+    super(x,y,dx,dy,dlay,bytes,t);
   }
   void shape() {
      fill(#4d8c2a);
@@ -183,8 +188,8 @@ class SynPacket extends Packet {
   }
 }
 class FinPacket extends Packet {
-  FinPacket (float x, float y, float dx, float dy, float dlay, float bytes) {
-    super(x,y,dx,dy,dlay,bytes);
+  FinPacket (float x, float y, float dx, float dy, float dlay, float bytes, float t) {
+    super(x,y,dx,dy,dlay,bytes,t);
   }
   void shape() {
      fill(#990000);
@@ -192,8 +197,8 @@ class FinPacket extends Packet {
   }
 }
 class CtrlPacket extends Packet {
-  CtrlPacket (float x, float y, float dx, float dy, float dlay, float bytes) {
-    super(x,y,dx,dy,dlay,bytes);
+  CtrlPacket (float x, float y, float dx, float dy, float dlay, float bytes, float t) {
+    super(x,y,dx,dy,dlay,bytes,t);
   }
   void shape() {
      fill(#4d8c2a);
@@ -201,8 +206,8 @@ class CtrlPacket extends Packet {
   }
 }
 class UdpPacket extends Packet {
-  UdpPacket (float x, float y, float dx, float dy, float dlay, float bytes) {
-    super(x,y,dx,dy,dlay,bytes);
+  UdpPacket (float x, float y, float dx, float dy, float dlay, float bytes, float t) {
+    super(x,y,dx,dy,dlay,bytes,t);
   }
   void shape() {
      fill(#ec9234);
@@ -210,14 +215,24 @@ class UdpPacket extends Packet {
   }
 }
 class PushPacket extends Packet {
-  PushPacket (float x, float y, float dx, float dy, float dlay, float bytes) {
-    super(x,y,dx,dy,dlay,bytes);
+  PushPacket (float x, float y, float dx, float dy, float dlay, float bytes, float t) {
+    super(x,y,dx,dy,dlay,bytes,t);
   }
   void shape() {
      fill(mycolor);
      ellipse(dest.x, dest.y, sz+10, sz+10);
      fill(192);
      text("P", dest.x, dest.y-10);
+  }
+}
+
+class RePacket extends Packet {
+  RePacket (float x, float y, float dx, float dy, float dlay, float bytes, float t) {
+    super(x,y,dx,dy,dlay,bytes,t);
+  }
+  void shape() {
+     fill(#a7466c);
+     ellipse(dest.x, dest.y, sz+10, sz+10);
   }
 }
 
@@ -250,28 +265,31 @@ class NetworkNode {
     }
   }
 
-  void addPacket(NetworkNode dest, float dlay, float bytes, int cls) {
+  void add(NetworkNode dest, float dlay, float bytes, int cls, float t) {
    dest.setStart(dlay);
    timeline.add(dlay);
    Packet p;
    switch (cls) {
    case 0:
-     p = new Packet(send.x, send.y, dest.recv.x, dest.recv.y, dlay, bytes);
+     p = new Packet(send.x, send.y, dest.recv.x, dest.recv.y, dlay, bytes, t);
      break;
    case 3:
-     p = new CtrlPacket(send.x, send.y, dest.recv.x, dest.recv.y, dlay, bytes);
+     p = new CtrlPacket(send.x, send.y, dest.recv.x, dest.recv.y, dlay, bytes, t);
      break;
    case 5:
-     p = new PushPacket(send.x, send.y, dest.recv.x, dest.recv.y, dlay, bytes);
+     p = new PushPacket(send.x, send.y, dest.recv.x, dest.recv.y, dlay, bytes, t);
      break;
    case 1:
-     p = new SynPacket(send.x, send.y, dest.recv.x, dest.recv.y, dlay, bytes);
+     p = new SynPacket(send.x, send.y, dest.recv.x, dest.recv.y, dlay, bytes, t);
      break;
    case 4:
-     p = new UdpPacket(send.x, send.y, dest.recv.x, dest.recv.y, dlay, bytes);
+     p = new UdpPacket(send.x, send.y, dest.recv.x, dest.recv.y, dlay, bytes, t);
+     break;
+   case 6:
+     p = new RePacket(send.x, send.y, dest.recv.x, dest.recv.y, dlay, bytes, t);
      break;
    default:
-     p = new FinPacket(send.x, send.y, dest.recv.x, dest.recv.y, dlay, bytes);
+     p = new FinPacket(send.x, send.y, dest.recv.x, dest.recv.y, dlay, bytes, t);
      break;
    }
    packets.add(p);
@@ -283,7 +301,7 @@ class Histo {
   float endt = 100;
   float width = 500;
   float pix_per_sec = 1; // 1 pixel = 1 second of real time
-  float[] buckets = new float[500];
+  float[] buckets = new float[2000];
 
   void init(float s, float en) {
     start = s;

@@ -1,0 +1,430 @@
+# Image request, 500ms latency, 10% packet loss (@1X)
+1283716574.779736 IP client > server: Flags [P.], seq 1:633, ack 1, win 65535, options [nop,nop,TS val 425879118 ecr 1944646060], length 632
+1283716574.801162 IP server > client: Flags [.], ack 633, win 56, options [nop,nop,TS val 1944651200 ecr 425879118], length 0
+1283716574.822626 IP server > client: Flags [.], seq 1:1449, ack 633, win 56, options [nop,nop,TS val 1944651205 ecr 425879118], length 1448
+1283716574.822896 IP server > client: Flags [.], seq 1449:2897, ack 633, win 56, options [nop,nop,TS val 1944651205 ecr 425879118], length 1448
+1283716574.823375 IP server > client: Flags [.], seq 2897:4345, ack 633, win 56, options [nop,nop,TS val 1944651205 ecr 425879118], length 1448
+1283716577.961182 IP server > client: Flags [.], seq 1:1449, ack 633, win 56, options [nop,nop,TS val 1944651979 ecr 425879118], length 1448
+1283716578.717402 IP client > server: Flags [.], ack 1449, win 65535, options [nop,nop,TS val 425879157 ecr 1944651205,nop,nop,sack 1 {2897:4345}], length 0
+1283716578.743313 IP server > client: Flags [.], seq 4345:5793, ack 633, win 56, options [nop,nop,TS val 1944652185 ecr 425879157], length 1448
+1283716578.743633 IP server > client: Flags [.], seq 5793:7241, ack 633, win 56, options [nop,nop,TS val 1944652185 ecr 425879157], length 1448
+1283716578.998782 IP client > server: Flags [.], ack 1449, win 65535, options [nop,nop,TS val 425879160 ecr 1944651979,nop,nop,sack 1 {2897:4345}], length 0
+1283716579.023747 IP server > client: Flags [.], seq 1449:2897, ack 633, win 56, options [nop,nop,TS val 1944652255 ecr 425879160], length 1448
+1283716579.024625 IP server > client: Flags [.], seq 4345:5793, ack 633, win 56, options [nop,nop,TS val 1944652255 ecr 425879160], length 1448
+1283716579.025164 IP server > client: Flags [.], seq 5793:7241, ack 633, win 56, options [nop,nop,TS val 1944652255 ecr 425879160], length 1448
+1283716579.780428 IP client > server: Flags [.], ack 1449, win 65535, options [nop,nop,TS val 425879168 ecr 1944651979,nop,nop,sack 2 {5793:7241}{2897:4345}], length 0
+1283716579.802212 IP server > client: Flags [.], seq 7241:8689, ack 633, win 56, options [nop,nop,TS val 1944652450 ecr 425879168], length 1448
+1283716580.061686 IP client > server: Flags [.], ack 4345, win 65182, options [nop,nop,TS val 425879171 ecr 1944652255,nop,nop,sack 1 {5793:7241}], length 0
+1283716580.082726 IP server > client: Flags [.], seq 8689:10137, ack 633, win 56, options [nop,nop,TS val 1944652520 ecr 425879171], length 1448
+1283716580.094300 IP client > server: Flags [.], ack 7241, win 65182, options [nop,nop,TS val 425879171 ecr 1944652255], length 0
+1283716580.114337 IP server > client: Flags [.], seq 10137:11585, ack 633, win 56, options [nop,nop,TS val 1944652528 ecr 425879171], length 1448
+1283716580.918768 IP client > server: Flags [.], ack 8689, win 65535, options [nop,nop,TS val 425879179 ecr 1944652450], length 0
+1283716580.941238 IP server > client: Flags [.], seq 11585:13033, ack 633, win 56, options [nop,nop,TS val 1944652735 ecr 425879179], length 1448
+1283716581.154852 IP client > server: Flags [.], ack 11585, win 65363, options [nop,nop,TS val 425879182 ecr 1944652520], length 0
+1283716581.182705 IP server > client: Flags [.], seq 13033:14481, ack 633, win 56, options [nop,nop,TS val 1944652795 ecr 425879182], length 1448
+1283716581.183078 IP server > client: Flags [.], seq 14481:15929, ack 633, win 56, options [nop,nop,TS val 1944652795 ecr 425879182], length 1448
+1283716581.183585 IP server > client: Flags [.], seq 15929:17377, ack 633, win 56, options [nop,nop,TS val 1944652795 ecr 425879182], length 1448
+1283716581.978072 IP client > server: Flags [.], ack 13033, win 65535, options [nop,nop,TS val 425879190 ecr 1944652735], length 0
+1283716582.220295 IP client > server: Flags [.], ack 14481, win 65363, options [nop,nop,TS val 425879192 ecr 1944652795], length 0
+1283716582.247204 IP server > client: Flags [.], seq 17377:18825, ack 633, win 56, options [nop,nop,TS val 1944653061 ecr 425879192], length 1448
+1283716582.247608 IP server > client: Flags [.], seq 18825:20273, ack 633, win 56, options [nop,nop,TS val 1944653061 ecr 425879192], length 1448
+1283716582.248126 IP server > client: Flags [.], seq 20273:21721, ack 633, win 56, options [nop,nop,TS val 1944653061 ecr 425879192], length 1448
+1283716582.254540 IP client > server: Flags [.], ack 15929, win 65535, options [nop,nop,TS val 425879193 ecr 1944652795], length 0
+1283716582.288108 IP client > server: Flags [.], ack 17377, win 65363, options [nop,nop,TS val 425879193 ecr 1944652795], length 0
+1283716582.307495 IP server > client: Flags [.], seq 21721:23169, ack 633, win 56, options [nop,nop,TS val 1944653077 ecr 425879193], length 1448
+1283716582.307754 IP server > client: Flags [.], seq 23169:24617, ack 633, win 56, options [nop,nop,TS val 1944653077 ecr 425879193], length 1448
+1283716582.308225 IP server > client: Flags [.], seq 24617:26065, ack 633, win 56, options [nop,nop,TS val 1944653077 ecr 425879193], length 1448
+1283716583.283526 IP client > server: Flags [.], ack 18825, win 65535, options [nop,nop,TS val 425879203 ecr 1944653061], length 0
+1283716583.351666 IP client > server: Flags [.], ack 21721, win 65535, options [nop,nop,TS val 425879204 ecr 1944653061], length 0
+1283716583.373052 IP server > client: Flags [.], seq 26065:27513, ack 633, win 56, options [nop,nop,TS val 1944653343 ecr 425879204], length 1448
+1283716583.373254 IP server > client: Flags [.], seq 27513:28961, ack 633, win 56, options [nop,nop,TS val 1944653343 ecr 425879204], length 1448
+1283716583.373618 IP server > client: Flags [.], seq 28961:30409, ack 633, win 56, options [nop,nop,TS val 1944653343 ecr 425879204], length 1448
+1283716583.373945 IP server > client: Flags [.], seq 30409:31857, ack 633, win 56, options [nop,nop,TS val 1944653343 ecr 425879204], length 1448
+1283716583.388385 IP client > server: Flags [.], ack 23169, win 65363, options [nop,nop,TS val 425879204 ecr 1944653077], length 0
+1283716583.420892 IP client > server: Flags [.], ack 24617, win 65535, options [nop,nop,TS val 425879204 ecr 1944653077], length 0
+1283716583.441991 IP server > client: Flags [.], seq 31857:33305, ack 633, win 56, options [nop,nop,TS val 1944653360 ecr 425879204], length 1448
+1283716583.442313 IP server > client: Flags [.], seq 33305:34753, ack 633, win 56, options [nop,nop,TS val 1944653360 ecr 425879204], length 1448
+1283716583.442637 IP server > client: Flags [.], seq 34753:36201, ack 633, win 56, options [nop,nop,TS val 1944653360 ecr 425879204], length 1448
+1283716583.455404 IP client > server: Flags [.], ack 26065, win 65363, options [nop,nop,TS val 425879205 ecr 1944653077], length 0
+1283716584.409719 IP client > server: Flags [.], ack 27513, win 65535, options [nop,nop,TS val 425879214 ecr 1944653343], length 0
+1283716584.431575 IP server > client: Flags [.], seq 36201:37649, ack 633, win 56, options [nop,nop,TS val 1944653607 ecr 425879214], length 1448
+1283716584.431770 IP server > client: Flags [.], seq 37649:39097, ack 633, win 56, options [nop,nop,TS val 1944653607 ecr 425879214], length 1448
+1283716584.436292 IP server > client: Flags [.], seq 39097:40545, ack 633, win 56, options [nop,nop,TS val 1944653607 ecr 425879214], length 1448
+1283716584.444259 IP client > server: Flags [.], ack 28961, win 65363, options [nop,nop,TS val 425879215 ecr 1944653343], length 0
+1283716584.477904 IP client > server: Flags [.], ack 30409, win 65535, options [nop,nop,TS val 425879215 ecr 1944653343], length 0
+1283716584.500638 IP server > client: Flags [.], seq 40545:41993, ack 633, win 56, options [nop,nop,TS val 1944653624 ecr 425879215], length 1448
+1283716584.500922 IP server > client: Flags [.], seq 41993:43441, ack 633, win 56, options [nop,nop,TS val 1944653624 ecr 425879215], length 1448
+1283716584.501319 IP server > client: Flags [.], seq 43441:44889, ack 633, win 56, options [nop,nop,TS val 1944653624 ecr 425879215], length 1448
+1283716584.512668 IP client > server: Flags [.], ack 31857, win 65363, options [nop,nop,TS val 425879215 ecr 1944653343], length 0
+1283716584.523320 IP client > server: Flags [.], ack 31857, win 65535, options [nop,nop,TS val 425879215 ecr 1944653343], length 0
+1283716584.547131 IP server > client: Flags [.], seq 44889:46337, ack 633, win 56, options [nop,nop,TS val 1944653636 ecr 425879215], length 1448
+1283716584.581219 IP client > server: Flags [.], ack 34753, win 65363, options [nop,nop,TS val 425879216 ecr 1944653360], length 0
+1283716585.469396 IP client > server: Flags [.], ack 37649, win 65363, options [nop,nop,TS val 425879225 ecr 1944653607], length 0
+1283716585.491509 IP server > client: Flags [.], seq 46337:47785, ack 633, win 56, options [nop,nop,TS val 1944653872 ecr 425879225], length 1448
+1283716585.491807 IP server > client: Flags [.], seq 47785:49233, ack 633, win 56, options [nop,nop,TS val 1944653872 ecr 425879225], length 1448
+1283716585.492133 IP server > client: Flags [.], seq 49233:50681, ack 633, win 56, options [nop,nop,TS val 1944653872 ecr 425879225], length 1448
+1283716585.492597 IP server > client: Flags [.], seq 50681:52129, ack 633, win 56, options [nop,nop,TS val 1944653872 ecr 425879225], length 1448
+1283716585.492971 IP server > client: Flags [.], seq 52129:53577, ack 633, win 56, options [nop,nop,TS val 1944653872 ecr 425879225], length 1448
+1283716585.502690 IP client > server: Flags [.], ack 39097, win 65535, options [nop,nop,TS val 425879225 ecr 1944653607], length 0
+1283716585.537364 IP client > server: Flags [.], ack 40545, win 65363, options [nop,nop,TS val 425879226 ecr 1944653607], length 0
+1283716585.559710 IP server > client: Flags [.], seq 53577:55025, ack 633, win 56, options [nop,nop,TS val 1944653890 ecr 425879226], length 1448
+1283716585.559940 IP server > client: Flags [.], seq 55025:56473, ack 633, win 56, options [nop,nop,TS val 1944653890 ecr 425879226], length 1448
+1283716585.560930 IP server > client: Flags [.], seq 56473:57921, ack 633, win 56, options [nop,nop,TS val 1944653890 ecr 425879226], length 1448
+1283716585.573445 IP client > server: Flags [.], ack 41993, win 65535, options [nop,nop,TS val 425879226 ecr 1944653624], length 0
+1283716585.594148 IP server > client: Flags [.], seq 57921:59369, ack 633, win 56, options [nop,nop,TS val 1944653898 ecr 425879226], length 1448
+1283716585.594420 IP server > client: Flags [.], seq 59369:60817, ack 633, win 56, options [nop,nop,TS val 1944653898 ecr 425879226], length 1448
+1283716585.605981 IP client > server: Flags [.], ack 43441, win 65363, options [nop,nop,TS val 425879226 ecr 1944653624], length 0
+1283716585.626755 IP server > client: Flags [.], seq 60817:62265, ack 633, win 56, options [nop,nop,TS val 1944653906 ecr 425879226], length 1448
+1283716585.640431 IP client > server: Flags [.], ack 44889, win 65535, options [nop,nop,TS val 425879227 ecr 1944653624], length 0
+1283716585.724160 IP client > server: Flags [.], ack 46337, win 65535, options [nop,nop,TS val 425879227 ecr 1944653636], length 0
+1283716585.754272 IP server > client: Flags [.], seq 62265:63713, ack 633, win 56, options [nop,nop,TS val 1944653938 ecr 425879227], length 1448
+1283716585.754603 IP server > client: Flags [.], seq 63713:65161, ack 633, win 56, options [nop,nop,TS val 1944653938 ecr 425879227], length 1448
+1283716585.754877 IP server > client: Flags [.], seq 65161:66609, ack 633, win 56, options [nop,nop,TS val 1944653938 ecr 425879227], length 1448
+1283716586.563758 IP client > server: Flags [.], ack 49233, win 65363, options [nop,nop,TS val 425879236 ecr 1944653872], length 0
+1283716586.596291 IP client > server: Flags [.], ack 50681, win 65535, options [nop,nop,TS val 425879236 ecr 1944653872], length 0
+1283716586.616589 IP server > client: Flags [.], seq 66609:68057, ack 633, win 56, options [nop,nop,TS val 1944654153 ecr 425879236], length 1448
+1283716586.616795 IP server > client: Flags [.], seq 68057:69505, ack 633, win 56, options [nop,nop,TS val 1944654153 ecr 425879236], length 1448
+1283716586.617275 IP server > client: Flags [.], seq 69505:70953, ack 633, win 56, options [nop,nop,TS val 1944654153 ecr 425879236], length 1448
+1283716586.617678 IP server > client: Flags [.], seq 70953:72401, ack 633, win 56, options [nop,nop,TS val 1944654153 ecr 425879236], length 1448
+1283716586.632004 IP client > server: Flags [.], ack 50681, win 65535, options [nop,nop,TS val 425879237 ecr 1944653872,nop,nop,sack 1 {52129:53577}], length 0
+1283716586.651721 IP server > client: Flags [.], seq 72401:73849, ack 633, win 56, options [nop,nop,TS val 1944654162 ecr 425879237], length 1448
+1283716586.665727 IP client > server: Flags [.], ack 50681, win 65535, options [nop,nop,TS val 425879237 ecr 1944653872,nop,nop,sack 1 {52129:55025}], length 0
+1283716586.686721 IP server > client: Flags [.], seq 73849:75297, ack 633, win 56, options [nop,nop,TS val 1944654171 ecr 425879237], length 1448
+1283716586.699435 IP client > server: Flags [.], ack 50681, win 65535, options [nop,nop,TS val 425879237 ecr 1944653872,nop,nop,sack 1 {52129:56473}], length 0
+1283716586.719756 IP server > client: Flags [.], seq 50681:52129, ack 633, win 56, options [nop,nop,TS val 1944654180 ecr 425879237], length 1448
+1283716586.733293 IP client > server: Flags [.], ack 50681, win 65535, options [nop,nop,TS val 425879238 ecr 1944653872,nop,nop,sack 2 {57921:59369}{52129:56473}], length 0
+1283716586.770960 IP client > server: Flags [.], ack 50681, win 65535, options [nop,nop,TS val 425879238 ecr 1944653872,nop,nop,sack 2 {57921:60817}{52129:56473}], length 0
+1283716586.791983 IP server > client: Flags [.], seq 75297:76745, ack 633, win 56, options [nop,nop,TS val 1944654197 ecr 425879238], length 1448
+1283716586.802295 IP client > server: Flags [.], ack 50681, win 65535, options [nop,nop,TS val 425879238 ecr 1944653872,nop,nop,sack 2 {57921:62265}{52129:56473}], length 0
+1283716586.825874 IP server > client: Flags [.], seq 56473:57921, ack 633, win 56, options [nop,nop,TS val 1944654205 ecr 425879238], length 1448
+1283716586.836945 IP client > server: Flags [.], ack 50681, win 65535, options [nop,nop,TS val 425879239 ecr 1944653872,nop,nop,sack 3 {63713:65161}{57921:62265}{52129:56473}], length 0
+1283716586.858399 IP server > client: Flags [.], seq 76745:78193, ack 633, win 56, options [nop,nop,TS val 1944654214 ecr 425879239], length 1448
+1283716586.872060 IP client > server: Flags [.], ack 50681, win 65535, options [nop,nop,TS val 425879239 ecr 1944653872,nop,nop,sack 3 {63713:66609}{57921:62265}{52129:56473}], length 0
+1283716587.687829 IP client > server: Flags [.], ack 50681, win 65535, options [nop,nop,TS val 425879247 ecr 1944653872,nop,nop,sack 3 {69505:70953}{63713:68057}{57921:62265}], length 0
+1283716587.713760 IP server > client: Flags [.], seq 62265:63713, ack 633, win 56, options [nop,nop,TS val 1944654427 ecr 425879247], length 1448
+1283716587.722612 IP client > server: Flags [.], ack 50681, win 65535, options [nop,nop,TS val 425879247 ecr 1944653872,nop,nop,sack 3 {69505:72401}{63713:68057}{57921:62265}], length 0
+1283716587.744322 IP server > client: Flags [.], seq 78193:79641, ack 633, win 56, options [nop,nop,TS val 1944654435 ecr 425879247], length 1448
+1283716587.757212 IP client > server: Flags [.], ack 50681, win 65535, options [nop,nop,TS val 425879248 ecr 1944653872,nop,nop,sack 3 {69505:73849}{63713:68057}{57921:62265}], length 0
+1283716587.778794 IP server > client: Flags [.], seq 68057:69505, ack 633, win 56, options [nop,nop,TS val 1944654444 ecr 425879248], length 1448
+1283716587.790906 IP client > server: Flags [.], ack 56473, win 64820, options [nop,nop,TS val 425879248 ecr 1944654180,nop,nop,sack 3 {69505:73849}{63713:68057}{57921:62265}], length 0
+1283716587.811897 IP server > client: Flags [.], seq 79641:81089, ack 633, win 56, options [nop,nop,TS val 1944654453 ecr 425879248], length 1448
+1283716587.829434 IP client > server: Flags [.], ack 56473, win 65535, options [nop,nop,TS val 425879249 ecr 1944654180,nop,nop,sack 3 {75297:76745}{69505:73849}{63713:68057}], length 0
+1283716587.858955 IP server > client: Flags [.], seq 81089:82537, ack 633, win 56, options [nop,nop,TS val 1944654464 ecr 425879249], length 1448
+1283716587.863203 IP client > server: Flags [.], ack 62265, win 64820, options [nop,nop,TS val 425879249 ecr 1944654205,nop,nop,sack 3 {75297:76745}{69505:73849}{63713:68057}], length 0
+1283716587.884076 IP server > client: Flags [.], seq 82537:83985, ack 633, win 56, options [nop,nop,TS val 1944654471 ecr 425879249], length 1448
+1283716587.896849 IP client > server: Flags [.], ack 62265, win 65535, options [nop,nop,TS val 425879249 ecr 1944654205,nop,nop,sack 3 {75297:78193}{69505:73849}{63713:68057}], length 0
+1283716587.918484 IP server > client: Flags [.], seq 83985:85433, ack 633, win 56, options [nop,nop,TS val 1944654479 ecr 425879249], length 1448
+1283716588.751791 IP client > server: Flags [.], ack 68057, win 64820, options [nop,nop,TS val 425879258 ecr 1944654427,nop,nop,sack 2 {75297:78193}{69505:73849}], length 0
+1283716588.772867 IP server > client: Flags [.], seq 85433:86881, ack 633, win 56, options [nop,nop,TS val 1944654692 ecr 425879258], length 1448
+1283716588.784484 IP client > server: Flags [.], ack 68057, win 65535, options [nop,nop,TS val 425879258 ecr 1944654427,nop,nop,sack 2 {75297:79641}{69505:73849}], length 0
+1283716588.805178 IP server > client: Flags [.], seq 73849:75297, ack 633, win 56, options [nop,nop,TS val 1944654701 ecr 425879258], length 1448
+1283716588.819349 IP client > server: Flags [.], ack 73849, win 64820, options [nop,nop,TS val 425879258 ecr 1944654444,nop,nop,sack 1 {75297:79641}], length 0
+1283716588.844384 IP server > client: Flags [.], seq 86881:88329, ack 633, win 56, options [nop,nop,TS val 1944654710 ecr 425879258], length 1448
+1283716588.854161 IP client > server: Flags [.], ack 73849, win 65535, options [nop,nop,TS val 425879259 ecr 1944654444,nop,nop,sack 1 {75297:81089}], length 0
+1283716588.875358 IP server > client: Flags [.], seq 88329:89777, ack 633, win 56, options [nop,nop,TS val 1944654718 ecr 425879259], length 1448
+1283716588.895593 IP client > server: Flags [.], ack 73849, win 65535, options [nop,nop,TS val 425879259 ecr 1944654444,nop,nop,sack 1 {75297:82537}], length 0
+1283716588.919895 IP server > client: Flags [.], seq 89777:91225, ack 633, win 56, options [nop,nop,TS val 1944654729 ecr 425879259], length 1448
+1283716588.929191 IP client > server: Flags [.], ack 73849, win 65535, options [nop,nop,TS val 425879260 ecr 1944654444,nop,nop,sack 1 {75297:83985}], length 0
+1283716588.950913 IP server > client: Flags [.], seq 91225:92673, ack 633, win 56, options [nop,nop,TS val 1944654737 ecr 425879260], length 1448
+1283716588.965057 IP client > server: Flags [.], ack 73849, win 65535, options [nop,nop,TS val 425879260 ecr 1944654444,nop,nop,sack 1 {75297:85433}], length 0
+1283716588.984550 IP server > client: Flags [.], seq 92673:94121, ack 633, win 56, options [nop,nop,TS val 1944654746 ecr 425879260], length 1448
+1283716589.809267 IP client > server: Flags [.], ack 73849, win 65535, options [nop,nop,TS val 425879268 ecr 1944654444,nop,nop,sack 1 {75297:86881}], length 0
+1283716589.828334 IP server > client: Flags [.], seq 94121:95569, ack 633, win 56, options [nop,nop,TS val 1944654957 ecr 425879268], length 1448
+1283716589.843887 IP client > server: Flags [.], ack 86881, win 63915, options [nop,nop,TS val 425879269 ecr 1944654701], length 0
+1283716589.862669 IP server > client: Flags [.], seq 95569:97017, ack 633, win 56, options [nop,nop,TS val 1944654965 ecr 425879269], length 1448
+1283716589.915239 IP client > server: Flags [.], ack 89777, win 65363, options [nop,nop,TS val 425879269 ecr 1944654718], length 0
+1283716589.943283 IP server > client: Flags [.], seq 97017:98465, ack 633, win 56, options [nop,nop,TS val 1944654983 ecr 425879269], length 1448
+1283716589.943444 IP server > client: Flags [.], seq 98465:99913, ack 633, win 56, options [nop,nop,TS val 1944654983 ecr 425879269], length 1448
+1283716589.943859 IP server > client: Flags [.], seq 99913:101361, ack 633, win 56, options [nop,nop,TS val 1944654983 ecr 425879269], length 1448
+1283716589.956414 IP client > server: Flags [.], ack 91225, win 65535, options [nop,nop,TS val 425879270 ecr 1944654729], length 0
+1283716589.976543 IP server > client: Flags [.], seq 101361:102809, ack 633, win 56, options [nop,nop,TS val 1944654993 ecr 425879270], length 1448
+1283716589.976811 IP server > client: Flags [.], seq 102809:104257, ack 633, win 56, options [nop,nop,TS val 1944654993 ecr 425879270], length 1448
+1283716589.990235 IP client > server: Flags [.], ack 92673, win 65363, options [nop,nop,TS val 425879270 ecr 1944654737], length 0
+1283716590.011166 IP server > client: Flags [.], seq 104257:105705, ack 633, win 56, options [nop,nop,TS val 1944655002 ecr 425879270], length 1448
+1283716590.011370 IP server > client: Flags [.], seq 105705:107153, ack 633, win 56, options [nop,nop,TS val 1944655002 ecr 425879270], length 1448
+1283716590.026148 IP client > server: Flags [.], ack 94121, win 65535, options [nop,nop,TS val 425879270 ecr 1944654746], length 0
+1283716590.052062 IP server > client: Flags [.], seq 107153:108601, ack 633, win 56, options [nop,nop,TS val 1944655012 ecr 425879270], length 1448
+1283716590.055228 IP server > client: Flags [.], seq 108601:110049, ack 633, win 56, options [nop,nop,TS val 1944655012 ecr 425879270], length 1448
+1283716590.899620 IP client > server: Flags [.], ack 94121, win 65535, options [nop,nop,TS val 425879279 ecr 1944654746,nop,nop,sack 1 {95569:97017}], length 0
+1283716590.922817 IP server > client: Flags [.], seq 110049:111497, ack 633, win 56, options [nop,nop,TS val 1944655230 ecr 425879279], length 1448
+1283716591.014699 IP client > server: Flags [.], ack 94121, win 65535, options [nop,nop,TS val 425879280 ecr 1944654746,nop,nop,sack 1 {95569:99913}], length 0
+1283716591.035143 IP server > client: Flags [.], seq 94121:95569, ack 633, win 56, options [nop,nop,TS val 1944655258 ecr 425879280], length 1448
+1283716591.048091 IP client > server: Flags [.], ack 94121, win 65535, options [nop,nop,TS val 425879281 ecr 1944654746,nop,nop,sack 1 {95569:101361}], length 0
+1283716591.083043 IP client > server: Flags [.], ack 94121, win 65535, options [nop,nop,TS val 425879281 ecr 1944654746,nop,nop,sack 1 {95569:102809}], length 0
+1283716591.105659 IP server > client: Flags [.], seq 111497:112945, ack 633, win 56, options [nop,nop,TS val 1944655275 ecr 425879281], length 1448
+1283716591.118680 IP client > server: Flags [.], ack 94121, win 65535, options [nop,nop,TS val 425879281 ecr 1944654746,nop,nop,sack 1 {95569:104257}], length 0
+1283716591.151491 IP client > server: Flags [.], ack 94121, win 65535, options [nop,nop,TS val 425879282 ecr 1944654746,nop,nop,sack 1 {95569:105705}], length 0
+1283716591.172495 IP server > client: Flags [.], seq 112945:114393, ack 633, win 56, options [nop,nop,TS val 1944655293 ecr 425879282], length 1448
+1283716591.186015 IP client > server: Flags [.], ack 94121, win 65535, options [nop,nop,TS val 425879282 ecr 1944654746,nop,nop,sack 1 {95569:107153}], length 0
+1283716591.207263 IP server > client: Flags [.], seq 114393:115841, ack 633, win 56, options [nop,nop,TS val 1944655301 ecr 425879282], length 1448
+1283716591.220836 IP client > server: Flags [.], ack 94121, win 65535, options [nop,nop,TS val 425879282 ecr 1944654746,nop,nop,sack 1 {95569:108601}], length 0
+1283716591.241856 IP server > client: Flags [.], seq 115841:117289, ack 633, win 56, options [nop,nop,TS val 1944655310 ecr 425879282], length 1448
+1283716591.255564 IP client > server: Flags [.], ack 94121, win 65535, options [nop,nop,TS val 425879283 ecr 1944654746,nop,nop,sack 1 {95569:110049}], length 0
+1283716591.280941 IP server > client: Flags [.], seq 117289:118737, ack 633, win 56, options [nop,nop,TS val 1944655320 ecr 425879283], length 1448
+1283716591.959293 IP client > server: Flags [.], ack 94121, win 65535, options [nop,nop,TS val 425879290 ecr 1944654746,nop,nop,sack 1 {95569:111497}], length 0
+1283716591.983152 IP server > client: Flags [.], seq 118737:120185, ack 633, win 56, options [nop,nop,TS val 1944655495 ecr 425879290], length 1448
+1283716592.073366 IP client > server: Flags [.], ack 111497, win 63372, options [nop,nop,TS val 425879291 ecr 1944655258], length 0
+1283716592.094875 IP server > client: Flags [.], seq 120185:121633, ack 633, win 56, options [nop,nop,TS val 1944655523 ecr 425879291], length 1448
+1283716592.143867 IP client > server: Flags [.], ack 112945, win 65535, options [nop,nop,TS val 425879292 ecr 1944655275], length 0
+1283716592.165641 IP server > client: Flags [.], seq 121633:123081, ack 633, win 56, options [nop,nop,TS val 1944655540 ecr 425879292], length 1448
+1283716592.165903 IP server > client: Flags [.], seq 123081:124529, ack 633, win 56, options [nop,nop,TS val 1944655540 ecr 425879292], length 1448
+1283716592.208959 IP client > server: Flags [.], ack 114393, win 65363, options [nop,nop,TS val 425879292 ecr 1944655293], length 0
+1283716592.231304 IP server > client: Flags [.], seq 124529:125977, ack 633, win 56, options [nop,nop,TS val 1944655557 ecr 425879292], length 1448
+1283716592.279888 IP client > server: Flags [.], ack 117289, win 65363, options [nop,nop,TS val 425879293 ecr 1944655310], length 0
+1283716592.301382 IP server > client: Flags [.], seq 125977:127425, ack 633, win 56, options [nop,nop,TS val 1944655575 ecr 425879293], length 1448
+1283716592.301618 IP server > client: Flags [.], seq 127425:128873, ack 633, win 56, options [nop,nop,TS val 1944655575 ecr 425879293], length 1448
+1283716592.318796 IP client > server: Flags [.], ack 118737, win 65535, options [nop,nop,TS val 425879293 ecr 1944655320], length 0
+1283716592.339999 IP server > client: Flags [.], seq 128873:130321, ack 633, win 56, options [nop,nop,TS val 1944655584 ecr 425879293], length 1448
+1283716593.020897 IP client > server: Flags [.], ack 120185, win 65363, options [nop,nop,TS val 425879300 ecr 1944655495], length 0
+1283716593.040445 IP server > client: Flags [.], seq 130321:131769, ack 633, win 56, options [nop,nop,TS val 1944655760 ecr 425879300], length 1448
+1283716593.040739 IP server > client: Flags [.], seq 131769:133217, ack 633, win 56, options [nop,nop,TS val 1944655760 ecr 425879300], length 1448
+1283716593.133528 IP client > server: Flags [.], ack 121633, win 65535, options [nop,nop,TS val 425879302 ecr 1944655523], length 0
+1283716593.202832 IP client > server: Flags [.], ack 123081, win 65363, options [nop,nop,TS val 425879302 ecr 1944655540], length 0
+1283716593.229547 IP server > client: Flags [.], seq 133217:134665, ack 633, win 56, options [nop,nop,TS val 1944655806 ecr 425879302], length 1448
+1283716593.229684 IP server > client: Flags [.], seq 134665:136113, ack 633, win 56, options [nop,nop,TS val 1944655806 ecr 425879302], length 1448
+1283716593.236721 IP client > server: Flags [.], ack 124529, win 65535, options [nop,nop,TS val 425879303 ecr 1944655540], length 0
+1283716593.271561 IP client > server: Flags [.], ack 125977, win 65363, options [nop,nop,TS val 425879303 ecr 1944655557], length 0
+1283716593.295873 IP server > client: Flags [.], seq 136113:137561, ack 633, win 56, options [nop,nop,TS val 1944655822 ecr 425879303], length 1448
+1283716593.299893 IP server > client: Flags [.], seq 137561:139009, ack 633, win 56, options [nop,nop,TS val 1944655822 ecr 425879303], length 1448
+1283716593.377281 IP client > server: Flags [.], ack 125977, win 65535, options [nop,nop,TS val 425879304 ecr 1944655557,nop,nop,sack 1 {128873:130321}], length 0
+1283716593.395912 IP server > client: Flags [.], seq 139009:140457, ack 633, win 56, options [nop,nop,TS val 1944655849 ecr 425879304], length 1448
+1283716594.077174 IP client > server: Flags [.], ack 125977, win 65535, options [nop,nop,TS val 425879311 ecr 1944655557,nop,nop,sack 1 {128873:131769}], length 0
+1283716594.099298 IP server > client: Flags [.], seq 125977:127425, ack 633, win 56, options [nop,nop,TS val 1944656024 ecr 425879311], length 1448
+1283716594.110834 IP client > server: Flags [.], ack 125977, win 65535, options [nop,nop,TS val 425879311 ecr 1944655557,nop,nop,sack 1 {128873:133217}], length 0
+1283716594.301136 IP client > server: Flags [.], ack 125977, win 65535, options [nop,nop,TS val 425879313 ecr 1944655557,nop,nop,sack 1 {128873:136113}], length 0
+1283716594.321637 IP server > client: Flags [.], seq 127425:128873, ack 633, win 56, options [nop,nop,TS val 1944656080 ecr 425879313], length 1448
+1283716594.336781 IP client > server: Flags [.], ack 125977, win 65535, options [nop,nop,TS val 425879314 ecr 1944655557,nop,nop,sack 2 {137561:139009}{128873:136113}], length 0
+1283716594.359360 IP server > client: Flags [.], seq 140457:141905, ack 633, win 56, options [nop,nop,TS val 1944656089 ecr 425879314], length 1448
+1283716594.433501 IP client > server: Flags [.], ack 125977, win 65535, options [nop,nop,TS val 425879315 ecr 1944655557,nop,nop,sack 2 {137561:140457}{128873:136113}], length 0
+1283716594.454501 IP server > client: Flags [.], seq 141905:143353, ack 633, win 56, options [nop,nop,TS val 1944656113 ecr 425879315], length 1448
+1283716595.136885 IP client > server: Flags [.], ack 127425, win 65363, options [nop,nop,TS val 425879322 ecr 1944656024,nop,nop,sack 2 {137561:140457}{128873:136113}], length 0
+1283716595.161681 IP server > client: Flags [.], seq 143353:144801, ack 633, win 56, options [nop,nop,TS val 1944656289 ecr 425879322], length 1448
+1283716595.358738 IP client > server: Flags [.], ack 136113, win 64458, options [nop,nop,TS val 425879324 ecr 1944656080,nop,nop,sack 1 {137561:140457}], length 0
+1283716595.379822 IP server > client: Flags [.], seq 136113:137561, ack 633, win 56, options [nop,nop,TS val 1944656344 ecr 425879324], length 1448
+1283716596.131163 IP client > server: Flags [.], ack 136113, win 65535, options [nop,nop,TS val 425879331 ecr 1944656080,nop,nop,sack 1 {137561:141905}], length 0
+1283716596.152331 IP server > client: Flags [.], seq 144801:146249, ack 633, win 56, options [nop,nop,TS val 1944656537 ecr 425879331], length 1448
+1283716596.417460 IP client > server: Flags [.], ack 141905, win 64820, options [nop,nop,TS val 425879334 ecr 1944656344], length 0
+1283716596.440235 IP server > client: Flags [.], seq 141905:143353, ack 633, win 56, options [nop,nop,TS val 1944656609 ecr 425879334], length 1448
+1283716597.189047 IP client > server: Flags [.], ack 141905, win 65535, options [nop,nop,TS val 425879342 ecr 1944656344,nop,nop,sack 1 {144801:146249}], length 0
+1283716597.477281 IP client > server: Flags [.], ack 143353, win 65363, options [nop,nop,TS val 425879345 ecr 1944656609,nop,nop,sack 1 {144801:146249}], length 0
+1283716597.499692 IP server > client: Flags [.], seq 143353:144801, ack 633, win 56, options [nop,nop,TS val 1944656874 ecr 425879345], length 1448
+1283716598.536507 IP client > server: Flags [.], ack 146249, win 65182, options [nop,nop,TS val 425879356 ecr 1944656874], length 0
+1283716598.560353 IP server > client: Flags [.], seq 146249:147697, ack 633, win 56, options [nop,nop,TS val 1944657140 ecr 425879356], length 1448
+1283716599.596933 IP client > server: Flags [.], ack 147697, win 65535, options [nop,nop,TS val 425879366 ecr 1944657140], length 0
+1283716599.619241 IP server > client: Flags [.], seq 147697:149145, ack 633, win 56, options [nop,nop,TS val 1944657404 ecr 425879366], length 1448
+1283716599.619793 IP server > client: Flags [.], seq 149145:150593, ack 633, win 56, options [nop,nop,TS val 1944657404 ecr 425879366], length 1448
+1283716600.656845 IP client > server: Flags [.], ack 149145, win 65363, options [nop,nop,TS val 425879377 ecr 1944657404], length 0
+1283716600.679374 IP server > client: Flags [.], seq 150593:152041, ack 633, win 56, options [nop,nop,TS val 1944657669 ecr 425879377], length 1448
+1283716600.679706 IP server > client: Flags [.], seq 152041:153489, ack 633, win 56, options [nop,nop,TS val 1944657669 ecr 425879377], length 1448
+1283716600.689334 IP client > server: Flags [.], ack 150593, win 65535, options [nop,nop,TS val 425879377 ecr 1944657404], length 0
+1283716600.712038 IP server > client: Flags [.], seq 153489:154937, ack 633, win 56, options [nop,nop,TS val 1944657677 ecr 425879377], length 1448
+1283716601.716654 IP client > server: Flags [.], ack 152041, win 65363, options [nop,nop,TS val 425879387 ecr 1944657669], length 0
+1283716601.736029 IP server > client: Flags [.], seq 154937:156385, ack 633, win 56, options [nop,nop,TS val 1944657933 ecr 425879387], length 1448
+1283716601.736298 IP server > client: Flags [.], seq 156385:157833, ack 633, win 56, options [nop,nop,TS val 1944657933 ecr 425879387], length 1448
+1283716601.751276 IP client > server: Flags [.], ack 153489, win 65535, options [nop,nop,TS val 425879388 ecr 1944657669], length 0
+1283716602.772679 IP client > server: Flags [.], ack 156385, win 65535, options [nop,nop,TS val 425879398 ecr 1944657933], length 0
+1283716602.795308 IP server > client: Flags [.], seq 157833:159281, ack 633, win 56, options [nop,nop,TS val 1944658198 ecr 425879398], length 1448
+1283716602.795841 IP server > client: Flags [.], seq 159281:160729, ack 633, win 56, options [nop,nop,TS val 1944658198 ecr 425879398], length 1448
+1283716602.796055 IP server > client: Flags [.], seq 160729:162177, ack 633, win 56, options [nop,nop,TS val 1944658198 ecr 425879398], length 1448
+1283716602.796434 IP server > client: Flags [.], seq 162177:163625, ack 633, win 56, options [nop,nop,TS val 1944658198 ecr 425879398], length 1448
+1283716602.806158 IP client > server: Flags [.], ack 157833, win 65363, options [nop,nop,TS val 425879398 ecr 1944657933], length 0
+1283716603.833075 IP client > server: Flags [.], ack 159281, win 65535, options [nop,nop,TS val 425879408 ecr 1944658198], length 0
+1283716603.855413 IP server > client: Flags [.], seq 163625:165073, ack 633, win 56, options [nop,nop,TS val 1944658463 ecr 425879408], length 1448
+1283716603.855680 IP server > client: Flags [.], seq 165073:166521, ack 633, win 56, options [nop,nop,TS val 1944658463 ecr 425879408], length 1448
+1283716603.856147 IP server > client: Flags [.], seq 166521:167969, ack 633, win 56, options [nop,nop,TS val 1944658463 ecr 425879408], length 1448
+1283716603.867816 IP client > server: Flags [.], ack 160729, win 65363, options [nop,nop,TS val 425879409 ecr 1944658198], length 0
+1283716603.900443 IP client > server: Flags [.], ack 162177, win 65535, options [nop,nop,TS val 425879409 ecr 1944658198], length 0
+1283716603.919657 IP server > client: Flags [.], seq 167969:169417, ack 633, win 56, options [nop,nop,TS val 1944658479 ecr 425879409], length 1448
+1283716603.919960 IP server > client: Flags [.], seq 169417:170865, ack 633, win 56, options [nop,nop,TS val 1944658479 ecr 425879409], length 1448
+1283716603.920331 IP server > client: Flags [.], seq 170865:172313, ack 633, win 56, options [nop,nop,TS val 1944658479 ecr 425879409], length 1448
+1283716603.936148 IP client > server: Flags [.], ack 163625, win 65363, options [nop,nop,TS val 425879409 ecr 1944658198], length 0
+1283716604.892085 IP client > server: Flags [.], ack 165073, win 65535, options [nop,nop,TS val 425879419 ecr 1944658463], length 0
+1283716604.913012 IP server > client: Flags [.], seq 172313:173761, ack 633, win 56, options [nop,nop,TS val 1944658728 ecr 425879419], length 1448
+1283716604.913259 IP server > client: Flags [.], seq 173761:175209, ack 633, win 56, options [nop,nop,TS val 1944658728 ecr 425879419], length 1448
+1283716604.914891 IP server > client: Flags [.], seq 175209:176657, ack 633, win 56, options [nop,nop,TS val 1944658728 ecr 425879419], length 1448
+1283716604.961008 IP client > server: Flags [.], ack 166521, win 65535, options [nop,nop,TS val 425879420 ecr 1944658463,nop,nop,sack 1 {167969:169417}], length 0
+1283716604.983706 IP server > client: Flags [.], seq 176657:178105, ack 633, win 56, options [nop,nop,TS val 1944658745 ecr 425879420], length 1448
+1283716604.983907 IP server > client: Flags [.], seq 178105:179553, ack 633, win 56, options [nop,nop,TS val 1944658745 ecr 425879420], length 1448
+1283716604.995616 IP client > server: Flags [.], ack 166521, win 65535, options [nop,nop,TS val 425879420 ecr 1944658463,nop,nop,sack 1 {167969:170865}], length 0
+1283716605.016216 IP server > client: Flags [.], seq 179553:181001, ack 633, win 56, options [nop,nop,TS val 1944658753 ecr 425879420], length 1448
+1283716605.029270 IP client > server: Flags [.], ack 166521, win 65535, options [nop,nop,TS val 425879420 ecr 1944658463,nop,nop,sack 1 {167969:172313}], length 0
+1283716605.052311 IP server > client: Flags [.], seq 166521:167969, ack 633, win 56, options [nop,nop,TS val 1944658762 ecr 425879420], length 1448
+1283716605.951746 IP client > server: Flags [.], ack 166521, win 65535, options [nop,nop,TS val 425879430 ecr 1944658463,nop,nop,sack 1 {167969:173761}], length 0
+1283716605.984853 IP client > server: Flags [.], ack 166521, win 65535, options [nop,nop,TS val 425879430 ecr 1944658463,nop,nop,sack 1 {167969:175209}], length 0
+1283716606.005954 IP server > client: Flags [.], seq 181001:182449, ack 633, win 56, options [nop,nop,TS val 1944659001 ecr 425879430], length 1448
+1283716606.018781 IP client > server: Flags [.], ack 166521, win 65535, options [nop,nop,TS val 425879430 ecr 1944658463,nop,nop,sack 1 {167969:176657}], length 0
+1283716606.054875 IP client > server: Flags [.], ack 166521, win 65535, options [nop,nop,TS val 425879431 ecr 1944658463,nop,nop,sack 2 {178105:179553}{167969:176657}], length 0
+1283716606.079092 IP server > client: Flags [.], seq 182449:183897, ack 633, win 56, options [nop,nop,TS val 1944659018 ecr 425879431], length 1448
+1283716606.087154 IP client > server: Flags [.], ack 166521, win 65535, options [nop,nop,TS val 425879431 ecr 1944658463,nop,nop,sack 2 {178105:181001}{167969:176657}], length 0
+1283716606.108988 IP server > client: Flags [.], seq 183897:185345, ack 633, win 56, options [nop,nop,TS val 1944659026 ecr 425879431], length 1448
+1283716606.121586 IP client > server: Flags [.], ack 176657, win 64277, options [nop,nop,TS val 425879431 ecr 1944658762,nop,nop,sack 1 {178105:181001}], length 0
+1283716606.144197 IP server > client: Flags [.], seq 185345:186793, ack 633, win 56, options [nop,nop,TS val 1944659035 ecr 425879431], length 1448
+1283716607.116906 IP client > server: Flags [.], ack 176657, win 65535, options [nop,nop,TS val 425879441 ecr 1944658762,nop,nop,sack 2 {182449:183897}{178105:181001}], length 0
+1283716607.143326 IP server > client: Flags [.], seq 176657:178105, ack 633, win 56, options [nop,nop,TS val 1944659284 ecr 425879441], length 1448
+1283716607.150547 IP client > server: Flags [.], ack 176657, win 65535, options [nop,nop,TS val 425879442 ecr 1944658762,nop,nop,sack 2 {182449:185345}{178105:181001}], length 0
+1283716607.172261 IP server > client: Flags [.], seq 186793:188241, ack 633, win 56, options [nop,nop,TS val 1944659292 ecr 425879442], length 1448
+1283716607.184250 IP client > server: Flags [.], ack 176657, win 65535, options [nop,nop,TS val 425879442 ecr 1944658762,nop,nop,sack 2 {182449:186793}{178105:181001}], length 0
+1283716607.203798 IP server > client: Flags [.], seq 188241:189689, ack 633, win 56, options [nop,nop,TS val 1944659300 ecr 425879442], length 1448
+1283716608.183158 IP client > server: Flags [.], ack 181001, win 65001, options [nop,nop,TS val 425879452 ecr 1944659284,nop,nop,sack 1 {182449:186793}], length 0
+1283716608.205668 IP server > client: Flags [.], seq 181001:182449, ack 633, win 56, options [nop,nop,TS val 1944659551 ecr 425879452], length 1448
+1283716608.214801 IP client > server: Flags [.], ack 181001, win 65535, options [nop,nop,TS val 425879452 ecr 1944659284,nop,nop,sack 1 {182449:188241}], length 0
+1283716609.243555 IP client > server: Flags [.], ack 188241, win 64639, options [nop,nop,TS val 425879463 ecr 1944659551], length 0
+1283716609.269852 IP server > client: Flags [.], seq 188241:189689, ack 633, win 56, options [nop,nop,TS val 1944659816 ecr 425879463], length 1448
+1283716610.309070 IP client > server: Flags [.], ack 189689, win 65535, options [nop,nop,TS val 425879473 ecr 1944659816], length 0
+1283716610.332332 IP server > client: Flags [.], seq 189689:191137, ack 633, win 56, options [nop,nop,TS val 1944660082 ecr 425879473], length 1448
+1283716611.368772 IP client > server: Flags [.], ack 191137, win 65363, options [nop,nop,TS val 425879484 ecr 1944660082], length 0
+1283716611.863606 IP server > client: Flags [.], seq 189689:191137, ack 633, win 56, options [nop,nop,TS val 1944660410 ecr 425879473], length 1448
+1283716612.901396 IP client > server: Flags [.], ack 191137, win 65535, options [nop,nop,TS val 425879499 ecr 1944660410], length 0
+1283716612.920923 IP server > client: Flags [.], seq 191137:192585, ack 633, win 56, options [nop,nop,TS val 1944660729 ecr 425879499], length 1448
+1283716612.921298 IP server > client: Flags [.], seq 192585:194033, ack 633, win 56, options [nop,nop,TS val 1944660729 ecr 425879499], length 1448
+1283716613.958223 IP client > server: Flags [.], ack 191137, win 65535, options [nop,nop,TS val 425879510 ecr 1944660410,nop,nop,sack 1 {192585:194033}], length 0
+1283716613.980613 IP server > client: Flags [.], seq 194033:195481, ack 633, win 56, options [nop,nop,TS val 1944660994 ecr 425879510], length 1448
+1283716614.321137 IP server > client: Flags [.], seq 191137:192585, ack 633, win 56, options [nop,nop,TS val 1944661075 ecr 425879510], length 1448
+1283716615.018407 IP client > server: Flags [.], ack 191137, win 65535, options [nop,nop,TS val 425879520 ecr 1944660410,nop,nop,sack 1 {192585:195481}], length 0
+1283716615.358129 IP client > server: Flags [.], ack 195481, win 65001, options [nop,nop,TS val 425879524 ecr 1944661075], length 0
+1283716615.382040 IP server > client: Flags [.], seq 195481:196929, ack 633, win 56, options [nop,nop,TS val 1944661344 ecr 425879524], length 1448
+1283716615.382195 IP server > client: Flags [.], seq 196929:198377, ack 633, win 56, options [nop,nop,TS val 1944661344 ecr 425879524], length 1448
+1283716616.418657 IP client > server: Flags [.], ack 196929, win 65535, options [nop,nop,TS val 425879534 ecr 1944661344], length 0
+1283716616.440179 IP server > client: Flags [.], seq 198377:199825, ack 633, win 56, options [nop,nop,TS val 1944661609 ecr 425879534], length 1448
+1283716616.440442 IP server > client: Flags [.], seq 199825:201273, ack 633, win 56, options [nop,nop,TS val 1944661609 ecr 425879534], length 1448
+1283716616.452214 IP client > server: Flags [.], ack 198377, win 65363, options [nop,nop,TS val 425879535 ecr 1944661344], length 0
+1283716616.475157 IP server > client: Flags [.], seq 201273:202721, ack 633, win 56, options [nop,nop,TS val 1944661617 ecr 425879535], length 1448
+1283716617.478449 IP client > server: Flags [.], ack 199825, win 65535, options [nop,nop,TS val 425879545 ecr 1944661609], length 0
+1283716617.500559 IP server > client: Flags [.], seq 202721:204169, ack 633, win 56, options [nop,nop,TS val 1944661874 ecr 425879545], length 1448
+1283716617.501004 IP server > client: Flags [.], seq 204169:205617, ack 633, win 56, options [nop,nop,TS val 1944661874 ecr 425879545], length 1448
+1283716617.511976 IP client > server: Flags [.], ack 201273, win 65363, options [nop,nop,TS val 425879545 ecr 1944661609], length 0
+1283716617.545581 IP client > server: Flags [.], ack 202721, win 65535, options [nop,nop,TS val 425879545 ecr 1944661617], length 0
+1283716617.564774 IP server > client: Flags [.], seq 205617:207065, ack 633, win 56, options [nop,nop,TS val 1944661890 ecr 425879545], length 1448
+1283716617.564971 IP server > client: Flags [.], seq 207065:208513, ack 633, win 56, options [nop,nop,TS val 1944661890 ecr 425879545], length 1448
+1283716617.565355 IP server > client: Flags [.], seq 208513:209961, ack 633, win 56, options [nop,nop,TS val 1944661890 ecr 425879545], length 1448
+1283716618.537298 IP client > server: Flags [.], ack 204169, win 65363, options [nop,nop,TS val 425879555 ecr 1944661874], length 0
+1283716618.601453 IP client > server: Flags [.], ack 204169, win 65535, options [nop,nop,TS val 425879556 ecr 1944661874,nop,nop,sack 1 {205617:207065}], length 0
+1283716618.624985 IP server > client: Flags [.], seq 209961:211409, ack 633, win 56, options [nop,nop,TS val 1944662155 ecr 425879556], length 1448
+1283716618.625044 IP server > client: Flags [.], seq 211409:212857, ack 633, win 56, options [nop,nop,TS val 1944662155 ecr 425879556], length 1448
+1283716618.635846 IP client > server: Flags [.], ack 204169, win 65535, options [nop,nop,TS val 425879556 ecr 1944661874,nop,nop,sack 1 {205617:208513}], length 0
+1283716618.656290 IP server > client: Flags [.], seq 212857:214305, ack 633, win 56, options [nop,nop,TS val 1944662163 ecr 425879556], length 1448
+1283716618.669453 IP client > server: Flags [.], ack 204169, win 65535, options [nop,nop,TS val 425879557 ecr 1944661874,nop,nop,sack 1 {205617:209961}], length 0
+1283716618.693369 IP server > client: Flags [.], seq 204169:205617, ack 633, win 56, options [nop,nop,TS val 1944662172 ecr 425879557], length 1448
+1283716619.348202 IP client > server: Flags [.], ack 204169, win 65535, options [nop,nop,TS val 425879563 ecr 1944661874,nop,nop,sack 1 {205617:209961}], length 0
+1283716619.662491 IP client > server: Flags [.], ack 204169, win 65535, options [nop,nop,TS val 425879567 ecr 1944661874,nop,nop,sack 1 {205617:211409}], length 0
+1283716619.696078 IP client > server: Flags [.], ack 204169, win 65535, options [nop,nop,TS val 425879567 ecr 1944661874,nop,nop,sack 1 {205617:212857}], length 0
+1283716619.718416 IP server > client: Flags [.], seq 214305:215753, ack 633, win 56, options [nop,nop,TS val 1944662428 ecr 425879567], length 1448
+1283716619.765228 IP client > server: Flags [.], ack 214305, win 64277, options [nop,nop,TS val 425879568 ecr 1944662172], length 0
+1283716619.784880 IP server > client: Flags [.], seq 215753:217201, ack 633, win 56, options [nop,nop,TS val 1944662445 ecr 425879568], length 1448
+1283716619.785102 IP server > client: Flags [.], seq 217201:218649, ack 633, win 56, options [nop,nop,TS val 1944662445 ecr 425879568], length 1448
+1283716620.755604 IP client > server: Flags [.], ack 215753, win 65535, options [nop,nop,TS val 425879578 ecr 1944662428], length 0
+1283716620.776447 IP server > client: Flags [.], seq 218649:220097, ack 633, win 56, options [nop,nop,TS val 1944662693 ecr 425879578], length 1448
+1283716620.776489 IP server > client: Flags [.], seq 220097:221545, ack 633, win 56, options [nop,nop,TS val 1944662693 ecr 425879578], length 1448
+1283716620.822495 IP client > server: Flags [.], ack 215753, win 65535, options [nop,nop,TS val 425879578 ecr 1944662428,nop,nop,sack 1 {217201:218649}], length 0
+1283716620.843483 IP server > client: Flags [.], seq 221545:222993, ack 633, win 56, options [nop,nop,TS val 1944662710 ecr 425879578], length 1448
+1283716621.848039 IP client > server: Flags [.], ack 215753, win 65535, options [nop,nop,TS val 425879588 ecr 1944662428,nop,nop,sack 1 {217201:221545}], length 0
+1283716621.871287 IP server > client: Flags [.], seq 215753:217201, ack 633, win 56, options [nop,nop,TS val 1944662966 ecr 425879588], length 1448
+1283716621.882854 IP client > server: Flags [.], ack 215753, win 65535, options [nop,nop,TS val 425879589 ecr 1944662428,nop,nop,sack 1 {217201:222993}], length 0
+1283716621.904587 IP server > client: Flags [.], seq 222993:224441, ack 633, win 56, options [nop,nop,TS val 1944662975 ecr 425879589], length 1448
+1283716622.908149 IP client > server: Flags [.], ack 222993, win 64639, options [nop,nop,TS val 425879599 ecr 1944662966], length 0
+1283716622.927547 IP server > client: Flags [.], seq 224441:225889, ack 633, win 56, options [nop,nop,TS val 1944663231 ecr 425879599], length 1448
+1283716622.942598 IP client > server: Flags [.], ack 224441, win 65535, options [nop,nop,TS val 425879599 ecr 1944662975], length 0
+1283716622.962376 IP server > client: Flags [.], seq 225889:227337, ack 633, win 56, options [nop,nop,TS val 1944663239 ecr 425879599], length 1448
+1283716622.962820 IP server > client: Flags [.], seq 227337:228785, ack 633, win 56, options [nop,nop,TS val 1944663239 ecr 425879599], length 1448
+1283716624.000470 IP client > server: Flags [.], ack 224441, win 65535, options [nop,nop,TS val 425879610 ecr 1944662975,nop,nop,sack 1 {227337:228785}], length 0
+1283716624.022009 IP server > client: Flags [.], seq 228785:230233, ack 633, win 56, options [nop,nop,TS val 1944663504 ecr 425879610], length 1448
+1283716624.267961 IP server > client: Flags [.], seq 224441:225889, ack 633, win 56, options [nop,nop,TS val 1944663565 ecr 425879610], length 1448
+1283716625.058603 IP client > server: Flags [.], ack 224441, win 65535, options [nop,nop,TS val 425879621 ecr 1944662975,nop,nop,sack 1 {227337:230233}], length 0
+1283716625.304957 IP client > server: Flags [.], ack 225889, win 65363, options [nop,nop,TS val 425879623 ecr 1944663565,nop,nop,sack 1 {227337:230233}], length 0
+1283716625.327270 IP server > client: Flags [.], seq 230233:231681, ack 633, win 56, options [nop,nop,TS val 1944663831 ecr 425879623], length 1448
+1283716625.327718 IP server > client: Flags [.], seq 231681:233129, ack 633, win 56, options [nop,nop,TS val 1944663831 ecr 425879623], length 1448
+1283716626.363565 IP client > server: Flags [.], ack 225889, win 65535, options [nop,nop,TS val 425879634 ecr 1944663565,nop,nop,sack 1 {227337:231681}], length 0
+1283716626.385051 IP server > client: Flags [.], seq 225889:227337, ack 633, win 56, options [nop,nop,TS val 1944664095 ecr 425879634], length 1448
+1283716626.385110 IP server > client: Flags [.], seq 231681:233129, ack 633, win 56, options [nop,nop,TS val 1944664095 ecr 425879634], length 1448
+1283716626.385513 IP server > client: Flags [.], seq 233129:234577, ack 633, win 56, options [nop,nop,TS val 1944664095 ecr 425879634], length 1448
+1283716626.399422 IP client > server: Flags [.], ack 225889, win 65535, options [nop,nop,TS val 425879634 ecr 1944663565,nop,nop,sack 1 {227337:233129}], length 0
+1283716626.420023 IP server > client: Flags [.], seq 234577:236025, ack 633, win 56, options [nop,nop,TS val 1944664104 ecr 425879634], length 1448
+1283716627.422341 IP client > server: Flags [.], ack 233129, win 64639, options [nop,nop,TS val 425879644 ecr 1944664095], length 0
+1283716627.443410 IP server > client: Flags [.], seq 236025:237473, ack 633, win 56, options [nop,nop,TS val 1944664359 ecr 425879644], length 1448
+1283716627.455838 IP client > server: Flags [.], ack 233129, win 65535, options [nop,nop,TS val 425879645 ecr 1944664095], length 0
+1283716627.554730 IP client > server: Flags [.], ack 234577, win 65535, options [nop,nop,TS val 425879645 ecr 1944664095], length 0
+1283716627.583892 IP server > client: Flags [.], seq 237473:238921, ack 633, win 56, options [nop,nop,TS val 1944664394 ecr 425879645], length 1448
+1283716628.481079 IP client > server: Flags [.], ack 234577, win 65535, options [nop,nop,TS val 425879655 ecr 1944664095,nop,nop,sack 1 {236025:237473}], length 0
+1283716628.502798 IP server > client: Flags [.], seq 234577:236025, ack 633, win 56, options [nop,nop,TS val 1944664624 ecr 425879655], length 1448
+1283716628.622162 IP client > server: Flags [.], ack 234577, win 65535, options [nop,nop,TS val 425879656 ecr 1944664095,nop,nop,sack 1 {236025:238921}], length 0
+1283716628.646734 IP server > client: Flags [.], seq 238921:240369, ack 633, win 56, options [nop,nop,TS val 1944664660 ecr 425879656], length 1448
+1283716629.539263 IP client > server: Flags [.], ack 238921, win 65001, options [nop,nop,TS val 425879665 ecr 1944664624], length 0
+1283716629.567801 IP server > client: Flags [.], seq 240369:241817, ack 633, win 56, options [nop,nop,TS val 1944664889 ecr 425879665], length 1448
+1283716629.683715 IP client > server: Flags [.], ack 240369, win 65535, options [nop,nop,TS val 425879667 ecr 1944664660], length 0
+1283716629.704797 IP server > client: Flags [.], seq 241817:243265, ack 633, win 56, options [nop,nop,TS val 1944664925 ecr 425879667], length 1448
+1283716629.705047 IP server > client: Flags [.], seq 243265:244713, ack 633, win 56, options [nop,nop,TS val 1944664925 ecr 425879667], length 1448
+1283716630.604297 IP client > server: Flags [.], ack 241817, win 65363, options [nop,nop,TS val 425879676 ecr 1944664889], length 0
+1283716630.628125 IP server > client: Flags [.], seq 244713:246161, ack 633, win 56, options [nop,nop,TS val 1944665156 ecr 425879676], length 1448
+1283716630.741692 IP client > server: Flags [.], ack 243265, win 65535, options [nop,nop,TS val 425879677 ecr 1944664925], length 0
+1283716630.763717 IP server > client: Flags [.], seq 246161:247609, ack 633, win 56, options [nop,nop,TS val 1944665190 ecr 425879677], length 1448
+1283716630.776220 IP client > server: Flags [.], ack 244713, win 65363, options [nop,nop,TS val 425879678 ecr 1944664925], length 0
+1283716630.798864 IP server > client: Flags [.], seq 247609:249057, ack 633, win 56, options [nop,nop,TS val 1944665198 ecr 425879678], length 1448
+1283716631.835643 IP client > server: Flags [.], ack 244713, win 65535, options [nop,nop,TS val 425879688 ecr 1944664925,nop,nop,sack 1 {247609:249057}], length 0
+1283716631.862482 IP server > client: Flags [.], seq 249057:250505, ack 633, win 56, options [nop,nop,TS val 1944665463 ecr 425879688], length 1448
+1283716632.092197 IP server > client: Flags [.], seq 244713:246161, ack 633, win 56, options [nop,nop,TS val 1944665521 ecr 425879688], length 1448
+1283716632.899942 IP client > server: Flags [.], ack 244713, win 65535, options [nop,nop,TS val 425879699 ecr 1944664925,nop,nop,sack 1 {247609:250505}], length 0
+1283716633.130290 IP client > server: Flags [.], ack 246161, win 65363, options [nop,nop,TS val 425879701 ecr 1944665521,nop,nop,sack 1 {247609:250505}], length 0
+1283716633.156242 IP server > client: Flags [.], seq 250505:251953, ack 633, win 56, options [nop,nop,TS val 1944665787 ecr 425879701], length 1448
+1283716633.156627 IP server > client: Flags [.], seq 251953:253401, ack 633, win 56, options [nop,nop,TS val 1944665787 ecr 425879701], length 1448
+1283716634.596341 IP server > client: Flags [.], seq 246161:247609, ack 633, win 56, options [nop,nop,TS val 1944666109 ecr 425879701], length 1448
+1283716637.015738 IP server > client: Flags [.], seq 246161:247609, ack 633, win 56, options [nop,nop,TS val 1944666753 ecr 425879701], length 1448
+1283716638.054502 IP client > server: Flags [.], ack 253401, win 65535, options [nop,nop,TS val 425879750 ecr 1944666109], length 0
+1283716638.078807 IP server > client: Flags [.], seq 253401:254849, ack 633, win 56, options [nop,nop,TS val 1944667018 ecr 425879750], length 1448
+1283716638.081832 IP server > client: Flags [.], seq 254849:256297, ack 633, win 56, options [nop,nop,TS val 1944667018 ecr 425879750], length 1448
+1283716639.149815 IP client > server: Flags [.], ack 256297, win 65363, options [nop,nop,TS val 425879761 ecr 1944667018], length 0
+1283716639.173141 IP server > client: Flags [.], seq 256297:257745, ack 633, win 56, options [nop,nop,TS val 1944667292 ecr 425879761], length 1448
+1283716639.173685 IP server > client: Flags [.], seq 257745:259193, ack 633, win 56, options [nop,nop,TS val 1944667292 ecr 425879761], length 1448
+1283716639.174091 IP server > client: Flags [.], seq 259193:260641, ack 633, win 56, options [nop,nop,TS val 1944667292 ecr 425879761], length 1448
+1283716640.210006 IP client > server: Flags [.], ack 257745, win 65535, options [nop,nop,TS val 425879772 ecr 1944667292], length 0
+1283716640.234705 IP server > client: Flags [.], seq 260641:262089, ack 633, win 56, options [nop,nop,TS val 1944667557 ecr 425879772], length 1448
+1283716640.243695 IP client > server: Flags [.], ack 259193, win 65363, options [nop,nop,TS val 425879772 ecr 1944667292], length 0
+1283716640.264315 IP server > client: Flags [.], seq 262089:263537, ack 633, win 56, options [nop,nop,TS val 1944667564 ecr 425879772], length 1448
+1283716640.281386 IP client > server: Flags [.], ack 260641, win 65535, options [nop,nop,TS val 425879773 ecr 1944667292], length 0
+1283716640.302233 IP server > client: Flags [.], seq 263537:264985, ack 633, win 56, options [nop,nop,TS val 1944667574 ecr 425879773], length 1448
+1283716641.272359 IP client > server: Flags [.], ack 262089, win 65363, options [nop,nop,TS val 425879783 ecr 1944667557], length 0
+1283716641.297952 IP server > client: Flags [.], seq 264985:266433, ack 633, win 56, options [nop,nop,TS val 1944667822 ecr 425879783], length 1448
+1283716641.298125 IP server > client: Flags [.], seq 266433:267881, ack 633, win 56, options [nop,nop,TS val 1944667822 ecr 425879783], length 1448
+1283716641.305565 IP client > server: Flags [.], ack 263537, win 65535, options [nop,nop,TS val 425879783 ecr 1944667564], length 0
+1283716641.324942 IP server > client: Flags [.], seq 267881:269329, ack 633, win 56, options [nop,nop,TS val 1944667830 ecr 425879783], length 1448
+1283716641.341410 IP client > server: Flags [.], ack 264985, win 65363, options [nop,nop,TS val 425879783 ecr 1944667574], length 0
+1283716641.361467 IP server > client: Flags [.], seq 269329:270777, ack 633, win 56, options [nop,nop,TS val 1944667839 ecr 425879783], length 1448
+1283716641.361735 IP server > client: Flags [.], seq 270777:272225, ack 633, win 56, options [nop,nop,TS val 1944667839 ecr 425879783], length 1448
+1283716642.334442 IP client > server: Flags [.], ack 266433, win 65535, options [nop,nop,TS val 425879793 ecr 1944667822], length 0
+1283716642.356725 IP server > client: Flags [.], seq 272225:273673, ack 633, win 56, options [nop,nop,TS val 1944668088 ecr 425879793], length 1448
+1283716642.368510 IP client > server: Flags [.], ack 267881, win 65363, options [nop,nop,TS val 425879794 ecr 1944667822], length 0
+1283716642.393454 IP server > client: Flags [.], seq 273673:275121, ack 633, win 56, options [nop,nop,TS val 1944668097 ecr 425879794], length 1448
+1283716642.393800 IP server > client: Flags [.], seq 275121:276569, ack 633, win 56, options [nop,nop,TS val 1944668097 ecr 425879794], length 1448
+1283716642.402470 IP client > server: Flags [.], ack 267881, win 65535, options [nop,nop,TS val 425879794 ecr 1944667822,nop,nop,sack 1 {269329:270777}], length 0
+1283716642.423499 IP server > client: Flags [.], seq 276569:278017, ack 633, win 56, options [nop,nop,TS val 1944668104 ecr 425879794], length 1448
+1283716642.437776 IP client > server: Flags [.], ack 267881, win 65535, options [nop,nop,TS val 425879794 ecr 1944667822,nop,nop,sack 1 {269329:272225}], length 0
+1283716642.456486 IP server > client: Flags [.], seq 278017:279465, ack 633, win 56, options [nop,nop,TS val 1944668113 ecr 425879794], length 1448
+1283716643.393822 IP client > server: Flags [.], ack 267881, win 65535, options [nop,nop,TS val 425879804 ecr 1944667822,nop,nop,sack 1 {269329:273673}], length 0
+1283716643.416872 IP server > client: Flags [.], seq 267881:269329, ack 633, win 56, options [nop,nop,TS val 1944668353 ecr 425879804], length 1448
+1283716643.431143 IP client > server: Flags [.], ack 267881, win 65535, options [nop,nop,TS val 425879804 ecr 1944667822,nop,nop,sack 1 {269329:275121}], length 0
+1283716643.464386 IP client > server: Flags [.], ack 267881, win 65535, options [nop,nop,TS val 425879804 ecr 1944667822,nop,nop,sack 1 {269329:276569}], length 0
+1283716643.484471 IP server > client: Flags [.], seq 279465:280913, ack 633, win 56, options [nop,nop,TS val 1944668370 ecr 425879804], length 1448
+1283716643.499726 IP client > server: Flags [.], ack 267881, win 65535, options [nop,nop,TS val 425879805 ecr 1944667822,nop,nop,sack 1 {269329:278017}], length 0
+1283716643.524203 IP server > client: Flags [.], seq 280913:282361, ack 633, win 56, options [nop,nop,TS val 1944668379 ecr 425879805], length 1448
+1283716643.533521 IP client > server: Flags [.], ack 267881, win 65535, options [nop,nop,TS val 425879805 ecr 1944667822,nop,nop,sack 1 {269329:279465}], length 0
+1283716643.553291 IP server > client: Flags [.], seq 282361:283809, ack 633, win 56, options [nop,nop,TS val 1944668387 ecr 425879805], length 1448
+1283716644.453835 IP client > server: Flags [.], ack 279465, win 64096, options [nop,nop,TS val 425879814 ecr 1944668353], length 0
+1283716644.476380 IP server > client: Flags [.], seq 283809:285257, ack 633, win 56, options [nop,nop,TS val 1944668617 ecr 425879814], length 1448
+1283716644.590998 IP client > server: Flags [.], ack 279465, win 65535, options [nop,nop,TS val 425879816 ecr 1944668353,nop,nop,sack 1 {282361:283809}], length 0
+1283716644.611788 IP server > client: Flags [.], seq 285257:286705, ack 633, win 56, options [nop,nop,TS val 1944668651 ecr 425879816], length 1448
+1283716644.612281 IP server > client: Flags [FP.], seq 286705:288148, ack 633, win 56, options [nop,nop,TS val 1944668651 ecr 425879816], length 1443
+1283716647.498692 IP server > client: Flags [.], seq 279465:280913, ack 633, win 56, options [nop,nop,TS val 1944669327 ecr 425879816], length 1448
+1283716653.028354 IP server > client: Flags [.], seq 279465:280913, ack 633, win 56, options [nop,nop,TS val 1944670747 ecr 425879816], length 1448
+1283716654.065352 IP client > server: Flags [.], ack 280913, win 65535, options [nop,nop,TS val 425879910 ecr 1944670747,nop,nop,sack 1 {282361:283809}], length 0
+1283716654.084335 IP server > client: Flags [.], seq 280913:282361, ack 633, win 56, options [nop,nop,TS val 1944671019 ecr 425879910], length 1448
+1283716654.084498 IP server > client: Flags [.], seq 283809:285257, ack 633, win 56, options [nop,nop,TS val 1944671019 ecr 425879910], length 1448
+1283716655.121388 IP client > server: Flags [.], ack 283809, win 65182, options [nop,nop,TS val 425879921 ecr 1944671019], length 0
+1283716655.144233 IP server > client: Flags [.], seq 285257:286705, ack 633, win 56, options [nop,nop,TS val 1944671284 ecr 425879921], length 1448
+1283716655.144558 IP server > client: Flags [FP.], seq 286705:288148, ack 633, win 56, options [nop,nop,TS val 1944671284 ecr 425879921], length 1443
+1283716655.155230 IP client > server: Flags [.], ack 285257, win 65535, options [nop,nop,TS val 425879921 ecr 1944671019], length 0
+1283716656.181172 IP client > server: Flags [.], ack 286705, win 65363, options [nop,nop,TS val 425879931 ecr 1944671284], length 0
+1283716656.214801 IP client > server: Flags [.], ack 288149, win 65364, options [nop,nop,TS val 425879932 ecr 1944671284], length 0
+1283716656.215884 IP client > server: Flags [F.], seq 633, ack 288149, win 65535, options [nop,nop,TS val 425879932 ecr 1944671284], length 0
+1283716656.237109 IP server > client: Flags [.], ack 634, win 56, options [nop,nop,TS val 1944671558 ecr 425879932], length 0
+
+
+
