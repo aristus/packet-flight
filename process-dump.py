@@ -72,7 +72,7 @@ dump_source = 'client' # node the tcpdump came from
 
 # sorted list of latencies between nodes, in seconds
 latencies = {
-    'client > server': 0.55
+    'client > server': 0.8
 }
 
 sequences = {}
@@ -82,7 +82,7 @@ def mangly(s):
     return 'n'+(re.sub(r'[^a-z0-9]+', '', s))
 
 def get_seq(s):
-    m = re.search(r'seq (\S+)', s)
+    m = re.search(r'((?:seq|ack) \S+)', s)
     if m:
         return m.group(1)
 
