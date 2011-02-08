@@ -30,17 +30,17 @@ what are the latencies between each node?
 import re, fileinput, random
 
 # 00:00:00.022019 IP client > server: Flags [S], seq 232647348, win 65535, options [mss 1460,nop,wscale 1,nop,nop,TS val 423667877 ecr 0,sackOK,eol], length 0
-verbose = re.compile(r'^\d\d:\d\d:(\d\d\.\d+) IP (\S+) > (\S+): Flags \[([^\[]+)\], .+ length (\d+)')
+verbose = re.compile(r'^\d\d:\d\d:(\d\d\.\d+) IP6? (\S+) > (\S+): Flags \[([^\[]+)\], .+ length (\d+)')
 
 # -tt
 # 1283448128.608708 IP client > dns: 59461+ AAAA? www.facebook.com. (34)
 # 1283449103.832338 IP client > www.facebook: Flags [S], seq 875995199, win 65535, options [mss 1460,nop,wscale 3,nop,nop,TS val 424662549 ecr 0,sackOK,eol], length 0
-tt_verbose = re.compile(r'^(\d+\.\d+) IP (\S+) > (\S+): .+? \(?(\d+)\)?$')
+tt_verbose = re.compile(r'^(\d+\.\d+) IP6? (\S+) > (\S+): .+? \(?(\d+)\)?$')
 
 # -tt -q
 # 1283397211.023307 IP client > webserver: tcp 0
 # 1283487251.146063 IP devserver > memcache: UDP, length 63
-tt_quiet = re.compile(r'^(\d+\.\d+) IP (\S+) > (\S+): .+? (\d+)$')
+tt_quiet = re.compile(r'^(\d+\.\d+) IP6? (\S+) > (\S+): .+? (\d+)$')
 
 pflags = re.compile(r'\[([\.SFPWN]+)\]')
 
