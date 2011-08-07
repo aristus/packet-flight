@@ -126,7 +126,6 @@ function NetworkNode(name, x, y) {
   this.name = name;
   this.x = x;
   this.y = y;
-  nodes.push(this);
 
   var sendPacket = function(node, delay, bytes, type, t) {
     var packet = new Packet(this, node, delay, bytes, type, t),
