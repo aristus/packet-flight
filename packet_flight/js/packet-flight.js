@@ -1,6 +1,8 @@
 // Packet Flight Viewer.
 PAPER = null;
 
+packet_counter = {};
+
 timeline = function() {
 }
 
@@ -38,6 +40,19 @@ DataPacket.prototype.init = function(packet) {
   this.packet = packet;
   var size = Math.log(packet.bytes || 10);
   this.packetEl = PAPER.circle(packet.sendr.x, packet.sendr.y, size);
+  this.packetEl.cleanup = $.proxy(function() {
+    var s = this.packet.sendr,
+        r = this.packet.recvr;
+    for (var i in [s, r]) {
+      var n = [s,r][i];
+      packet_counter[n.name] -= 1;
+      if (packet_counter[n.name] <= 0) {
+        n.nodeEl.hide();
+      }
+    }
+    this.packetEl.remove();
+
+  }, this);
   this.packetEl.hide();
 }
 
@@ -62,7 +77,7 @@ DataPacket.prototype.animate = function() {
     },
     this.packet.flight_time * 1000,
     "<>",
-    $.proxy(function() { this.packetEl.hide(); }, this)
+    $.proxy(function() { this.packetEl.cleanup(); }, this)
   );
 }
 
@@ -123,7 +138,7 @@ nodes.put = nodes.push
 
 function NetworkNode(name, x, y) {
   // private members
-  this.name = name;
+  this.name = name || "client";
   this.x = x;
   this.y = y;
 
@@ -167,10 +182,15 @@ function start_animation(paper) {
   }
 
   for (var n in nodes) {
-    node = nodes[n];
-    nodeEl = PAPER.circle(node.x, node.y, 50);
-    PAPER.text(node.x, node.y, node.name);
-    nodeEl.attr("fill", "#eeeeee");
+    var node = nodes[n];
+    var nodeEl = PAPER.set();
+    var node_circ = PAPER.circle(node.x, node.y, 50);
+    nodeEl.push(node_circ);
+    nodeEl.push(PAPER.text(node.x, node.y, node.name));
+    node_circ.attr("fill", "#eeeeee");
+    node_circ.attr("stroke", "#000");
+    node.nodeEl = nodeEl;
+
     // TODO: put z-indexing on nodes.
     nodeEl.attr("stroke", "none");
     if (node.x) {
@@ -180,6 +200,7 @@ function start_animation(paper) {
     if (node.y) {
       max_y = Math.max(node.y, max_y);
     }
+    nodeEl.hide();
   }
 
   // Draw the little timeline bar across the top of the view
@@ -199,17 +220,32 @@ function show_flight(PAPER, max_x, max_y) {
     var cur_time = new Date();
 
     var frame = (cur_time - start_time) / 1000;
-    var replay_time = (packet.delay - frame) * 100;
-
     if (text) {
       text.remove();
     }
 
     text = PAPER.text(max_x+100, max_y+50, "" + parseInt(frame * 100) / 100);
 
+    if (!packet) { setTimeout(replay, 200); return }
+    var replay_time = (packet.delay - frame) * 100;
+
+
     if (replay_time <= 0 && !packet.fired) {
       packet.fired = true;
       packetEl = packet.packetEl;
+      var s = packet.sendr,
+          r = packet.recvr;
+
+      if (!packet_counter[s.name]) { packet_counter[s.name] = 0 };
+      if (!packet_counter[r.name]) { packet_counter[r.name] = 0 };
+
+      for (var i in [s,r]) {
+        var n = [s,r][i];
+        packet_counter[n.name] += 1;
+        n.nodeEl.stop().show();
+        n.nodeEl.attr('fill-opacity', 1);
+      }
+
       packetEl.animate(packet);
 
       p += 1;
@@ -221,3 +257,4 @@ function show_flight(PAPER, max_x, max_y) {
 
   replay();
 };
+
