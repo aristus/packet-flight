@@ -224,7 +224,8 @@ function show_flight(PAPER, max_x, max_y) {
       text.remove();
     }
 
-    text = PAPER.text(max_x+100, max_y+50, "" + parseInt(frame * 100) / 100);
+    text = PAPER.text(max_x+100, max_y+50,
+      "" + Math.min(parseInt(frame * 100) / 100, timeline.end));
 
     if (!packet) { setTimeout(replay, 200); return }
     var replay_time = (packet.delay - frame) * 100;
