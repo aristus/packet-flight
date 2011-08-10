@@ -132,12 +132,21 @@ for line in fileinput.input():
         if dest == dump_source:
             start -= (1 * scale)
 
-        if not machines.has_key(src):
-            try:
-                machines[src] = {'xy':spots[spos], 'packets':[]}
-                spos += 1
-            except:
-                machines[src] = {'xy':(random.randint(10, 600), random.randint(30, 440)), 'packets':[]}
+        def add_machine(mch):
+          split_mch = mch.split('.')
+          mch = ".".join(split_mch[:-1])
+          port = split_mch[-1]
+          if not machines.has_key(mch):
+              try:
+                  machines[mch] = {'xy':spots[spos], 'packets':[]}
+                  spos += 1
+              except:
+                  machines[mch] = {'xy':(random.randint(10, 600), random.randint(30, 440)), 'packets':[]}
+
+          return mch
+
+        src = add_machine(src)
+        dest = add_machine(dest)
 
         machines[src]['packets'].append((dest, (start / scale), int(size), cls))
         maxtime = (time / scale) + 1
