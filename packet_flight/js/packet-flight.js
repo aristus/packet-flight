@@ -4,12 +4,33 @@ var
   FRAME_SIZE = 1000,
   NODE_RADIUS = 20,
   PAPER = null,
-  PLAY_SPEED = 1,
+  PLAY_SPEED = 2,
   STOP_ANIMATION;
 
 packet_counter = {};
 
-timeline = function() {
+
+var draw_packet_key = function(max_x, max_y) {
+  var start_y = 10;
+  var segments = Object.keys(PACKET_TYPES).length,
+      segment_width = (max_y - start_y) / segments;
+
+
+  var index = 0,
+      packet_radius = 4;
+  $.each(PACKET_TYPES, function(i, p) {
+    index += 1;
+    var y = start_y + (index * (segment_width + packet_radius)),
+        x = 2 * packet_radius + NODE_RADIUS;
+    var packet = PAPER.circle(x, y, packet_radius);
+    var text = PAPER.text(x, y - (2*packet_radius), i);
+
+    packet.attr("fill", new p().fill);
+  });
+};
+
+
+var timeline = function() {
 }
 
 timeline.init = function(min, max) {
@@ -58,6 +79,7 @@ timeline.draw = function(packets, end_x, end_y, segments) {
 }
 
 var DataPacket = function() {
+  this.fill = "#1689cf";
   return this;
 };
 
@@ -117,7 +139,7 @@ function FinPacket() {
 $.extend(FinPacket, DataPacket);
 
 function CtrlPacket() {
-  this.fill = "#4d8c2a";
+  this.fill = "#dddd00";
 }
 $.extend(CtrlPacket, DataPacket);
 
@@ -239,13 +261,9 @@ function start_animation(paper, play_speed) {
   var frame_skew = FRAME_SIZE / 1000 * PLAY_SPEED;
   timeline.draw(packets, max_x, max_y, 50);
 
+  draw_packet_key(max_x, max_y);
 
-  PAPER.setViewBox(
-    min_x - (2*NODE_RADIUS),
-    min_y - (2*NODE_RADIUS),
-    max_x - min_x + (2*NODE_RADIUS) + 200,
-    max_y - min_y + (2*NODE_RADIUS) + 200,
-    true);
+
   show_flight(PAPER, max_x, max_y);
 }
 
