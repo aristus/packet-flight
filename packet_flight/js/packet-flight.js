@@ -2,7 +2,7 @@
 NODE_RADIUS = 20;
 PAPER = null;
 FRAME_SIZE = 1000;
-PLAY_SPEED = 2;
+PLAY_SPEED = 1;
 
 packet_counter = {};
 
@@ -48,6 +48,10 @@ timeline.draw = function(packets, end_x, end_y, segments) {
     }, (this.end - this.start) * 1000 * PLAY_SPEED, function() {
       mover.remove();
       st.remove();
+      $("#canvas").fadeOut(function() {
+        $('#controls').fadeIn();
+      });
+
     });
 }
 
@@ -180,7 +184,7 @@ function Packet(sendr, recvr, delay, bytes, type, flight_time) {
   this.type = type;
 }
 
-function start_animation(paper) {
+function start_animation(paper, play_speed) {
   var node,
       packet,
       max_x = 0,
@@ -189,6 +193,7 @@ function start_animation(paper) {
       min_y = 10000;
 
   PAPER=paper;
+  PLAY_SPEED=play_speed || 1;
 
   start_time = new Date();
   packets.sort(function(a, b) {
@@ -206,11 +211,15 @@ function start_animation(paper) {
     var node = nodes[n];
     var nodeEl = PAPER.set();
     var node_circ = PAPER.circle(node.x, node.y, NODE_RADIUS);
+    node_circ.attr("stroke", "none");
+
+
     nodeEl.push(node_circ);
-    nodeEl.push(PAPER.text(node.x, node.y, node.name));
-    node_circ.attr("fill", "#eeeeee");
-    node_circ.attr("stroke", "#000");
+    nodeEl.push(PAPER.text(node.x, node.y - NODE_RADIUS - 10, node.name));
+    nodeEl.push(node_circ.glow( { width: 5 }));
     node.nodeEl = nodeEl;
+
+    node_circ.hide();
 
     if (node.x) {
       min_x = Math.min(node.x, min_x);
@@ -232,7 +241,7 @@ function start_animation(paper) {
   PAPER.setViewBox(
     min_x - (2*NODE_RADIUS),
     min_y - (2*NODE_RADIUS),
-    max_x - min_x + (2*NODE_RADIUS) + 100,
+    max_x - min_x + (2*NODE_RADIUS) + 200,
     max_y - min_y + (2*NODE_RADIUS) + 200,
     true);
   show_flight(PAPER, max_x, max_y);
