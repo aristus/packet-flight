@@ -100,7 +100,7 @@ DataPacket.prototype.animate = function() {
       cx: this.packet.recvr.x + rand_num(),
       cy: this.packet.recvr.y + rand_num()
     },
-    this.packet.flight_time * 1000,
+    this.packet.flight_time * 1000 * PLAY_SPEED,
     "<>",
     $.proxy(function() { setTimeout(this.packetEl.cleanup, 500); }, this)
   );
