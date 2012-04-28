@@ -2,7 +2,7 @@
 NODE_RADIUS = 20;
 PAPER = null;
 FRAME_SIZE = 1000;
-PLAY_SPEED = 1;
+PLAY_SPEED = 2;
 
 packet_counter = {};
 
@@ -27,6 +27,7 @@ timeline.draw = function(packets, end_x, end_y, segments) {
   var start_delay,
       end_delay;
 
+  PAPER.setStart();
   var j = 0;
   for (var i = 0; i < segments; i++) {
     var count = 0;
@@ -40,11 +41,13 @@ timeline.draw = function(packets, end_x, end_y, segments) {
   }
 
   var mover = PAPER.rect(50, end_y - 25, 5, 50);
-  mover.attr("fill", "rgba(200,200,200,0.5)");
+  mover.attr("fill", "rgba(201,200,200,0.5)");
+  var st = PAPER.setFinish();
   mover.animate({
     x: end_x,
     }, (this.end - this.start) * 1000 * PLAY_SPEED, function() {
       mover.remove();
+      st.remove();
     });
 }
 
@@ -226,6 +229,12 @@ function start_animation(paper) {
   timeline.draw(packets, max_x, max_y, 50);
 
 
+  PAPER.setViewBox(
+    min_x - (2*NODE_RADIUS),
+    min_y - (2*NODE_RADIUS),
+    max_x - min_x + (2*NODE_RADIUS) + 100,
+    max_y - min_y + (2*NODE_RADIUS) + 200,
+    true);
   show_flight(PAPER, max_x, max_y);
 }
 
