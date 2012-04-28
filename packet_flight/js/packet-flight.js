@@ -49,8 +49,6 @@ timeline.draw = function(packets, end_x, end_y, segments) {
   mover.animate({
     x: end_x,
     }, (this.end - this.start) * 1000 * PLAY_SPEED, function() {
-      mover.remove();
-      st.remove();
       STOP_ANIMATION = true;
       $("#canvas").fadeOut(function() {
         $('#controls').fadeIn();
