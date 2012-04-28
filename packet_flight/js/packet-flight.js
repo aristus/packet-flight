@@ -1,8 +1,11 @@
 // Packet Flight Viewer.
-NODE_RADIUS = 20;
-PAPER = null;
-FRAME_SIZE = 1000;
-PLAY_SPEED = 1;
+
+var
+  FRAME_SIZE = 1000,
+  NODE_RADIUS = 20,
+  PAPER = null,
+  PLAY_SPEED = 1,
+  STOP_ANIMATION;
 
 packet_counter = {};
 
@@ -48,6 +51,7 @@ timeline.draw = function(packets, end_x, end_y, segments) {
     }, (this.end - this.start) * 1000 * PLAY_SPEED, function() {
       mover.remove();
       st.remove();
+      STOP_ANIMATION = true;
       $("#canvas").fadeOut(function() {
         $('#controls').fadeIn();
       });
@@ -252,6 +256,9 @@ function show_flight(PAPER, max_x, max_y) {
 
   var p = 0;
   var replay = function () {
+    if (STOP_ANIMATION) { // saving CPUs
+      return;
+    }
     var packet = packets[p];
     var cur_time = new Date();
 
