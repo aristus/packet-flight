@@ -9,10 +9,6 @@ At the moment this is a very basic demonstraion of the idea.
 
 TODOS:
 
-  * take any valid TCP dump
-
-  * generate & compile the progam in one step (no copy/paste into Processing)
-
   * automatically figure out the latency and correct the timings to account
     for it. The dump timestamps show the send time of sent packets and the
     received time of received packets, so the timings for received packets
