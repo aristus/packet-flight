@@ -72,6 +72,7 @@ timeline.draw = function(packets, end_x, end_y, segments) {
     }, (this.end - this.start) * 1000 * PLAY_SPEED, function() {
       STOP_ANIMATION = true;
       $("#canvas").fadeOut(function() {
+        $('body').attr("background-color", "#000");
         $('#controls').fadeIn();
       });
 
@@ -105,6 +106,7 @@ DataPacket.prototype.init = function(packet) {
 
 DataPacket.prototype.animate = function() {
   this.packetEl.attr("fill",  this.fill || "#1689cf");
+  this.packetEl.attr("stroke", "none");
   this.packetEl.show();
   var rand_num = function() {
     var n = parseInt(Math.random() * NODE_RADIUS / 2);
@@ -240,7 +242,7 @@ function start_animation(paper, play_speed) {
 
     nodeEl.push(node_circ);
     nodeEl.push(PAPER.text(node.x, node.y - NODE_RADIUS - 10, node.name));
-    nodeEl.push(node_circ.glow( { width: 5 }));
+    nodeEl.push(node_circ.glow( { width: 3 }));
     node.nodeEl = nodeEl;
 
     node_circ.hide();
