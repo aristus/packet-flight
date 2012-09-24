@@ -7,6 +7,17 @@ Processing animation.
 
 At the moment this is a very basic demonstraion of the idea.
 
+On linux (ubuntu) to generate a dump use the following command
+
+sudo tcpdump -n -i <INTERFACE> -tt host <HOST>  > data.tcp
+
+and after to generate the correct data file for the viewer 
+
+./build.sh <DATA_PATH>
+
+finally to visualize it simply open the viewer.html file
+
+
 TODOS:
 
   * automatically figure out the latency and correct the timings to account
