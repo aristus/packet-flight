@@ -29,6 +29,46 @@ what are the latencies between each node?
 
 import re, fileinput, random
 
+# Where the network nodes live. Client in center, the rest arrayed around
+spots = (
+    (100, 250),
+    (540, 250),
+    (320, 250),
+    (320, 120),
+    (320, 380),
+    (100, 120),
+    (540, 380),
+    (100, 380),
+    (540, 120),
+    (220, 120),
+    (400, 120),
+    (220, 380),
+    (400, 380)
+)
+
+numberOfMachine = 0
+
+def add_machine(mch):
+  #split_mch = mch.split('.')
+  #mch = ".".join(split_mch[:-1])
+  #port = split_mch[-1]
+
+  if not machines.has_key(mch):
+      # if we have a new machine, we try to put it at nice place on the grid, not occupied yet
+      try:
+          global numberOfMachine
+          machines[mch] = {'xy':spots[numberOfMachine], 'packets':[]}
+          numberOfMachine += 1
+      # otherwise we put the machine at a random place @TODO would be nice to check that this place does not overlap
+      # with an existent machine, at best with a minimun distance from any other, in order to correctly
+      # visualize the packets
+      except:
+          machines[mch] = {'xy':(random.randint(10, 600), random.randint(30, 440)), 'packets':[]}
+
+  return mch
+
+
+
 # 00:00:00.022019 IP client > server: Flags [S], seq 232647348, win 65535, options [mss 1460,nop,wscale 1,nop,nop,TS val 423667877 ecr 0,sackOK,eol], length 0
 verbose = re.compile(r'^\d\d:\d\d:(\d\d\.\d+) IP6? (\S+) > (\S+): Flags \[([^\[]+)\], .+ length (\d+)')
 
@@ -60,9 +100,6 @@ maxtime = 0
 machines = {}
 latencies = {}
 
-# Where the network nodes live. Client in center, the rest arrayed around
-spots = ((100, 250), (540, 250), (320, 250), (320, 120), (320, 380), (100, 120), (540, 380), (100, 380), (540, 120), (220, 120), (400,120), (220, 380), (400, 380))
-spos = 0
 
 title = "Packet Visualization"
 
@@ -92,9 +129,15 @@ for line in fileinput.input():
         title = line[1:].strip()
         continue
 
-    m = tt_verbose.match(line)
+    m = verbose.match(line)
+    if m == None:
+        m = tt_verbose.match(line)
+        if m:
+            sec, src, dest, size = m.groups()
+            f = flags(line)
+    else:
+        sec, src, dest, f, size = m.groups()
     if m:
-        sec, src, dest, size = m.groups()
         sec = float(sec)
 
         mpair = ' > '.join(sorted((src, dest)))
@@ -113,7 +156,8 @@ for line in fileinput.input():
             cls = 'CTRL'
         elif dest == "dns" or src == "dns":
             cls = 'UDP'
-        f = flags(line)
+
+        #f = flags(line)
         if 'F' in f:
             cls = 'FIN'
         elif 'S' in f:
@@ -131,20 +175,6 @@ for line in fileinput.input():
         ## move start time for received packets backwards to account for latency.
         if dest == dump_source:
             start -= (1 * scale)
-
-        def add_machine(mch):
-          split_mch = mch.split('.')
-          mch = ".".join(split_mch[:-1])
-          port = split_mch[-1]
-          if not machines.has_key(mch):
-              try:
-                  machines[mch] = {'xy':spots[spos], 'packets':[]}
-                  spos += 1
-              except:
-                  machines[mch] = {'xy':(random.randint(10, 600), random.randint(30, 440)), 'packets':[]}
-
-          return mch
-
         src = add_machine(src)
         dest = add_machine(dest)
 

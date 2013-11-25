@@ -1,9 +1,36 @@
 // Packet Flight Viewer.
-PAPER = null;
+
+var
+  FRAME_SIZE = 1000,
+  NODE_RADIUS = 20,
+  PAPER = null,
+  PLAY_SPEED = 2,
+  STOP_ANIMATION;
 
 packet_counter = {};
 
-timeline = function() {
+
+var draw_packet_key = function(max_x, max_y) {
+  var start_y = 10;
+  var segments = Object.keys(PACKET_TYPES).length,
+      segment_width = (max_y - start_y) / segments;
+
+
+  var index = 0,
+      packet_radius = 4;
+  $.each(PACKET_TYPES, function(i, p) {
+    index += 1;
+    var y = start_y + (index * (segment_width + packet_radius)),
+        x = 2 * packet_radius + NODE_RADIUS;
+    var packet = PAPER.circle(x, y, packet_radius);
+    var text = PAPER.text(x, y - (2*packet_radius), i);
+
+    packet.attr("fill", new p().fill);
+  });
+};
+
+
+var timeline = function() {
 }
 
 timeline.init = function(min, max) {
@@ -11,34 +38,55 @@ timeline.init = function(min, max) {
   this.end = max;
 }
 
-timeline.draw = function(end_x, end_y) {
+timeline.draw = function(packets, end_x, end_y, segments) {
 
   end_y += 75;
   end_x += 50;
   start_x = 50;
-  var midsection = PAPER.rect(start_x, end_y+25, end_x-start_x, 1);
+  var width = end_x - start_x;
+  var segment_width = 5,
+      segment_distance = (width - (segments * segment_width)) / segments,
+      segment_delay = packets[packets.length-1].delay / segments;
 
-  var end   = PAPER.rect(end_x, end_y, 10, 50),
-      start = PAPER.rect(start_x, end_y, 10, 50);
+  var start_delay,
+      end_delay;
 
-  end.attr("fill", "#000");
-  start.attr("fill", "#000");
+  PAPER.setStart();
+  var j = 0;
+  for (var i = 0; i < segments; i++) {
+    var count = 0;
+    for (; packets[j].delay < segment_delay * i; j += 1) {
+      count += 1;
+    }
 
-  midsection.attr("fill", "#eee");
-  var mover = PAPER.rect(start_x, end_y, 10, 50);
-  mover.attr("fill", "#ddd");
+    var segment = PAPER.rect(start_x, end_y, segment_width, count);
+    segment.attr("fill", "rgba(1, 1, 0, 0.5)");
+    start_x += segment_distance + segment_width;
+  }
+
+  var mover = PAPER.rect(50, end_y - 25, 5, 50);
+  mover.attr("fill", "rgba(201,200,200,0.5)");
+  var st = PAPER.setFinish();
   mover.animate({
     x: end_x,
-    }, (this.end - this.start) * 1000);
+    }, (this.end - this.start) * 1000 * PLAY_SPEED, function() {
+      STOP_ANIMATION = true;
+      $("#canvas").fadeOut(function() {
+        $('body').attr("background-color", "#000");
+        $('#controls').fadeIn();
+      });
+
+    });
 }
 
 var DataPacket = function() {
+  this.fill = "#1689cf";
   return this;
 };
 
 DataPacket.prototype.init = function(packet) {
   this.packet = packet;
-  var size = Math.log(packet.bytes || 10);
+  var size = Math.log(packet.bytes / 2 || 10);
   this.packetEl = PAPER.circle(packet.sendr.x, packet.sendr.y, size);
   this.packetEl.cleanup = $.proxy(function() {
     var s = this.packet.sendr,
@@ -58,9 +106,10 @@ DataPacket.prototype.init = function(packet) {
 
 DataPacket.prototype.animate = function() {
   this.packetEl.attr("fill",  this.fill || "#1689cf");
+  this.packetEl.attr("stroke", "none");
   this.packetEl.show();
   var rand_num = function() {
-    var n = parseInt(Math.random() * 25);
+    var n = parseInt(Math.random() * NODE_RADIUS / 2);
     if (Math.random() > 0.5) {
       n *= -1;
     }
@@ -75,9 +124,9 @@ DataPacket.prototype.animate = function() {
       cx: this.packet.recvr.x + rand_num(),
       cy: this.packet.recvr.y + rand_num()
     },
-    this.packet.flight_time * 1000,
+    this.packet.flight_time * 1000 * PLAY_SPEED,
     "<>",
-    $.proxy(function() { this.packetEl.cleanup(); }, this)
+    $.proxy(function() { setTimeout(this.packetEl.cleanup, 500); }, this)
   );
 }
 
@@ -92,7 +141,7 @@ function FinPacket() {
 $.extend(FinPacket, DataPacket);
 
 function CtrlPacket() {
-  this.fill = "#4d8c2a";
+  this.fill = "#dddd00";
 }
 $.extend(CtrlPacket, DataPacket);
 
@@ -161,13 +210,16 @@ function Packet(sendr, recvr, delay, bytes, type, flight_time) {
   this.type = type;
 }
 
-function start_animation(paper) {
+function start_animation(paper, play_speed) {
   var node,
       packet,
       max_x = 0,
-      max_y = 0;
+      min_x = 10000,
+      max_y = 0,
+      min_y = 10000;
 
-  PAPER=paper
+  PAPER=paper;
+  PLAY_SPEED=play_speed || 1;
 
   start_time = new Date();
   packets.sort(function(a, b) {
@@ -184,27 +236,34 @@ function start_animation(paper) {
   for (var n in nodes) {
     var node = nodes[n];
     var nodeEl = PAPER.set();
-    var node_circ = PAPER.circle(node.x, node.y, 50);
+    var node_circ = PAPER.circle(node.x, node.y, NODE_RADIUS);
+    node_circ.attr("stroke", "none");
+
+
     nodeEl.push(node_circ);
-    nodeEl.push(PAPER.text(node.x, node.y, node.name));
-    node_circ.attr("fill", "#eeeeee");
-    node_circ.attr("stroke", "#000");
+    nodeEl.push(PAPER.text(node.x, node.y - NODE_RADIUS - 10, node.name));
+    nodeEl.push(node_circ.glow( { width: 3 }));
     node.nodeEl = nodeEl;
 
-    // TODO: put z-indexing on nodes.
-    nodeEl.attr("stroke", "none");
+    node_circ.hide();
+
     if (node.x) {
+      min_x = Math.min(node.x, min_x);
       max_x = Math.max(node.x, max_x);
     }
 
     if (node.y) {
+      min_y = Math.min(node.y, min_y);
       max_y = Math.max(node.y, max_y);
     }
     nodeEl.hide();
   }
 
   // Draw the little timeline bar across the top of the view
-  timeline.draw(max_x, max_y);
+  var frame_skew = FRAME_SIZE / 1000 * PLAY_SPEED;
+  timeline.draw(packets, max_x, max_y, 50);
+
+  draw_packet_key(max_x, max_y);
 
 
   show_flight(PAPER, max_x, max_y);
@@ -214,21 +273,17 @@ fired = {};
 function show_flight(PAPER, max_x, max_y) {
 
   var p = 0;
-  var text = null;
   var replay = function () {
+    if (STOP_ANIMATION) { // saving CPUs
+      return;
+    }
     var packet = packets[p];
     var cur_time = new Date();
 
-    var frame = (cur_time - start_time) / 1000;
-    if (text) {
-      text.remove();
-    }
-
-    text = PAPER.text(max_x+100, max_y+50,
-      "" + Math.min(parseInt(frame * 100) / 100, timeline.end));
+    var frame = (cur_time - start_time) / FRAME_SIZE / PLAY_SPEED;
 
     if (!packet) { setTimeout(replay, 200); return }
-    var replay_time = (packet.delay - frame) * 100;
+    var replay_time = (packet.delay - frame) * (FRAME_SIZE / 10 * PLAY_SPEED);
 
 
     if (replay_time <= 0 && !packet.fired) {
